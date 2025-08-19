@@ -151,6 +151,56 @@ Defines the templates used by the component.
 | opposite |  | Custom opposite item template. |
 | marker |  | Custom marker template. |
 
+## Theming
+
+### Timeline Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-timeline | Class name of the root element |
+| p-timeline-event | Class name of the event element |
+| p-timeline-event-opposite | Class name of the event opposite element |
+| p-timeline-event-separator | Class name of the event separator element |
+| p-timeline-event-marker | Class name of the event marker element |
+| p-timeline-event-connector | Class name of the event connector element |
+| p-timeline-event-content | Class name of the event content element |
+
+#### Timeline Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| timeline.event.minHeight | timeline.event.min.height | --p-timeline-event-min-height | Min height of event |
+| timeline.horizontal.eventContent.padding | timeline.horizontal.event.content.padding | --p-timeline-horizontal-event-content-padding | Event content padding of horizontal |
+| timeline.vertical.eventContent.padding | timeline.vertical.event.content.padding | --p-timeline-vertical-event-content-padding | Event content padding of vertical |
+| timeline.eventMarker.size | timeline.event.marker.size | --p-timeline-event-marker-size | Size of event marker |
+| timeline.eventMarker.borderRadius | timeline.event.marker.border.radius | --p-timeline-event-marker-border-radius | Border radius of event marker |
+| timeline.eventMarker.borderWidth | timeline.event.marker.border.width | --p-timeline-event-marker-border-width | Border width of event marker |
+| timeline.eventMarker.background | timeline.event.marker.background | --p-timeline-event-marker-background | Background of event marker |
+| timeline.eventMarker.borderColor | timeline.event.marker.border.color | --p-timeline-event-marker-border-color | Border color of event marker |
+| timeline.eventMarker.content.borderRadius | timeline.event.marker.content.border.radius | --p-timeline-event-marker-content-border-radius | Content border radius of event marker |
+| timeline.eventMarker.content.size | timeline.event.marker.content.size | --p-timeline-event-marker-content-size | Content size of event marker |
+| timeline.eventMarker.content.background | timeline.event.marker.content.background | --p-timeline-event-marker-content-background | Content background of event marker |
+| timeline.eventMarker.content.insetShadow | timeline.event.marker.content.inset.shadow | --p-timeline-event-marker-content-inset-shadow | Content inset shadow of event marker |
+| timeline.eventConnector.color | timeline.event.connector.color | --p-timeline-event-connector-color | Color of event connector |
+| timeline.eventConnector.size | timeline.event.connector.size | --p-timeline-event-connector-size | Size of event connector |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/timeline)

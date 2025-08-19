@@ -161,6 +161,48 @@ Defines the templates used by the component.
 | content |  | Content template of the element. |
 | closeicon |  | Close icon template of the element. |
 
+## Theming
+
+### Inplace Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-inplace | Class name of the root element |
+| p-inplace-display | Class name of the display element |
+| p-inplace-content | Class name of the content element |
+
+#### Inplace Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| inplace.root.padding | inplace.padding | --p-inplace-padding | Padding of root |
+| inplace.root.borderRadius | inplace.border.radius | --p-inplace-border-radius | Border radius of root |
+| inplace.root.focusRing.width | inplace.focus.ring.width | --p-inplace-focus-ring-width | Focus ring width of root |
+| inplace.root.focusRing.style | inplace.focus.ring.style | --p-inplace-focus-ring-style | Focus ring style of root |
+| inplace.root.focusRing.color | inplace.focus.ring.color | --p-inplace-focus-ring-color | Focus ring color of root |
+| inplace.root.focusRing.offset | inplace.focus.ring.offset | --p-inplace-focus-ring-offset | Focus ring offset of root |
+| inplace.root.focusRing.shadow | inplace.focus.ring.shadow | --p-inplace-focus-ring-shadow | Focus ring shadow of root |
+| inplace.root.transitionDuration | inplace.transition.duration | --p-inplace-transition-duration | Transition duration of root |
+| inplace.display.hoverBackground | inplace.display.hover.background | --p-inplace-display-hover-background | Hover background of display |
+| inplace.display.hoverColor | inplace.display.hover.color | --p-inplace-display-hover-color | Hover color of display |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/inplace)

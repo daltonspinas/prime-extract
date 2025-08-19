@@ -120,6 +120,45 @@ Defines the input properties of the component.
 
 #### TooltipOptions
 
+## Theming
+
+### Tooltip Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-tooltip | Class name of the root element |
+| p-tooltip-arrow | Class name of the arrow element |
+| p-tooltip-text | Class name of the text element |
+
+#### Tooltip Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| tooltip.root.maxWidth | tooltip.max.width | --p-tooltip-max-width | Max width of root |
+| tooltip.root.gutter | tooltip.gutter | --p-tooltip-gutter | Gutter of root |
+| tooltip.root.shadow | tooltip.shadow | --p-tooltip-shadow | Shadow of root |
+| tooltip.root.padding | tooltip.padding | --p-tooltip-padding | Padding of root |
+| tooltip.root.borderRadius | tooltip.border.radius | --p-tooltip-border-radius | Border radius of root |
+| tooltip.root.background | tooltip.background | --p-tooltip-background | Background of root |
+| tooltip.root.color | tooltip.color | --p-tooltip-color | Color of root |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/tooltip)

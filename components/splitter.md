@@ -128,6 +128,51 @@ Defines emit that determine the behavior of the component based on a given condi
 | onResizeEnd | event :  SplitterResizeEndEvent | Callback to invoke when resize ends. |
 | onResizeStart | event :  SplitterResizeStartEvent | Callback to invoke when resize starts. |
 
+## Theming
+
+### Splitter Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-splitter | Class name of the root element |
+| p-splitter-gutter | Class name of the gutter element |
+| p-splitter-gutter-handle | Class name of the gutter handle element |
+
+#### Splitter Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| splitter.root.background | splitter.background | --p-splitter-background | Background of root |
+| splitter.root.borderColor | splitter.border.color | --p-splitter-border-color | Border color of root |
+| splitter.root.color | splitter.color | --p-splitter-color | Color of root |
+| splitter.root.transitionDuration | splitter.transition.duration | --p-splitter-transition-duration | Transition duration of root |
+| splitter.gutter.background | splitter.gutter.background | --p-splitter-gutter-background | Background of gutter |
+| splitter.handle.size | splitter.handle.size | --p-splitter-handle-size | Size of handle |
+| splitter.handle.background | splitter.handle.background | --p-splitter-handle-background | Background of handle |
+| splitter.handle.borderRadius | splitter.handle.border.radius | --p-splitter-handle-border-radius | Border radius of handle |
+| splitter.handle.focusRing.width | splitter.handle.focus.ring.width | --p-splitter-handle-focus-ring-width | Focus ring width of handle |
+| splitter.handle.focusRing.style | splitter.handle.focus.ring.style | --p-splitter-handle-focus-ring-style | Focus ring style of handle |
+| splitter.handle.focusRing.color | splitter.handle.focus.ring.color | --p-splitter-handle-focus-ring-color | Focus ring color of handle |
+| splitter.handle.focusRing.offset | splitter.handle.focus.ring.offset | --p-splitter-handle-focus-ring-offset | Focus ring offset of handle |
+| splitter.handle.focusRing.shadow | splitter.handle.focus.ring.shadow | --p-splitter-handle-focus-ring-shadow | Focus ring shadow of handle |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/splitter)

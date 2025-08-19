@@ -145,6 +145,59 @@ Defines emit that determine the behavior of the component based on a given condi
 | onChange | event :  SliderChangeEvent | Callback to invoke on value change. |
 | onSlideEnd | event :  SliderSlideEndEvent | Callback to invoke when slide ended. |
 
+## Theming
+
+### Slider Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-slider | Class name of the root element |
+| p-slider-range | Class name of the range element |
+| p-slider-handle | Class name of the handle element |
+
+#### Slider Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| slider.root.transitionDuration | slider.transition.duration | --p-slider-transition-duration | Transition duration of root |
+| slider.track.background | slider.track.background | --p-slider-track-background | Background of track |
+| slider.track.borderRadius | slider.track.border.radius | --p-slider-track-border-radius | Border radius of track |
+| slider.track.size | slider.track.size | --p-slider-track-size | Size of track |
+| slider.range.background | slider.range.background | --p-slider-range-background | Background of range |
+| slider.handle.width | slider.handle.width | --p-slider-handle-width | Width of handle |
+| slider.handle.height | slider.handle.height | --p-slider-handle-height | Height of handle |
+| slider.handle.borderRadius | slider.handle.border.radius | --p-slider-handle-border-radius | Border radius of handle |
+| slider.handle.background | slider.handle.background | --p-slider-handle-background | Background of handle |
+| slider.handle.hoverBackground | slider.handle.hover.background | --p-slider-handle-hover-background | Hover background of handle |
+| slider.handle.content.borderRadius | slider.handle.content.border.radius | --p-slider-handle-content-border-radius | Content border radius of handle |
+| slider.handle.content.background | slider.handle.content.background | --p-slider-handle-content-background | Background of handle |
+| slider.handle.content.hoverBackground | slider.handle.content.hover.background | --p-slider-handle-content-hover-background | Content hover background of handle |
+| slider.handle.content.width | slider.handle.content.width | --p-slider-handle-content-width | Content width of handle |
+| slider.handle.content.height | slider.handle.content.height | --p-slider-handle-content-height | Content height of handle |
+| slider.handle.content.shadow | slider.handle.content.shadow | --p-slider-handle-content-shadow | Content shadow of handle |
+| slider.handle.focusRing.width | slider.handle.focus.ring.width | --p-slider-handle-focus-ring-width | Focus ring width of handle |
+| slider.handle.focusRing.style | slider.handle.focus.ring.style | --p-slider-handle-focus-ring-style | Focus ring style of handle |
+| slider.handle.focusRing.color | slider.handle.focus.ring.color | --p-slider-handle-focus-ring-color | Focus ring color of handle |
+| slider.handle.focusRing.offset | slider.handle.focus.ring.offset | --p-slider-handle-focus-ring-offset | Focus ring offset of handle |
+| slider.handle.focusRing.shadow | slider.handle.focus.ring.shadow | --p-slider-handle-focus-ring-shadow | Focus ring shadow of handle |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/slider)

@@ -137,6 +137,72 @@ Defines the templates used by the component.
 
 #### MenuItem
 
+## Theming
+
+### TieredMenu Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-tieredmenu | Class name of the root element |
+| p-tieredmenu-start | Class name of the start element |
+| p-tieredmenu-root-list | Class name of the root list element |
+| p-tieredmenu-item | Class name of the item element |
+| p-tieredmenu-item-content | Class name of the item content element |
+| p-tieredmenu-item-link | Class name of the item link element |
+| p-tieredmenu-item-icon | Class name of the item icon element |
+| p-tieredmenu-item-label | Class name of the item label element |
+| p-tieredmenu-submenu-icon | Class name of the submenu icon element |
+| p-tieredmenu-submenu | Class name of the submenu element |
+| p-tieredmenu-separator | Class name of the separator element |
+| p-tieredmenu-end | Class name of the end element |
+
+#### TieredMenu Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| tieredmenu.root.background | tieredmenu.background | --p-tieredmenu-background | Background of root |
+| tieredmenu.root.borderColor | tieredmenu.border.color | --p-tieredmenu-border-color | Border color of root |
+| tieredmenu.root.color | tieredmenu.color | --p-tieredmenu-color | Color of root |
+| tieredmenu.root.borderRadius | tieredmenu.border.radius | --p-tieredmenu-border-radius | Border radius of root |
+| tieredmenu.root.shadow | tieredmenu.shadow | --p-tieredmenu-shadow | Shadow of root |
+| tieredmenu.root.transitionDuration | tieredmenu.transition.duration | --p-tieredmenu-transition-duration | Transition duration of root |
+| tieredmenu.list.padding | tieredmenu.list.padding | --p-tieredmenu-list-padding | Padding of list |
+| tieredmenu.list.gap | tieredmenu.list.gap | --p-tieredmenu-list-gap | Gap of list |
+| tieredmenu.item.focusBackground | tieredmenu.item.focus.background | --p-tieredmenu-item-focus-background | Focus background of item |
+| tieredmenu.item.activeBackground | tieredmenu.item.active.background | --p-tieredmenu-item-active-background | Active background of item |
+| tieredmenu.item.color | tieredmenu.item.color | --p-tieredmenu-item-color | Color of item |
+| tieredmenu.item.focusColor | tieredmenu.item.focus.color | --p-tieredmenu-item-focus-color | Focus color of item |
+| tieredmenu.item.activeColor | tieredmenu.item.active.color | --p-tieredmenu-item-active-color | Active color of item |
+| tieredmenu.item.padding | tieredmenu.item.padding | --p-tieredmenu-item-padding | Padding of item |
+| tieredmenu.item.borderRadius | tieredmenu.item.border.radius | --p-tieredmenu-item-border-radius | Border radius of item |
+| tieredmenu.item.gap | tieredmenu.item.gap | --p-tieredmenu-item-gap | Gap of item |
+| tieredmenu.item.icon.color | tieredmenu.item.icon.color | --p-tieredmenu-item-icon-color | Icon color of item |
+| tieredmenu.item.icon.focusColor | tieredmenu.item.icon.focus.color | --p-tieredmenu-item-icon-focus-color | Icon focus color of item |
+| tieredmenu.item.icon.activeColor | tieredmenu.item.icon.active.color | --p-tieredmenu-item-icon-active-color | Icon active color of item |
+| tieredmenu.submenu.mobileIndent | tieredmenu.submenu.mobile.indent | --p-tieredmenu-submenu-mobile-indent | Mobile indent of submenu |
+| tieredmenu.submenuIcon.size | tieredmenu.submenu.icon.size | --p-tieredmenu-submenu-icon-size | Size of submenu icon |
+| tieredmenu.submenuIcon.color | tieredmenu.submenu.icon.color | --p-tieredmenu-submenu-icon-color | Color of submenu icon |
+| tieredmenu.submenuIcon.focusColor | tieredmenu.submenu.icon.focus.color | --p-tieredmenu-submenu-icon-focus-color | Focus color of submenu icon |
+| tieredmenu.submenuIcon.activeColor | tieredmenu.submenu.icon.active.color | --p-tieredmenu-submenu-icon-active-color | Active color of submenu icon |
+| tieredmenu.separator.borderColor | tieredmenu.separator.border.color | --p-tieredmenu-separator-border-color | Border color of separator |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/tieredmenu)

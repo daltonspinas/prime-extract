@@ -164,6 +164,46 @@ Defines the input properties of the component.
 | type | "solid" | "dashed" | "dotted" | solid | Border style type. |
 | align | "right" | "left" | "top" | "bottom" | "center" | null | Alignment of the content. |
 
+## Theming
+
+### Divider Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-divider | Class name of the root element |
+| p-divider-content | Class name of the content element |
+
+#### Divider Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| divider.root.borderColor | divider.border.color | --p-divider-border-color | Border color of root |
+| divider.content.background | divider.content.background | --p-divider-content-background | Background of content |
+| divider.content.color | divider.content.color | --p-divider-content-color | Color of content |
+| divider.horizontal.margin | divider.horizontal.margin | --p-divider-horizontal-margin | Margin of horizontal |
+| divider.horizontal.padding | divider.horizontal.padding | --p-divider-horizontal-padding | Padding of horizontal |
+| divider.horizontal.content.padding | divider.horizontal.content.padding | --p-divider-horizontal-content-padding | Content padding of horizontal |
+| divider.vertical.margin | divider.vertical.margin | --p-divider-vertical-margin | Margin of vertical |
+| divider.vertical.padding | divider.vertical.padding | --p-divider-vertical-padding | Padding of vertical |
+| divider.vertical.content.padding | divider.vertical.content.padding | --p-divider-vertical-content-padding | Content padding of vertical |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/divider)

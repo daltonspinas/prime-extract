@@ -69,6 +69,30 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | icon |  | Template of the icon. |
 
+## Theming
+
+### ScrollTop Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-scrolltop | Class name of the root element |
+| p-scrolltop-icon | Class name of the icon element |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/scrolltop)

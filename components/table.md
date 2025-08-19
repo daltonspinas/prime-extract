@@ -287,6 +287,8 @@ Pagination is enabled by setting paginator property to true and defining a rows 
 </p-table>
 ```
 
+## Theming
+
 ---
 
 [View Official Documentation](https://primeng.org/table)

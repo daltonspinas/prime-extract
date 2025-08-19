@@ -168,6 +168,44 @@ Defines the templates used by the component.
 | item |  | Template of the item. |
 | icon |  | Template of the item. |
 
+## Theming
+
+### Speed Dial Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-speeddial | Class name of the root element |
+| p-speeddial-button | Class name of the button element |
+| p-speeddial-list | Class name of the list element |
+| p-speeddial-item | Class name of the item element |
+| p-speeddial-action | Class name of the action element |
+| p-speeddial-action-icon | Class name of the action icon element |
+| p-speeddial-mask | Class name of the mask element |
+
+#### Speed Dial Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| speeddial.root.gap | speeddial.gap | --p-speeddial-gap | Gap of root |
+| speeddial.root.transitionDuration | speeddial.transition.duration | --p-speeddial-transition-duration | Transition duration of root |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/speeddial)

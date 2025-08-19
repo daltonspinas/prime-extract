@@ -124,6 +124,90 @@ Defines the templates used by the component.
 
 #### MenuItem
 
+## Theming
+
+### Menubar Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-menubar | Class name of the root element |
+| p-menubar-start | Class name of the start element |
+| p-menubar-button | Class name of the button element |
+| p-menubar-root-list | Class name of the root list element |
+| p-menubar-item | Class name of the item element |
+| p-menubar-item-content | Class name of the item content element |
+| p-menubar-item-link | Class name of the item link element |
+| p-menubar-item-icon | Class name of the item icon element |
+| p-menubar-item-label | Class name of the item label element |
+| p-menubar-submenu-icon | Class name of the submenu icon element |
+| p-menubar-submenu | Class name of the submenu element |
+| p-menubar-separator | Class name of the separator element |
+| p-menubar-end | Class name of the end element |
+
+#### Menubar Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| menubar.root.background | menubar.background | --p-menubar-background | Background of root |
+| menubar.root.borderColor | menubar.border.color | --p-menubar-border-color | Border color of root |
+| menubar.root.borderRadius | menubar.border.radius | --p-menubar-border-radius | Border radius of root |
+| menubar.root.color | menubar.color | --p-menubar-color | Color of root |
+| menubar.root.gap | menubar.gap | --p-menubar-gap | Gap of root |
+| menubar.root.padding | menubar.padding | --p-menubar-padding | Padding of root |
+| menubar.root.transitionDuration | menubar.transition.duration | --p-menubar-transition-duration | Transition duration of root |
+| menubar.baseItem.borderRadius | menubar.base.item.border.radius | --p-menubar-base-item-border-radius | Border radius of base item |
+| menubar.baseItem.padding | menubar.base.item.padding | --p-menubar-base-item-padding | Padding of base item |
+| menubar.item.focusBackground | menubar.item.focus.background | --p-menubar-item-focus-background | Focus background of item |
+| menubar.item.activeBackground | menubar.item.active.background | --p-menubar-item-active-background | Active background of item |
+| menubar.item.color | menubar.item.color | --p-menubar-item-color | Color of item |
+| menubar.item.focusColor | menubar.item.focus.color | --p-menubar-item-focus-color | Focus color of item |
+| menubar.item.activeColor | menubar.item.active.color | --p-menubar-item-active-color | Active color of item |
+| menubar.item.padding | menubar.item.padding | --p-menubar-item-padding | Padding of item |
+| menubar.item.borderRadius | menubar.item.border.radius | --p-menubar-item-border-radius | Border radius of item |
+| menubar.item.gap | menubar.item.gap | --p-menubar-item-gap | Gap of item |
+| menubar.item.icon.color | menubar.item.icon.color | --p-menubar-item-icon-color | Icon color of item |
+| menubar.item.icon.focusColor | menubar.item.icon.focus.color | --p-menubar-item-icon-focus-color | Icon focus color of item |
+| menubar.item.icon.activeColor | menubar.item.icon.active.color | --p-menubar-item-icon-active-color | Icon active color of item |
+| menubar.submenu.padding | menubar.submenu.padding | --p-menubar-submenu-padding | Padding of submenu |
+| menubar.submenu.gap | menubar.submenu.gap | --p-menubar-submenu-gap | Gap of submenu |
+| menubar.submenu.background | menubar.submenu.background | --p-menubar-submenu-background | Background of submenu |
+| menubar.submenu.borderColor | menubar.submenu.border.color | --p-menubar-submenu-border-color | Border color of submenu |
+| menubar.submenu.borderRadius | menubar.submenu.border.radius | --p-menubar-submenu-border-radius | Border radius of submenu |
+| menubar.submenu.shadow | menubar.submenu.shadow | --p-menubar-submenu-shadow | Shadow of submenu |
+| menubar.submenu.mobileIndent | menubar.submenu.mobile.indent | --p-menubar-submenu-mobile-indent | Mobile indent of submenu |
+| menubar.submenu.icon.size | menubar.submenu.icon.size | --p-menubar-submenu-icon-size | Icon size of submenu |
+| menubar.submenu.icon.color | menubar.submenu.icon.color | --p-menubar-submenu-icon-color | Icon color of submenu |
+| menubar.submenu.icon.focusColor | menubar.submenu.icon.focus.color | --p-menubar-submenu-icon-focus-color | Icon focus color of submenu |
+| menubar.submenu.icon.activeColor | menubar.submenu.icon.active.color | --p-menubar-submenu-icon-active-color | Icon active color of submenu |
+| menubar.separator.borderColor | menubar.separator.border.color | --p-menubar-separator-border-color | Border color of separator |
+| menubar.mobileButton.borderRadius | menubar.mobile.button.border.radius | --p-menubar-mobile-button-border-radius | Border radius of mobile button |
+| menubar.mobileButton.size | menubar.mobile.button.size | --p-menubar-mobile-button-size | Size of mobile button |
+| menubar.mobileButton.color | menubar.mobile.button.color | --p-menubar-mobile-button-color | Color of mobile button |
+| menubar.mobileButton.hoverColor | menubar.mobile.button.hover.color | --p-menubar-mobile-button-hover-color | Hover color of mobile button |
+| menubar.mobileButton.hoverBackground | menubar.mobile.button.hover.background | --p-menubar-mobile-button-hover-background | Hover background of mobile button |
+| menubar.mobileButton.focusRing.width | menubar.mobile.button.focus.ring.width | --p-menubar-mobile-button-focus-ring-width | Focus ring width of mobile button |
+| menubar.mobileButton.focusRing.style | menubar.mobile.button.focus.ring.style | --p-menubar-mobile-button-focus-ring-style | Focus ring style of mobile button |
+| menubar.mobileButton.focusRing.color | menubar.mobile.button.focus.ring.color | --p-menubar-mobile-button-focus-ring-color | Focus ring color of mobile button |
+| menubar.mobileButton.focusRing.offset | menubar.mobile.button.focus.ring.offset | --p-menubar-mobile-button-focus-ring-offset | Focus ring offset of mobile button |
+| menubar.mobileButton.focusRing.shadow | menubar.mobile.button.focus.ring.shadow | --p-menubar-mobile-button-focus-ring-shadow | Focus ring shadow of mobile button |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/menubar)

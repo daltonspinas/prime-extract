@@ -84,6 +84,53 @@ Defines the input properties of the component.
 | --- | --- | --- | --- |
 | variant | "in" | "over" | "on" | over | Defines the positioning of the label relative to the input. |
 
+## Theming
+
+### FloatLabel Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-floatlabel | Class name of the root element |
+
+#### FloatLabel Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| floatlabel.root.color | floatlabel.color | --p-floatlabel-color | Color of root |
+| floatlabel.root.focusColor | floatlabel.focus.color | --p-floatlabel-focus-color | Focus color of root |
+| floatlabel.root.activeColor | floatlabel.active.color | --p-floatlabel-active-color | Active color of root |
+| floatlabel.root.invalidColor | floatlabel.invalid.color | --p-floatlabel-invalid-color | Invalid color of root |
+| floatlabel.root.transitionDuration | floatlabel.transition.duration | --p-floatlabel-transition-duration | Transition duration of root |
+| floatlabel.root.positionX | floatlabel.position.x | --p-floatlabel-position-x | Position x of root |
+| floatlabel.root.positionY | floatlabel.position.y | --p-floatlabel-position-y | Position y of root |
+| floatlabel.root.fontWeight | floatlabel.font.weight | --p-floatlabel-font-weight | Font weight of root |
+| floatlabel.root.active.fontSize | floatlabel.active.font.size | --p-floatlabel-active-font-size | Active font size of root |
+| floatlabel.root.active.fontWeight | floatlabel.active.font.weight | --p-floatlabel-active-font-weight | Active font weight of root |
+| floatlabel.over.active.top | floatlabel.over.active.top | --p-floatlabel-over-active-top | Active top of over |
+| floatlabel.in.input.paddingTop | floatlabel.in.input.padding.top | --p-floatlabel-in-input-padding-top | Input padding top of in |
+| floatlabel.in.input.paddingBottom | floatlabel.in.input.padding.bottom | --p-floatlabel-in-input-padding-bottom | Input padding bottom of in |
+| floatlabel.in.active.top | floatlabel.in.active.top | --p-floatlabel-in-active-top | Active top of in |
+| floatlabel.on.borderRadius | floatlabel.on.border.radius | --p-floatlabel-on-border-radius | Border radius of on |
+| floatlabel.on.active.background | floatlabel.on.active.background | --p-floatlabel-on-active-background | Active background of on |
+| floatlabel.on.active.padding | floatlabel.on.active.padding | --p-floatlabel-on-active-padding | Active padding of on |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/floatlabel)

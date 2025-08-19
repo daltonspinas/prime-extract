@@ -275,6 +275,101 @@ Defines the templates used by the component.
 | groupicon |  | Content template for customizing the group icon. |
 | clearicon |  | Content template for customizing the clear icon. |
 
+## Theming
+
+### CascadeSelect Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-cascadeselect | Class name of the root element |
+| p-cascadeselect-label | Class name of the label element |
+| p-cascadeselect-dropdown | Class name of the dropdown element |
+| p-cascadeselect-loading-icon | Class name of the loading icon element |
+| p-cascadeselect-clear-icon | Class name of the dropdown icon element |
+| p-cascadeselect-dropdown-icon | Class name of the dropdown icon element |
+| p-cascadeselect-overlay | Class name of the overlay element |
+| p-cascadeselect-list-container | Class name of the list container element |
+| p-cascadeselect-list | Class name of the list element |
+| p-cascadeselect-item | Class name of the item element |
+| p-cascadeselect-item-content | Class name of the item content element |
+| p-cascadeselect-item-text | Class name of the item text element |
+| p-cascadeselect-group-icon | Class name of the group icon element |
+| p-cascadeselect-item-list | Class name of the item list element |
+
+#### CascadeSelect Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| cascadeselect.root.background | cascadeselect.background | --p-cascadeselect-background | Background of root |
+| cascadeselect.root.disabledBackground | cascadeselect.disabled.background | --p-cascadeselect-disabled-background | Disabled background of root |
+| cascadeselect.root.filledBackground | cascadeselect.filled.background | --p-cascadeselect-filled-background | Filled background of root |
+| cascadeselect.root.filledHoverBackground | cascadeselect.filled.hover.background | --p-cascadeselect-filled-hover-background | Filled hover background of root |
+| cascadeselect.root.filledFocusBackground | cascadeselect.filled.focus.background | --p-cascadeselect-filled-focus-background | Filled focus background of root |
+| cascadeselect.root.borderColor | cascadeselect.border.color | --p-cascadeselect-border-color | Border color of root |
+| cascadeselect.root.hoverBorderColor | cascadeselect.hover.border.color | --p-cascadeselect-hover-border-color | Hover border color of root |
+| cascadeselect.root.focusBorderColor | cascadeselect.focus.border.color | --p-cascadeselect-focus-border-color | Focus border color of root |
+| cascadeselect.root.invalidBorderColor | cascadeselect.invalid.border.color | --p-cascadeselect-invalid-border-color | Invalid border color of root |
+| cascadeselect.root.color | cascadeselect.color | --p-cascadeselect-color | Color of root |
+| cascadeselect.root.disabledColor | cascadeselect.disabled.color | --p-cascadeselect-disabled-color | Disabled color of root |
+| cascadeselect.root.placeholderColor | cascadeselect.placeholder.color | --p-cascadeselect-placeholder-color | Placeholder color of root |
+| cascadeselect.root.invalidPlaceholderColor | cascadeselect.invalid.placeholder.color | --p-cascadeselect-invalid-placeholder-color | Invalid placeholder color of root |
+| cascadeselect.root.shadow | cascadeselect.shadow | --p-cascadeselect-shadow | Shadow of root |
+| cascadeselect.root.paddingX | cascadeselect.padding.x | --p-cascadeselect-padding-x | Padding x of root |
+| cascadeselect.root.paddingY | cascadeselect.padding.y | --p-cascadeselect-padding-y | Padding y of root |
+| cascadeselect.root.borderRadius | cascadeselect.border.radius | --p-cascadeselect-border-radius | Border radius of root |
+| cascadeselect.root.focusRing.width | cascadeselect.focus.ring.width | --p-cascadeselect-focus-ring-width | Focus ring width of root |
+| cascadeselect.root.focusRing.style | cascadeselect.focus.ring.style | --p-cascadeselect-focus-ring-style | Focus ring style of root |
+| cascadeselect.root.focusRing.color | cascadeselect.focus.ring.color | --p-cascadeselect-focus-ring-color | Focus ring color of root |
+| cascadeselect.root.focusRing.offset | cascadeselect.focus.ring.offset | --p-cascadeselect-focus-ring-offset | Focus ring offset of root |
+| cascadeselect.root.focusRing.shadow | cascadeselect.focus.ring.shadow | --p-cascadeselect-focus-ring-shadow | Focus ring shadow of root |
+| cascadeselect.root.transitionDuration | cascadeselect.transition.duration | --p-cascadeselect-transition-duration | Transition duration of root |
+| cascadeselect.root.sm.fontSize | cascadeselect.sm.font.size | --p-cascadeselect-sm-font-size | Sm font size of root |
+| cascadeselect.root.sm.paddingX | cascadeselect.sm.padding.x | --p-cascadeselect-sm-padding-x | Sm padding x of root |
+| cascadeselect.root.sm.paddingY | cascadeselect.sm.padding.y | --p-cascadeselect-sm-padding-y | Sm padding y of root |
+| cascadeselect.root.lg.fontSize | cascadeselect.lg.font.size | --p-cascadeselect-lg-font-size | Lg font size of root |
+| cascadeselect.root.lg.paddingX | cascadeselect.lg.padding.x | --p-cascadeselect-lg-padding-x | Lg padding x of root |
+| cascadeselect.root.lg.paddingY | cascadeselect.lg.padding.y | --p-cascadeselect-lg-padding-y | Lg padding y of root |
+| cascadeselect.dropdown.width | cascadeselect.dropdown.width | --p-cascadeselect-dropdown-width | Width of dropdown |
+| cascadeselect.dropdown.color | cascadeselect.dropdown.color | --p-cascadeselect-dropdown-color | Color of dropdown |
+| cascadeselect.overlay.background | cascadeselect.overlay.background | --p-cascadeselect-overlay-background | Background of overlay |
+| cascadeselect.overlay.borderColor | cascadeselect.overlay.border.color | --p-cascadeselect-overlay-border-color | Border color of overlay |
+| cascadeselect.overlay.borderRadius | cascadeselect.overlay.border.radius | --p-cascadeselect-overlay-border-radius | Border radius of overlay |
+| cascadeselect.overlay.color | cascadeselect.overlay.color | --p-cascadeselect-overlay-color | Color of overlay |
+| cascadeselect.overlay.shadow | cascadeselect.overlay.shadow | --p-cascadeselect-overlay-shadow | Shadow of overlay |
+| cascadeselect.list.padding | cascadeselect.list.padding | --p-cascadeselect-list-padding | Padding of list |
+| cascadeselect.list.gap | cascadeselect.list.gap | --p-cascadeselect-list-gap | Gap of list |
+| cascadeselect.list.mobileIndent | cascadeselect.list.mobile.indent | --p-cascadeselect-list-mobile-indent | Mobile indent of list |
+| cascadeselect.option.focusBackground | cascadeselect.option.focus.background | --p-cascadeselect-option-focus-background | Focus background of option |
+| cascadeselect.option.selectedBackground | cascadeselect.option.selected.background | --p-cascadeselect-option-selected-background | Selected background of option |
+| cascadeselect.option.selectedFocusBackground | cascadeselect.option.selected.focus.background | --p-cascadeselect-option-selected-focus-background | Selected focus background of option |
+| cascadeselect.option.color | cascadeselect.option.color | --p-cascadeselect-option-color | Color of option |
+| cascadeselect.option.focusColor | cascadeselect.option.focus.color | --p-cascadeselect-option-focus-color | Focus color of option |
+| cascadeselect.option.selectedColor | cascadeselect.option.selected.color | --p-cascadeselect-option-selected-color | Selected color of option |
+| cascadeselect.option.selectedFocusColor | cascadeselect.option.selected.focus.color | --p-cascadeselect-option-selected-focus-color | Selected focus color of option |
+| cascadeselect.option.padding | cascadeselect.option.padding | --p-cascadeselect-option-padding | Padding of option |
+| cascadeselect.option.borderRadius | cascadeselect.option.border.radius | --p-cascadeselect-option-border-radius | Border radius of option |
+| cascadeselect.option.icon.color | cascadeselect.option.icon.color | --p-cascadeselect-option-icon-color | Icon color of option |
+| cascadeselect.option.icon.focusColor | cascadeselect.option.icon.focus.color | --p-cascadeselect-option-icon-focus-color | Icon focus color of option |
+| cascadeselect.option.icon.size | cascadeselect.option.icon.size | --p-cascadeselect-option-icon-size | Icon size of option |
+| cascadeselect.clearIcon.color | cascadeselect.clear.icon.color | --p-cascadeselect-clear-icon-color | Color of clear icon |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/cascadeselect)

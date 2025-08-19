@@ -147,6 +147,76 @@ Defines the templates used by the component.
 | icon |  | Custom icon template. |
 | content |  | Custom content template. |
 
+## Theming
+
+### ToggleButton Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-togglebutton | Class name of the root element |
+| p-togglebutton-icon | Class name of the icon element |
+| p-togglebutton-icon-left | Class name of the left icon |
+| p-togglebutton-icon-right | Class name of the right icon |
+| p-togglebutton-label | Class name of the label element |
+
+#### ToggleButton Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| togglebutton.root.padding | togglebutton.padding | --p-togglebutton-padding | Padding of root |
+| togglebutton.root.borderRadius | togglebutton.border.radius | --p-togglebutton-border-radius | Border radius of root |
+| togglebutton.root.gap | togglebutton.gap | --p-togglebutton-gap | Gap of root |
+| togglebutton.root.fontWeight | togglebutton.font.weight | --p-togglebutton-font-weight | Font weight of root |
+| togglebutton.root.disabledBackground | togglebutton.disabled.background | --p-togglebutton-disabled-background | Disabled background of root |
+| togglebutton.root.disabledBorderColor | togglebutton.disabled.border.color | --p-togglebutton-disabled-border-color | Disabled border color of root |
+| togglebutton.root.disabledColor | togglebutton.disabled.color | --p-togglebutton-disabled-color | Disabled color of root |
+| togglebutton.root.invalidBorderColor | togglebutton.invalid.border.color | --p-togglebutton-invalid-border-color | Invalid border color of root |
+| togglebutton.root.focusRing.width | togglebutton.focus.ring.width | --p-togglebutton-focus-ring-width | Focus ring width of root |
+| togglebutton.root.focusRing.style | togglebutton.focus.ring.style | --p-togglebutton-focus-ring-style | Focus ring style of root |
+| togglebutton.root.focusRing.color | togglebutton.focus.ring.color | --p-togglebutton-focus-ring-color | Focus ring color of root |
+| togglebutton.root.focusRing.offset | togglebutton.focus.ring.offset | --p-togglebutton-focus-ring-offset | Focus ring offset of root |
+| togglebutton.root.focusRing.shadow | togglebutton.focus.ring.shadow | --p-togglebutton-focus-ring-shadow | Focus ring shadow of root |
+| togglebutton.root.transitionDuration | togglebutton.transition.duration | --p-togglebutton-transition-duration | Transition duration of root |
+| togglebutton.root.sm.fontSize | togglebutton.sm.font.size | --p-togglebutton-sm-font-size | Sm font size of root |
+| togglebutton.root.sm.padding | togglebutton.sm.padding | --p-togglebutton-sm-padding | Sm padding of root |
+| togglebutton.root.lg.fontSize | togglebutton.lg.font.size | --p-togglebutton-lg-font-size | Lg font size of root |
+| togglebutton.root.lg.padding | togglebutton.lg.padding | --p-togglebutton-lg-padding | Lg padding of root |
+| togglebutton.root.background | togglebutton.background | --p-togglebutton-background | Background of root |
+| togglebutton.root.checkedBackground | togglebutton.checked.background | --p-togglebutton-checked-background | Checked background of root |
+| togglebutton.root.hoverBackground | togglebutton.hover.background | --p-togglebutton-hover-background | Hover background of root |
+| togglebutton.root.borderColor | togglebutton.border.color | --p-togglebutton-border-color | Border color of root |
+| togglebutton.root.color | togglebutton.color | --p-togglebutton-color | Color of root |
+| togglebutton.root.hoverColor | togglebutton.hover.color | --p-togglebutton-hover-color | Hover color of root |
+| togglebutton.root.checkedColor | togglebutton.checked.color | --p-togglebutton-checked-color | Checked color of root |
+| togglebutton.root.checkedBorderColor | togglebutton.checked.border.color | --p-togglebutton-checked-border-color | Checked border color of root |
+| togglebutton.icon.disabledColor | togglebutton.icon.disabled.color | --p-togglebutton-icon-disabled-color | Disabled color of icon |
+| togglebutton.icon.color | togglebutton.icon.color | --p-togglebutton-icon-color | Color of icon |
+| togglebutton.icon.hoverColor | togglebutton.icon.hover.color | --p-togglebutton-icon-hover-color | Hover color of icon |
+| togglebutton.icon.checkedColor | togglebutton.icon.checked.color | --p-togglebutton-icon-checked-color | Checked color of icon |
+| togglebutton.content.padding | togglebutton.content.padding | --p-togglebutton-content-padding | Padding of content |
+| togglebutton.content.borderRadius | togglebutton.content.border.radius | --p-togglebutton-content-border-radius | Border radius of content |
+| togglebutton.content.checkedShadow | togglebutton.content.checked.shadow | --p-togglebutton-content-checked-shadow | Checked shadow of content |
+| togglebutton.content.sm.padding | togglebutton.content.sm.padding | --p-togglebutton-content-sm-padding | Sm padding of content |
+| togglebutton.content.lg.padding | togglebutton.content.lg.padding | --p-togglebutton-content-lg-padding | Lg padding of content |
+| togglebutton.content.checkedBackground | togglebutton.content.checked.background | --p-togglebutton-content-checked-background | Checked background of content |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/togglebutton)

@@ -132,6 +132,52 @@ Defines the input properties of the component.
 | labelOrientation | "vertical" | "horizontal" | horizontal | Specifies the label orientation of the component, valid values are 'horizontal' and 'vertical'. |
 | styleClass | string | null | Style class of the element. |
 
+## Theming
+
+### MeterGroup Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-metergroup | Class name of the root element |
+| p-metergroup-meters | Class name of the meters element |
+| p-metergroup-meter | Class name of the meter element |
+| p-metergroup-label-list | Class name of the label list element |
+| p-metergroup-label | Class name of the label element |
+| p-metergroup-label-icon | Class name of the label icon element |
+| p-metergroup-label-marker | Class name of the label marker element |
+| p-metergroup-label-text | Class name of the label text element |
+
+#### MeterGroup Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| metergroup.root.borderRadius | metergroup.border.radius | --p-metergroup-border-radius | Border radius of root |
+| metergroup.root.gap | metergroup.gap | --p-metergroup-gap | Gap of root |
+| metergroup.meters.background | metergroup.meters.background | --p-metergroup-meters-background | Background of meters |
+| metergroup.meters.size | metergroup.meters.size | --p-metergroup-meters-size | Size of meters |
+| metergroup.label.gap | metergroup.label.gap | --p-metergroup-label-gap | Gap of label |
+| metergroup.labelMarker.size | metergroup.label.marker.size | --p-metergroup-label-marker-size | Size of label marker |
+| metergroup.labelIcon.size | metergroup.label.icon.size | --p-metergroup-label-icon-size | Size of label icon |
+| metergroup.labelList.verticalGap | metergroup.label.list.vertical.gap | --p-metergroup-label-list-vertical-gap | Vertical gap of label list |
+| metergroup.labelList.horizontalGap | metergroup.label.list.horizontal.gap | --p-metergroup-label-list-horizontal-gap | Horizontal gap of label list |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/metergroup)

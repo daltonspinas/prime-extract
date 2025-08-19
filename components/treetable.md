@@ -933,6 +933,141 @@ Defines methods that can be accessed by the component's reference.
 
 #### TreeNode
 
+## Theming
+
+### TreeTable Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-treetable | Class name of the root element |
+| p-treetable-loading | Class name of the loading element |
+| p-treetable-mask | Class name of the mask element |
+| p-treetable-loading-icon | Class name of the loading icon element |
+| p-treetable-header | Class name of the header element |
+| p-treetable-paginator-[position] | Class name of the paginator element |
+| p-treetable-table-container | Class name of the table container element |
+| p-treetable-table | Class name of the table element |
+| p-treetable-thead | Class name of the thead element |
+| p-treetable-column-resizer | Class name of the column resizer element |
+| p-treetable-column-title | Class name of the column title element |
+| p-treetable-sort-icon | Class name of the sort icon element |
+| p-treetable-sort-badge | Class name of the sort badge element |
+| p-treetable-tbody | Class name of the tbody element |
+| p-treetable-node-toggle-button | Class name of the node toggle button element |
+| p-treetable-node-toggle-icon | Class name of the node toggle icon element |
+| p-treetable-node-checkbox | Class name of the node checkbox element |
+| p-treetable-empty-message | Class name of the empty message element |
+| p-treetable-tfoot | Class name of the tfoot element |
+| p-treetable-footer | Class name of the footer element |
+| p-treetable-column-resize-indicator | Class name of the column resize indicator element |
+| p-treetable-wrapper | Class name of the wrapper element |
+| p-treetable-scrollable-wrapper | Class name of the scrollable wrapper element |
+| p-treetable-scrollable-view | Class name of the scrollable view element |
+| p-treetable-frozen-view | Class name of the frozen view element |
+| p-treetable-column-resizer-helper | Class name of the column resizer helper element |
+| p-treetable-reorder-indicator-up | Class name of the reorder indicator up element |
+| p-treetable-reorder-indicator-down | Class name of the reorder indicator down element |
+| p-treetable-scrollable-header | Class name of the scrollable header element |
+| p-treetable-scrollable-header-box | Class name of the scrollable header box element |
+| p-treetable-scrollable-header-table | Class name of the scrollable header table element |
+| p-treetable-scrollable-body | Class name of the scrollable body element |
+| p-treetable-scrollable-footer | Class name of the scrollable footer element |
+| p-treetable-scrollable-footer-box | Class name of the scrollable footer box element |
+| p-treetable-scrollable-footer-table | Class name of the scrollable footer table element |
+| p-sortable-column-icon | Class name of the sortable column icon element |
+
+#### TreeTable Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| treetable.root.transitionDuration | treetable.transition.duration | --p-treetable-transition-duration | Transition duration of root |
+| treetable.root.borderColor | treetable.border.color | --p-treetable-border-color | Border color of root |
+| treetable.header.background | treetable.header.background | --p-treetable-header-background | Background of header |
+| treetable.header.borderColor | treetable.header.border.color | --p-treetable-header-border-color | Border color of header |
+| treetable.header.color | treetable.header.color | --p-treetable-header-color | Color of header |
+| treetable.header.borderWidth | treetable.header.border.width | --p-treetable-header-border-width | Border width of header |
+| treetable.header.padding | treetable.header.padding | --p-treetable-header-padding | Padding of header |
+| treetable.headerCell.background | treetable.header.cell.background | --p-treetable-header-cell-background | Background of header cell |
+| treetable.headerCell.hoverBackground | treetable.header.cell.hover.background | --p-treetable-header-cell-hover-background | Hover background of header cell |
+| treetable.headerCell.selectedBackground | treetable.header.cell.selected.background | --p-treetable-header-cell-selected-background | Selected background of header cell |
+| treetable.headerCell.borderColor | treetable.header.cell.border.color | --p-treetable-header-cell-border-color | Border color of header cell |
+| treetable.headerCell.color | treetable.header.cell.color | --p-treetable-header-cell-color | Color of header cell |
+| treetable.headerCell.hoverColor | treetable.header.cell.hover.color | --p-treetable-header-cell-hover-color | Hover color of header cell |
+| treetable.headerCell.selectedColor | treetable.header.cell.selected.color | --p-treetable-header-cell-selected-color | Selected color of header cell |
+| treetable.headerCell.gap | treetable.header.cell.gap | --p-treetable-header-cell-gap | Gap of header cell |
+| treetable.headerCell.padding | treetable.header.cell.padding | --p-treetable-header-cell-padding | Padding of header cell |
+| treetable.headerCell.focusRing.width | treetable.header.cell.focus.ring.width | --p-treetable-header-cell-focus-ring-width | Focus ring width of header cell |
+| treetable.headerCell.focusRing.style | treetable.header.cell.focus.ring.style | --p-treetable-header-cell-focus-ring-style | Focus ring style of header cell |
+| treetable.headerCell.focusRing.color | treetable.header.cell.focus.ring.color | --p-treetable-header-cell-focus-ring-color | Focus ring color of header cell |
+| treetable.headerCell.focusRing.offset | treetable.header.cell.focus.ring.offset | --p-treetable-header-cell-focus-ring-offset | Focus ring offset of header cell |
+| treetable.headerCell.focusRing.shadow | treetable.header.cell.focus.ring.shadow | --p-treetable-header-cell-focus-ring-shadow | Focus ring shadow of header cell |
+| treetable.columnTitle.fontWeight | treetable.column.title.font.weight | --p-treetable-column-title-font-weight | Font weight of column title |
+| treetable.row.background | treetable.row.background | --p-treetable-row-background | Background of row |
+| treetable.row.hoverBackground | treetable.row.hover.background | --p-treetable-row-hover-background | Hover background of row |
+| treetable.row.selectedBackground | treetable.row.selected.background | --p-treetable-row-selected-background | Selected background of row |
+| treetable.row.color | treetable.row.color | --p-treetable-row-color | Color of row |
+| treetable.row.hoverColor | treetable.row.hover.color | --p-treetable-row-hover-color | Hover color of row |
+| treetable.row.selectedColor | treetable.row.selected.color | --p-treetable-row-selected-color | Selected color of row |
+| treetable.row.focusRing.width | treetable.row.focus.ring.width | --p-treetable-row-focus-ring-width | Focus ring width of row |
+| treetable.row.focusRing.style | treetable.row.focus.ring.style | --p-treetable-row-focus-ring-style | Focus ring style of row |
+| treetable.row.focusRing.color | treetable.row.focus.ring.color | --p-treetable-row-focus-ring-color | Focus ring color of row |
+| treetable.row.focusRing.offset | treetable.row.focus.ring.offset | --p-treetable-row-focus-ring-offset | Focus ring offset of row |
+| treetable.row.focusRing.shadow | treetable.row.focus.ring.shadow | --p-treetable-row-focus-ring-shadow | Focus ring shadow of row |
+| treetable.bodyCell.borderColor | treetable.body.cell.border.color | --p-treetable-body-cell-border-color | Border color of body cell |
+| treetable.bodyCell.padding | treetable.body.cell.padding | --p-treetable-body-cell-padding | Padding of body cell |
+| treetable.bodyCell.gap | treetable.body.cell.gap | --p-treetable-body-cell-gap | Gap of body cell |
+| treetable.bodyCell.selectedBorderColor | treetable.body.cell.selected.border.color | --p-treetable-body-cell-selected-border-color | Selected border color of body cell |
+| treetable.footerCell.background | treetable.footer.cell.background | --p-treetable-footer-cell-background | Background of footer cell |
+| treetable.footerCell.borderColor | treetable.footer.cell.border.color | --p-treetable-footer-cell-border-color | Border color of footer cell |
+| treetable.footerCell.color | treetable.footer.cell.color | --p-treetable-footer-cell-color | Color of footer cell |
+| treetable.footerCell.padding | treetable.footer.cell.padding | --p-treetable-footer-cell-padding | Padding of footer cell |
+| treetable.columnFooter.fontWeight | treetable.column.footer.font.weight | --p-treetable-column-footer-font-weight | Font weight of column footer |
+| treetable.footer.background | treetable.footer.background | --p-treetable-footer-background | Background of footer |
+| treetable.footer.borderColor | treetable.footer.border.color | --p-treetable-footer-border-color | Border color of footer |
+| treetable.footer.color | treetable.footer.color | --p-treetable-footer-color | Color of footer |
+| treetable.footer.borderWidth | treetable.footer.border.width | --p-treetable-footer-border-width | Border width of footer |
+| treetable.footer.padding | treetable.footer.padding | --p-treetable-footer-padding | Padding of footer |
+| treetable.columnResizer.width | treetable.column.resizer.width | --p-treetable-column-resizer-width | Width of column resizer |
+| treetable.resizeIndicator.width | treetable.resize.indicator.width | --p-treetable-resize-indicator-width | Width of resize indicator |
+| treetable.resizeIndicator.color | treetable.resize.indicator.color | --p-treetable-resize-indicator-color | Color of resize indicator |
+| treetable.sortIcon.color | treetable.sort.icon.color | --p-treetable-sort-icon-color | Color of sort icon |
+| treetable.sortIcon.hoverColor | treetable.sort.icon.hover.color | --p-treetable-sort-icon-hover-color | Hover color of sort icon |
+| treetable.sortIcon.size | treetable.sort.icon.size | --p-treetable-sort-icon-size | Size of sort icon |
+| treetable.loadingIcon.size | treetable.loading.icon.size | --p-treetable-loading-icon-size | Size of loading icon |
+| treetable.nodeToggleButton.hoverBackground | treetable.node.toggle.button.hover.background | --p-treetable-node-toggle-button-hover-background | Hover background of node toggle button |
+| treetable.nodeToggleButton.selectedHoverBackground | treetable.node.toggle.button.selected.hover.background | --p-treetable-node-toggle-button-selected-hover-background | Selected hover background of node toggle button |
+| treetable.nodeToggleButton.color | treetable.node.toggle.button.color | --p-treetable-node-toggle-button-color | Color of node toggle button |
+| treetable.nodeToggleButton.hoverColor | treetable.node.toggle.button.hover.color | --p-treetable-node-toggle-button-hover-color | Hover color of node toggle button |
+| treetable.nodeToggleButton.selectedHoverColor | treetable.node.toggle.button.selected.hover.color | --p-treetable-node-toggle-button-selected-hover-color | Selected hover color of node toggle button |
+| treetable.nodeToggleButton.size | treetable.node.toggle.button.size | --p-treetable-node-toggle-button-size | Size of node toggle button |
+| treetable.nodeToggleButton.borderRadius | treetable.node.toggle.button.border.radius | --p-treetable-node-toggle-button-border-radius | Border radius of node toggle button |
+| treetable.nodeToggleButton.focusRing.width | treetable.node.toggle.button.focus.ring.width | --p-treetable-node-toggle-button-focus-ring-width | Focus ring width of node toggle button |
+| treetable.nodeToggleButton.focusRing.style | treetable.node.toggle.button.focus.ring.style | --p-treetable-node-toggle-button-focus-ring-style | Focus ring style of node toggle button |
+| treetable.nodeToggleButton.focusRing.color | treetable.node.toggle.button.focus.ring.color | --p-treetable-node-toggle-button-focus-ring-color | Focus ring color of node toggle button |
+| treetable.nodeToggleButton.focusRing.offset | treetable.node.toggle.button.focus.ring.offset | --p-treetable-node-toggle-button-focus-ring-offset | Focus ring offset of node toggle button |
+| treetable.nodeToggleButton.focusRing.shadow | treetable.node.toggle.button.focus.ring.shadow | --p-treetable-node-toggle-button-focus-ring-shadow | Focus ring shadow of node toggle button |
+| treetable.paginatorTop.borderColor | treetable.paginator.top.border.color | --p-treetable-paginator-top-border-color | Border color of paginator top |
+| treetable.paginatorTop.borderWidth | treetable.paginator.top.border.width | --p-treetable-paginator-top-border-width | Border width of paginator top |
+| treetable.paginatorBottom.borderColor | treetable.paginator.bottom.border.color | --p-treetable-paginator-bottom-border-color | Border color of paginator bottom |
+| treetable.paginatorBottom.borderWidth | treetable.paginator.bottom.border.width | --p-treetable-paginator-bottom-border-width | Border width of paginator bottom |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/treetable)

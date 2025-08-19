@@ -186,6 +186,65 @@ Defines the input properties of the component.
 | fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 | invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
 
+## Theming
+
+### InputText Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-inputtext | The class of root element |
+
+#### InputText Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| inputtext.root.background | inputtext.background | --p-inputtext-background | Background of root |
+| inputtext.root.disabledBackground | inputtext.disabled.background | --p-inputtext-disabled-background | Disabled background of root |
+| inputtext.root.filledBackground | inputtext.filled.background | --p-inputtext-filled-background | Filled background of root |
+| inputtext.root.filledHoverBackground | inputtext.filled.hover.background | --p-inputtext-filled-hover-background | Filled hover background of root |
+| inputtext.root.filledFocusBackground | inputtext.filled.focus.background | --p-inputtext-filled-focus-background | Filled focus background of root |
+| inputtext.root.borderColor | inputtext.border.color | --p-inputtext-border-color | Border color of root |
+| inputtext.root.hoverBorderColor | inputtext.hover.border.color | --p-inputtext-hover-border-color | Hover border color of root |
+| inputtext.root.focusBorderColor | inputtext.focus.border.color | --p-inputtext-focus-border-color | Focus border color of root |
+| inputtext.root.invalidBorderColor | inputtext.invalid.border.color | --p-inputtext-invalid-border-color | Invalid border color of root |
+| inputtext.root.color | inputtext.color | --p-inputtext-color | Color of root |
+| inputtext.root.disabledColor | inputtext.disabled.color | --p-inputtext-disabled-color | Disabled color of root |
+| inputtext.root.placeholderColor | inputtext.placeholder.color | --p-inputtext-placeholder-color | Placeholder color of root |
+| inputtext.root.invalidPlaceholderColor | inputtext.invalid.placeholder.color | --p-inputtext-invalid-placeholder-color | Invalid placeholder color of root |
+| inputtext.root.shadow | inputtext.shadow | --p-inputtext-shadow | Shadow of root |
+| inputtext.root.paddingX | inputtext.padding.x | --p-inputtext-padding-x | Padding x of root |
+| inputtext.root.paddingY | inputtext.padding.y | --p-inputtext-padding-y | Padding y of root |
+| inputtext.root.borderRadius | inputtext.border.radius | --p-inputtext-border-radius | Border radius of root |
+| inputtext.root.focusRing.width | inputtext.focus.ring.width | --p-inputtext-focus-ring-width | Focus ring width of root |
+| inputtext.root.focusRing.style | inputtext.focus.ring.style | --p-inputtext-focus-ring-style | Focus ring style of root |
+| inputtext.root.focusRing.color | inputtext.focus.ring.color | --p-inputtext-focus-ring-color | Focus ring color of root |
+| inputtext.root.focusRing.offset | inputtext.focus.ring.offset | --p-inputtext-focus-ring-offset | Focus ring offset of root |
+| inputtext.root.focusRing.shadow | inputtext.focus.ring.shadow | --p-inputtext-focus-ring-shadow | Focus ring shadow of root |
+| inputtext.root.transitionDuration | inputtext.transition.duration | --p-inputtext-transition-duration | Transition duration of root |
+| inputtext.root.sm.fontSize | inputtext.sm.font.size | --p-inputtext-sm-font-size | Sm font size of root |
+| inputtext.root.sm.paddingX | inputtext.sm.padding.x | --p-inputtext-sm-padding-x | Sm padding x of root |
+| inputtext.root.sm.paddingY | inputtext.sm.padding.y | --p-inputtext-sm-padding-y | Sm padding y of root |
+| inputtext.root.lg.fontSize | inputtext.lg.font.size | --p-inputtext-lg-font-size | Lg font size of root |
+| inputtext.root.lg.paddingX | inputtext.lg.padding.x | --p-inputtext-lg-padding-x | Lg padding x of root |
+| inputtext.root.lg.paddingY | inputtext.lg.padding.y | --p-inputtext-lg-padding-y | Lg padding y of root |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/inputtext)

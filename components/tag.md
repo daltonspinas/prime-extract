@@ -105,6 +105,59 @@ Defines the input properties of the component.
 | icon | string | null | Icon of the tag to display next to the value. |
 | rounded | boolean | false | Whether the corners of the tag are rounded. |
 
+## Theming
+
+### Tag Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-tag | Class name of the root element |
+| p-tag-icon | Class name of the icon element |
+| p-tag-label | Class name of the label element |
+
+#### Tag Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| tag.root.fontSize | tag.font.size | --p-tag-font-size | Font size of root |
+| tag.root.fontWeight | tag.font.weight | --p-tag-font-weight | Font weight of root |
+| tag.root.padding | tag.padding | --p-tag-padding | Padding of root |
+| tag.root.gap | tag.gap | --p-tag-gap | Gap of root |
+| tag.root.borderRadius | tag.border.radius | --p-tag-border-radius | Border radius of root |
+| tag.root.roundedBorderRadius | tag.rounded.border.radius | --p-tag-rounded-border-radius | Rounded border radius of root |
+| tag.icon.size | tag.icon.size | --p-tag-icon-size | Size of icon |
+| tag.primary.background | tag.primary.background | --p-tag-primary-background | Background of primary |
+| tag.primary.color | tag.primary.color | --p-tag-primary-color | Color of primary |
+| tag.secondary.background | tag.secondary.background | --p-tag-secondary-background | Background of secondary |
+| tag.secondary.color | tag.secondary.color | --p-tag-secondary-color | Color of secondary |
+| tag.success.background | tag.success.background | --p-tag-success-background | Background of success |
+| tag.success.color | tag.success.color | --p-tag-success-color | Color of success |
+| tag.info.background | tag.info.background | --p-tag-info-background | Background of info |
+| tag.info.color | tag.info.color | --p-tag-info-color | Color of info |
+| tag.warn.background | tag.warn.background | --p-tag-warn-background | Background of warn |
+| tag.warn.color | tag.warn.color | --p-tag-warn-color | Color of warn |
+| tag.danger.background | tag.danger.background | --p-tag-danger-background | Background of danger |
+| tag.danger.color | tag.danger.color | --p-tag-danger-color | Color of danger |
+| tag.contrast.background | tag.contrast.background | --p-tag-contrast-background | Background of contrast |
+| tag.contrast.color | tag.contrast.color | --p-tag-contrast-color | Color of contrast |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/tag)

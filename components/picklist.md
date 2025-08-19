@@ -220,6 +220,43 @@ Defines the templates used by the component.
 | targetfiltericon |  | Custom target filter icon template. |
 | sourcefiltericon |  | Custom source filter icon template. |
 
+## Theming
+
+### PickList Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-picklist | Class name of the root element |
+| p-picklist-source-controls | Class name of the source controls element |
+| p-picklist-source-list-container | Class name of the source list container element |
+| p-picklist-transfer-controls | Class name of the transfer controls element |
+| p-picklist-target-list-container | Class name of the target list container element |
+| p-picklist-target-controls | Class name of the target controls element |
+
+#### PickList Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| picklist.root.gap | picklist.gap | --p-picklist-gap | Gap of root |
+| picklist.controls.gap | picklist.controls.gap | --p-picklist-controls-gap | Gap of controls |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/picklist)

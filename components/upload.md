@@ -207,6 +207,73 @@ Defines the templates used by the component.
 | cancelicon |  | Template for cancel icon. |
 | empty |  | Template for empty state. |
 
+## Theming
+
+### FileUpload Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-fileupload | Class name of the root element |
+| p-fileupload-header | Class name of the header element |
+| p-fileupload-choose-button | Class name of the choose button element |
+| p-fileupload-upload-button | Class name of the upload button element |
+| p-fileupload-cancel-button | Class name of the cancel button element |
+| p-fileupload-content | Class name of the content element |
+| p-fileupload-file-list | Class name of the file list element |
+| p-fileupload-file | Class name of the file element |
+| p-fileupload-file-thumbnail | Class name of the file thumbnail element |
+| p-fileupload-file-info | Class name of the file info element |
+| p-fileupload-file-name | Class name of the file name element |
+| p-fileupload-file-size | Class name of the file size element |
+| p-fileupload-file-badge | Class name of the file badge element |
+| p-fileupload-file-actions | Class name of the file actions element |
+| p-fileupload-file-remove-button | Class name of the file remove button element |
+| p-fileupload-basic-content | Class name of the content in basic mode |
+
+#### FileUpload Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| fileupload.root.background | fileupload.background | --p-fileupload-background | Background of root |
+| fileupload.root.borderColor | fileupload.border.color | --p-fileupload-border-color | Border color of root |
+| fileupload.root.color | fileupload.color | --p-fileupload-color | Color of root |
+| fileupload.root.borderRadius | fileupload.border.radius | --p-fileupload-border-radius | Border radius of root |
+| fileupload.root.transitionDuration | fileupload.transition.duration | --p-fileupload-transition-duration | Transition duration of root |
+| fileupload.header.background | fileupload.header.background | --p-fileupload-header-background | Background of header |
+| fileupload.header.color | fileupload.header.color | --p-fileupload-header-color | Color of header |
+| fileupload.header.padding | fileupload.header.padding | --p-fileupload-header-padding | Padding of header |
+| fileupload.header.borderColor | fileupload.header.border.color | --p-fileupload-header-border-color | Border color of header |
+| fileupload.header.borderWidth | fileupload.header.border.width | --p-fileupload-header-border-width | Border width of header |
+| fileupload.header.borderRadius | fileupload.header.border.radius | --p-fileupload-header-border-radius | Border radius of header |
+| fileupload.header.gap | fileupload.header.gap | --p-fileupload-header-gap | Gap of header |
+| fileupload.content.highlightBorderColor | fileupload.content.highlight.border.color | --p-fileupload-content-highlight-border-color | Highlight border color of content |
+| fileupload.content.padding | fileupload.content.padding | --p-fileupload-content-padding | Padding of content |
+| fileupload.content.gap | fileupload.content.gap | --p-fileupload-content-gap | Gap of content |
+| fileupload.file.padding | fileupload.file.padding | --p-fileupload-file-padding | Padding of file |
+| fileupload.file.gap | fileupload.file.gap | --p-fileupload-file-gap | Gap of file |
+| fileupload.file.borderColor | fileupload.file.border.color | --p-fileupload-file-border-color | Border color of file |
+| fileupload.file.info.gap | fileupload.file.info.gap | --p-fileupload-file-info-gap | Info gap of file |
+| fileupload.fileList.gap | fileupload.file.list.gap | --p-fileupload-file-list-gap | Gap of file list |
+| fileupload.progressbar.height | fileupload.progressbar.height | --p-fileupload-progressbar-height | Height of progressbar |
+| fileupload.basic.gap | fileupload.basic.gap | --p-fileupload-basic-gap | Gap of basic |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/fileupload)

@@ -128,6 +128,57 @@ Defines emit that determine the behavior of the component based on a given condi
 
 #### AvatarGroup
 
+## Theming
+
+### Avatar Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-avatar | Class name of the root element |
+| p-avatar-label | Class name of the label element |
+| p-avatar-icon | Class name of the icon element |
+
+#### Avatar Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| avatar.root.width | avatar.width | --p-avatar-width | Width of root |
+| avatar.root.height | avatar.height | --p-avatar-height | Height of root |
+| avatar.root.fontSize | avatar.font.size | --p-avatar-font-size | Font size of root |
+| avatar.root.background | avatar.background | --p-avatar-background | Background of root |
+| avatar.root.color | avatar.color | --p-avatar-color | Color of root |
+| avatar.root.borderRadius | avatar.border.radius | --p-avatar-border-radius | Border radius of root |
+| avatar.icon.size | avatar.icon.size | --p-avatar-icon-size | Size of icon |
+| avatar.group.borderColor | avatar.group.border.color | --p-avatar-group-border-color | Border color of group |
+| avatar.group.offset | avatar.group.offset | --p-avatar-group-offset | Offset of group |
+| avatar.lg.width | avatar.lg.width | --p-avatar-lg-width | Width of lg |
+| avatar.lg.height | avatar.lg.height | --p-avatar-lg-height | Height of lg |
+| avatar.lg.fontSize | avatar.lg.font.size | --p-avatar-lg-font-size | Font size of lg |
+| avatar.lg.icon.size | avatar.lg.icon.size | --p-avatar-lg-icon-size | Icon size of lg |
+| avatar.lg.group.offset | avatar.lg.group.offset | --p-avatar-lg-group-offset | Group offset of lg |
+| avatar.xl.width | avatar.xl.width | --p-avatar-xl-width | Width of xl |
+| avatar.xl.height | avatar.xl.height | --p-avatar-xl-height | Height of xl |
+| avatar.xl.fontSize | avatar.xl.font.size | --p-avatar-xl-font-size | Font size of xl |
+| avatar.xl.icon.size | avatar.xl.icon.size | --p-avatar-xl-icon-size | Icon size of xl |
+| avatar.xl.group.offset | avatar.xl.group.offset | --p-avatar-xl-group-offset | Group offset of xl |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/avatar)

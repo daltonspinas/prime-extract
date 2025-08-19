@@ -103,6 +103,45 @@ Defines the templates used by the component.
 | end |  | Defines template option for end. |
 | center |  | Defines template option for center. |
 
+## Theming
+
+### Toolbar Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-toolbar | Class name of the root element |
+| p-toolbar-start | Class name of the start element |
+| p-toolbar-center | Class name of the center element |
+| p-toolbar-end | Class name of the end element |
+
+#### Toolbar Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| toolbar.root.background | toolbar.background | --p-toolbar-background | Background of root |
+| toolbar.root.borderColor | toolbar.border.color | --p-toolbar-border-color | Border color of root |
+| toolbar.root.borderRadius | toolbar.border.radius | --p-toolbar-border-radius | Border radius of root |
+| toolbar.root.color | toolbar.color | --p-toolbar-color | Color of root |
+| toolbar.root.gap | toolbar.gap | --p-toolbar-gap | Gap of root |
+| toolbar.root.padding | toolbar.padding | --p-toolbar-padding | Padding of root |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/toolbar)

@@ -87,6 +87,45 @@ Defines the input properties of the component.
 | mode | string | determinate | Defines the mode of the progress |
 | color | string | null | Color for the background of the progress. |
 
+## Theming
+
+### ProgressBar Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-progressbar | Class name of the root element |
+| p-progressbar-value | Class name of the value element |
+| p-progressbar-label | Class name of the label element |
+
+#### ProgressBar Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| progressbar.root.background | progressbar.background | --p-progressbar-background | Background of root |
+| progressbar.root.borderRadius | progressbar.border.radius | --p-progressbar-border-radius | Border radius of root |
+| progressbar.root.height | progressbar.height | --p-progressbar-height | Height of root |
+| progressbar.value.background | progressbar.value.background | --p-progressbar-value-background | Background of value |
+| progressbar.label.color | progressbar.label.color | --p-progressbar-label-color | Color of label |
+| progressbar.label.fontSize | progressbar.label.font.size | --p-progressbar-label-font-size | Font size of label |
+| progressbar.label.fontWeight | progressbar.label.font.weight | --p-progressbar-label-font-weight | Font weight of label |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/progressbar)

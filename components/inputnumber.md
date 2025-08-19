@@ -288,6 +288,54 @@ Defines the templates used by the component.
 | incrementbuttonicon |  | Template of the increment button icon. |
 | decrementbuttonicon |  | Template of the decrement button icon. |
 
+## Theming
+
+### InputNumber Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-inputnumber | Class name of the root element |
+| p-inputnumber-input | Class name of the input element |
+| p-inputnumber-button-group | Class name of the button group element |
+| p-inputnumber-increment-button | Class name of the increment button element |
+| p-inputnumber-decrement-button | Class name of the decrement button element |
+| p-autocomplete-clear-icon | Class name of the clear icon |
+
+#### InputNumber Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| inputnumber.root.transitionDuration | inputnumber.transition.duration | --p-inputnumber-transition-duration | Transition duration of root |
+| inputnumber.button.width | inputnumber.button.width | --p-inputnumber-button-width | Width of button |
+| inputnumber.button.borderRadius | inputnumber.button.border.radius | --p-inputnumber-button-border-radius | Border radius of button |
+| inputnumber.button.verticalPadding | inputnumber.button.vertical.padding | --p-inputnumber-button-vertical-padding | Vertical padding of button |
+| inputnumber.button.background | inputnumber.button.background | --p-inputnumber-button-background | Background of button |
+| inputnumber.button.hoverBackground | inputnumber.button.hover.background | --p-inputnumber-button-hover-background | Hover background of button |
+| inputnumber.button.activeBackground | inputnumber.button.active.background | --p-inputnumber-button-active-background | Active background of button |
+| inputnumber.button.borderColor | inputnumber.button.border.color | --p-inputnumber-button-border-color | Border color of button |
+| inputnumber.button.hoverBorderColor | inputnumber.button.hover.border.color | --p-inputnumber-button-hover-border-color | Hover border color of button |
+| inputnumber.button.activeBorderColor | inputnumber.button.active.border.color | --p-inputnumber-button-active-border-color | Active border color of button |
+| inputnumber.button.color | inputnumber.button.color | --p-inputnumber-button-color | Color of button |
+| inputnumber.button.hoverColor | inputnumber.button.hover.color | --p-inputnumber-button-hover-color | Hover color of button |
+| inputnumber.button.activeColor | inputnumber.button.active.color | --p-inputnumber-button-active-color | Active color of button |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/inputnumber)

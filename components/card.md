@@ -81,6 +81,53 @@ Defines the input properties of the component.
 | style | - | null | Inline style of the element. |
 | styleClass | string | null | Class of the element. |
 
+## Theming
+
+### Card Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-card | Class name of the root element |
+| p-card-header | Class name of the header element |
+| p-card-body | Class name of the body element |
+| p-card-caption | Class name of the caption element |
+| p-card-title | Class name of the title element |
+| p-card-subtitle | Class name of the subtitle element |
+| p-card-content | Class name of the content element |
+| p-card-footer | Class name of the footer element |
+
+#### Card Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| card.root.background | card.background | --p-card-background | Background of root |
+| card.root.borderRadius | card.border.radius | --p-card-border-radius | Border radius of root |
+| card.root.color | card.color | --p-card-color | Color of root |
+| card.root.shadow | card.shadow | --p-card-shadow | Shadow of root |
+| card.body.padding | card.body.padding | --p-card-body-padding | Padding of body |
+| card.body.gap | card.body.gap | --p-card-body-gap | Gap of body |
+| card.caption.gap | card.caption.gap | --p-card-caption-gap | Gap of caption |
+| card.title.fontSize | card.title.font.size | --p-card-title-font-size | Font size of title |
+| card.title.fontWeight | card.title.font.weight | --p-card-title-font-weight | Font weight of title |
+| card.subtitle.color | card.subtitle.color | --p-card-subtitle-color | Color of subtitle |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/card)

@@ -183,6 +183,39 @@ Defines the templates used by the component.
 | movebottomicon |  | Custom move bottom icon template. |
 | filtericon |  | Custom filter icon template. |
 
+## Theming
+
+### OrderList Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-orderlist | Class name of the root element |
+| p-orderlist-controls | Class name of the controls element |
+
+#### OrderList Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| orderlist.root.gap | orderlist.gap | --p-orderlist-gap | Gap of root |
+| orderlist.controls.gap | orderlist.controls.gap | --p-orderlist-controls-gap | Gap of controls |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/orderlist)

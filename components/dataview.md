@@ -509,6 +509,70 @@ Defines the templates used by the component.
 | listicon |  | Template for list icon. |
 | gridicon |  | Template for grid icon. |
 
+## Theming
+
+### DataView Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-dataview | Class name of the root element |
+| p-dataview-header | Class name of the header element |
+| p-dataview-loading | Class name of the loading element |
+| p-dataview-loading-overlay | Class name of the loading overlay element |
+| p-dataview-loading-icon | Class name of the loading icon element |
+| p-dataview-paginator-[position] | Class name of the paginator element |
+| p-dataview-content | Class name of the content element |
+| p-dataview-empty-message | Class name of the empty message element |
+| p-dataview-footer | Class name of the footer element |
+
+#### DataView Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| dataview.root.borderColor | dataview.border.color | --p-dataview-border-color | Border color of root |
+| dataview.root.borderWidth | dataview.border.width | --p-dataview-border-width | Border width of root |
+| dataview.root.borderRadius | dataview.border.radius | --p-dataview-border-radius | Border radius of root |
+| dataview.root.padding | dataview.padding | --p-dataview-padding | Padding of root |
+| dataview.header.background | dataview.header.background | --p-dataview-header-background | Background of header |
+| dataview.header.color | dataview.header.color | --p-dataview-header-color | Color of header |
+| dataview.header.borderColor | dataview.header.border.color | --p-dataview-header-border-color | Border color of header |
+| dataview.header.borderWidth | dataview.header.border.width | --p-dataview-header-border-width | Border width of header |
+| dataview.header.padding | dataview.header.padding | --p-dataview-header-padding | Padding of header |
+| dataview.header.borderRadius | dataview.header.border.radius | --p-dataview-header-border-radius | Border radius of header |
+| dataview.content.background | dataview.content.background | --p-dataview-content-background | Background of content |
+| dataview.content.color | dataview.content.color | --p-dataview-content-color | Color of content |
+| dataview.content.borderColor | dataview.content.border.color | --p-dataview-content-border-color | Border color of content |
+| dataview.content.borderWidth | dataview.content.border.width | --p-dataview-content-border-width | Border width of content |
+| dataview.content.padding | dataview.content.padding | --p-dataview-content-padding | Padding of content |
+| dataview.content.borderRadius | dataview.content.border.radius | --p-dataview-content-border-radius | Border radius of content |
+| dataview.footer.background | dataview.footer.background | --p-dataview-footer-background | Background of footer |
+| dataview.footer.color | dataview.footer.color | --p-dataview-footer-color | Color of footer |
+| dataview.footer.borderColor | dataview.footer.border.color | --p-dataview-footer-border-color | Border color of footer |
+| dataview.footer.borderWidth | dataview.footer.border.width | --p-dataview-footer-border-width | Border width of footer |
+| dataview.footer.padding | dataview.footer.padding | --p-dataview-footer-padding | Padding of footer |
+| dataview.footer.borderRadius | dataview.footer.border.radius | --p-dataview-footer-border-radius | Border radius of footer |
+| dataview.paginatorTop.borderColor | dataview.paginator.top.border.color | --p-dataview-paginator-top-border-color | Border color of paginator top |
+| dataview.paginatorTop.borderWidth | dataview.paginator.top.border.width | --p-dataview-paginator-top-border-width | Border width of paginator top |
+| dataview.paginatorBottom.borderColor | dataview.paginator.bottom.border.color | --p-dataview-paginator-bottom-border-color | Border color of paginator bottom |
+| dataview.paginatorBottom.borderWidth | dataview.paginator.bottom.border.width | --p-dataview-paginator-bottom-border-width | Border width of paginator bottom |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/dataview)

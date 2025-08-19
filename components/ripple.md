@@ -38,6 +38,37 @@ Styling Demo Content.
 
 Ripple element has the aria-hidden attribute as true so that it gets ignored by the screen readers.
 
+## Theming
+
+### Ripple Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-ink | Class name of the root element |
+
+#### Ripple Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| ripple.root.background | ripple.background | --p-ripple-background | Background of root |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/ripple)

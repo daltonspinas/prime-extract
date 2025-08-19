@@ -235,6 +235,87 @@ Defines the templates used by the component.
 
 #### TreeNode
 
+## Theming
+
+### Tree Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-tree | Class name of the root element |
+| p-tree-mask | Class name of the mask element |
+| p-tree-loading-icon | Class name of the loading icon element |
+| p-tree-filter-input | Class name of the filter input element |
+| p-tree-root | Class name of the wrapper element |
+| p-tree-root-children | Class name of the root children element |
+| p-tree-node | Class name of the node element |
+| p-tree-node-content | Class name of the node content element |
+| p-tree-node-toggle-button | Class name of the node toggle button element |
+| p-tree-node-toggle-icon | Class name of the node toggle icon element |
+| p-tree-node-checkbox | Class name of the node checkbox element |
+| p-tree-node-icon | Class name of the node icon element |
+| p-tree-node-label | Class name of the node label element |
+| p-tree-node-children | Class name of the node children element |
+| p-tree-empty-message | Class name of the empty message element |
+| p-tree-node-droppoint | Class name of the drop point element |
+
+#### Tree Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| tree.root.background | tree.background | --p-tree-background | Background of root |
+| tree.root.color | tree.color | --p-tree-color | Color of root |
+| tree.root.padding | tree.padding | --p-tree-padding | Padding of root |
+| tree.root.gap | tree.gap | --p-tree-gap | Gap of root |
+| tree.root.indent | tree.indent | --p-tree-indent | Indent of root |
+| tree.root.transitionDuration | tree.transition.duration | --p-tree-transition-duration | Transition duration of root |
+| tree.node.padding | tree.node.padding | --p-tree-node-padding | Padding of node |
+| tree.node.borderRadius | tree.node.border.radius | --p-tree-node-border-radius | Border radius of node |
+| tree.node.hoverBackground | tree.node.hover.background | --p-tree-node-hover-background | Hover background of node |
+| tree.node.selectedBackground | tree.node.selected.background | --p-tree-node-selected-background | Selected background of node |
+| tree.node.color | tree.node.color | --p-tree-node-color | Color of node |
+| tree.node.hoverColor | tree.node.hover.color | --p-tree-node-hover-color | Hover color of node |
+| tree.node.selectedColor | tree.node.selected.color | --p-tree-node-selected-color | Selected color of node |
+| tree.node.focusRing.width | tree.node.focus.ring.width | --p-tree-node-focus-ring-width | Focus ring width of node |
+| tree.node.focusRing.style | tree.node.focus.ring.style | --p-tree-node-focus-ring-style | Focus ring style of node |
+| tree.node.focusRing.color | tree.node.focus.ring.color | --p-tree-node-focus-ring-color | Focus ring color of node |
+| tree.node.focusRing.offset | tree.node.focus.ring.offset | --p-tree-node-focus-ring-offset | Focus ring offset of node |
+| tree.node.focusRing.shadow | tree.node.focus.ring.shadow | --p-tree-node-focus-ring-shadow | Focus ring shadow of node |
+| tree.node.gap | tree.node.gap | --p-tree-node-gap | Gap of node |
+| tree.nodeIcon.color | tree.node.icon.color | --p-tree-node-icon-color | Color of node icon |
+| tree.nodeIcon.hoverColor | tree.node.icon.hover.color | --p-tree-node-icon-hover-color | Hover color of node icon |
+| tree.nodeIcon.selectedColor | tree.node.icon.selected.color | --p-tree-node-icon-selected-color | Selected color of node icon |
+| tree.nodeToggleButton.borderRadius | tree.node.toggle.button.border.radius | --p-tree-node-toggle-button-border-radius | Border radius of node toggle button |
+| tree.nodeToggleButton.size | tree.node.toggle.button.size | --p-tree-node-toggle-button-size | Size of node toggle button |
+| tree.nodeToggleButton.hoverBackground | tree.node.toggle.button.hover.background | --p-tree-node-toggle-button-hover-background | Hover background of node toggle button |
+| tree.nodeToggleButton.selectedHoverBackground | tree.node.toggle.button.selected.hover.background | --p-tree-node-toggle-button-selected-hover-background | Selected hover background of node toggle button |
+| tree.nodeToggleButton.color | tree.node.toggle.button.color | --p-tree-node-toggle-button-color | Color of node toggle button |
+| tree.nodeToggleButton.hoverColor | tree.node.toggle.button.hover.color | --p-tree-node-toggle-button-hover-color | Hover color of node toggle button |
+| tree.nodeToggleButton.selectedHoverColor | tree.node.toggle.button.selected.hover.color | --p-tree-node-toggle-button-selected-hover-color | Selected hover color of node toggle button |
+| tree.nodeToggleButton.focusRing.width | tree.node.toggle.button.focus.ring.width | --p-tree-node-toggle-button-focus-ring-width | Focus ring width of node toggle button |
+| tree.nodeToggleButton.focusRing.style | tree.node.toggle.button.focus.ring.style | --p-tree-node-toggle-button-focus-ring-style | Focus ring style of node toggle button |
+| tree.nodeToggleButton.focusRing.color | tree.node.toggle.button.focus.ring.color | --p-tree-node-toggle-button-focus-ring-color | Focus ring color of node toggle button |
+| tree.nodeToggleButton.focusRing.offset | tree.node.toggle.button.focus.ring.offset | --p-tree-node-toggle-button-focus-ring-offset | Focus ring offset of node toggle button |
+| tree.nodeToggleButton.focusRing.shadow | tree.node.toggle.button.focus.ring.shadow | --p-tree-node-toggle-button-focus-ring-shadow | Focus ring shadow of node toggle button |
+| tree.loadingIcon.size | tree.loading.icon.size | --p-tree-loading-icon-size | Size of loading icon |
+| tree.filter.margin | tree.filter.margin | --p-tree-filter-margin | Margin of filter |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/tree)

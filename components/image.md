@@ -111,6 +111,72 @@ Defines the templates used by the component.
 | preview |  | Custom template of preview. |
 | image |  | Custom template of image. |
 
+## Theming
+
+### Image Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-image | Class name of the root element |
+| p-image-preview-mask | Class name of the preview mask element |
+| p-image-preview-icon | Class name of the preview icon element |
+| p-image-mask | Class name of the mask element |
+| p-image-toolbar | Class name of the toolbar element |
+| p-image-rotate-right-button | Class name of the rotate right button element |
+| p-image-rotate-left-button | Class name of the rotate left button element |
+| p-image-zoom-out-button | Class name of the zoom out button element |
+| p-image-zoom-in-button | Class name of the zoom in button element |
+| p-image-close-button | Class name of the close button element |
+| p-image-original | Class name of the original element |
+
+#### Image Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| image.root.transitionDuration | image.transition.duration | --p-image-transition-duration | Transition duration of root |
+| image.preview.icon.size | image.preview.icon.size | --p-image-preview-icon-size | Icon size of preview |
+| image.preview.mask.background | image.preview.mask.background | --p-image-preview-mask-background | Mask background of preview |
+| image.preview.mask.color | image.preview.mask.color | --p-image-preview-mask-color | Mask color of preview |
+| image.toolbar.position.left | image.toolbar.position.left | --p-image-toolbar-position-left | Position left of toolbar |
+| image.toolbar.position.right | image.toolbar.position.right | --p-image-toolbar-position-right | Position right of toolbar |
+| image.toolbar.position.top | image.toolbar.position.top | --p-image-toolbar-position-top | Position top of toolbar |
+| image.toolbar.position.bottom | image.toolbar.position.bottom | --p-image-toolbar-position-bottom | Position bottom of toolbar |
+| image.toolbar.blur | image.toolbar.blur | --p-image-toolbar-blur | Blur of toolbar |
+| image.toolbar.background | image.toolbar.background | --p-image-toolbar-background | Background of toolbar |
+| image.toolbar.borderColor | image.toolbar.border.color | --p-image-toolbar-border-color | Border color of toolbar |
+| image.toolbar.borderWidth | image.toolbar.border.width | --p-image-toolbar-border-width | Border width of toolbar |
+| image.toolbar.borderRadius | image.toolbar.border.radius | --p-image-toolbar-border-radius | Border radius of toolbar |
+| image.toolbar.padding | image.toolbar.padding | --p-image-toolbar-padding | Padding of toolbar |
+| image.toolbar.gap | image.toolbar.gap | --p-image-toolbar-gap | Gap of toolbar |
+| image.action.hoverBackground | image.action.hover.background | --p-image-action-hover-background | Hover background of action |
+| image.action.color | image.action.color | --p-image-action-color | Color of action |
+| image.action.hoverColor | image.action.hover.color | --p-image-action-hover-color | Hover color of action |
+| image.action.size | image.action.size | --p-image-action-size | Size of action |
+| image.action.iconSize | image.action.icon.size | --p-image-action-icon-size | Icon size of action |
+| image.action.borderRadius | image.action.border.radius | --p-image-action-border-radius | Border radius of action |
+| image.action.focusRing.width | image.action.focus.ring.width | --p-image-action-focus-ring-width | Focus ring width of action |
+| image.action.focusRing.style | image.action.focus.ring.style | --p-image-action-focus-ring-style | Focus ring style of action |
+| image.action.focusRing.color | image.action.focus.ring.color | --p-image-action-focus-ring-color | Focus ring color of action |
+| image.action.focusRing.offset | image.action.focus.ring.offset | --p-image-action-focus-ring-offset | Focus ring offset of action |
+| image.action.focusRing.shadow | image.action.focus.ring.shadow | --p-image-action-focus-ring-shadow | Focus ring shadow of action |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/image)

@@ -271,6 +271,58 @@ Defines the input properties of the component.
 | fluid | InputSignalWithTransform<boolean, unknown> | false | Spans 100% width of the container when enabled. |
 | size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
 
+## Theming
+
+### Password Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-password | Class name of the root element |
+| p-password-input | Class name of the pt input element |
+| p-password-mask-icon | Class name of the mask icon element |
+| p-password-unmask-icon | Class name of the unmask icon element |
+| p-password-overlay | Class name of the overlay element |
+| p-password-meter | Class name of the meter element |
+| p-password-meter-label | Class name of the meter label element |
+| p-password-meter-text | Class name of the meter text element |
+| p-password-clear-icon | Class name of the clear icon |
+
+#### Password Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| password.meter.background | password.meter.background | --p-password-meter-background | Background of meter |
+| password.meter.borderRadius | password.meter.border.radius | --p-password-meter-border-radius | Border radius of meter |
+| password.meter.height | password.meter.height | --p-password-meter-height | Height of meter |
+| password.icon.color | password.icon.color | --p-password-icon-color | Color of icon |
+| password.overlay.background | password.overlay.background | --p-password-overlay-background | Background of overlay |
+| password.overlay.borderColor | password.overlay.border.color | --p-password-overlay-border-color | Border color of overlay |
+| password.overlay.borderRadius | password.overlay.border.radius | --p-password-overlay-border-radius | Border radius of overlay |
+| password.overlay.color | password.overlay.color | --p-password-overlay-color | Color of overlay |
+| password.overlay.padding | password.overlay.padding | --p-password-overlay-padding | Padding of overlay |
+| password.overlay.shadow | password.overlay.shadow | --p-password-overlay-shadow | Shadow of overlay |
+| password.content.gap | password.content.gap | --p-password-content-gap | Gap of content |
+| password.strength.weakBackground | password.strength.weak.background | --p-password-strength-weak-background | Weak background of strength |
+| password.strength.mediumBackground | password.strength.medium.background | --p-password-strength-medium-background | Medium background of strength |
+| password.strength.strongBackground | password.strength.strong.background | --p-password-strength-strong-background | Strong background of strength |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/password)

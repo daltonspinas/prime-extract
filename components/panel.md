@@ -124,6 +124,57 @@ Defines the templates used by the component.
 | footer |  | Defines template option for footer. |
 | headericons |  | Defines template option for headerIcon. |
 
+## Theming
+
+### Panel Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-panel | Class name of the root element |
+| p-panel-header | Class name of the header element |
+| p-panel-title | Class name of the title element |
+| p-panel-header-actions | Class name of the header actions element |
+| p-panel-toggle-button | Class name of the toggle button element |
+| p-panel-content-container | Class name of the content container element |
+| p-panel-content | Class name of the content element |
+| p-panel-footer | Class name of the footer element |
+
+#### Panel Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| panel.root.background | panel.background | --p-panel-background | Background of root |
+| panel.root.borderColor | panel.border.color | --p-panel-border-color | Border color of root |
+| panel.root.color | panel.color | --p-panel-color | Color of root |
+| panel.root.borderRadius | panel.border.radius | --p-panel-border-radius | Border radius of root |
+| panel.header.background | panel.header.background | --p-panel-header-background | Background of header |
+| panel.header.color | panel.header.color | --p-panel-header-color | Color of header |
+| panel.header.padding | panel.header.padding | --p-panel-header-padding | Padding of header |
+| panel.header.borderColor | panel.header.border.color | --p-panel-header-border-color | Border color of header |
+| panel.header.borderWidth | panel.header.border.width | --p-panel-header-border-width | Border width of header |
+| panel.header.borderRadius | panel.header.border.radius | --p-panel-header-border-radius | Border radius of header |
+| panel.toggleableHeader.padding | panel.toggleable.header.padding | --p-panel-toggleable-header-padding | Padding of toggleable header |
+| panel.title.fontWeight | panel.title.font.weight | --p-panel-title-font-weight | Font weight of title |
+| panel.content.padding | panel.content.padding | --p-panel-content-padding | Padding of content |
+| panel.footer.padding | panel.footer.padding | --p-panel-footer-padding | Padding of footer |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/panel)

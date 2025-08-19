@@ -102,6 +102,55 @@ Defines the input properties of the component.
 
 #### ConfirmationService
 
+## Theming
+
+### ConfirmPopup Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-confirmpopup | Class name of the root element |
+| p-confirmpopup-content | Class name of the content element |
+| p-confirmpopup-icon | Class name of the icon element |
+| p-confirmpopup-message | Class name of the message element |
+| p-confirmpopup-footer | Class name of the footer element |
+| p-confirmpopup-reject-button | Class name of the reject button element |
+| p-confirmpopup-accept-button | Class name of the accept button element |
+
+#### ConfirmPopup Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| confirmpopup.root.background | confirmpopup.background | --p-confirmpopup-background | Background of root |
+| confirmpopup.root.borderColor | confirmpopup.border.color | --p-confirmpopup-border-color | Border color of root |
+| confirmpopup.root.color | confirmpopup.color | --p-confirmpopup-color | Color of root |
+| confirmpopup.root.borderRadius | confirmpopup.border.radius | --p-confirmpopup-border-radius | Border radius of root |
+| confirmpopup.root.shadow | confirmpopup.shadow | --p-confirmpopup-shadow | Shadow of root |
+| confirmpopup.root.gutter | confirmpopup.gutter | --p-confirmpopup-gutter | Gutter of root |
+| confirmpopup.root.arrowOffset | confirmpopup.arrow.offset | --p-confirmpopup-arrow-offset | Arrow offset of root |
+| confirmpopup.content.padding | confirmpopup.content.padding | --p-confirmpopup-content-padding | Padding of content |
+| confirmpopup.content.gap | confirmpopup.content.gap | --p-confirmpopup-content-gap | Gap of content |
+| confirmpopup.icon.size | confirmpopup.icon.size | --p-confirmpopup-icon-size | Size of icon |
+| confirmpopup.icon.color | confirmpopup.icon.color | --p-confirmpopup-icon-color | Color of icon |
+| confirmpopup.footer.gap | confirmpopup.footer.gap | --p-confirmpopup-footer-gap | Gap of footer |
+| confirmpopup.footer.padding | confirmpopup.footer.padding | --p-confirmpopup-footer-padding | Padding of footer |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/confirmpopup)

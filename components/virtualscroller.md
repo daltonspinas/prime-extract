@@ -240,6 +240,33 @@ Defines the templates used by the component.
 | loader |  | Loader template of the component. |
 | loadericon |  | Loader icon template of the component. |
 
+## Theming
+
+### Scroller Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-virtualscroller | Class name of the root element |
+| p-virtualscroller-content | Class name of the content element |
+| p-virtualscroller-spacer | Class name of the spacer element |
+| p-virtualscroller-loader | Class name of the loader element |
+| p-virtualscroller-loading-icon | Class name of the loading icon element |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/virtualscroller)

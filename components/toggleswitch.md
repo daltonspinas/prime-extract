@@ -149,6 +149,72 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | handle |  | Callback to invoke when the on value change. |
 
+## Theming
+
+### ToggleSwitch Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-toggleswitch | Class name of the root element |
+| p-toggleswitch-input | Class name of the input element |
+| p-toggleswitch-slider | Class name of the slider element |
+
+#### ToggleSwitch Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| toggleswitch.root.width | toggleswitch.width | --p-toggleswitch-width | Width of root |
+| toggleswitch.root.height | toggleswitch.height | --p-toggleswitch-height | Height of root |
+| toggleswitch.root.borderRadius | toggleswitch.border.radius | --p-toggleswitch-border-radius | Border radius of root |
+| toggleswitch.root.gap | toggleswitch.gap | --p-toggleswitch-gap | Gap of root |
+| toggleswitch.root.shadow | toggleswitch.shadow | --p-toggleswitch-shadow | Shadow of root |
+| toggleswitch.root.focusRing.width | toggleswitch.focus.ring.width | --p-toggleswitch-focus-ring-width | Focus ring width of root |
+| toggleswitch.root.focusRing.style | toggleswitch.focus.ring.style | --p-toggleswitch-focus-ring-style | Focus ring style of root |
+| toggleswitch.root.focusRing.color | toggleswitch.focus.ring.color | --p-toggleswitch-focus-ring-color | Focus ring color of root |
+| toggleswitch.root.focusRing.offset | toggleswitch.focus.ring.offset | --p-toggleswitch-focus-ring-offset | Focus ring offset of root |
+| toggleswitch.root.focusRing.shadow | toggleswitch.focus.ring.shadow | --p-toggleswitch-focus-ring-shadow | Focus ring shadow of root |
+| toggleswitch.root.borderWidth | toggleswitch.border.width | --p-toggleswitch-border-width | Border width of root |
+| toggleswitch.root.borderColor | toggleswitch.border.color | --p-toggleswitch-border-color | Border color of root |
+| toggleswitch.root.hoverBorderColor | toggleswitch.hover.border.color | --p-toggleswitch-hover-border-color | Hover border color of root |
+| toggleswitch.root.checkedBorderColor | toggleswitch.checked.border.color | --p-toggleswitch-checked-border-color | Checked border color of root |
+| toggleswitch.root.checkedHoverBorderColor | toggleswitch.checked.hover.border.color | --p-toggleswitch-checked-hover-border-color | Checked hover border color of root |
+| toggleswitch.root.invalidBorderColor | toggleswitch.invalid.border.color | --p-toggleswitch-invalid-border-color | Invalid border color of root |
+| toggleswitch.root.transitionDuration | toggleswitch.transition.duration | --p-toggleswitch-transition-duration | Transition duration of root |
+| toggleswitch.root.slideDuration | toggleswitch.slide.duration | --p-toggleswitch-slide-duration | Slide duration of root |
+| toggleswitch.root.background | toggleswitch.background | --p-toggleswitch-background | Background of root |
+| toggleswitch.root.disabledBackground | toggleswitch.disabled.background | --p-toggleswitch-disabled-background | Disabled background of root |
+| toggleswitch.root.hoverBackground | toggleswitch.hover.background | --p-toggleswitch-hover-background | Hover background of root |
+| toggleswitch.root.checkedBackground | toggleswitch.checked.background | --p-toggleswitch-checked-background | Checked background of root |
+| toggleswitch.root.checkedHoverBackground | toggleswitch.checked.hover.background | --p-toggleswitch-checked-hover-background | Checked hover background of root |
+| toggleswitch.handle.borderRadius | toggleswitch.handle.border.radius | --p-toggleswitch-handle-border-radius | Border radius of handle |
+| toggleswitch.handle.size | toggleswitch.handle.size | --p-toggleswitch-handle-size | Size of handle |
+| toggleswitch.handle.background | toggleswitch.handle.background | --p-toggleswitch-handle-background | Background of handle |
+| toggleswitch.handle.disabledBackground | toggleswitch.handle.disabled.background | --p-toggleswitch-handle-disabled-background | Disabled background of handle |
+| toggleswitch.handle.hoverBackground | toggleswitch.handle.hover.background | --p-toggleswitch-handle-hover-background | Hover background of handle |
+| toggleswitch.handle.checkedBackground | toggleswitch.handle.checked.background | --p-toggleswitch-handle-checked-background | Checked background of handle |
+| toggleswitch.handle.checkedHoverBackground | toggleswitch.handle.checked.hover.background | --p-toggleswitch-handle-checked-hover-background | Checked hover background of handle |
+| toggleswitch.handle.color | toggleswitch.handle.color | --p-toggleswitch-handle-color | Color of handle |
+| toggleswitch.handle.hoverColor | toggleswitch.handle.hover.color | --p-toggleswitch-handle-hover-color | Hover color of handle |
+| toggleswitch.handle.checkedColor | toggleswitch.handle.checked.color | --p-toggleswitch-handle-checked-color | Checked color of handle |
+| toggleswitch.handle.checkedHoverColor | toggleswitch.handle.checked.hover.color | --p-toggleswitch-handle-checked-hover-color | Checked hover color of handle |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/toggleswitch)

@@ -188,6 +188,37 @@ API defines helper props, events and others for the PrimeNG Dynamic Dialog modul
 
 #### DialogService
 
+## Theming
+
+### Dynamic Dialog Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-dialog-mask | Class name of the mask element |
+| p-dialog | Class name of the root element |
+| p-dialog-header | Class name of the header element |
+| p-dialog-title | Class name of the title element |
+| p-dialog-header-actions | Class name of the header actions element |
+| p-dialog-maximize-button | Class name of the maximize button element |
+| p-dialog-close-button | Class name of the close button element |
+| p-dialog-content | Class name of the content element |
+| p-dialog-footer | Class name of the footer element |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/dynamicdialog)

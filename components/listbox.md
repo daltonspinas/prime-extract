@@ -258,6 +258,75 @@ Defines the templates used by the component.
 | checkmark |  | Custom checkmark icon template. |
 | loader |  | Custom loader template. |
 
+## Theming
+
+### Listbox Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-listbox | Class name of the root element |
+| p-listbox-header | Class name of the header element |
+| p-listbox-filter | Class name of the filter element |
+| p-listbox-list-container | Class name of the list container element |
+| p-listbox-list | Class name of the list element |
+| p-listbox-option-group | Class name of the option group element |
+| p-listbox-option | Class name of the option element |
+| p-listbox-option-check-icon | Class name of the option check icon element |
+| p-listbox-option-blank-icon | Class name of the option blank icon element |
+| p-listbox-empty-message | Class name of the empty message element |
+
+#### Listbox Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| listbox.root.background | listbox.background | --p-listbox-background | Background of root |
+| listbox.root.disabledBackground | listbox.disabled.background | --p-listbox-disabled-background | Disabled background of root |
+| listbox.root.borderColor | listbox.border.color | --p-listbox-border-color | Border color of root |
+| listbox.root.invalidBorderColor | listbox.invalid.border.color | --p-listbox-invalid-border-color | Invalid border color of root |
+| listbox.root.color | listbox.color | --p-listbox-color | Color of root |
+| listbox.root.disabledColor | listbox.disabled.color | --p-listbox-disabled-color | Disabled color of root |
+| listbox.root.shadow | listbox.shadow | --p-listbox-shadow | Shadow of root |
+| listbox.root.borderRadius | listbox.border.radius | --p-listbox-border-radius | Border radius of root |
+| listbox.root.transitionDuration | listbox.transition.duration | --p-listbox-transition-duration | Transition duration of root |
+| listbox.list.padding | listbox.list.padding | --p-listbox-list-padding | Padding of list |
+| listbox.list.gap | listbox.list.gap | --p-listbox-list-gap | Gap of list |
+| listbox.list.header.padding | listbox.list.header.padding | --p-listbox-list-header-padding | Header padding of list |
+| listbox.option.focusBackground | listbox.option.focus.background | --p-listbox-option-focus-background | Focus background of option |
+| listbox.option.selectedBackground | listbox.option.selected.background | --p-listbox-option-selected-background | Selected background of option |
+| listbox.option.selectedFocusBackground | listbox.option.selected.focus.background | --p-listbox-option-selected-focus-background | Selected focus background of option |
+| listbox.option.color | listbox.option.color | --p-listbox-option-color | Color of option |
+| listbox.option.focusColor | listbox.option.focus.color | --p-listbox-option-focus-color | Focus color of option |
+| listbox.option.selectedColor | listbox.option.selected.color | --p-listbox-option-selected-color | Selected color of option |
+| listbox.option.selectedFocusColor | listbox.option.selected.focus.color | --p-listbox-option-selected-focus-color | Selected focus color of option |
+| listbox.option.padding | listbox.option.padding | --p-listbox-option-padding | Padding of option |
+| listbox.option.borderRadius | listbox.option.border.radius | --p-listbox-option-border-radius | Border radius of option |
+| listbox.option.stripedBackground | listbox.option.striped.background | --p-listbox-option-striped-background | Striped background of option |
+| listbox.optionGroup.background | listbox.option.group.background | --p-listbox-option-group-background | Background of option group |
+| listbox.optionGroup.color | listbox.option.group.color | --p-listbox-option-group-color | Color of option group |
+| listbox.optionGroup.fontWeight | listbox.option.group.font.weight | --p-listbox-option-group-font-weight | Font weight of option group |
+| listbox.optionGroup.padding | listbox.option.group.padding | --p-listbox-option-group-padding | Padding of option group |
+| listbox.checkmark.color | listbox.checkmark.color | --p-listbox-checkmark-color | Color of checkmark |
+| listbox.checkmark.gutterStart | listbox.checkmark.gutter.start | --p-listbox-checkmark-gutter-start | Gutter start of checkmark |
+| listbox.checkmark.gutterEnd | listbox.checkmark.gutter.end | --p-listbox-checkmark-gutter-end | Gutter end of checkmark |
+| listbox.emptyMessage.padding | listbox.empty.message.padding | --p-listbox-empty-message-padding | Padding of empty message |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/listbox)

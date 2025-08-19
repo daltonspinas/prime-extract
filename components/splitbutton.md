@@ -232,6 +232,41 @@ Defines the templates used by the component.
 | content |  | Template of the content. |
 | dropdownicon |  | Template of the dropdownicon. |
 
+## Theming
+
+### SplitButton Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-splitbutton | Class name of the root element |
+| p-splitbutton-button | Class name of the button element |
+| p-splitbutton-dropdown | Class name of the dropdown element |
+
+#### SplitButton Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| splitbutton.root.borderRadius | splitbutton.border.radius | --p-splitbutton-border-radius | Border radius of root |
+| splitbutton.root.roundedBorderRadius | splitbutton.rounded.border.radius | --p-splitbutton-rounded-border-radius | Rounded border radius of root |
+| splitbutton.root.raisedShadow | splitbutton.raised.shadow | --p-splitbutton-raised-shadow | Raised shadow of root |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/splitbutton)

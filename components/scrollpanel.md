@@ -99,6 +99,49 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | content |  | Defines template option for content. |
 
+## Theming
+
+### ScrollPanel Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-scrollpanel | Class name of the root element |
+| p-scrollpanel-content-container | Class name of the content container element |
+| p-scrollpanel-content | Class name of the content element |
+| p-scrollpanel-bar-x | Class name of the bar x element |
+| p-scrollpanel-bar-y | Class name of the bar y element |
+
+#### ScrollPanel Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| scrollpanel.root.transitionDuration | scrollpanel.transition.duration | --p-scrollpanel-transition-duration | Transition duration of root |
+| scrollpanel.bar.size | scrollpanel.bar.size | --p-scrollpanel-bar-size | Size of bar |
+| scrollpanel.bar.borderRadius | scrollpanel.bar.border.radius | --p-scrollpanel-bar-border-radius | Border radius of bar |
+| scrollpanel.bar.focusRing.width | scrollpanel.bar.focus.ring.width | --p-scrollpanel-bar-focus-ring-width | Focus ring width of bar |
+| scrollpanel.bar.focusRing.style | scrollpanel.bar.focus.ring.style | --p-scrollpanel-bar-focus-ring-style | Focus ring style of bar |
+| scrollpanel.bar.focusRing.color | scrollpanel.bar.focus.ring.color | --p-scrollpanel-bar-focus-ring-color | Focus ring color of bar |
+| scrollpanel.bar.focusRing.offset | scrollpanel.bar.focus.ring.offset | --p-scrollpanel-bar-focus-ring-offset | Focus ring offset of bar |
+| scrollpanel.bar.focusRing.shadow | scrollpanel.bar.focus.ring.shadow | --p-scrollpanel-bar-focus-ring-shadow | Focus ring shadow of bar |
+| scrollpanel.bar.background | scrollpanel.bar.background | --p-scrollpanel-bar-background | Background of bar |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/scrollpanel)

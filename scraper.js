@@ -124,6 +124,61 @@ function extractApiSection($, apiSection) {
     return apiData;
 }
 
+function extractThemingSection($, themingSection) {
+    const themingData = {
+        title: '',
+        description: '',
+        sections: []
+    };
+
+    // Extract main theming title
+    const titleEl = $(themingSection).find('.doc-intro h1').first();
+    if (titleEl.length) {
+        themingData.title = titleEl.text().trim();
+    }
+
+    // Extract main theming description
+    const descEl = $(themingSection).find('.doc-intro p').first();
+    if (descEl.length) {
+        themingData.description = descEl.text().trim();
+    }
+
+    // Extract CSS Classes and Design Tokens sections
+    $(themingSection).find('app-docapitable').each((i, apiTable) => {
+        const sectionTitle = $(apiTable).find('h3.doc-section-label').text().replace('#', '').trim();
+        const sectionDesc = $(apiTable).find('.doc-section-description p').text().trim();
+        
+        // Extract table data
+        const table = $(apiTable).find('table.doc-table').first();
+        const tableData = extractApiTable($, table);
+        
+        themingData.sections.push({
+            title: sectionTitle,
+            description: sectionDesc,
+            table: tableData
+        });
+    });
+
+    // Extract Built-in Presets section
+    const presetsSection = $(themingSection).find('app-docstyledpreset');
+    if (presetsSection.length > 0) {
+        const presetsTitle = presetsSection.find('h3.doc-section-label').text().replace('#', '').trim();
+        const presetsDesc = presetsSection.find('.doc-section-description p').first().text().trim();
+        
+        // Extract presets table
+        const presetsTable = presetsSection.find('table.doc-preset-table').first();
+        const presetsTableData = extractApiTable($, presetsTable);
+        
+        themingData.sections.push({
+            title: presetsTitle,
+            description: presetsDesc,
+            table: presetsTableData
+        });
+    }
+
+    return themingData;
+}
+
 async function scrapeComponents() {
     // Load component list
     const componentList = JSON.parse(fs.readFileSync(COMPONENT_LIST_PATH, 'utf-8'));
@@ -246,6 +301,53 @@ async function scrapeComponents() {
                 }
             } else {
                 console.log(`No API section found for ${comp.name}`);
+            }
+
+            // Extract Theming documentation
+            const themingSection = $('app-docthemingsection');
+            if (themingSection.length > 0) {
+                console.log(`Found Theming section for ${comp.name}`);
+                const themingData = extractThemingSection($, themingSection);
+                
+                if (themingData.title || themingData.sections.length > 0) {
+                    markdown += `## Theming\n\n`;
+                    
+                    if (themingData.title) {
+                        markdown += `### ${themingData.title}\n\n`;
+                    }
+                    
+                    if (themingData.description) {
+                        markdown += `${themingData.description}\n\n`;
+                    }
+                    
+                    // Process theming sections (CSS Classes, Design Tokens, Built-in Presets)
+                    themingData.sections.forEach(section => {
+                        if (section.title) {
+                            markdown += `#### ${section.title}\n\n`;
+                            if (section.description) {
+                                markdown += `${section.description}\n\n`;
+                            }
+                            
+                            // Add table data
+                            if (section.table && section.table.data.length > 0) {
+                                // Create markdown table
+                                const headers = section.table.headers;
+                                if (headers.length > 0) {
+                                    markdown += `| ${headers.join(' | ')} |\n`;
+                                    markdown += `| ${headers.map(() => '---').join(' | ')} |\n`;
+                                    
+                                    section.table.data.forEach(row => {
+                                        const cells = headers.map(header => row[header] || '');
+                                        markdown += `| ${cells.join(' | ')} |\n`;
+                                    });
+                                    markdown += '\n';
+                                }
+                            }
+                        }
+                    });
+                }
+            } else {
+                console.log(`No Theming section found for ${comp.name}`);
             }
 
             // Add source link

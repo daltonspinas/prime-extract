@@ -107,6 +107,65 @@ Defines the templates used by the component.
 | collapseicon |  | Defines the collapseicon template. |
 | content |  | Defines the content template. |
 
+## Theming
+
+### Fieldset Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-fieldset | Class name of the root element |
+| p-fieldset-legend | Class name of the legend element |
+| p-fieldset-legend-label | Class name of the legend label element |
+| p-fieldset-toggle-icon | Class name of the toggle icon element |
+| p-fieldset-content-container | Class name of the content container element |
+| p-fieldset-content | Class name of the content element |
+
+#### Fieldset Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| fieldset.root.background | fieldset.background | --p-fieldset-background | Background of root |
+| fieldset.root.borderColor | fieldset.border.color | --p-fieldset-border-color | Border color of root |
+| fieldset.root.borderRadius | fieldset.border.radius | --p-fieldset-border-radius | Border radius of root |
+| fieldset.root.color | fieldset.color | --p-fieldset-color | Color of root |
+| fieldset.root.padding | fieldset.padding | --p-fieldset-padding | Padding of root |
+| fieldset.root.transitionDuration | fieldset.transition.duration | --p-fieldset-transition-duration | Transition duration of root |
+| fieldset.legend.background | fieldset.legend.background | --p-fieldset-legend-background | Background of legend |
+| fieldset.legend.hoverBackground | fieldset.legend.hover.background | --p-fieldset-legend-hover-background | Hover background of legend |
+| fieldset.legend.color | fieldset.legend.color | --p-fieldset-legend-color | Color of legend |
+| fieldset.legend.hoverColor | fieldset.legend.hover.color | --p-fieldset-legend-hover-color | Hover color of legend |
+| fieldset.legend.borderRadius | fieldset.legend.border.radius | --p-fieldset-legend-border-radius | Border radius of legend |
+| fieldset.legend.borderWidth | fieldset.legend.border.width | --p-fieldset-legend-border-width | Border width of legend |
+| fieldset.legend.borderColor | fieldset.legend.border.color | --p-fieldset-legend-border-color | Border color of legend |
+| fieldset.legend.padding | fieldset.legend.padding | --p-fieldset-legend-padding | Padding of legend |
+| fieldset.legend.gap | fieldset.legend.gap | --p-fieldset-legend-gap | Gap of legend |
+| fieldset.legend.fontWeight | fieldset.legend.font.weight | --p-fieldset-legend-font-weight | Font weight of legend |
+| fieldset.legend.focusRing.width | fieldset.legend.focus.ring.width | --p-fieldset-legend-focus-ring-width | Focus ring width of legend |
+| fieldset.legend.focusRing.style | fieldset.legend.focus.ring.style | --p-fieldset-legend-focus-ring-style | Focus ring style of legend |
+| fieldset.legend.focusRing.color | fieldset.legend.focus.ring.color | --p-fieldset-legend-focus-ring-color | Focus ring color of legend |
+| fieldset.legend.focusRing.offset | fieldset.legend.focus.ring.offset | --p-fieldset-legend-focus-ring-offset | Focus ring offset of legend |
+| fieldset.legend.focusRing.shadow | fieldset.legend.focus.ring.shadow | --p-fieldset-legend-focus-ring-shadow | Focus ring shadow of legend |
+| fieldset.toggleIcon.color | fieldset.toggle.icon.color | --p-fieldset-toggle-icon-color | Color of toggle icon |
+| fieldset.toggleIcon.hoverColor | fieldset.toggle.icon.hover.color | --p-fieldset-toggle-icon-hover-color | Hover color of toggle icon |
+| fieldset.content.padding | fieldset.content.padding | --p-fieldset-content-padding | Padding of content |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/fieldset)

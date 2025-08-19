@@ -383,6 +383,110 @@ Defines the templates used by the component.
 | officon |  | Custom off icon template. |
 | cancelicon |  | Custom cancel icon template. |
 
+## Theming
+
+### Select Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-select | Class name of the root element |
+| p-select-label | Class name of the label element |
+| p-select-clear-icon | Class name of the clear icon element |
+| p-select-dropdown | Class name of the dropdown element |
+| p-select-loading-icon | Class name of the loadingicon element |
+| p-select-dropdown-icon | Class name of the dropdown icon element |
+| p-select-overlay | Class name of the overlay element |
+| p-select-header | Class name of the header element |
+| p-select-filter | Class name of the filter element |
+| p-select-list-container | Class name of the list container element |
+| p-select-list | Class name of the list element |
+| p-select-option-group | Class name of the option group element |
+| p-select-option-group-label | Class name of the option group label element |
+| p-select-option | Class name of the option element |
+| p-select-option-label | Class name of the option label element |
+| p-select-option-check-icon | Class name of the option check icon element |
+| p-select-option-blank-icon | Class name of the option blank icon element |
+| p-select-empty-message | Class name of the empty message element |
+
+#### Select Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| select.root.background | select.background | --p-select-background | Background of root |
+| select.root.disabledBackground | select.disabled.background | --p-select-disabled-background | Disabled background of root |
+| select.root.filledBackground | select.filled.background | --p-select-filled-background | Filled background of root |
+| select.root.filledHoverBackground | select.filled.hover.background | --p-select-filled-hover-background | Filled hover background of root |
+| select.root.filledFocusBackground | select.filled.focus.background | --p-select-filled-focus-background | Filled focus background of root |
+| select.root.borderColor | select.border.color | --p-select-border-color | Border color of root |
+| select.root.hoverBorderColor | select.hover.border.color | --p-select-hover-border-color | Hover border color of root |
+| select.root.focusBorderColor | select.focus.border.color | --p-select-focus-border-color | Focus border color of root |
+| select.root.invalidBorderColor | select.invalid.border.color | --p-select-invalid-border-color | Invalid border color of root |
+| select.root.color | select.color | --p-select-color | Color of root |
+| select.root.disabledColor | select.disabled.color | --p-select-disabled-color | Disabled color of root |
+| select.root.placeholderColor | select.placeholder.color | --p-select-placeholder-color | Placeholder color of root |
+| select.root.invalidPlaceholderColor | select.invalid.placeholder.color | --p-select-invalid-placeholder-color | Invalid placeholder color of root |
+| select.root.shadow | select.shadow | --p-select-shadow | Shadow of root |
+| select.root.paddingX | select.padding.x | --p-select-padding-x | Padding x of root |
+| select.root.paddingY | select.padding.y | --p-select-padding-y | Padding y of root |
+| select.root.borderRadius | select.border.radius | --p-select-border-radius | Border radius of root |
+| select.root.focusRing.width | select.focus.ring.width | --p-select-focus-ring-width | Focus ring width of root |
+| select.root.focusRing.style | select.focus.ring.style | --p-select-focus-ring-style | Focus ring style of root |
+| select.root.focusRing.color | select.focus.ring.color | --p-select-focus-ring-color | Focus ring color of root |
+| select.root.focusRing.offset | select.focus.ring.offset | --p-select-focus-ring-offset | Focus ring offset of root |
+| select.root.focusRing.shadow | select.focus.ring.shadow | --p-select-focus-ring-shadow | Focus ring shadow of root |
+| select.root.transitionDuration | select.transition.duration | --p-select-transition-duration | Transition duration of root |
+| select.root.sm.fontSize | select.sm.font.size | --p-select-sm-font-size | Sm font size of root |
+| select.root.sm.paddingX | select.sm.padding.x | --p-select-sm-padding-x | Sm padding x of root |
+| select.root.sm.paddingY | select.sm.padding.y | --p-select-sm-padding-y | Sm padding y of root |
+| select.root.lg.fontSize | select.lg.font.size | --p-select-lg-font-size | Lg font size of root |
+| select.root.lg.paddingX | select.lg.padding.x | --p-select-lg-padding-x | Lg padding x of root |
+| select.root.lg.paddingY | select.lg.padding.y | --p-select-lg-padding-y | Lg padding y of root |
+| select.dropdown.width | select.dropdown.width | --p-select-dropdown-width | Width of dropdown |
+| select.dropdown.color | select.dropdown.color | --p-select-dropdown-color | Color of dropdown |
+| select.overlay.background | select.overlay.background | --p-select-overlay-background | Background of overlay |
+| select.overlay.borderColor | select.overlay.border.color | --p-select-overlay-border-color | Border color of overlay |
+| select.overlay.borderRadius | select.overlay.border.radius | --p-select-overlay-border-radius | Border radius of overlay |
+| select.overlay.color | select.overlay.color | --p-select-overlay-color | Color of overlay |
+| select.overlay.shadow | select.overlay.shadow | --p-select-overlay-shadow | Shadow of overlay |
+| select.list.padding | select.list.padding | --p-select-list-padding | Padding of list |
+| select.list.gap | select.list.gap | --p-select-list-gap | Gap of list |
+| select.list.header.padding | select.list.header.padding | --p-select-list-header-padding | Header padding of list |
+| select.option.focusBackground | select.option.focus.background | --p-select-option-focus-background | Focus background of option |
+| select.option.selectedBackground | select.option.selected.background | --p-select-option-selected-background | Selected background of option |
+| select.option.selectedFocusBackground | select.option.selected.focus.background | --p-select-option-selected-focus-background | Selected focus background of option |
+| select.option.color | select.option.color | --p-select-option-color | Color of option |
+| select.option.focusColor | select.option.focus.color | --p-select-option-focus-color | Focus color of option |
+| select.option.selectedColor | select.option.selected.color | --p-select-option-selected-color | Selected color of option |
+| select.option.selectedFocusColor | select.option.selected.focus.color | --p-select-option-selected-focus-color | Selected focus color of option |
+| select.option.padding | select.option.padding | --p-select-option-padding | Padding of option |
+| select.option.borderRadius | select.option.border.radius | --p-select-option-border-radius | Border radius of option |
+| select.optionGroup.background | select.option.group.background | --p-select-option-group-background | Background of option group |
+| select.optionGroup.color | select.option.group.color | --p-select-option-group-color | Color of option group |
+| select.optionGroup.fontWeight | select.option.group.font.weight | --p-select-option-group-font-weight | Font weight of option group |
+| select.optionGroup.padding | select.option.group.padding | --p-select-option-group-padding | Padding of option group |
+| select.clearIcon.color | select.clear.icon.color | --p-select-clear-icon-color | Color of clear icon |
+| select.checkmark.color | select.checkmark.color | --p-select-checkmark-color | Color of checkmark |
+| select.checkmark.gutterStart | select.checkmark.gutter.start | --p-select-checkmark-gutter-start | Gutter start of checkmark |
+| select.checkmark.gutterEnd | select.checkmark.gutter.end | --p-select-checkmark-gutter-end | Gutter end of checkmark |
+| select.emptyMessage.padding | select.empty.message.padding | --p-select-empty-message-padding | Padding of empty message |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/select)

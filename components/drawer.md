@@ -387,6 +387,50 @@ Defines the templates used by the component.
 | closeicon |  | Close icon template for the close icon of the drawer. |
 | headless |  | Headless template for the headless drawer. |
 
+## Theming
+
+### Drawer Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-drawer-mask | Class name of the mask element |
+| p-drawer | Class name of the root element |
+| p-drawer-header | Class name of the header element |
+| p-drawer-title | Class name of the title element |
+| p-drawer-close-button | Class name of the close button element |
+| p-drawer-content | Class name of the content element |
+
+#### Drawer Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| drawer.root.background | drawer.background | --p-drawer-background | Background of root |
+| drawer.root.borderColor | drawer.border.color | --p-drawer-border-color | Border color of root |
+| drawer.root.color | drawer.color | --p-drawer-color | Color of root |
+| drawer.root.shadow | drawer.shadow | --p-drawer-shadow | Shadow of root |
+| drawer.header.padding | drawer.header.padding | --p-drawer-header-padding | Padding of header |
+| drawer.title.fontSize | drawer.title.font.size | --p-drawer-title-font-size | Font size of title |
+| drawer.title.fontWeight | drawer.title.font.weight | --p-drawer-title-font-weight | Font weight of title |
+| drawer.content.padding | drawer.content.padding | --p-drawer-content-padding | Padding of content |
+| drawer.footer.padding | drawer.footer.padding | --p-drawer-footer-padding | Padding of footer |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/drawer)

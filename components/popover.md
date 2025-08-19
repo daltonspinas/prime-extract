@@ -236,6 +236,36 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | content |  | Custom content template. |
 
+## Theming
+
+### Popover Theming
+
+#### Popover Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| popover.root.background | popover.background | --p-popover-background | Background of root |
+| popover.root.borderColor | popover.border.color | --p-popover-border-color | Border color of root |
+| popover.root.color | popover.color | --p-popover-color | Color of root |
+| popover.root.borderRadius | popover.border.radius | --p-popover-border-radius | Border radius of root |
+| popover.root.shadow | popover.shadow | --p-popover-shadow | Shadow of root |
+| popover.root.gutter | popover.gutter | --p-popover-gutter | Gutter of root |
+| popover.root.arrowOffset | popover.arrow.offset | --p-popover-arrow-offset | Arrow offset of root |
+| popover.content.padding | popover.content.padding | --p-popover-content-padding | Padding of content |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/popover)

@@ -168,6 +168,67 @@ Defines the templates used by the component.
 
 #### MenuItem
 
+## Theming
+
+### Menu Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-menu | Class name of the root element |
+| p-menu-start | Class name of the start element |
+| p-menu-list | Class name of the list element |
+| p-menu-submenu-item | Class name of the submenu item element |
+| p-menu-separator | Class name of the separator element |
+| p-menu-end | Class name of the end element |
+| p-menu-item | Class name of the item element |
+| p-menu-item-content | Class name of the item content element |
+| p-menu-item-link | Class name of the item link element |
+| p-menu-item-icon | Class name of the item icon element |
+| p-menu-item-label | Class name of the item label element |
+
+#### Menu Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| menu.root.background | menu.background | --p-menu-background | Background of root |
+| menu.root.borderColor | menu.border.color | --p-menu-border-color | Border color of root |
+| menu.root.color | menu.color | --p-menu-color | Color of root |
+| menu.root.borderRadius | menu.border.radius | --p-menu-border-radius | Border radius of root |
+| menu.root.shadow | menu.shadow | --p-menu-shadow | Shadow of root |
+| menu.root.transitionDuration | menu.transition.duration | --p-menu-transition-duration | Transition duration of root |
+| menu.list.padding | menu.list.padding | --p-menu-list-padding | Padding of list |
+| menu.list.gap | menu.list.gap | --p-menu-list-gap | Gap of list |
+| menu.item.focusBackground | menu.item.focus.background | --p-menu-item-focus-background | Focus background of item |
+| menu.item.color | menu.item.color | --p-menu-item-color | Color of item |
+| menu.item.focusColor | menu.item.focus.color | --p-menu-item-focus-color | Focus color of item |
+| menu.item.padding | menu.item.padding | --p-menu-item-padding | Padding of item |
+| menu.item.borderRadius | menu.item.border.radius | --p-menu-item-border-radius | Border radius of item |
+| menu.item.gap | menu.item.gap | --p-menu-item-gap | Gap of item |
+| menu.item.icon.color | menu.item.icon.color | --p-menu-item-icon-color | Icon color of item |
+| menu.item.icon.focusColor | menu.item.icon.focus.color | --p-menu-item-icon-focus-color | Icon focus color of item |
+| menu.submenuLabel.padding | menu.submenu.label.padding | --p-menu-submenu-label-padding | Padding of submenu label |
+| menu.submenuLabel.fontWeight | menu.submenu.label.font.weight | --p-menu-submenu-label-font-weight | Font weight of submenu label |
+| menu.submenuLabel.background | menu.submenu.label.background | --p-menu-submenu-label-background | Background of submenu label |
+| menu.submenuLabel.color | menu.submenu.label.color | --p-menu-submenu-label-color | Color of submenu label |
+| menu.separator.borderColor | menu.separator.border.color | --p-menu-separator-border-color | Border color of separator |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/menu)

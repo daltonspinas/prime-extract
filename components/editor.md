@@ -134,6 +134,60 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | header |  | Custom item template. |
 
+## Theming
+
+### Editor Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-editor | Class name of the root element |
+| p-editor-toolbar | Class name of the toolbar element |
+| p-editor-content | Class name of the content element |
+
+#### Editor Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| editor.toolbar.background | editor.toolbar.background | --p-editor-toolbar-background | Background of toolbar |
+| editor.toolbar.borderColor | editor.toolbar.border.color | --p-editor-toolbar-border-color | Border color of toolbar |
+| editor.toolbar.borderRadius | editor.toolbar.border.radius | --p-editor-toolbar-border-radius | Border radius of toolbar |
+| editor.toolbarItem.color | editor.toolbar.item.color | --p-editor-toolbar-item-color | Color of toolbar item |
+| editor.toolbarItem.hoverColor | editor.toolbar.item.hover.color | --p-editor-toolbar-item-hover-color | Hover color of toolbar item |
+| editor.toolbarItem.activeColor | editor.toolbar.item.active.color | --p-editor-toolbar-item-active-color | Active color of toolbar item |
+| editor.toolbarItem.padding | editor.toolbar.item.padding | --p-editor-toolbar-item-padding | Padding of toolbar item |
+| editor.overlay.background | editor.overlay.background | --p-editor-overlay-background | Background of overlay |
+| editor.overlay.borderColor | editor.overlay.border.color | --p-editor-overlay-border-color | Border color of overlay |
+| editor.overlay.borderRadius | editor.overlay.border.radius | --p-editor-overlay-border-radius | Border radius of overlay |
+| editor.overlay.color | editor.overlay.color | --p-editor-overlay-color | Color of overlay |
+| editor.overlay.shadow | editor.overlay.shadow | --p-editor-overlay-shadow | Shadow of overlay |
+| editor.overlay.padding | editor.overlay.padding | --p-editor-overlay-padding | Padding of overlay |
+| editor.overlayOption.focusBackground | editor.overlay.option.focus.background | --p-editor-overlay-option-focus-background | Focus background of overlay option |
+| editor.overlayOption.color | editor.overlay.option.color | --p-editor-overlay-option-color | Color of overlay option |
+| editor.overlayOption.focusColor | editor.overlay.option.focus.color | --p-editor-overlay-option-focus-color | Focus color of overlay option |
+| editor.overlayOption.padding | editor.overlay.option.padding | --p-editor-overlay-option-padding | Padding of overlay option |
+| editor.overlayOption.borderRadius | editor.overlay.option.border.radius | --p-editor-overlay-option-border-radius | Border radius of overlay option |
+| editor.content.background | editor.content.background | --p-editor-content-background | Background of content |
+| editor.content.borderColor | editor.content.border.color | --p-editor-content-border-color | Border color of content |
+| editor.content.color | editor.content.color | --p-editor-content-color | Color of content |
+| editor.content.borderRadius | editor.content.border.radius | --p-editor-content-border-radius | Border radius of content |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/editor)

@@ -71,6 +71,37 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | content |  | template of the content |
 
+## Theming
+
+### BlockUI Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-blockui | Class name of the root element |
+
+#### BlockUI Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| blockui.root.borderRadius | blockui.border.radius | --p-blockui-border-radius | Border radius of root |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/blockui)

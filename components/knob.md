@@ -181,6 +181,48 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onChange | value :  number | Callback to invoke on value change. |
 
+## Theming
+
+### Knob Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-knob | Class name of the root element |
+| p-knob-range | Class name of the range element |
+| p-knob-value | Class name of the value element |
+| p-knob-text | Class name of the text element |
+
+#### Knob Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| knob.root.transitionDuration | knob.transition.duration | --p-knob-transition-duration | Transition duration of root |
+| knob.root.focusRing.width | knob.focus.ring.width | --p-knob-focus-ring-width | Focus ring width of root |
+| knob.root.focusRing.style | knob.focus.ring.style | --p-knob-focus-ring-style | Focus ring style of root |
+| knob.root.focusRing.color | knob.focus.ring.color | --p-knob-focus-ring-color | Focus ring color of root |
+| knob.root.focusRing.offset | knob.focus.ring.offset | --p-knob-focus-ring-offset | Focus ring offset of root |
+| knob.root.focusRing.shadow | knob.focus.ring.shadow | --p-knob-focus-ring-shadow | Focus ring shadow of root |
+| knob.value.background | knob.value.background | --p-knob-value-background | Background of value |
+| knob.range.background | knob.range.background | --p-knob-range-background | Background of range |
+| knob.text.color | knob.text.color | --p-knob-text-color | Color of text |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/knob)

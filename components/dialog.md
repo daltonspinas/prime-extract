@@ -325,6 +325,56 @@ Defines emit that determine the behavior of the component based on a given condi
 | onDragEnd | event :  DragEvent | Callback to invoke when dialog dragging is completed. |
 | onMaximize | value :  any | Callback to invoke when dialog maximized or unmaximized. |
 
+## Theming
+
+### Dialog Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-dialog-mask | Class name of the mask element |
+| p-dialog | Class name of the root element |
+| p-dialog-header | Class name of the header element |
+| p-dialog-title | Class name of the title element |
+| p-dialog-header-actions | Class name of the header actions element |
+| p-dialog-maximize-button | Class name of the maximize button element |
+| p-dialog-close-button | Class name of the close button element |
+| p-dialog-content | Class name of the content element |
+| p-dialog-footer | Class name of the footer element |
+
+#### Dialog Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| dialog.root.background | dialog.background | --p-dialog-background | Background of root |
+| dialog.root.borderColor | dialog.border.color | --p-dialog-border-color | Border color of root |
+| dialog.root.color | dialog.color | --p-dialog-color | Color of root |
+| dialog.root.borderRadius | dialog.border.radius | --p-dialog-border-radius | Border radius of root |
+| dialog.root.shadow | dialog.shadow | --p-dialog-shadow | Shadow of root |
+| dialog.header.padding | dialog.header.padding | --p-dialog-header-padding | Padding of header |
+| dialog.header.gap | dialog.header.gap | --p-dialog-header-gap | Gap of header |
+| dialog.title.fontSize | dialog.title.font.size | --p-dialog-title-font-size | Font size of title |
+| dialog.title.fontWeight | dialog.title.font.weight | --p-dialog-title-font-weight | Font weight of title |
+| dialog.content.padding | dialog.content.padding | --p-dialog-content-padding | Padding of content |
+| dialog.footer.padding | dialog.footer.padding | --p-dialog-footer-padding | Padding of footer |
+| dialog.footer.gap | dialog.footer.gap | --p-dialog-footer-gap | Gap of footer |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/dialog)

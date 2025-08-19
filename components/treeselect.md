@@ -296,6 +296,85 @@ Defines the templates used by the component.
 
 #### TreeNode
 
+## Theming
+
+### TreeSelect Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-treeselect | Class name of the root element |
+| p-treeselect-label-container | Class name of the label container element |
+| p-treeselect-label | Class name of the label element |
+| p-treeselect-chip-item | Class name of the chip item element |
+| p-treeselect-chip | Class name of the chip element |
+| p-treeselect-dropdown | Class name of the dropdown element |
+| p-treeselect-dropdown-icon | Class name of the dropdown icon element |
+| p-treeselect-overlay | Class name of the panel element |
+| p-treeselect-tree-container | Class name of the tree container element |
+| p-treeselect-empty-message | Class name of the empty message element |
+
+#### TreeSelect Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| treeselect.root.background | treeselect.background | --p-treeselect-background | Background of root |
+| treeselect.root.disabledBackground | treeselect.disabled.background | --p-treeselect-disabled-background | Disabled background of root |
+| treeselect.root.filledBackground | treeselect.filled.background | --p-treeselect-filled-background | Filled background of root |
+| treeselect.root.filledHoverBackground | treeselect.filled.hover.background | --p-treeselect-filled-hover-background | Filled hover background of root |
+| treeselect.root.filledFocusBackground | treeselect.filled.focus.background | --p-treeselect-filled-focus-background | Filled focus background of root |
+| treeselect.root.borderColor | treeselect.border.color | --p-treeselect-border-color | Border color of root |
+| treeselect.root.hoverBorderColor | treeselect.hover.border.color | --p-treeselect-hover-border-color | Hover border color of root |
+| treeselect.root.focusBorderColor | treeselect.focus.border.color | --p-treeselect-focus-border-color | Focus border color of root |
+| treeselect.root.invalidBorderColor | treeselect.invalid.border.color | --p-treeselect-invalid-border-color | Invalid border color of root |
+| treeselect.root.color | treeselect.color | --p-treeselect-color | Color of root |
+| treeselect.root.disabledColor | treeselect.disabled.color | --p-treeselect-disabled-color | Disabled color of root |
+| treeselect.root.placeholderColor | treeselect.placeholder.color | --p-treeselect-placeholder-color | Placeholder color of root |
+| treeselect.root.invalidPlaceholderColor | treeselect.invalid.placeholder.color | --p-treeselect-invalid-placeholder-color | Invalid placeholder color of root |
+| treeselect.root.shadow | treeselect.shadow | --p-treeselect-shadow | Shadow of root |
+| treeselect.root.paddingX | treeselect.padding.x | --p-treeselect-padding-x | Padding x of root |
+| treeselect.root.paddingY | treeselect.padding.y | --p-treeselect-padding-y | Padding y of root |
+| treeselect.root.borderRadius | treeselect.border.radius | --p-treeselect-border-radius | Border radius of root |
+| treeselect.root.focusRing.width | treeselect.focus.ring.width | --p-treeselect-focus-ring-width | Focus ring width of root |
+| treeselect.root.focusRing.style | treeselect.focus.ring.style | --p-treeselect-focus-ring-style | Focus ring style of root |
+| treeselect.root.focusRing.color | treeselect.focus.ring.color | --p-treeselect-focus-ring-color | Focus ring color of root |
+| treeselect.root.focusRing.offset | treeselect.focus.ring.offset | --p-treeselect-focus-ring-offset | Focus ring offset of root |
+| treeselect.root.focusRing.shadow | treeselect.focus.ring.shadow | --p-treeselect-focus-ring-shadow | Focus ring shadow of root |
+| treeselect.root.transitionDuration | treeselect.transition.duration | --p-treeselect-transition-duration | Transition duration of root |
+| treeselect.root.sm.fontSize | treeselect.sm.font.size | --p-treeselect-sm-font-size | Sm font size of root |
+| treeselect.root.sm.paddingX | treeselect.sm.padding.x | --p-treeselect-sm-padding-x | Sm padding x of root |
+| treeselect.root.sm.paddingY | treeselect.sm.padding.y | --p-treeselect-sm-padding-y | Sm padding y of root |
+| treeselect.root.lg.fontSize | treeselect.lg.font.size | --p-treeselect-lg-font-size | Lg font size of root |
+| treeselect.root.lg.paddingX | treeselect.lg.padding.x | --p-treeselect-lg-padding-x | Lg padding x of root |
+| treeselect.root.lg.paddingY | treeselect.lg.padding.y | --p-treeselect-lg-padding-y | Lg padding y of root |
+| treeselect.dropdown.width | treeselect.dropdown.width | --p-treeselect-dropdown-width | Width of dropdown |
+| treeselect.dropdown.color | treeselect.dropdown.color | --p-treeselect-dropdown-color | Color of dropdown |
+| treeselect.overlay.background | treeselect.overlay.background | --p-treeselect-overlay-background | Background of overlay |
+| treeselect.overlay.borderColor | treeselect.overlay.border.color | --p-treeselect-overlay-border-color | Border color of overlay |
+| treeselect.overlay.borderRadius | treeselect.overlay.border.radius | --p-treeselect-overlay-border-radius | Border radius of overlay |
+| treeselect.overlay.color | treeselect.overlay.color | --p-treeselect-overlay-color | Color of overlay |
+| treeselect.overlay.shadow | treeselect.overlay.shadow | --p-treeselect-overlay-shadow | Shadow of overlay |
+| treeselect.tree.padding | treeselect.tree.padding | --p-treeselect-tree-padding | Padding of tree |
+| treeselect.clearIcon.color | treeselect.clear.icon.color | --p-treeselect-clear-icon-color | Color of clear icon |
+| treeselect.emptyMessage.padding | treeselect.empty.message.padding | --p-treeselect-empty-message-padding | Padding of empty message |
+| treeselect.chip.borderRadius | treeselect.chip.border.radius | --p-treeselect-chip-border-radius | Border radius of chip |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/treeselect)

@@ -166,6 +166,42 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 
 InputGroup and InputGroupAddon does not require any roles and attributes.
 
+## Theming
+
+### InputGroup Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-inputgroup | Class name of the root element |
+
+#### InputGroup Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| inputgroup.addon.background | inputgroup.addon.background | --p-inputgroup-addon-background | Background of addon |
+| inputgroup.addon.borderColor | inputgroup.addon.border.color | --p-inputgroup-addon-border-color | Border color of addon |
+| inputgroup.addon.color | inputgroup.addon.color | --p-inputgroup-addon-color | Color of addon |
+| inputgroup.addon.borderRadius | inputgroup.addon.border.radius | --p-inputgroup-addon-border-radius | Border radius of addon |
+| inputgroup.addon.padding | inputgroup.addon.padding | --p-inputgroup-addon-padding | Padding of addon |
+| inputgroup.addon.minWidth | inputgroup.addon.min.width | --p-inputgroup-addon-min-width | Min width of addon |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/inputgroup)

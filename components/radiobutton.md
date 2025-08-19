@@ -207,6 +207,71 @@ Defines methods that can be accessed by the component's reference.
 | --- | --- | --- |
 | focus |  | Applies focus to input field. |
 
+## Theming
+
+### RadioButton Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-radiobutton | Class name of the root element |
+| p-radiobutton-box | Class name of the box element |
+| p-radiobutton-input | Class name of the input element |
+| p-radiobutton-icon | Class name of the icon element |
+
+#### RadioButton Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| radiobutton.root.width | radiobutton.width | --p-radiobutton-width | Width of root |
+| radiobutton.root.height | radiobutton.height | --p-radiobutton-height | Height of root |
+| radiobutton.root.background | radiobutton.background | --p-radiobutton-background | Background of root |
+| radiobutton.root.checkedBackground | radiobutton.checked.background | --p-radiobutton-checked-background | Checked background of root |
+| radiobutton.root.checkedHoverBackground | radiobutton.checked.hover.background | --p-radiobutton-checked-hover-background | Checked hover background of root |
+| radiobutton.root.disabledBackground | radiobutton.disabled.background | --p-radiobutton-disabled-background | Disabled background of root |
+| radiobutton.root.filledBackground | radiobutton.filled.background | --p-radiobutton-filled-background | Filled background of root |
+| radiobutton.root.borderColor | radiobutton.border.color | --p-radiobutton-border-color | Border color of root |
+| radiobutton.root.hoverBorderColor | radiobutton.hover.border.color | --p-radiobutton-hover-border-color | Hover border color of root |
+| radiobutton.root.focusBorderColor | radiobutton.focus.border.color | --p-radiobutton-focus-border-color | Focus border color of root |
+| radiobutton.root.checkedBorderColor | radiobutton.checked.border.color | --p-radiobutton-checked-border-color | Checked border color of root |
+| radiobutton.root.checkedHoverBorderColor | radiobutton.checked.hover.border.color | --p-radiobutton-checked-hover-border-color | Checked hover border color of root |
+| radiobutton.root.checkedFocusBorderColor | radiobutton.checked.focus.border.color | --p-radiobutton-checked-focus-border-color | Checked focus border color of root |
+| radiobutton.root.checkedDisabledBorderColor | radiobutton.checked.disabled.border.color | --p-radiobutton-checked-disabled-border-color | Checked disabled border color of root |
+| radiobutton.root.invalidBorderColor | radiobutton.invalid.border.color | --p-radiobutton-invalid-border-color | Invalid border color of root |
+| radiobutton.root.shadow | radiobutton.shadow | --p-radiobutton-shadow | Shadow of root |
+| radiobutton.root.focusRing.width | radiobutton.focus.ring.width | --p-radiobutton-focus-ring-width | Focus ring width of root |
+| radiobutton.root.focusRing.style | radiobutton.focus.ring.style | --p-radiobutton-focus-ring-style | Focus ring style of root |
+| radiobutton.root.focusRing.color | radiobutton.focus.ring.color | --p-radiobutton-focus-ring-color | Focus ring color of root |
+| radiobutton.root.focusRing.offset | radiobutton.focus.ring.offset | --p-radiobutton-focus-ring-offset | Focus ring offset of root |
+| radiobutton.root.focusRing.shadow | radiobutton.focus.ring.shadow | --p-radiobutton-focus-ring-shadow | Focus ring shadow of root |
+| radiobutton.root.transitionDuration | radiobutton.transition.duration | --p-radiobutton-transition-duration | Transition duration of root |
+| radiobutton.root.sm.width | radiobutton.sm.width | --p-radiobutton-sm-width | Sm width of root |
+| radiobutton.root.sm.height | radiobutton.sm.height | --p-radiobutton-sm-height | Sm height of root |
+| radiobutton.root.lg.width | radiobutton.lg.width | --p-radiobutton-lg-width | Lg width of root |
+| radiobutton.root.lg.height | radiobutton.lg.height | --p-radiobutton-lg-height | Lg height of root |
+| radiobutton.icon.size | radiobutton.icon.size | --p-radiobutton-icon-size | Size of icon |
+| radiobutton.icon.checkedColor | radiobutton.icon.checked.color | --p-radiobutton-icon-checked-color | Checked color of icon |
+| radiobutton.icon.checkedHoverColor | radiobutton.icon.checked.hover.color | --p-radiobutton-icon-checked-hover-color | Checked hover color of icon |
+| radiobutton.icon.disabledColor | radiobutton.icon.disabled.color | --p-radiobutton-icon-disabled-color | Disabled color of icon |
+| radiobutton.icon.sm.size | radiobutton.icon.sm.size | --p-radiobutton-icon-sm-size | Sm size of icon |
+| radiobutton.icon.lg.size | radiobutton.icon.lg.size | --p-radiobutton-icon-lg-size | Lg size of icon |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/radiobutton)

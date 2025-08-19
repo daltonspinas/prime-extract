@@ -303,6 +303,88 @@ Defines the input properties of the component.
 
 #### Tab
 
+## Theming
+
+### Tabs Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-tabs | Class name of the root element |
+| p-tablist | Class name of the wrapper element |
+| p-tablist-content | Class name of the content element |
+| p-tablist-tab-list | Class name of the tab list element |
+| p-tab | Class name of the tab list element |
+| p-tablist-active-bar | Class name of the inkbar element |
+| p-tablist-nav-button | Class name of the navigation buttons |
+| p-tabpanels | Class name of the tab panels wrapper |
+| p-tabs-panel | Class name of the tab panel element |
+
+#### Tabs Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| tabs.root.transitionDuration | tabs.transition.duration | --p-tabs-transition-duration | Transition duration of root |
+| tabs.tablist.borderWidth | tabs.tablist.border.width | --p-tabs-tablist-border-width | Border width of tablist |
+| tabs.tablist.background | tabs.tablist.background | --p-tabs-tablist-background | Background of tablist |
+| tabs.tablist.borderColor | tabs.tablist.border.color | --p-tabs-tablist-border-color | Border color of tablist |
+| tabs.tab.background | tabs.tab.background | --p-tabs-tab-background | Background of tab |
+| tabs.tab.hoverBackground | tabs.tab.hover.background | --p-tabs-tab-hover-background | Hover background of tab |
+| tabs.tab.activeBackground | tabs.tab.active.background | --p-tabs-tab-active-background | Active background of tab |
+| tabs.tab.borderWidth | tabs.tab.border.width | --p-tabs-tab-border-width | Border width of tab |
+| tabs.tab.borderColor | tabs.tab.border.color | --p-tabs-tab-border-color | Border color of tab |
+| tabs.tab.hoverBorderColor | tabs.tab.hover.border.color | --p-tabs-tab-hover-border-color | Hover border color of tab |
+| tabs.tab.activeBorderColor | tabs.tab.active.border.color | --p-tabs-tab-active-border-color | Active border color of tab |
+| tabs.tab.color | tabs.tab.color | --p-tabs-tab-color | Color of tab |
+| tabs.tab.hoverColor | tabs.tab.hover.color | --p-tabs-tab-hover-color | Hover color of tab |
+| tabs.tab.activeColor | tabs.tab.active.color | --p-tabs-tab-active-color | Active color of tab |
+| tabs.tab.padding | tabs.tab.padding | --p-tabs-tab-padding | Padding of tab |
+| tabs.tab.fontWeight | tabs.tab.font.weight | --p-tabs-tab-font-weight | Font weight of tab |
+| tabs.tab.margin | tabs.tab.margin | --p-tabs-tab-margin | Margin of tab |
+| tabs.tab.gap | tabs.tab.gap | --p-tabs-tab-gap | Gap of tab |
+| tabs.tab.focusRing.width | tabs.tab.focus.ring.width | --p-tabs-tab-focus-ring-width | Focus ring width of tab |
+| tabs.tab.focusRing.style | tabs.tab.focus.ring.style | --p-tabs-tab-focus-ring-style | Focus ring style of tab |
+| tabs.tab.focusRing.color | tabs.tab.focus.ring.color | --p-tabs-tab-focus-ring-color | Focus ring color of tab |
+| tabs.tab.focusRing.offset | tabs.tab.focus.ring.offset | --p-tabs-tab-focus-ring-offset | Focus ring offset of tab |
+| tabs.tab.focusRing.shadow | tabs.tab.focus.ring.shadow | --p-tabs-tab-focus-ring-shadow | Focus ring shadow of tab |
+| tabs.tabpanel.background | tabs.tabpanel.background | --p-tabs-tabpanel-background | Background of tabpanel |
+| tabs.tabpanel.color | tabs.tabpanel.color | --p-tabs-tabpanel-color | Color of tabpanel |
+| tabs.tabpanel.padding | tabs.tabpanel.padding | --p-tabs-tabpanel-padding | Padding of tabpanel |
+| tabs.tabpanel.focusRing.width | tabs.tabpanel.focus.ring.width | --p-tabs-tabpanel-focus-ring-width | Focus ring width of tabpanel |
+| tabs.tabpanel.focusRing.style | tabs.tabpanel.focus.ring.style | --p-tabs-tabpanel-focus-ring-style | Focus ring style of tabpanel |
+| tabs.tabpanel.focusRing.color | tabs.tabpanel.focus.ring.color | --p-tabs-tabpanel-focus-ring-color | Focus ring color of tabpanel |
+| tabs.tabpanel.focusRing.offset | tabs.tabpanel.focus.ring.offset | --p-tabs-tabpanel-focus-ring-offset | Focus ring offset of tabpanel |
+| tabs.tabpanel.focusRing.shadow | tabs.tabpanel.focus.ring.shadow | --p-tabs-tabpanel-focus-ring-shadow | Focus ring shadow of tabpanel |
+| tabs.navButton.background | tabs.nav.button.background | --p-tabs-nav-button-background | Background of nav button |
+| tabs.navButton.color | tabs.nav.button.color | --p-tabs-nav-button-color | Color of nav button |
+| tabs.navButton.hoverColor | tabs.nav.button.hover.color | --p-tabs-nav-button-hover-color | Hover color of nav button |
+| tabs.navButton.width | tabs.nav.button.width | --p-tabs-nav-button-width | Width of nav button |
+| tabs.navButton.focusRing.width | tabs.nav.button.focus.ring.width | --p-tabs-nav-button-focus-ring-width | Focus ring width of nav button |
+| tabs.navButton.focusRing.style | tabs.nav.button.focus.ring.style | --p-tabs-nav-button-focus-ring-style | Focus ring style of nav button |
+| tabs.navButton.focusRing.color | tabs.nav.button.focus.ring.color | --p-tabs-nav-button-focus-ring-color | Focus ring color of nav button |
+| tabs.navButton.focusRing.offset | tabs.nav.button.focus.ring.offset | --p-tabs-nav-button-focus-ring-offset | Focus ring offset of nav button |
+| tabs.navButton.focusRing.shadow | tabs.nav.button.focus.ring.shadow | --p-tabs-nav-button-focus-ring-shadow | Focus ring shadow of nav button |
+| tabs.navButton.shadow | tabs.nav.button.shadow | --p-tabs-nav-button-shadow | Shadow of nav button |
+| tabs.activeBar.height | tabs.active.bar.height | --p-tabs-active-bar-height | Height of active bar |
+| tabs.activeBar.bottom | tabs.active.bar.bottom | --p-tabs-active-bar-bottom | Bottom of active bar |
+| tabs.activeBar.background | tabs.active.bar.background | --p-tabs-active-bar-background | Background of active bar |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/tabs)

@@ -336,6 +336,110 @@ Defines methods that can be accessed by the component's reference.
 | show | isFocus :  any | Displays the panel. |
 | hide | isFocus :  any | Hides the panel. |
 
+## Theming
+
+### MultiSelect Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-multiselect | Class name of the root element |
+| p-multiselect-label-container | Class name of the label container element |
+| p-multiselect-label | Class name of the label element |
+| p-multiselect-chip-item | Class name of the chip item element |
+| p-multiselect-chip | Class name of the chip element |
+| p-multiselect-chip-icon | Class name of the chip icon element |
+| p-multiselect-dropdown | Class name of the dropdown element |
+| p-multiselect-loading-icon | Class name of the loading icon element |
+| p-multiselect-dropdown-icon | Class name of the dropdown icon element |
+| p-multiselect-overlay | Class name of the overlay element |
+| p-multiselect-header | Class name of the header element |
+| p-multiselect-filter-container | Class name of the filter container element |
+| p-multiselect-filter | Class name of the filter element |
+| p-multiselect-list-container | Class name of the list container element |
+| p-multiselect-list | Class name of the list element |
+| p-multiselect-option-group | Class name of the option group element |
+| p-multiselect-option | Class name of the option element |
+| p-multiselect-empty-message | Class name of the empty message element |
+| p-autocomplete-clear-icon | Class name of the clear icon |
+
+#### MultiSelect Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| multiselect.root.background | multiselect.background | --p-multiselect-background | Background of root |
+| multiselect.root.disabledBackground | multiselect.disabled.background | --p-multiselect-disabled-background | Disabled background of root |
+| multiselect.root.filledBackground | multiselect.filled.background | --p-multiselect-filled-background | Filled background of root |
+| multiselect.root.filledHoverBackground | multiselect.filled.hover.background | --p-multiselect-filled-hover-background | Filled hover background of root |
+| multiselect.root.filledFocusBackground | multiselect.filled.focus.background | --p-multiselect-filled-focus-background | Filled focus background of root |
+| multiselect.root.borderColor | multiselect.border.color | --p-multiselect-border-color | Border color of root |
+| multiselect.root.hoverBorderColor | multiselect.hover.border.color | --p-multiselect-hover-border-color | Hover border color of root |
+| multiselect.root.focusBorderColor | multiselect.focus.border.color | --p-multiselect-focus-border-color | Focus border color of root |
+| multiselect.root.invalidBorderColor | multiselect.invalid.border.color | --p-multiselect-invalid-border-color | Invalid border color of root |
+| multiselect.root.color | multiselect.color | --p-multiselect-color | Color of root |
+| multiselect.root.disabledColor | multiselect.disabled.color | --p-multiselect-disabled-color | Disabled color of root |
+| multiselect.root.placeholderColor | multiselect.placeholder.color | --p-multiselect-placeholder-color | Placeholder color of root |
+| multiselect.root.invalidPlaceholderColor | multiselect.invalid.placeholder.color | --p-multiselect-invalid-placeholder-color | Invalid placeholder color of root |
+| multiselect.root.shadow | multiselect.shadow | --p-multiselect-shadow | Shadow of root |
+| multiselect.root.paddingX | multiselect.padding.x | --p-multiselect-padding-x | Padding x of root |
+| multiselect.root.paddingY | multiselect.padding.y | --p-multiselect-padding-y | Padding y of root |
+| multiselect.root.borderRadius | multiselect.border.radius | --p-multiselect-border-radius | Border radius of root |
+| multiselect.root.focusRing.width | multiselect.focus.ring.width | --p-multiselect-focus-ring-width | Focus ring width of root |
+| multiselect.root.focusRing.style | multiselect.focus.ring.style | --p-multiselect-focus-ring-style | Focus ring style of root |
+| multiselect.root.focusRing.color | multiselect.focus.ring.color | --p-multiselect-focus-ring-color | Focus ring color of root |
+| multiselect.root.focusRing.offset | multiselect.focus.ring.offset | --p-multiselect-focus-ring-offset | Focus ring offset of root |
+| multiselect.root.focusRing.shadow | multiselect.focus.ring.shadow | --p-multiselect-focus-ring-shadow | Focus ring shadow of root |
+| multiselect.root.transitionDuration | multiselect.transition.duration | --p-multiselect-transition-duration | Transition duration of root |
+| multiselect.root.sm.fontSize | multiselect.sm.font.size | --p-multiselect-sm-font-size | Sm font size of root |
+| multiselect.root.sm.paddingX | multiselect.sm.padding.x | --p-multiselect-sm-padding-x | Sm padding x of root |
+| multiselect.root.sm.paddingY | multiselect.sm.padding.y | --p-multiselect-sm-padding-y | Sm padding y of root |
+| multiselect.root.lg.fontSize | multiselect.lg.font.size | --p-multiselect-lg-font-size | Lg font size of root |
+| multiselect.root.lg.paddingX | multiselect.lg.padding.x | --p-multiselect-lg-padding-x | Lg padding x of root |
+| multiselect.root.lg.paddingY | multiselect.lg.padding.y | --p-multiselect-lg-padding-y | Lg padding y of root |
+| multiselect.dropdown.width | multiselect.dropdown.width | --p-multiselect-dropdown-width | Width of dropdown |
+| multiselect.dropdown.color | multiselect.dropdown.color | --p-multiselect-dropdown-color | Color of dropdown |
+| multiselect.overlay.background | multiselect.overlay.background | --p-multiselect-overlay-background | Background of overlay |
+| multiselect.overlay.borderColor | multiselect.overlay.border.color | --p-multiselect-overlay-border-color | Border color of overlay |
+| multiselect.overlay.borderRadius | multiselect.overlay.border.radius | --p-multiselect-overlay-border-radius | Border radius of overlay |
+| multiselect.overlay.color | multiselect.overlay.color | --p-multiselect-overlay-color | Color of overlay |
+| multiselect.overlay.shadow | multiselect.overlay.shadow | --p-multiselect-overlay-shadow | Shadow of overlay |
+| multiselect.list.padding | multiselect.list.padding | --p-multiselect-list-padding | Padding of list |
+| multiselect.list.gap | multiselect.list.gap | --p-multiselect-list-gap | Gap of list |
+| multiselect.list.header.padding | multiselect.list.header.padding | --p-multiselect-list-header-padding | Header padding of list |
+| multiselect.option.focusBackground | multiselect.option.focus.background | --p-multiselect-option-focus-background | Focus background of option |
+| multiselect.option.selectedBackground | multiselect.option.selected.background | --p-multiselect-option-selected-background | Selected background of option |
+| multiselect.option.selectedFocusBackground | multiselect.option.selected.focus.background | --p-multiselect-option-selected-focus-background | Selected focus background of option |
+| multiselect.option.color | multiselect.option.color | --p-multiselect-option-color | Color of option |
+| multiselect.option.focusColor | multiselect.option.focus.color | --p-multiselect-option-focus-color | Focus color of option |
+| multiselect.option.selectedColor | multiselect.option.selected.color | --p-multiselect-option-selected-color | Selected color of option |
+| multiselect.option.selectedFocusColor | multiselect.option.selected.focus.color | --p-multiselect-option-selected-focus-color | Selected focus color of option |
+| multiselect.option.padding | multiselect.option.padding | --p-multiselect-option-padding | Padding of option |
+| multiselect.option.borderRadius | multiselect.option.border.radius | --p-multiselect-option-border-radius | Border radius of option |
+| multiselect.option.gap | multiselect.option.gap | --p-multiselect-option-gap | Gap of option |
+| multiselect.optionGroup.background | multiselect.option.group.background | --p-multiselect-option-group-background | Background of option group |
+| multiselect.optionGroup.color | multiselect.option.group.color | --p-multiselect-option-group-color | Color of option group |
+| multiselect.optionGroup.fontWeight | multiselect.option.group.font.weight | --p-multiselect-option-group-font-weight | Font weight of option group |
+| multiselect.optionGroup.padding | multiselect.option.group.padding | --p-multiselect-option-group-padding | Padding of option group |
+| multiselect.clearIcon.color | multiselect.clear.icon.color | --p-multiselect-clear-icon-color | Color of clear icon |
+| multiselect.chip.borderRadius | multiselect.chip.border.radius | --p-multiselect-chip-border-radius | Border radius of chip |
+| multiselect.emptyMessage.padding | multiselect.empty.message.padding | --p-multiselect-empty-message-padding | Padding of empty message |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/multiselect)

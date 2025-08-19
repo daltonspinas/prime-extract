@@ -140,6 +140,50 @@ Defines the templates used by the component.
 | onicon |  | Custom on icon template. |
 | officon |  | Custom off icon template. |
 
+## Theming
+
+### Rating Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-rating | Class name of the root element |
+| p-rating-option | Class name of the option element |
+| p-rating-on-icon | Class name of the on icon element |
+| p-rating-off-icon | Class name of the off icon element |
+
+#### Rating Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| rating.root.gap | rating.gap | --p-rating-gap | Gap of root |
+| rating.root.transitionDuration | rating.transition.duration | --p-rating-transition-duration | Transition duration of root |
+| rating.root.focusRing.width | rating.focus.ring.width | --p-rating-focus-ring-width | Focus ring width of root |
+| rating.root.focusRing.style | rating.focus.ring.style | --p-rating-focus-ring-style | Focus ring style of root |
+| rating.root.focusRing.color | rating.focus.ring.color | --p-rating-focus-ring-color | Focus ring color of root |
+| rating.root.focusRing.offset | rating.focus.ring.offset | --p-rating-focus-ring-offset | Focus ring offset of root |
+| rating.root.focusRing.shadow | rating.focus.ring.shadow | --p-rating-focus-ring-shadow | Focus ring shadow of root |
+| rating.icon.size | rating.icon.size | --p-rating-icon-size | Size of icon |
+| rating.icon.color | rating.icon.color | --p-rating-icon-color | Color of icon |
+| rating.icon.hoverColor | rating.icon.hover.color | --p-rating-icon-hover-color | Hover color of icon |
+| rating.icon.activeColor | rating.icon.active.color | --p-rating-icon-active-color | Active color of icon |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/rating)

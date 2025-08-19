@@ -50,6 +50,46 @@ API defines helper props, events and others for the PrimeNG IftaLabel module.
 
 IftaLabel is used to create infield top aligned labels.
 
+## Theming
+
+### IftaLabel Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-iftalabel | Class name of the root element |
+
+#### IftaLabel Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| iftalabel.root.color | iftalabel.color | --p-iftalabel-color | Color of root |
+| iftalabel.root.focusColor | iftalabel.focus.color | --p-iftalabel-focus-color | Focus color of root |
+| iftalabel.root.invalidColor | iftalabel.invalid.color | --p-iftalabel-invalid-color | Invalid color of root |
+| iftalabel.root.transitionDuration | iftalabel.transition.duration | --p-iftalabel-transition-duration | Transition duration of root |
+| iftalabel.root.positionX | iftalabel.position.x | --p-iftalabel-position-x | Position x of root |
+| iftalabel.root.top | iftalabel.top | --p-iftalabel-top | Top of root |
+| iftalabel.root.fontSize | iftalabel.font.size | --p-iftalabel-font-size | Font size of root |
+| iftalabel.root.fontWeight | iftalabel.font.weight | --p-iftalabel-font-weight | Font weight of root |
+| iftalabel.input.paddingTop | iftalabel.input.padding.top | --p-iftalabel-input-padding-top | Padding top of input |
+| iftalabel.input.paddingBottom | iftalabel.input.padding.bottom | --p-iftalabel-input-padding-bottom | Padding bottom of input |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/iftalabel)

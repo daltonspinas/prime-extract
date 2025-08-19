@@ -112,6 +112,66 @@ Defines the input properties of the component.
 | badgeStyle | { [klass: string]: any } | null | Inline style of the element. |
 | badgeStyleClass | string | null | Class of the element. |
 
+## Theming
+
+### Badge Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-badge | Class name of the root element |
+
+#### Badge Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| badge.root.borderRadius | badge.border.radius | --p-badge-border-radius | Border radius of root |
+| badge.root.padding | badge.padding | --p-badge-padding | Padding of root |
+| badge.root.fontSize | badge.font.size | --p-badge-font-size | Font size of root |
+| badge.root.fontWeight | badge.font.weight | --p-badge-font-weight | Font weight of root |
+| badge.root.minWidth | badge.min.width | --p-badge-min-width | Min width of root |
+| badge.root.height | badge.height | --p-badge-height | Height of root |
+| badge.dot.size | badge.dot.size | --p-badge-dot-size | Size of dot |
+| badge.sm.fontSize | badge.sm.font.size | --p-badge-sm-font-size | Font size of sm |
+| badge.sm.minWidth | badge.sm.min.width | --p-badge-sm-min-width | Min width of sm |
+| badge.sm.height | badge.sm.height | --p-badge-sm-height | Height of sm |
+| badge.lg.fontSize | badge.lg.font.size | --p-badge-lg-font-size | Font size of lg |
+| badge.lg.minWidth | badge.lg.min.width | --p-badge-lg-min-width | Min width of lg |
+| badge.lg.height | badge.lg.height | --p-badge-lg-height | Height of lg |
+| badge.xl.fontSize | badge.xl.font.size | --p-badge-xl-font-size | Font size of xl |
+| badge.xl.minWidth | badge.xl.min.width | --p-badge-xl-min-width | Min width of xl |
+| badge.xl.height | badge.xl.height | --p-badge-xl-height | Height of xl |
+| badge.primary.background | badge.primary.background | --p-badge-primary-background | Background of primary |
+| badge.primary.color | badge.primary.color | --p-badge-primary-color | Color of primary |
+| badge.secondary.background | badge.secondary.background | --p-badge-secondary-background | Background of secondary |
+| badge.secondary.color | badge.secondary.color | --p-badge-secondary-color | Color of secondary |
+| badge.success.background | badge.success.background | --p-badge-success-background | Background of success |
+| badge.success.color | badge.success.color | --p-badge-success-color | Color of success |
+| badge.info.background | badge.info.background | --p-badge-info-background | Background of info |
+| badge.info.color | badge.info.color | --p-badge-info-color | Color of info |
+| badge.warn.background | badge.warn.background | --p-badge-warn-background | Background of warn |
+| badge.warn.color | badge.warn.color | --p-badge-warn-color | Color of warn |
+| badge.danger.background | badge.danger.background | --p-badge-danger-background | Background of danger |
+| badge.danger.color | badge.danger.color | --p-badge-danger-color | Color of danger |
+| badge.contrast.background | badge.contrast.background | --p-badge-contrast-background | Background of contrast |
+| badge.contrast.color | badge.contrast.color | --p-badge-contrast-color | Color of contrast |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/badge)

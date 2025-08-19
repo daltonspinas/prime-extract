@@ -97,6 +97,58 @@ Defines emit that determine the behavior of the component based on a given condi
 | onRemove | event :  MouseEvent | Callback to invoke when a chip is removed. |
 | onImageError | event :  Event | This event is triggered if an error occurs while loading an image file. |
 
+## Theming
+
+### Chip Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-chip | Class name of the root element |
+| p-chip-image | Class name of the image element |
+| p-chip-icon | Class name of the icon element |
+| p-chip-label | Class name of the label element |
+| p-chip-remove-icon | Class name of the remove icon element |
+
+#### Chip Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| chip.root.borderRadius | chip.border.radius | --p-chip-border-radius | Border radius of root |
+| chip.root.paddingX | chip.padding.x | --p-chip-padding-x | Padding x of root |
+| chip.root.paddingY | chip.padding.y | --p-chip-padding-y | Padding y of root |
+| chip.root.gap | chip.gap | --p-chip-gap | Gap of root |
+| chip.root.transitionDuration | chip.transition.duration | --p-chip-transition-duration | Transition duration of root |
+| chip.root.background | chip.background | --p-chip-background | Background of root |
+| chip.root.color | chip.color | --p-chip-color | Color of root |
+| chip.image.width | chip.image.width | --p-chip-image-width | Width of image |
+| chip.image.height | chip.image.height | --p-chip-image-height | Height of image |
+| chip.icon.size | chip.icon.size | --p-chip-icon-size | Size of icon |
+| chip.icon.color | chip.icon.color | --p-chip-icon-color | Color of icon |
+| chip.removeIcon.size | chip.remove.icon.size | --p-chip-remove-icon-size | Size of remove icon |
+| chip.removeIcon.focusRing.width | chip.remove.icon.focus.ring.width | --p-chip-remove-icon-focus-ring-width | Focus ring width of remove icon |
+| chip.removeIcon.focusRing.style | chip.remove.icon.focus.ring.style | --p-chip-remove-icon-focus-ring-style | Focus ring style of remove icon |
+| chip.removeIcon.focusRing.color | chip.remove.icon.focus.ring.color | --p-chip-remove-icon-focus-ring-color | Focus ring color of remove icon |
+| chip.removeIcon.focusRing.offset | chip.remove.icon.focus.ring.offset | --p-chip-remove-icon-focus-ring-offset | Focus ring offset of remove icon |
+| chip.removeIcon.focusRing.shadow | chip.remove.icon.focus.ring.shadow | --p-chip-remove-icon-focus-ring-shadow | Focus ring shadow of remove icon |
+| chip.removeIcon.color | chip.remove.icon.color | --p-chip-remove-icon-color | Color of remove icon |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/chip)

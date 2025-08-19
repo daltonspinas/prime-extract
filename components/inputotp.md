@@ -164,6 +164,41 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | input | context :  any | Input template. |
 
+## Theming
+
+### InputOtp Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-inputotp | Class name of the root element |
+| p-inputotp-input | Class name of the input element |
+
+#### InputOtp Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| inputotp.root.gap | inputotp.gap | --p-inputotp-gap | Gap of root |
+| inputotp.input.width | inputotp.input.width | --p-inputotp-input-width | Width of input |
+| inputotp.input.sm.width | inputotp.input.sm.width | --p-inputotp-input-sm-width | Width of input in small screens |
+| inputotp.input.lg.width | inputotp.input.lg.width | --p-inputotp-input-lg-width | Width of input in large screens |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/inputotp)

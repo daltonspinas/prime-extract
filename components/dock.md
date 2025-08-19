@@ -137,6 +137,54 @@ Defines emit that determine the behavior of the component based on a given condi
 
 #### MenuItem
 
+## Theming
+
+### Dock Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-dock | Class name of the root element |
+| p-dock-list-container | Class name of the list container element |
+| p-dock-list | Class name of the list element |
+| p-dock-item | Class name of the item element |
+| p-dock-item-content | Class name of the item content element |
+| p-dock-item-link | Class name of the item link element |
+| p-dock-item-icon | Class name of the item icon element |
+
+#### Dock Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| dock.root.background | dock.background | --p-dock-background | Background of root |
+| dock.root.borderColor | dock.border.color | --p-dock-border-color | Border color of root |
+| dock.root.padding | dock.padding | --p-dock-padding | Padding of root |
+| dock.root.borderRadius | dock.border.radius | --p-dock-border-radius | Border radius of root |
+| dock.item.borderRadius | dock.item.border.radius | --p-dock-item-border-radius | Border radius of item |
+| dock.item.padding | dock.item.padding | --p-dock-item-padding | Padding of item |
+| dock.item.size | dock.item.size | --p-dock-item-size | Size of item |
+| dock.item.focusRing.width | dock.item.focus.ring.width | --p-dock-item-focus-ring-width | Focus ring width of item |
+| dock.item.focusRing.style | dock.item.focus.ring.style | --p-dock-item-focus-ring-style | Focus ring style of item |
+| dock.item.focusRing.color | dock.item.focus.ring.color | --p-dock-item-focus-ring-color | Focus ring color of item |
+| dock.item.focusRing.offset | dock.item.focus.ring.offset | --p-dock-item-focus-ring-offset | Focus ring offset of item |
+| dock.item.focusRing.shadow | dock.item.focus.ring.shadow | --p-dock-item-focus-ring-shadow | Focus ring shadow of item |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/dock)

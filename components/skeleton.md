@@ -167,6 +167,39 @@ Defines the input properties of the component.
 | width | string | 100% | Width of the element. |
 | height | string | 1rem | Height of the element. |
 
+## Theming
+
+### Skeleton Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-skeleton | Class name of the root element |
+
+#### Skeleton Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| skeleton.root.borderRadius | skeleton.border.radius | --p-skeleton-border-radius | Border radius of root |
+| skeleton.root.background | skeleton.background | --p-skeleton-background | Background of root |
+| skeleton.root.animationBackground | skeleton.animation.background | --p-skeleton-animation-background | Animation background of root |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/skeleton)

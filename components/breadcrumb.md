@@ -92,6 +92,59 @@ Defines the templates used by the component.
 
 #### MenuItem
 
+## Theming
+
+### Breadcrumb Theming
+
+#### CSS Classes
+
+List of class names used in the styled mode.
+
+| class | description |
+| --- | --- |
+| p-breadcrumb | Class name of the root element |
+| p-breadcrumb-list | Class name of the list element |
+| p-breadcrumb-home-item | Class name of the home item element |
+| p-breadcrumb-separator | Class name of the separator element |
+| p-breadcrumb-item | Class name of the item element |
+| p-breadcrumb-item-link | Class name of the item link element |
+| p-breadcrumb-item-icon | Class name of the item icon element |
+| p-breadcrumb-item-label | Class name of the item label element |
+
+#### Breadcrumb Design Tokens
+
+List of design tokens used in a preset.
+
+| name | token | variable | description |
+| --- | --- | --- | --- |
+| breadcrumb.root.padding | breadcrumb.padding | --p-breadcrumb-padding | Padding of root |
+| breadcrumb.root.background | breadcrumb.background | --p-breadcrumb-background | Background of root |
+| breadcrumb.root.gap | breadcrumb.gap | --p-breadcrumb-gap | Gap of root |
+| breadcrumb.root.transitionDuration | breadcrumb.transition.duration | --p-breadcrumb-transition-duration | Transition duration of root |
+| breadcrumb.item.color | breadcrumb.item.color | --p-breadcrumb-item-color | Color of item |
+| breadcrumb.item.hoverColor | breadcrumb.item.hover.color | --p-breadcrumb-item-hover-color | Hover color of item |
+| breadcrumb.item.borderRadius | breadcrumb.item.border.radius | --p-breadcrumb-item-border-radius | Border radius of item |
+| breadcrumb.item.gap | breadcrumb.item.gap | --p-breadcrumb-item-gap | Gap of item |
+| breadcrumb.item.icon.color | breadcrumb.item.icon.color | --p-breadcrumb-item-icon-color | Icon color of item |
+| breadcrumb.item.icon.hoverColor | breadcrumb.item.icon.hover.color | --p-breadcrumb-item-icon-hover-color | Icon hover color of item |
+| breadcrumb.item.focusRing.width | breadcrumb.item.focus.ring.width | --p-breadcrumb-item-focus-ring-width | Focus ring width of item |
+| breadcrumb.item.focusRing.style | breadcrumb.item.focus.ring.style | --p-breadcrumb-item-focus-ring-style | Focus ring style of item |
+| breadcrumb.item.focusRing.color | breadcrumb.item.focus.ring.color | --p-breadcrumb-item-focus-ring-color | Focus ring color of item |
+| breadcrumb.item.focusRing.offset | breadcrumb.item.focus.ring.offset | --p-breadcrumb-item-focus-ring-offset | Focus ring offset of item |
+| breadcrumb.item.focusRing.shadow | breadcrumb.item.focus.ring.shadow | --p-breadcrumb-item-focus-ring-shadow | Focus ring shadow of item |
+| breadcrumb.separator.color | breadcrumb.separator.color | --p-breadcrumb-separator-color | Color of separator |
+
+#### Built-in Presets
+
+PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
+
+| Preset | Implementation | Types |
+| --- | --- | --- |
+| Aura | Aura | Aura |
+| Lara | Lara | Lara |
+| Nora | Nora | Nora |
+| Material | Material | Material |
+
 ---
 
 [View Official Documentation](https://primeng.org/breadcrumb)
