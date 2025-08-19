@@ -1,0 +1,253 @@
+# Dialog
+
+Dialog is a container to display content in an overlay window.
+
+## Import
+
+```typescript
+import { DialogModule } from 'primeng/dialog';
+```
+
+## Basic
+
+Dialog is used as a container and visibility is controlled with visible property.
+
+```html
+<p-button (click)="showDialog()" label="Show" />
+<p-dialog header="Edit Profile" [modal]="true" [(visible)]="visible" [style]="{ width: '25rem' }">
+    <span class="p-text-secondary block mb-8">Update your information.</span>
+    <div class="flex items-center gap-4 mb-4">
+        <label for="username" class="font-semibold w-24">Username</label>
+        <input pInputText id="username" class="flex-auto" autocomplete="off" />
+    </div>
+    <div class="flex items-center gap-4 mb-8">
+        <label for="email" class="font-semibold w-24">Email</label>
+        <input pInputText id="email" class="flex-auto" autocomplete="off" />
+    </div>
+    <div class="flex justify-end gap-2">
+        <p-button label="Cancel" severity="secondary" (click)="visible = false" />
+        <p-button label="Save" (click)="visible = false" />
+    </div>
+</p-dialog>
+```
+
+## Template
+
+Dialog can be customized using header and footer templates.
+
+```html
+<p-button (click)="showDialog()" label="Show" />
+<p-dialog [(visible)]="visible" [modal]="true" [style]="{ width: '25rem' }">
+    <ng-template #header>
+        <div class="inline-flex items-center justify-center gap-2">
+            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+            <span class="font-bold whitespace-nowrap">Amy Elsner</span>
+        </div>
+    </ng-template>
+    <span class="text-surface-500 dark:text-surface-400 block mb-8">Update your information.</span>
+    <div class="flex items-center gap-4 mb-4">
+        <label for="username" class="font-semibold w-24">Username</label>
+        <input pInputText id="username" class="flex-auto" autocomplete="off" />
+    </div>
+    <div class="flex items-center gap-4 mb-2">
+        <label for="email" class="font-semibold w-24">Email</label>
+        <input pInputText id="email" class="flex-auto" autocomplete="off" />
+    </div>
+    <ng-template #footer>
+        <p-button label="Cancel" [text]="true" severity="secondary" (click)="visible = false" />
+        <p-button label="Save" [outlined]="true" severity="secondary" (click)="visible = false" />
+    </ng-template>
+</p-dialog>
+```
+
+## Position
+
+The position property is used to display a Dialog at all edges and corners of the screen.
+
+```html
+<div class="flex flex-wrap justify-center gap-2 mb-2">
+    <p-button (click)="showDialog('left')" icon="pi pi-arrow-right" label="Left" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="showDialog('right')" icon="pi pi-arrow-left" label="Right" severity="secondary" styleClass="min-w-40" />
+</div>
+<div class="flex flex-wrap justify-center gap-2 mb-2">
+    <p-button (click)="showDialog('topleft')" icon="pi pi-arrow-down-right" label="TopLeft" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="showDialog('top')" icon="pi pi-arrow-down" label="Top" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="showDialog('topright')" icon="pi pi-arrow-down-left" label="TopRight" severity="secondary" styleClass="min-w-40" />
+</div>
+<div class="flex flex-wrap justify-center gap-2">
+    <p-button (click)="showDialog('bottomleft')" icon="pi pi-arrow-up-right" label="BottomLeft" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="showDialog('bottom')" icon="pi pi-arrow-up" label="Bottom" severity="secondary" styleClass="min-w-40" />
+    <p-button (click)="showDialog('bottomright')" icon="pi pi-arrow-up-left" label="BottomRight" severity="secondary" styleClass="min-w-40" />
+</div>
+<p-dialog header="Edit Profile" [modal]="true" [(visible)]="visible" [position]="position" [style]="{ width: '25rem' }">
+    <span class="text-surface-500 dark:text-surface-400 block mb-8">Update your information.</span>
+    <div class="flex items-center gap-4 mb-4">
+        <label for="username" class="font-semibold w-24">Username</label>
+        <input pInputText id="username" class="flex-auto" autocomplete="off" />
+    </div>
+    <div class="flex items-center gap-4 mb-8">
+        <label for="email" class="font-semibold w-24">Email</label>
+        <input pInputText id="email" class="flex-auto" autocomplete="off" />
+    </div>
+    <div class="flex justify-end gap-2">
+        <p-button label="Cancel" severity="secondary" (click)="visible = false" />
+        <p-button label="Save" (click)="visible = false" />
+    </div>
+</p-dialog>
+```
+
+## Maximizable
+
+Setting maximizable property to true enables the full screen mode.
+
+```html
+<p-button (click)="showDialog()" label="Show" />
+<p-dialog header="Header" [modal]="true" [(visible)]="visible" [style]="{ width: '50rem' }" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [maximizable]="true">
+    <p>
+        Lorem ipsum dolor sit amet...
+    </p>
+</p-dialog>
+```
+
+## Long Content
+
+Dialog automatically displays a scroller when content exceeds viewport.
+
+```html
+<p-button (click)="showDialog()" label="Show" />
+<p-dialog header="Header" [modal]="true" [(visible)]="visible" [style]="{ width: '50rem' }" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }">
+    <p class="mb-8">
+        Lorem ipsum dolor sit amet...
+    </p>
+    <p class="mb-8">
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...
+    </p>
+    <p class="mb-8">
+        At vero eos et accusamus et iusto odio dignissimos...
+    </p>
+    <p class="mb-8">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+    </p>
+    <p class="mb-8">
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium...
+    </p>
+    <p>
+        At vero eos et accusamus et iusto odio dignissimos...
+    </p>
+</p-dialog>
+```
+
+## Without Modal
+
+Mask layer behind the Dialog is configured with the modal property. By default, no modal layer is added.
+
+```html
+<p-button (click)="showDialog()" label="Show" />
+<p-dialog header="Edit Profile" [(visible)]="visible" [style]="{ width: '25rem' }">
+    <span class="p-text-secondary block mb-8">Update your information.</span>
+    <div class="flex items-center gap-4 mb-4">
+        <label for="username" class="font-semibold w-24">Username</label>
+        <input pInputText id="username" class="flex-auto" autocomplete="off" />
+    </div>
+    <div class="flex items-center gap-4 mb-8">
+        <label for="email" class="font-semibold w-24">Email</label>
+        <input pInputText id="email" class="flex-auto" autocomplete="off" />
+    </div>
+    <div class="flex justify-end gap-2">
+        <p-button label="Cancel" severity="secondary" (click)="visible = false" />
+        <p-button label="Save" (click)="visible = false" />
+    </div>
+</p-dialog>
+```
+
+## Responsive
+
+Dialog width can be adjusted per screen size with the breakpoints option where a key defines the max-width for the breakpoint and value for the corresponding width. When no breakpoint matches width defined in style property is used.
+
+```html
+<p-button (click)="showDialog()" label="Show" />
+<p-dialog header="Header" [(visible)]="visible" [modal]="true" [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }" [style]="{ width: '50vw' }" [draggable]="false" [resizable]="false">
+    <p>
+        Lorem ipsum dolor sit amet...
+    </p>
+</p-dialog>
+```
+
+## Headless
+
+Headless mode allows you to customize the entire user interface instead of the default elements.
+
+```html
+<p-button (click)="showDialog()" icon="pi pi-user" label="Login" />
+<p-dialog maskStyleClass="backdrop-blur-sm" [(visible)]="visible" styleClass="!border-0 !bg-transparent">
+    <ng-template #headless>
+        <div
+            class="flex flex-col px-8 py-8 gap-6 rounded-2xl"
+            style="border-radius: 12px; background-image: radial-gradient(circle at left top, var(--p-primary-400), var(--p-primary-700))"
+        >
+            <svg
+                width="31"
+                height="33"
+                viewBox="0 0 31 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="block mx-auto"
+            >
+                <path
+                    d="..."
+                    fill="var(--p-primary-color)"
+                />
+            </svg>
+            <div class="inline-flex flex-col gap-2">
+                <label for="username" class="text-primary-50 font-semibold">Username</label>
+                <input pInputText id="username" class="!bg-white/20 !border-0 !p-4 !text-primary-50 w-80" />
+            </div>
+            <div class="inline-flex flex-col gap-2">
+                <label for="password" class="text-primary-50 font-semibold">Password</label>
+                <input
+                    pInputText
+                    id="password"
+                    class="!bg-white/20 !border-0 !p-4 !text-primary-50 w-80"
+                    type="password"
+                />
+            </div>
+            <div class="flex items-center gap-4">
+                <p-button
+                    label="Cancel"
+                    (click)="closeDialog()"
+                    [text]="true"
+                    styleClass="!p-4 w-full !text-primary-50 !border !border-white/30 hover:!bg-white/10"
+                    class="w-full"
+                />
+                <p-button
+                    label="Sign-In"
+                    (click)="closeDialog()"
+                    [text]="true"
+                    styleClass="!p-4 w-full !text-primary-50 !border !border-white/30 hover:!bg-white/10"
+                    class="w-full"
+                />
+            </div>
+        </div>
+    </ng-template>
+</p-dialog>
+```
+
+## Accessibility
+
+Dialog component uses dialog role along with aria-labelledby referring to the header element however any attribute is passed to the root element so you may use aria-labelledby to override this default behavior. In addition aria-modal is added since focus is kept within the popup.
+
+```html
+<p-button icon="pi pi-external-link" (click)="visible = true" aria-controls="{{visible ? 'dialog' : null}}" aria-expanded="{{visible ? true : false}}" />
+
+<p-dialog id="dialog" header="Header" [(visible)]="visible" [style]="{ width: '50vw' }" (onHide)="visible = false">
+    <p>Content</p>
+</p-dialog>
+```
+
+## Dialog
+
+Dialog is a container to display content in an overlay window.
+
+---
+
+[View Official Documentation](https://primeng.org/dialog)

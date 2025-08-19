@@ -1,0 +1,121 @@
+# IconField
+
+IconField wraps an input and an icon.
+
+## Import
+
+```typescript
+import { IconFieldModule } from 'primeng/iconfield';
+import { InputIconModule } from 'primeng/inputicon';
+```
+
+## Basic
+
+A group is created by wrapping the input and icon with the IconField component. Each icon is defined as a child of InputIcon component. In addition, position of the icon can be changed using iconPosition property that the default value is right and also left option is available.
+
+```html
+<p-iconfield>
+    <p-inputicon class="pi pi-search" />
+    <input type="text" pInputText placeholder="Search" />
+</p-iconfield>
+<p-iconfield>
+    <input type="text" pInputText />
+    <p-inputicon class="pi pi-spinner pi-spin" />
+</p-iconfield>
+```
+
+## Template
+
+An eye icon is displayed by default when the image is hovered in preview mode. Use the indicator template for custom content.
+
+```html
+<p-iconfield iconPosition="left">
+    <p-inputicon>
+        <svg width="20" height="20" viewBox="0 0 35 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="..." fill="var(--p-primary-color)" />
+            <path d="..." fill="var(--p-text-color)" />
+        </svg>
+    </p-inputicon>
+    <input type="text" pInputText placeholder="Search" />
+</p-iconfield>
+```
+
+## Float Label
+
+FloatLabel visually integrates a label with its form element. Visit FloatLabel documentation for more information.
+
+```html
+<p-floatlabel>
+    <p-iconfield>
+        <p-inputicon class="pi pi-search" />
+        <input pInputText id="over_label" [(ngModel)]="value1" autocomplete="off" />
+    </p-iconfield>
+    <label for="over_label">Over Label</label>
+</p-floatlabel>
+
+<p-floatlabel variant="in">
+    <p-iconfield>
+        <p-inputicon class="pi pi-search" />
+        <input pInputText id="in_label" [(ngModel)]="value2" autocomplete="off" />
+    </p-iconfield>
+    <label for="in_label">In Label</label>
+</p-floatlabel>
+
+<p-floatlabel variant="on">
+    <p-iconfield>
+        <p-inputicon class="pi pi-search" />
+        <input pInputText id="on_label" [(ngModel)]="value3" autocomplete="off" />
+    </p-iconfield>
+    <label for="on_label">On Label</label>
+</p-floatlabel>
+```
+
+## Ifta Label
+
+IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
+
+```html
+<p-iftalabel>
+    <p-iconfield>
+        <p-inputicon class="pi pi-user" />
+        <input pInputText id="username" [(ngModel)]="value" autocomplete="off" />
+    </p-iconfield>
+    <label for="username">Username</label>
+</p-iftalabel>
+```
+
+## Sizes
+
+IconField is compatible with the pSize setting of the input field.
+
+```html
+<p-iconfield>
+    <p-inputicon class="pi pi-search" />
+    <input pInputText [(ngModel)]="value1" placeholder="Small" pSize="small" />
+</p-iconfield>
+
+<p-iconfield>
+    <input pInputText [(ngModel)]="value2" placeholder="Normal" />
+    <p-inputicon class="pi pi-user" />
+</p-iconfield>
+
+<p-iconfield>
+    <p-inputicon class="pi pi-lock" />
+    <input pInputText [(ngModel)]="value3" placeholder="Large" pSize="large" />
+    <p-inputicon class="pi pi-spin pi-spinner" />
+</p-iconfield>
+```
+
+## Accessibility
+
+IconField and InputIcon does not require any roles and attributes.
+
+## IconField
+
+IconField wraps an input and an icon.
+
+## InputIcon
+
+---
+
+[View Official Documentation](https://primeng.org/iconfield)
