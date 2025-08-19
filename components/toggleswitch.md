@@ -2,15 +2,21 @@
 
 ToggleSwitch is used to select a boolean value.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ToggleSwitchModule } from 'primeng/toggleswitch';
 ```
 
-### Basic
+### Basic {#basic}
 
 Two-way value binding is defined using ngModel.
 
@@ -18,7 +24,7 @@ Two-way value binding is defined using ngModel.
 <p-toggleswitch [(ngModel)]="checked" />
 ```
 
-### Preselection
+### Preselection {#preselection}
 
 Enabling ngModel property displays the component as active initially.
 
@@ -26,7 +32,7 @@ Enabling ngModel property displays the component as active initially.
 <p-toggleswitch [(ngModel)]="checked" />
 ```
 
-### Template
+### Template {#template}
 
 The handle template is available to display custom content.
 
@@ -38,7 +44,7 @@ The handle template is available to display custom content.
 </p-toggleswitch>
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -46,7 +52,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-toggleswitch [(ngModel)]="checked" [disabled]="true" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -54,7 +60,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-toggleswitch [(ngModel)]="checked" [invalid]="!checked" />
 ```
 
-### Forms
+### Forms {#forms}
 
 ToggleSwitch can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -84,7 +90,7 @@ ToggleSwitch can also be used with reactive forms. In this case, the formControl
 </div>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 InputSwitch component uses a hidden native checkbox element with switch role internally that is only visible to screen readers. Value to describe the component can either be provided via label tag combined with inputId prop or using ariaLabelledBy, ariaLabel props.
 
@@ -98,21 +104,23 @@ InputSwitch component uses a hidden native checkbox element with switch role int
 <p-toggleswitch ariaLabel="Remember Me" />
 ```
 
-### ToggleSwitch
+### ToggleSwitch {#toggleswitch}
 
 ToggleSwitch is used to select a boolean value.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ToggleSwitch API
 
 API defines helper props, events and others for the PrimeNG ToggleSwitch module.
 
-#### ToggleSwitch
+#### ToggleSwitch {#api-toggleswitch}
 
 ToggleSwitch is used to select a boolean value.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -133,7 +141,7 @@ Defines the input properties of the component.
 | ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
 | autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -141,7 +149,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onChange | event :  ToggleSwitchChangeEvent | Callback to invoke when the on value change. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -149,11 +157,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | handle |  | Callback to invoke when the on value change. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ToggleSwitch Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -163,7 +173,7 @@ List of class names used in the styled mode.
 | p-toggleswitch-input | Class name of the input element |
 | p-toggleswitch-slider | Class name of the slider element |
 
-#### ToggleSwitch Design Tokens
+#### ToggleSwitch Design Tokens {#theming-toggleswitch-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -204,7 +214,7 @@ List of design tokens used in a preset.
 | toggleswitch.handle.checkedColor | toggleswitch.handle.checked.color | --p-toggleswitch-handle-checked-color | Checked color of handle |
 | toggleswitch.handle.checkedHoverColor | toggleswitch.handle.checked.hover.color | --p-toggleswitch-handle-checked-hover-color | Checked hover color of handle |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -215,6 +225,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/toggleswitch)

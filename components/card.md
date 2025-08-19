@@ -2,15 +2,21 @@
 
 Card is a flexible container component.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { CardModule } from 'primeng/card';
 ```
 
-### Basic
+### Basic {#basic}
 
 A simple Card is created with a header property along with the content as children.
 
@@ -22,7 +28,7 @@ A simple Card is created with a header property along with the content as childr
 </p-card>
 ```
 
-### Advanced
+### Advanced {#advanced}
 
 Card content can be customized further with subHeader, header and footer properties.
 
@@ -46,7 +52,7 @@ Card content can be customized further with subHeader, header and footer propert
 </p-card>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 A card can be utilized in many use cases as a result no role is enforced, in fact a role may not be necessary if the card is used for presentational purposes only. Any valid attribute is passed to the container element so if you require to use one of the landmark roles like region, you may use the role property.
 
@@ -56,21 +62,23 @@ A card can be utilized in many use cases as a result no role is enforced, in fac
 </p-card>
 ```
 
-### Card
+### Card {#card}
 
 Card is a flexible container component.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Card API
 
 API defines helper props, events and others for the PrimeNG Card module.
 
-#### Card
+#### Card {#api-card}
 
 Card is a flexible container component.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -81,11 +89,13 @@ Defines the input properties of the component.
 | style | - | null | Inline style of the element. |
 | styleClass | string | null | Class of the element. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Card Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -100,7 +110,7 @@ List of class names used in the styled mode.
 | p-card-content | Class name of the content element |
 | p-card-footer | Class name of the footer element |
 
-#### Card Design Tokens
+#### Card Design Tokens {#theming-card-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -117,7 +127,7 @@ List of design tokens used in a preset.
 | card.title.fontWeight | card.title.font.weight | --p-card-title-font-weight | Font weight of title |
 | card.subtitle.color | card.subtitle.color | --p-card-subtitle-color | Color of subtitle |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -128,6 +138,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/card)

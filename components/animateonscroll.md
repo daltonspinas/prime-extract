@@ -2,15 +2,20 @@
 
 AnimateOnScroll AnimateOnScroll is used to apply animations to elements when entering or leaving the viewport during scrolling.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 ```
 
-### Basic
+### Basic {#basic}
 
 Animation classes are defined with the enterClass and leaveClass properties. This example utilizes tailwindcss-primeui plugin animations however any valid CSS animation is supported.
 
@@ -141,25 +146,27 @@ Animation classes are defined with the enterClass and leaveClass properties. Thi
 </div>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 AnimateOnScroll does not require any roles and attributes.
 
-### AnimateOnScroll
+### AnimateOnScroll {#animateonscroll}
 
 AnimateOnScroll is used to apply animations to elements when entering or leaving the viewport during scrolling.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### AnimateOnScroll API
 
 API defines helper props, events and others for the PrimeNG AnimateOnScroll module.
 
-#### AnimateOnScroll
+#### AnimateOnScroll {#api-animateonscroll}
 
 AnimateOnScroll is used to apply animations to elements when entering or leaving the viewport during scrolling.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -172,6 +179,14 @@ Defines the input properties of the component.
 | threshold | number | 0.5 | Specifies the threshold option of the IntersectionObserver API |
 | once | boolean | false | Whether the scroll event listener should be removed after initial run. |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
 
 [View Official Documentation](https://primeng.org/animateonscroll)

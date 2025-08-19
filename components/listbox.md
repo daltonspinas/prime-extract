@@ -2,15 +2,21 @@
 
 Listbox is used to select one or more values from a list of items.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ListboxModule } from 'primeng/listbox';
 ```
 
-### Basic
+### Basic {#basic}
 
 Listbox is used as a controlled component with ngModel property along with an options collection. Label and value of an option are defined with the optionLabel and optionValue properties respectively. Default property name for the optionLabel is label and value for the optionValue. If optionValue is omitted and the object has no value property, the object itself becomes the value of an option. Note that, when options are simple primitive values such as a string array, no optionLabel and optionValue would be necessary.
 
@@ -18,7 +24,7 @@ Listbox is used as a controlled component with ngModel property along with an op
 <p-listbox [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" class="w-full md:w-56" />
 ```
 
-### Checkmark
+### Checkmark {#checkmark}
 
 An alternative way to highlight the selected option is displaying a checkmark instead.
 
@@ -26,7 +32,7 @@ An alternative way to highlight the selected option is displaying a checkmark in
 <p-listbox [(ngModel)]="selectedCity" [options]="cities" optionLabel="name" [checkmark]="true" [highlightOnSelect]="false" class="w-full md:w-56"/>
 ```
 
-### Checkbox
+### Checkbox {#checkbox}
 
 Listbox allows item selection using checkboxes.
 
@@ -34,7 +40,7 @@ Listbox allows item selection using checkboxes.
 <p-listbox [(ngModel)]="selectedCity" [options]="cities" [multiple]="true" [checkbox]="true" optionLabel="name" class="w-full md:w-56" />
 ```
 
-### Multiple
+### Multiple {#multiple}
 
 ListBox allows choosing a single item by default, enable multiple property to choose more than one. When the optional metaKeySelection is present, behavior is changed in a way that selecting a new item requires meta key to be present.
 
@@ -42,7 +48,7 @@ ListBox allows choosing a single item by default, enable multiple property to ch
 <p-listbox [options]="cities" [(ngModel)]="selectedCities" optionLabel="name" [multiple]="true" [metaKeySelection]="false" class="w-full md:w-56" />
 ```
 
-### Group
+### Group {#group}
 
 Options can be grouped when a nested data structures is provided.
 
@@ -57,7 +63,7 @@ Options can be grouped when a nested data structures is provided.
 </p-listbox>
 ```
 
-### Filter
+### Filter {#filter}
 
 ListBox provides built-in filtering that is enabled by adding the filter property.
 
@@ -65,7 +71,7 @@ ListBox provides built-in filtering that is enabled by adding the filter propert
 <p-listbox [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" [filter]="true" class="w-full md:w-56" />
 ```
 
-### Template
+### Template {#template}
 
 For custom content support define a template named item where the default local template variable refers to an option.
 
@@ -80,7 +86,7 @@ For custom content support define a template named item where the default local 
 </p-listbox>
 ```
 
-### Virtual Scroll
+### Virtual Scroll {#virtual-scroll}
 
 VirtualScrolling is an efficient way of rendering the options by displaying a small subset of data in the viewport at any time. When dealing with huge number of options, it is suggested to enable VirtualScrolling to avoid performance issues. Usage is simple as setting virtualScroll property to true and defining virtualScrollItemSize to specify the height of an item.
 
@@ -88,7 +94,7 @@ VirtualScrolling is an efficient way of rendering the options by displaying a sm
 <p-listbox [options]="items" [(ngModel)]="selectedItems" [checkbox]="true" [filter]="true" [selectAll]="selectAll" optionLabel="label" [virtualScroll]="true" [virtualScrollItemSize]="40" [multiple]="true" [metaKeySelection]="false" (onSelectAllChange)="onSelectAllChange($event)" (onChange)="onChange($event)" scrollHeight="250px" [striped]="true" class="w-full md:w-56" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -96,7 +102,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-listbox [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" class="w-full md:w-56" [invalid]="selectedCity === undefined" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -104,7 +110,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-listbox [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" [disabled]="true" class="w-full md:w-56" />
 ```
 
-### Forms
+### Forms {#forms}
 
 Listbox can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -132,7 +138,7 @@ Listbox can also be used with reactive forms. In this case, the formControlName 
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can be provided ariaLabelledBy or ariaLabel props. The list element has a listbox role with the aria-multiselectable attribute that sets to true when multiple selection is enabled. Each list item has an option role with aria-selected and aria-disabled as their attributes.
 
@@ -143,21 +149,23 @@ Value to describe the component can be provided ariaLabelledBy or ariaLabel prop
 <p-listbox ariaLabel="City"/>
 ```
 
-### Listbox
+### Listbox {#listbox}
 
 ListBox is used to select one or more values from a list of items.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Listbox API
 
 API defines helper props, events and others for the PrimeNG Listbox module.
 
-#### Listbox
+#### Listbox {#api-listbox}
 
 ListBox is used to select one or more values from a list of items.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -216,7 +224,7 @@ Defines the input properties of the component.
 | dragdrop | boolean | false | Whether to enable dragdrop based reordering. |
 | fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -232,7 +240,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onLazyLoad | event :  ScrollerLazyLoadEvent | Emits on lazy load. |
 | onDrop | value :  CdkDragDrop | Emits on item is dropped. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -240,7 +248,7 @@ Defines methods that can be accessed by the component's reference.
 | --- | --- | --- |
 | updateModel | value :  anyevent :  any | Updates the model value. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -258,11 +266,13 @@ Defines the templates used by the component.
 | checkmark |  | Custom checkmark icon template. |
 | loader |  | Custom loader template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Listbox Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -279,7 +289,7 @@ List of class names used in the styled mode.
 | p-listbox-option-blank-icon | Class name of the option blank icon element |
 | p-listbox-empty-message | Class name of the empty message element |
 
-#### Listbox Design Tokens
+#### Listbox Design Tokens {#theming-listbox-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -316,7 +326,7 @@ List of design tokens used in a preset.
 | listbox.checkmark.gutterEnd | listbox.checkmark.gutter.end | --p-listbox-checkmark-gutter-end | Gutter end of checkmark |
 | listbox.emptyMessage.padding | listbox.empty.message.padding | --p-listbox-empty-message-padding | Padding of empty message |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -327,6 +337,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/listbox)

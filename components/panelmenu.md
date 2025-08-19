@@ -2,15 +2,21 @@
 
 PanelMenu is a hybrid of Accordion and Tree components.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { PanelMenuModule } from 'primeng/panelmenu';
 ```
 
-### Basic
+### Basic {#basic}
 
 PanelMenu requires a collection of menuitems as its model.
 
@@ -18,7 +24,7 @@ PanelMenu requires a collection of menuitems as its model.
 <p-panelmenu [model]="items" class="w-full md:w-20rem" />
 ```
 
-### Multiple
+### Multiple {#multiple}
 
 Only one single root menuitem can be active by default, enable multiple property to be able to open more than one items.
 
@@ -26,7 +32,7 @@ Only one single root menuitem can be active by default, enable multiple property
 <p-panelmenu [model]="items" [style]="{'width':'300px'}" [multiple]="true" />
 ```
 
-### Controlled
+### Controlled {#controlled}
 
 Menu items can be controlled programmatically.
 
@@ -35,7 +41,7 @@ Menu items can be controlled programmatically.
 <p-panelmenu [model]="items" class="w-full md:w-80" />
 ```
 
-### Template
+### Template {#template}
 
 PanelMenu requires a collection of menuitems as its model.
 
@@ -57,7 +63,7 @@ PanelMenu requires a collection of menuitems as its model.
 </p-panelmenu>
 ```
 
-### Command
+### Command {#command}
 
 The command property defines the callback to run when an item is activated by click or a key event.
 
@@ -66,7 +72,7 @@ The command property defines the callback to run when an item is activated by cl
 <p-panelmenu [model]="items" class="w-full md:w-80" />
 ```
 
-### Router
+### Router {#router}
 
 Menu items support navigation via routerLink, programmatic routing using commands, or external URLs.
 
@@ -74,27 +80,29 @@ Menu items support navigation via routerLink, programmatic routing using command
 <p-panelmenu [model]="items" class="w-full md:w-80" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Accordion header elements have a button role, an aria-label defined using the label property of the menuitem model and aria-controls to define the id of the content section along with aria-expanded for the visibility state.
 
-### PanelMenu
+### PanelMenu {#panelmenu}
 
 PanelMenu is a hybrid of Accordion and Tree components.
 
-### MenuItem
+### MenuItem {#menuitem}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### PanelMenu API
 
 API defines helper props, events and others for the PrimeNG PanelMenu module.
 
-#### PanelMenu
+#### PanelMenu {#api-panelmenu}
 
 PanelMenu is a hybrid of Accordion and Tree components.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -107,7 +115,7 @@ Defines the input properties of the component.
 | id | string | null | Current id state as a string. |
 | tabindex | number | 0 | Index of the element in tabbing order. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -115,7 +123,7 @@ Defines methods that can be accessed by the component's reference.
 | --- | --- | --- |
 | collapseAll |  | Collapses open panels. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -125,13 +133,15 @@ Defines the templates used by the component.
 | headericon |  | Template option of header icon. |
 | item |  | Template option of item. |
 
-#### MenuItem
+#### MenuItem {#api-menuitem}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### PanelMenu Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -156,7 +166,7 @@ List of class names used in the styled mode.
 | p-panelmenu-submenu | Class name of the submenu element |
 | p-menuitem-separator |  |
 
-#### PanelMenu Design Tokens
+#### PanelMenu Design Tokens {#theming-panelmenu-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -186,7 +196,7 @@ List of design tokens used in a preset.
 | panelmenu.submenuIcon.color | panelmenu.submenu.icon.color | --p-panelmenu-submenu-icon-color | Color of submenu icon |
 | panelmenu.submenuIcon.focusColor | panelmenu.submenu.icon.focus.color | --p-panelmenu-submenu-icon-focus-color | Focus color of submenu icon |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -197,6 +207,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/panelmenu)

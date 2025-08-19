@@ -2,15 +2,21 @@
 
 DataView displays data in grid grid-cols-12 gap-4 or list layout with pagination and sorting features.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { DataViewModule } from 'primeng/dataview';
 ```
 
-### Basic
+### Basic {#basic}
 
 DataView requires a value to display along with a list template that receives an object in the collection to return content.
 
@@ -77,7 +83,7 @@ DataView requires a value to display along with a list template that receives an
 </p-dataview>
 ```
 
-### Pagination
+### Pagination {#pagination}
 
 Pagination is enabled with the paginator and rows properties. Refer to the Paginator for more information about customizing the paginator.
 
@@ -144,7 +150,7 @@ Pagination is enabled with the paginator and rows properties. Refer to the Pagin
 </p-dataview>
 ```
 
-### Sorting
+### Sorting {#sorting}
 
 Built-in sorting is controlled by bindings sortField and sortOrder properties from a custom UI.
 
@@ -222,7 +228,7 @@ Built-in sorting is controlled by bindings sortField and sortOrder properties fr
 </p-dataview>
 ```
 
-### Layout
+### Layout {#layout}
 
 DataView supports list and grid display modes defined with the layout property. The grid mode is not built-in for flexibility purposes and requires a library with CSS grid features like Tailwind.
 
@@ -352,7 +358,7 @@ DataView supports list and grid display modes defined with the layout property. 
 </p-dataview>
 ```
 
-### Loading
+### Loading {#loading}
 
 While data is being loaded. Skeleton component may be used to indicate the busy state.
 
@@ -425,25 +431,27 @@ While data is being loaded. Skeleton component may be used to indicate the busy 
 </p-dataview>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 The container element that wraps the layout options buttons has a group role whereas each button element uses button role and aria-pressed is updated depending on selection state. Values to describe the buttons are derived from the aria.listView and aria.gridView properties of the locale API respectively.
 
-### DataView
+### DataView {#dataview}
 
 DataView displays data in grid or list layout with pagination and sorting features.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### DataView API
 
 API defines helper props, events and others for the PrimeNG DataView module.
 
-#### DataView
+#### DataView {#api-dataview}
 
 DataView displays data in grid or list layout with pagination and sorting features.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -480,7 +488,7 @@ Defines the input properties of the component.
 | value | any[] | null | An array of objects to display. |
 | layout | "list" | "grid" | list | Defines the layout mode. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -491,7 +499,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onSort | event :  DataViewSortEvent | Callback to invoke when sorting occurs. |
 | onChangeLayout | event :  DataViewLayoutChangeEvent | Callback to invoke when changing layout. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -509,11 +517,13 @@ Defines the templates used by the component.
 | listicon |  | Template for list icon. |
 | gridicon |  | Template for grid icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### DataView Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -529,7 +539,7 @@ List of class names used in the styled mode.
 | p-dataview-empty-message | Class name of the empty message element |
 | p-dataview-footer | Class name of the footer element |
 
-#### DataView Design Tokens
+#### DataView Design Tokens {#theming-dataview-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -562,7 +572,7 @@ List of design tokens used in a preset.
 | dataview.paginatorBottom.borderColor | dataview.paginator.bottom.border.color | --p-dataview-paginator-bottom-border-color | Border color of paginator bottom |
 | dataview.paginatorBottom.borderWidth | dataview.paginator.bottom.border.width | --p-dataview-paginator-bottom-border-width | Border width of paginator bottom |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -573,6 +583,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/dataview)

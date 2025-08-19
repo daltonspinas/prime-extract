@@ -2,15 +2,21 @@
 
 Breadcrumb provides contextual information about page hierarchy.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { BreadcrumbModule } from 'primeng/breadcrumb';
 ```
 
-### Basic
+### Basic {#basic}
 
 Breadcrumb provides contextual information about page hierarchy.
 
@@ -18,7 +24,7 @@ Breadcrumb provides contextual information about page hierarchy.
 <p-breadcrumb [model]="items" [home]="home" />
 ```
 
-### Template
+### Template {#template}
 
 Custom content can be placed inside the items using the item template. The divider between the items has its own separator template.
 
@@ -33,7 +39,7 @@ Custom content can be placed inside the items using the item template. The divid
 </p-breadcrumb>
 ```
 
-### Router
+### Router {#router}
 
 Menu items support navigation via routerLink, programmatic routing using commands, or external URLs.
 
@@ -41,27 +47,29 @@ Menu items support navigation via routerLink, programmatic routing using command
 <p-breadcrumb [home]="home" [model]="items" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Breadcrumb uses the nav element and since any attribute is passed to the root implicitly aria-labelledby or aria-label can be used to describe the component. Inside an ordered list is used where the list item separators have aria-hidden to be able to ignored by the screen readers. If the last link represents the current route, aria-current is added with "page" as the value.
 
-### Breadcrumb
+### Breadcrumb {#breadcrumb}
 
 Breadcrumb provides contextual information about page hierarchy.
 
-### MenuItem
+### MenuItem {#menuitem}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Breadcrumb API
 
 API defines helper props, events and others for the PrimeNG Breadcrumb module.
 
-#### Breadcrumb
+#### Breadcrumb {#api-breadcrumb}
 
 Breadcrumb provides contextual information about page hierarchy.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -73,7 +81,7 @@ Defines the input properties of the component.
 | home | MenuItem | null | MenuItem configuration for the home icon. |
 | homeAriaLabel | string | null | Defines a string that labels the home icon for accessibility. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -81,7 +89,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onItemClick | event :  BreadcrumbItemClickEvent | Fired when an item is selected. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -90,13 +98,15 @@ Defines the templates used by the component.
 | item |  | Defines template option for item. |
 | separator |  | Defines template option for separator. |
 
-#### MenuItem
+#### MenuItem {#api-menuitem}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Breadcrumb Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -111,7 +121,7 @@ List of class names used in the styled mode.
 | p-breadcrumb-item-icon | Class name of the item icon element |
 | p-breadcrumb-item-label | Class name of the item label element |
 
-#### Breadcrumb Design Tokens
+#### Breadcrumb Design Tokens {#theming-breadcrumb-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -134,7 +144,7 @@ List of design tokens used in a preset.
 | breadcrumb.item.focusRing.shadow | breadcrumb.item.focus.ring.shadow | --p-breadcrumb-item-focus-ring-shadow | Focus ring shadow of item |
 | breadcrumb.separator.color | breadcrumb.separator.color | --p-breadcrumb-separator-color | Color of separator |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -145,6 +155,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/breadcrumb)

@@ -2,15 +2,21 @@
 
 ProgressSpinner is a process status indicator.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
 ```
 
-### Basic
+### Basic {#basic}
 
 An infinite spin animation is displayed by default.
 
@@ -18,7 +24,7 @@ An infinite spin animation is displayed by default.
 <p-progress-spinner ariaLabel="loading" />
 ```
 
-### Custom
+### Custom {#custom}
 
 ProgressSpinner can be customized with styling property like strokeWidth and fill.
 
@@ -26,7 +32,7 @@ ProgressSpinner can be customized with styling property like strokeWidth and fil
 <p-progress-spinner strokeWidth="8" fill="transparent" animationDuration=".5s" [style]="{ width: '50px', height: '50px' }" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 ProgressSpinner components uses progressbar role. Value to describe the component can be defined using aria-labelledby and aria-label props.
 
@@ -34,21 +40,23 @@ ProgressSpinner components uses progressbar role. Value to describe the componen
 <p-progress-spinner aria-label="Loading"></p-progress-spinner>
 ```
 
-### ProgressSpinner
+### ProgressSpinner {#progressspinner}
 
 ProgressSpinner is a process status indicator.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ProgressSpinner API
 
 API defines helper props, events and others for the PrimeNG ProgressSpinner module.
 
-#### ProgressSpinner
+#### ProgressSpinner {#api-progressspinner}
 
 ProgressSpinner is a process status indicator.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -60,11 +68,13 @@ Defines the input properties of the component.
 | animationDuration | string | 2s | Duration of the rotate animation. |
 | ariaLabel | string | null | Used to define a aria label attribute the current element. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ProgressSpinner Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -74,7 +84,7 @@ List of class names used in the styled mode.
 | p-progressspinner-spin | Class name of the spin element |
 | p-progressspinner-circle | Class name of the circle element |
 
-#### ProgressSpinner Design Tokens
+#### ProgressSpinner Design Tokens {#theming-progressspinner-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -85,7 +95,7 @@ List of design tokens used in a preset.
 | progressspinner.root.colorThree | progressspinner.color.three | --p-progressspinner-color-three | Color three of root |
 | progressspinner.root.colorFour | progressspinner.color.four | --p-progressspinner-color-four | Color four of root |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -96,6 +106,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/progressspinner)

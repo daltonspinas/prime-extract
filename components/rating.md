@@ -2,15 +2,21 @@
 
 Rating component is a star based selection input.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { RatingModule } from 'primeng/rating';
 ```
 
-### Basic
+### Basic {#basic}
 
 Two-way value binding is defined using ngModel.
 
@@ -18,7 +24,7 @@ Two-way value binding is defined using ngModel.
 <p-rating [(ngModel)]="value" />
 ```
 
-### Number of Stars
+### Number of Stars {#number-of-stars}
 
 Number of stars to display is defined with stars property.
 
@@ -26,7 +32,7 @@ Number of stars to display is defined with stars property.
 <p-rating [(ngModel)]="value" [stars]="10" />
 ```
 
-### Template
+### Template {#template}
 
 Templating allows customizing the content where the icon instance is available as the implicit variable.
 
@@ -41,7 +47,7 @@ Templating allows customizing the content where the icon instance is available a
 </p-rating>
 ```
 
-### Readonly
+### Readonly {#readonly}
 
 When readonly present, value cannot be edited.
 
@@ -49,7 +55,7 @@ When readonly present, value cannot be edited.
 <p-rating [(ngModel)]="value" [readonly]="true" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, a visual hint is applied to indicate that the Knob cannot be interacted with.
 
@@ -57,7 +63,7 @@ When disabled is present, a visual hint is applied to indicate that the Knob can
 <p-rating [(ngModel)]="value" [disabled]="true" />
 ```
 
-### Forms
+### Forms {#forms}
 
 Rating can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -85,25 +91,27 @@ Rating can also be used with reactive forms. In this case, the formControlName p
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Rating component internally uses radio buttons that are only visible to screen readers. The value to read for item is retrieved from the locale API via star and stars of the aria property.
 
-### Rating
+### Rating {#rating}
 
 Rating is an extension to standard radio button element with theming.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Rating API
 
 API defines helper props, events and others for the PrimeNG Rating module.
 
-#### Rating
+#### Rating {#api-rating}
 
 Rating is an extension to standard radio button element with theming.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -121,7 +129,7 @@ Defines the input properties of the component.
 | iconOffStyle | { [klass: string]: any } | null | Inline style of the off icon. |
 | autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -131,7 +139,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onFocus | event :  FocusEvent | Emitted when the rating receives focus. |
 | onBlur | event :  FocusEvent | Emitted when the rating loses focus. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -140,11 +148,13 @@ Defines the templates used by the component.
 | onicon |  | Custom on icon template. |
 | officon |  | Custom off icon template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Rating Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -155,7 +165,7 @@ List of class names used in the styled mode.
 | p-rating-on-icon | Class name of the on icon element |
 | p-rating-off-icon | Class name of the off icon element |
 
-#### Rating Design Tokens
+#### Rating Design Tokens {#theming-rating-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -173,7 +183,7 @@ List of design tokens used in a preset.
 | rating.icon.hoverColor | rating.icon.hover.color | --p-rating-icon-hover-color | Hover color of icon |
 | rating.icon.activeColor | rating.icon.active.color | --p-rating-icon-active-color | Active color of icon |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -184,6 +194,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/rating)

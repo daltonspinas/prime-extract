@@ -2,15 +2,21 @@
 
 Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { InplaceModule } from 'primeng/inplace';
 ```
 
-### Basic
+### Basic {#basic}
 
 Inplace component requires display and content templates to define the content of each state.
 
@@ -27,7 +33,7 @@ Inplace component requires display and content templates to define the content o
 </p-inplace>
 ```
 
-### Input
+### Input {#input}
 
 The closeCallback switches the state back to display mode when called from an event.
 
@@ -47,7 +53,7 @@ The closeCallback switches the state back to display mode when called from an ev
 </p-inplace>
 ```
 
-### Image
+### Image {#image}
 
 Any content such as an image can be placed inside an Inplace.
 
@@ -69,7 +75,7 @@ Any content such as an image can be placed inside an Inplace.
 </p-inplace>
 ```
 
-### Lazy
+### Lazy {#lazy}
 
 Using the onActivate event, data can be loaded in a lazy manner before displaying it in a table.
 
@@ -101,25 +107,27 @@ Using the onActivate event, data can be loaded in a lazy manner before displayin
 </p-inplace>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Inplace component defines aria-live as "polite" by default, since any valid attribute is passed to the main container aria roles and attributes of the root element can be customized easily.
 
-### Inplace
+### Inplace {#inplace}
 
 Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Inplace API
 
 API defines helper props, events and others for the PrimeNG Inplace module.
 
-#### Inplace
+#### Inplace {#api-inplace}
 
 Inplace provides an easy to do editing and display at the same time where clicking the output displays the actual content.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -133,7 +141,7 @@ Defines the input properties of the component.
 | closeIcon | string | null | Icon to display in the close button. |
 | closeAriaLabel | string | null | Establishes a string value that labels the close button. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -142,7 +150,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onActivate | event :  Event | Callback to invoke when inplace is opened. |
 | onDeactivate | event :  Event | Callback to invoke when inplace is closed. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -151,7 +159,7 @@ Defines methods that can be accessed by the component's reference.
 | activate | event :  Event | Activates the content. |
 | deactivate | event :  Event | Deactivates the content. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -161,11 +169,13 @@ Defines the templates used by the component.
 | content |  | Content template of the element. |
 | closeicon |  | Close icon template of the element. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Inplace Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -175,7 +185,7 @@ List of class names used in the styled mode.
 | p-inplace-display | Class name of the display element |
 | p-inplace-content | Class name of the content element |
 
-#### Inplace Design Tokens
+#### Inplace Design Tokens {#theming-inplace-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -192,7 +202,7 @@ List of design tokens used in a preset.
 | inplace.display.hoverBackground | inplace.display.hover.background | --p-inplace-display-hover-background | Hover background of display |
 | inplace.display.hoverColor | inplace.display.hover.color | --p-inplace-display-hover-color | Hover color of display |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -203,6 +213,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/inplace)

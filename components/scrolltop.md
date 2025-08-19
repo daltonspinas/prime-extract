@@ -2,15 +2,21 @@
 
 ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ScrollTopModule } from 'primeng/scrolltop';
 ```
 
-### Basic
+### Basic {#basic}
 
 ScrollTop listens window scroll by default.
 
@@ -18,7 +24,7 @@ ScrollTop listens window scroll by default.
 <p-scrolltop />
 ```
 
-### Target Element
+### Target Element {#target-element}
 
 Setting the target property to parent binds ScrollTop to its parent element that has scrolling content.
 
@@ -26,25 +32,27 @@ Setting the target property to parent binds ScrollTop to its parent element that
 <p-scrolltop target="parent" [threshold]="100" icon="pi pi-arrow-up" [buttonProps]="{ severity: 'contrast', raised: true, rounded: true }" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 ScrollTop uses a button element with an aria-label that refers to the aria.scrollTop property of the locale API by default, you may use your own aria roles and attributes as any valid attribute is passed to the button element implicitly.
 
-### ScrollTop
+### ScrollTop {#scrolltop}
 
 ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ScrollTop API
 
 API defines helper props, events and others for the PrimeNG ScrollTop module.
 
-#### ScrollTop
+#### ScrollTop {#api-scrolltop}
 
 ScrollTop gets displayed after a certain scroll position and used to navigates to the top of the page quickly.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -61,7 +69,7 @@ Defines the input properties of the component.
 | buttonAriaLabel | string | null | Establishes a string value that labels the scroll-top button. |
 | buttonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the Button component. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -69,11 +77,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | icon |  | Template of the icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ScrollTop Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -82,7 +92,7 @@ List of class names used in the styled mode.
 | p-scrolltop | Class name of the root element |
 | p-scrolltop-icon | Class name of the icon element |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -93,6 +103,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/scrolltop)

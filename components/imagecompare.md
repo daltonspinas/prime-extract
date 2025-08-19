@@ -2,15 +2,21 @@
 
 Compare two images side by side with a slider.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ImageCompareModule } from 'primeng/imagecompare';
 ```
 
-### Basic
+### Basic {#basic}
 
 Images are defined using templating with left and right templates. Use the style or class properties to define the size of the container.
 
@@ -25,7 +31,7 @@ Images are defined using templating with left and right templates. Use the style
 </p-imagecompare>
 ```
 
-### Responsive
+### Responsive {#responsive}
 
 Apply responsive styles to the container element to optimize display per screen size.
 
@@ -40,7 +46,7 @@ Apply responsive styles to the container element to optimize display per screen 
 </p-imagecompare>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 ImageComponent component uses a native range slider internally. Value to describe the component can be defined using aria-labelledby and aria-label props.
 
@@ -55,21 +61,23 @@ ImageComponent component uses a native range slider internally. Value to describ
 </p-imagecompare>
 ```
 
-### ImageCompare
+### ImageCompare {#imagecompare}
 
 Compare two images side by side with a slider.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ImageCompare API
 
 API defines helper props, events and others for the PrimeNG ImageCompare module.
 
-#### ImageCompare
+#### ImageCompare {#api-imagecompare}
 
 Compare two images side by side with a slider.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -79,7 +87,7 @@ Defines the input properties of the component.
 | ariaLabelledby | string | null | Defines a string value that labels an interactive element. |
 | ariaLabel | string | null | Identifier of the underlying input element. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -88,11 +96,13 @@ Defines the templates used by the component.
 | left |  | Template for the left side. |
 | right |  | Template for the right side. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ImageCompare Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -101,7 +111,7 @@ List of class names used in the styled mode.
 | p-imagecompare | Class name of the root element |
 | p-imagecompare-slider | Class name of the slider element |
 
-#### ImageCompare Design Tokens
+#### ImageCompare Design Tokens {#theming-imagecompare-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -122,7 +132,7 @@ List of design tokens used in a preset.
 | imagecompare.handle.focusRing.offset | imagecompare.handle.focus.ring.offset | --p-imagecompare-handle-focus-ring-offset | Focus ring offset of handle |
 | imagecompare.handle.focusRing.shadow | imagecompare.handle.focus.ring.shadow | --p-imagecompare-handle-focus-ring-shadow | Focus ring shadow of handle |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -133,6 +143,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/imagecompare)

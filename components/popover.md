@@ -2,15 +2,21 @@
 
 Popover is a container component that can overlay other components on page.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { PopoverModule } from 'primeng/popover';
 ```
 
-### Basic
+### Basic {#basic}
 
 Popover is accessed via its reference and visibility is controlled using toggle, show and hide methods with an event of the target.
 
@@ -58,7 +64,7 @@ Popover is accessed via its reference and visibility is controlled using toggle,
 </p-popover>
 ```
 
-### Select Data
+### Select Data {#select-data}
 
 In this sample, data is retrieved from the content inside the popover.
 
@@ -83,7 +89,7 @@ In this sample, data is retrieved from the content inside the popover.
 </p-popover>
 ```
 
-### DataTable
+### DataTable {#datatable}
 
 Place the Popover outside of the data iteration components to avoid rendering it multiple times.
 
@@ -172,25 +178,27 @@ Place the Popover outside of the data iteration components to avoid rendering it
 </p-popover>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Popover component uses dialog role and since any attribute is passed to the root element you may define attributes like aria-label or aria-labelledby to describe the popup contents. In addition aria-modal is added since focus is kept within the popup.
 
-### Popover
+### Popover {#popover}
 
 Popover is a container component that can overlay other components on page.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Popover API
 
 API defines helper props, events and others for the PrimeNG Popover module.
 
-#### Popover
+#### Popover {#api-popover}
 
 Popover is a container component that can overlay other components on page.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -209,7 +217,7 @@ Defines the input properties of the component.
 | showTransitionOptions | string | .12s cubic-bezier(0, 0, 0.2, 1) | Transition options of the show animation. |
 | hideTransitionOptions | string | .1s linear | Transition options of the hide animation. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -218,7 +226,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onShow | value :  any | Callback to invoke when an overlay becomes visible. |
 | onHide | value :  any | Callback to invoke when an overlay gets hidden. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -228,7 +236,7 @@ Defines methods that can be accessed by the component's reference.
 | show | event :  anytarget :  any | Displays the panel. |
 | hide |  | Hides the panel. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -236,11 +244,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | content |  | Custom content template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Popover Theming
 
-#### Popover Design Tokens
+#### Popover Design Tokens {#theming-popover-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -255,7 +265,7 @@ List of design tokens used in a preset.
 | popover.root.arrowOffset | popover.arrow.offset | --p-popover-arrow-offset | Arrow offset of root |
 | popover.content.padding | popover.content.padding | --p-popover-content-padding | Padding of content |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -266,6 +276,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/popover)

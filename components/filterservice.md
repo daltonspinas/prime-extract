@@ -2,15 +2,15 @@
 
 FilterService is a helper utility to filter collections against constraints.
 
-## Features
+## Features {#features}
 
-### Import
+### Import {#import}
 
 ```typescript
 import { FilterService } from 'primeng/api';
 ```
 
-### Usage
+### Usage {#usage}
 
 FilterService needs to be injected into your component. Filters are accessed with FilterService.filters.
 
@@ -35,9 +35,9 @@ export class FilterServiceDemo implements OnInit {
 }
 ```
 
-### Built-in Constraints
+### Built-in Constraints {#built-in-constraints}
 
-### Custom Constraints
+### Custom Constraints {#custom-constraints}
 
 FilterService can be extended by adding new constraints using the register function.
 
@@ -59,7 +59,7 @@ this.filterService.filters['isPrimeNumber'](5);                      //true
 this.filterService.filters['isPrimeNumber'](568985673);              //false
 ```
 
-### Table Integration
+### Table Integration {#table-integration}
 
 A custom equals filter that checks for exact case sensitive value is registered and defined as a match mode of a column filter.
 
@@ -83,7 +83,7 @@ A custom equals filter that checks for exact case sensitive value is registered 
 </p-table>
 ```
 
-### FilterService API
+### FilterService API {#filterservice-api}
 
 Following is the list of structural style classes, for theming classes visit theming page.
 

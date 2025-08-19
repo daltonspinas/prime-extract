@@ -2,15 +2,21 @@
 
 Textarea adds styling and autoResize functionality to standard textarea element.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TextareaModule } from 'primeng/textarea';
 ```
 
-### Basic
+### Basic {#basic}
 
 Textarea is applied to an input field with pTextarea directive.
 
@@ -18,7 +24,7 @@ Textarea is applied to an input field with pTextarea directive.
 <textarea rows="5" cols="30" pTextarea [(ngModel)]="value"></textarea>
 ```
 
-### AutoResize
+### AutoResize {#autoresize}
 
 When autoResize is enabled, textarea grows instead of displaying a scrollbar.
 
@@ -26,7 +32,7 @@ When autoResize is enabled, textarea grows instead of displaying a scrollbar.
 <textarea rows="5"cols="30" pTextarea [autoResize]="true"></textarea>
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -47,7 +53,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -58,7 +64,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 Textarea provides small and large sizes as alternatives to the base.
 
@@ -68,7 +74,7 @@ Textarea provides small and large sizes as alternatives to the base.
 <textarea pTextarea [(ngModel)]="value3" pSize="large" placeholder="Large" rows="3"></textarea>
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -76,7 +82,7 @@ Specify the variant property as filled to display the component with a higher vi
 <textarea [(ngModel)]="value" variant="filled" rows="5" cols="30" pTextarea></textarea>
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -84,7 +90,7 @@ When disabled is present, the element cannot be edited and focused.
 <textarea rows="5"cols="30" pTextarea [disabled]="true"></textarea>
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -92,7 +98,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <textarea rows="5" cols="30" pTextarea [(ngModel)]="value" [invalid]="!value" placeholder="Address"></textarea>
 ```
 
-### Forms
+### Forms {#forms}
 
 Textarea can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -120,7 +126,7 @@ Textarea can also be used with reactive forms. In this case, the formControlName
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Textarea component renders a native textarea element that implicitly includes any passed prop. Value to describe the component can either be provided via label tag combined with id prop or using aria-labelledby, aria-label props.
 
@@ -134,21 +140,23 @@ Textarea component renders a native textarea element that implicitly includes an
 <textarea pTextarea aria-label="Address Details"></textarea>
 ```
 
-### Textarea
+### Textarea {#textarea}
 
 Textarea adds styling and autoResize functionality to standard textarea element.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Textarea API
 
 API defines helper props, events and others for the PrimeNG Textarea module.
 
-#### Textarea
+#### Textarea {#api-textarea}
 
 Textarea adds styling and autoResize functionality to standard textarea element.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -160,7 +168,7 @@ Defines the input properties of the component.
 | fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 | invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -168,11 +176,13 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onResize | event :  {} | Event | Callback to invoke on textarea resize. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Textarea Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -180,7 +190,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-textarea | Class name of the root element |
 
-#### Textarea Design Tokens
+#### Textarea Design Tokens {#theming-textarea-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -216,7 +226,7 @@ List of design tokens used in a preset.
 | textarea.root.lg.paddingX | textarea.lg.padding.x | --p-textarea-lg-padding-x | Lg padding x of root |
 | textarea.root.lg.paddingY | textarea.lg.padding.y | --p-textarea-lg-padding-y | Lg padding y of root |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -227,6 +237,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/textarea)

@@ -2,15 +2,21 @@
 
 ToggleButton is used to select a boolean value using a button.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ToggleButtonModule } from 'primeng/togglebutton';
 ```
 
-### Basic
+### Basic {#basic}
 
 Two-way binding to a boolean property is defined using the standard ngModel directive.
 
@@ -18,7 +24,7 @@ Two-way binding to a boolean property is defined using the standard ngModel dire
 <p-togglebutton [(ngModel)]="checked" onLabel="On" offLabel="Off" class="w-24" />
 ```
 
-### Customized
+### Customized {#customized}
 
 Icons and Labels can be customized using onLabel, offLabel, onIcon and offIcon properties.
 
@@ -26,7 +32,7 @@ Icons and Labels can be customized using onLabel, offLabel, onIcon and offIcon p
 <p-togglebutton [(ngModel)]="checked" onLabel="Locked" offLabel="Unlocked" onIcon="pi pi-check" offIcon="pi pi-times" onIcon="pi pi-lock" offIcon="pi pi-lock-open" class="w-36" ariaLabel="Do you confirm" />
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 ToggleButton provides small and large sizes as alternatives to the base.
 
@@ -36,7 +42,7 @@ ToggleButton provides small and large sizes as alternatives to the base.
 <p-togglebutton [(ngModel)]="value3" onLabel="On" offLabel="Off" size="large" class="min-w-24" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -44,7 +50,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-togglebutton disabled="true" onIcon="pi pi-check" offIcon="pi pi-times" [(ngModel)]="checked" onLabel="Yes" offLabel="No" class="w-full sm:w-40" ariaLabel="Confirmation" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -52,7 +58,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-togglebutton [(ngModel)]="checked" onIcon="pi pi-check" offIcon="pi pi-times" [invalid]="!checked" class="w-full sm:w-40" aria-label="Confirmation" />
 ```
 
-### Forms
+### Forms {#forms}
 
 ToggleButton can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -80,7 +86,7 @@ ToggleButton can also be used with reactive forms. In this case, the formControl
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 ToggleButton component uses an element with button role and updates aria-pressed state for screen readers. Value to describe the component can be defined with ariaLabelledBy or ariaLabel props, it is highly suggested to use either of these props as the component changes the label displayed which will result in screen readers to read different labels when the component receives focus. To prevent this, always provide an aria label that does not change related to state.
 
@@ -91,21 +97,23 @@ ToggleButton component uses an element with button role and updates aria-pressed
 <p-togglebutton ariaLabel="Remember Me" />
 ```
 
-### ToggleButton
+### ToggleButton {#togglebutton}
 
 ToggleButton is used to select a boolean value using a button.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ToggleButton API
 
 API defines helper props, events and others for the PrimeNG ToggleButton module.
 
-#### ToggleButton
+#### ToggleButton {#api-togglebutton}
 
 ToggleButton is used to select a boolean value using a button.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -130,7 +138,7 @@ Defines the input properties of the component.
 | allowEmpty | boolean | false | Whether selection can not be cleared. |
 | fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -138,7 +146,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onChange | event :  ToggleButtonChangeEvent | Callback to invoke on value change. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -147,11 +155,13 @@ Defines the templates used by the component.
 | icon |  | Custom icon template. |
 | content |  | Custom content template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ToggleButton Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -163,7 +173,7 @@ List of class names used in the styled mode.
 | p-togglebutton-icon-right | Class name of the right icon |
 | p-togglebutton-label | Class name of the label element |
 
-#### ToggleButton Design Tokens
+#### ToggleButton Design Tokens {#theming-togglebutton-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -206,7 +216,7 @@ List of design tokens used in a preset.
 | togglebutton.content.lg.padding | togglebutton.content.lg.padding | --p-togglebutton-content-lg-padding | Lg padding of content |
 | togglebutton.content.checkedBackground | togglebutton.content.checked.background | --p-togglebutton-content-checked-background | Checked background of content |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -217,6 +227,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/togglebutton)

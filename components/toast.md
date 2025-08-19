@@ -2,15 +2,21 @@
 
 Toast is used to display messages in an overlay.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ToastModule } from 'primeng/toast';
 ```
 
-### Basic
+### Basic {#basic}
 
 Toasts are displayed by calling the add and addAll method provided by the messageService. A single toast is specified by the Message interface that defines various properties such as severity, summary and detail.
 
@@ -19,7 +25,7 @@ Toasts are displayed by calling the add and addAll method provided by the messag
 <p-button (onClick)="show()" label="Show" />
 ```
 
-### Severity
+### Severity {#severity}
 
 The severity option specifies the type of the message. There are four types of messages: success, info, warn and error. The severity of the message is used to display the icon and the color of the toast.
 
@@ -33,7 +39,7 @@ The severity option specifies the type of the message. There are four types of m
 <p-button type="button" pRipple (click)="showContrast()" label="Contrast" severity="contrast" />
 ```
 
-### Position
+### Position {#position}
 
 Location of the toast is customized with the position property. Valid values are top-left, top-center, top-right, bottom-left, bottom-center, bottom-right and center.
 
@@ -46,7 +52,7 @@ Location of the toast is customized with the position property. Valid values are
 <p-button pRipple (click)="showBottomRight()" label="Bottom Right" />
 ```
 
-### Multiple
+### Multiple {#multiple}
 
 Multiple toasts are displayed by passing an array to the showAll method of the messageService.
 
@@ -55,7 +61,7 @@ Multiple toasts are displayed by passing an array to the showAll method of the m
 <p-button pRipple (click)="show()" label="Multiple" severity="warn" />
 ```
 
-### Sticky
+### Sticky {#sticky}
 
 A toast disappears after the time defined by the life option, set sticky option true on the message to override this and not hide the toast automatically.
 
@@ -67,7 +73,7 @@ A toast disappears after the time defined by the life option, set sticky option 
 </div>
 ```
 
-### Template
+### Template {#template}
 
 Templating allows customizing the content where the message instance is available as the implicit variable.
 
@@ -87,7 +93,7 @@ Templating allows customizing the content where the message instance is availabl
 <p-button (click)="showConfirm()" label="View" />
 ```
 
-### Headless
+### Headless {#headless}
 
 Headless mode allows you to customize the entire user interface instead of the default elements.
 
@@ -113,7 +119,7 @@ Headless mode allows you to customize the entire user interface instead of the d
 <p-button (click)="showConfirm()" label="Confirm" />
 ```
 
-### Responsive
+### Responsive {#responsive}
 
 Toast styling can be adjusted per screen size with the breakpoints option. The value of breakpoints should be an object literal whose keys are the maximum screen sizes and values are the styles per screen. In example below, width of the toast messages cover the whole page on screens whose widths is smaller than 921px.
 
@@ -122,7 +128,7 @@ Toast styling can be adjusted per screen size with the breakpoints option. The v
 <p-button (click)="show()" label="Show" />
 ```
 
-### Animation
+### Animation {#animation}
 
 Transition of the animations can be customized using the showTransitionOptions, hideTransitionOptions, showTransformOptions and hideTransformOptions properties.
 
@@ -131,27 +137,29 @@ Transition of the animations can be customized using the showTransitionOptions, 
 <p-button (click)="show()" label="Show" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Toast component use alert role that implicitly defines aria-live as "assertive" and aria-atomic as "true".
 
-### Toast
+### Toast {#toast}
 
 Toast is used to display messages in an overlay.
 
-### ToastMessage
+### ToastMessage {#toastmessage}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Toast API
 
 API defines helper props, events and others for the PrimeNG Toast module.
 
-#### Toast
+#### Toast {#api-toast}
 
 Toast is used to display messages in an overlay.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -171,7 +179,7 @@ Defines the input properties of the component.
 | hideTransitionOptions | string | 250ms ease-in | Transition options of the hide animation. |
 | breakpoints | { [key: string]: any } | null | Object literal to define styles per screen size. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -179,7 +187,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onClose | event :  ToastCloseEvent | Callback to invoke when a message is closed. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -188,13 +196,15 @@ Defines the templates used by the component.
 | template |  | Custom template of message. |
 | headless |  | Custom headless template. |
 
-#### ToastMessage
+#### ToastMessage {#api-toastmessage}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Toast Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -210,7 +220,7 @@ List of class names used in the styled mode.
 | p-toast-close-button | Class name of the close button element |
 | p-toast-close-icon | Class name of the close icon element |
 
-#### Toast Design Tokens
+#### Toast Design Tokens {#theming-toast-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -285,7 +295,7 @@ List of design tokens used in a preset.
 | toast.contrast.closeButton.focusRing.color | toast.contrast.close.button.focus.ring.color | --p-toast-contrast-close-button-focus-ring-color | Close button focus ring color of contrast |
 | toast.contrast.closeButton.focusRing.shadow | toast.contrast.close.button.focus.ring.shadow | --p-toast-contrast-close-button-focus-ring-shadow | Close button focus ring shadow of contrast |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -296,6 +306,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/toast)

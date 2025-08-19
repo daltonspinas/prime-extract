@@ -2,15 +2,21 @@
 
 MultiSelect is used to select multiple items from a collection.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { MultiSelectModule } from 'primeng/multiselect';
 ```
 
-### Basic
+### Basic {#basic}
 
 MultiSelect is used as a controlled component with ngModel property along with an options collection. Label and value of an option are defined with the optionLabel and optionValue properties respectively. Default property name for the optionLabel is label and value for the optionValue. If optionValue is omitted and the object has no value property, the object itself becomes the value of an option. Note that, when options are simple primitive values such as a string array, no optionLabel and optionValue would be necessary.
 
@@ -18,7 +24,7 @@ MultiSelect is used as a controlled component with ngModel property along with a
 <p-multiselect [options]="cities" [(ngModel)]="selectedCities" optionLabel="name" placeholder="Select Cities" [maxSelectedLabels]="3" class="w-full md:w-80" />
 ```
 
-### Chips
+### Chips {#chips}
 
 Selected values are displayed as a comma separated list by default, setting display as chip displays them as chips.
 
@@ -26,7 +32,7 @@ Selected values are displayed as a comma separated list by default, setting disp
 <p-multiselect [options]="cities" [(ngModel)]="selectedCities" placeholder="Select Cities" optionLabel="name" display="chip" class="w-full md:w-80" />
 ```
 
-### Group
+### Group {#group}
 
 Options can be grouped when a nested data structures is provided.
 
@@ -41,7 +47,7 @@ Options can be grouped when a nested data structures is provided.
 </p-multiselect>
 ```
 
-### Template
+### Template {#template}
 
 Available options and the selected options support customization with item and selecteditems templates respectively. In addition, header, footer and filter sections can be templated as well.
 
@@ -71,7 +77,7 @@ Available options and the selected options support customization with item and s
 </p-multiselect>
 ```
 
-### Filter
+### Filter {#filter}
 
 MultiSelect provides built-in filtering that is enabled by adding the filter property.
 
@@ -79,7 +85,7 @@ MultiSelect provides built-in filtering that is enabled by adding the filter pro
 <p-multiselect [options]="cities" [(ngModel)]="selectedCities" [filter]="true" optionLabel="name" placeholder="Select Cities" [maxSelectedLabels]="3" class="w-full md:w-80" />
 ```
 
-### Loading State
+### Loading State {#loading-state}
 
 Loading state can be used loading property.
 
@@ -87,7 +93,7 @@ Loading state can be used loading property.
 <p-multiselect [options]="cities" [(ngModel)]="selectedCities" [loading]="true" optionLabel="name" placeholder="Loading..." class="w-full md:w-80" />
 ```
 
-### VirtualScroll
+### VirtualScroll {#virtualscroll}
 
 VirtualScrolling is an efficient way of rendering the options by displaying a small subset of data in the viewport at any time. When dealing with huge number of options, it is suggested to enable VirtualScrolling to avoid performance issues. Usage is simple as setting virtualScroll property to true and defining virtualScrollItemSize to specify the height of an item.
 
@@ -100,7 +106,7 @@ VirtualScrolling is an efficient way of rendering the options by displaying a sm
 </p-multiselect>
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -121,7 +127,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -132,7 +138,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 MultiSelect provides small and large sizes as alternatives to the base.
 
@@ -142,7 +148,7 @@ MultiSelect provides small and large sizes as alternatives to the base.
 <p-multiselect [(ngModel)]="value3" [options]="cities" optionLabel="name" [maxSelectedLabels]="3" class="w-full md:w-80" size="large" placeholder="Large" />
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -150,7 +156,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-multiselect [options]="cities" [(ngModel)]="selectedCities" variant="filled" optionLabel="name" placeholder="Select Cities" [maxSelectedLabels]="3" class="w-full md:w-80" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -158,7 +164,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-multiselect [options]="cities" [(ngModel)]="selectedCities" [disabled]="true" optionLabel="name" class="w-full md:w-80" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -167,7 +173,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-multiselect [options]="cities" [(ngModel)]="selectedCities2" [invalid]="value2" optionLabel="name" placeholder="Select Cities" [maxSelectedLabels]="3" class="w-full md:w-80" variant="filled" />
 ```
 
-### Forms
+### Forms {#forms}
 
 MultiSelect can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -208,7 +214,7 @@ MultiSelect can also be used with reactive forms. In this case, the formControlN
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can either be provided with ariaLabelledBy or ariaLabel props. The multiselect component has a combobox role in addition to aria-haspopup and aria-expanded attributes. The relation between the combobox and the popup is created with aria-controls attribute that refers to the id of the popup listbox.
 
@@ -219,21 +225,23 @@ Value to describe the component can either be provided with ariaLabelledBy or ar
 <p-multiselect ariaLabel="Options"/>
 ```
 
-### MultiSelect
+### MultiSelect {#multiselect}
 
 MultiSelect is used to select multiple items from a collection.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### MultiSelect API
 
 API defines helper props, events and others for the PrimeNG MultiSelect module.
 
-#### MultiSelect
+#### MultiSelect {#api-multiselect}
 
 MultiSelect is used to select multiple items from a collection.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -308,7 +316,7 @@ Defines the input properties of the component.
 | fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -326,7 +334,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onRemove | event :  MultiSelectRemoveEvent | Callback to invoke in lazy mode to load new data. |
 | onSelectAllChange | event :  MultiSelectSelectAllChangeEvent | Callback to invoke when all data is selected. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -336,11 +344,13 @@ Defines methods that can be accessed by the component's reference.
 | show | isFocus :  any | Displays the panel. |
 | hide | isFocus :  any | Hides the panel. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### MultiSelect Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -366,7 +376,7 @@ List of class names used in the styled mode.
 | p-multiselect-empty-message | Class name of the empty message element |
 | p-autocomplete-clear-icon | Class name of the clear icon |
 
-#### MultiSelect Design Tokens
+#### MultiSelect Design Tokens {#theming-multiselect-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -429,7 +439,7 @@ List of design tokens used in a preset.
 | multiselect.chip.borderRadius | multiselect.chip.border.radius | --p-multiselect-chip-border-radius | Border radius of chip |
 | multiselect.emptyMessage.padding | multiselect.empty.message.padding | --p-multiselect-empty-message-padding | Padding of empty message |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -440,6 +450,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/multiselect)

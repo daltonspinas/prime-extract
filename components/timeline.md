@@ -2,15 +2,21 @@
 
 Timeline visualizes a series of chained events.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TimelineModule } from 'primeng/timeline';
 ```
 
-### Basic
+### Basic {#basic}
 
 Timeline receives the events with the value property as a collection of arbitrary objects. In addition, content template is required to display the representation of an event. Example below is a sample events array that is used throughout the documentation.
 
@@ -22,7 +28,7 @@ Timeline receives the events with the value property as a collection of arbitrar
 </p-timeline>
 ```
 
-### Alignment
+### Alignment {#alignment}
 
 Content location relative the line is defined with the align property.
 
@@ -46,7 +52,7 @@ Content location relative the line is defined with the align property.
 </p-timeline>
 ```
 
-### Opposite
+### Opposite {#opposite}
 
 Additional content at the other side of the line can be provided with the opposite property.
 
@@ -61,7 +67,7 @@ Additional content at the other side of the line can be provided with the opposi
 </p-timeline>
 ```
 
-### Template
+### Template {#template}
 
 Sample implementation with custom content and styled markers.
 
@@ -85,7 +91,7 @@ Sample implementation with custom content and styled markers.
 </p-timeline>
 ```
 
-### Horizontal
+### Horizontal {#horizontal}
 
 TimeLine orientation is controlled with the layout property, default is vertical having horizontal as the alternative.
 
@@ -112,25 +118,27 @@ TimeLine orientation is controlled with the layout property, default is vertical
 </p-timeline>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Timeline uses a semantic ordered list element to list the events. No specific role is enforced, still you may use any aria role and attributes as any valid attribute is passed to the list element.
 
-### Timeline
+### Timeline {#timeline}
 
 Timeline visualizes a series of chained events.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Timeline API
 
 API defines helper props, events and others for the PrimeNG Timeline module.
 
-#### Timeline
+#### Timeline {#api-timeline}
 
 Timeline visualizes a series of chained events.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -141,7 +149,7 @@ Defines the input properties of the component.
 | align | string | left | Position of the timeline bar relative to the content. Valid values are "left", "right" for vertical layout and "top", "bottom" for horizontal layout. |
 | layout | "vertical" | "horizontal" | vertical | Orientation of the timeline. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -151,11 +159,13 @@ Defines the templates used by the component.
 | opposite |  | Custom opposite item template. |
 | marker |  | Custom marker template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Timeline Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -169,7 +179,7 @@ List of class names used in the styled mode.
 | p-timeline-event-connector | Class name of the event connector element |
 | p-timeline-event-content | Class name of the event content element |
 
-#### Timeline Design Tokens
+#### Timeline Design Tokens {#theming-timeline-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -190,7 +200,7 @@ List of design tokens used in a preset.
 | timeline.eventConnector.color | timeline.event.connector.color | --p-timeline-event-connector-color | Color of event connector |
 | timeline.eventConnector.size | timeline.event.connector.size | --p-timeline-event-connector-size | Size of event connector |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -201,6 +211,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/timeline)

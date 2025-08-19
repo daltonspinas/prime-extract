@@ -2,15 +2,20 @@
 
 KeyFilter is a directive to restrict individual key strokes. In order to restrict the whole input, use InputNumber or InputMask instead.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { KeyFilterModule } from 'primeng/keyfilter';
 ```
 
-### Presets
+### Presets {#presets}
 
 KeyFilter provides various presets configured with the pKeyFilter property.
 
@@ -23,7 +28,7 @@ KeyFilter provides various presets configured with the pKeyFilter property.
 <input pInputText pKeyFilter="alphanum" />
 ```
 
-### Regex
+### Regex {#regex}
 
 In addition to the presets, a regular expression can be configured for customization.
 
@@ -32,25 +37,27 @@ In addition to the presets, a regular expression can be configured for customiza
 <input pInputText [pKeyFilter]="blockChars" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Refer to InputText for accessibility as KeyFilter is a built-in add-on of the InputText.
 
-### KeyFilter
+### KeyFilter {#keyfilter}
 
 KeyFilter Directive is a built-in feature of InputText to restrict user input based on a regular expression.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### KeyFilter API
 
 API defines helper props, events and others for the PrimeNG KeyFilter module.
 
-#### KeyFilter
+#### KeyFilter {#api-keyfilter}
 
 KeyFilter Directive is a built-in feature of InputText to restrict user input based on a regular expression.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -59,7 +66,7 @@ Defines the input properties of the component.
 | pValidateOnly | boolean | false | When enabled, instead of blocking keys, input is validated internally to test against the regular expression. |
 | pattern | RegExp | KeyFilterPattern | null | Sets the pattern for key filtering. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -67,6 +74,14 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | ngModelChange | value :  string | number | Emits a value whenever the ngModel of the component changes. |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
 
 [View Official Documentation](https://primeng.org/keyfilter)

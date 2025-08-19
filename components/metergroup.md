@@ -2,15 +2,21 @@
 
 MeterGroup displays scalar measurements within a known range.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { MeterGroupModule } from 'primeng/metergroup';
 ```
 
-### Basic
+### Basic {#basic}
 
 MeterGroup requires a value as the data to display where each item in the collection should be a type of MeterItem.
 
@@ -18,7 +24,7 @@ MeterGroup requires a value as the data to display where each item in the collec
 <p-metergroup [value]="value" />
 ```
 
-### Multiple
+### Multiple {#multiple}
 
 Adding more items to the array displays the meters in a group.
 
@@ -26,7 +32,7 @@ Adding more items to the array displays the meters in a group.
 <p-metergroup [value]="value" />
 ```
 
-### Icon
+### Icon {#icon}
 
 Icons can be displayed next to the labels instead of the default marker.
 
@@ -34,7 +40,7 @@ Icons can be displayed next to the labels instead of the default marker.
 <p-metergroup [value]="value" />
 ```
 
-### Label
+### Label {#label}
 
 The position of the labels relative to the meters is defined using the labelPosition property. The default orientation of the labels is horizontal, and the vertical alternative is available through the labelOrientation option.
 
@@ -42,7 +48,7 @@ The position of the labels relative to the meters is defined using the labelPosi
 <p-metergroup [value]="value" labelPosition="start" labelOrientation="vertical" />
 ```
 
-### Vertical
+### Vertical {#vertical}
 
 Layout of the MeterGroup is configured with the orientation property that accepts either horizontal or vertical as available options.
 
@@ -50,7 +56,7 @@ Layout of the MeterGroup is configured with the orientation property that accept
 <p-metergroup [value]="value" orientation="vertical" labelOrientation="vertical" [style]="{ height: '300px' }" />
 ```
 
-### Min Max
+### Min Max {#min-max}
 
 Boundaries are configured with the min and max values whose defaults are 0 and 100 respectively.
 
@@ -58,7 +64,7 @@ Boundaries are configured with the min and max values whose defaults are 0 and 1
 <p-metergroup [value]="value" [max]="200" />
 ```
 
-### Template
+### Template {#template}
 
 MeterGroup provides templating support for labels, meter items, and content around the meters.
 
@@ -100,25 +106,27 @@ MeterGroup provides templating support for labels, meter items, and content arou
 </p-metergroup>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 MeterGroup component uses meter role in addition to the aria-valuemin, aria-valuemax and aria-valuenow attributes. Value to describe the component can be defined using aria-labelledby prop.
 
-### MeterGroup
+### MeterGroup {#metergroup}
 
 MeterGroup displays scalar measurements within a known range.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### MeterGroup API
 
 API defines helper props, events and others for the PrimeNG MeterGroup module.
 
-#### MeterGroup
+#### MeterGroup {#api-metergroup}
 
 MeterGroup displays scalar measurements within a known range.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -132,11 +140,13 @@ Defines the input properties of the component.
 | labelOrientation | "vertical" | "horizontal" | horizontal | Specifies the label orientation of the component, valid values are 'horizontal' and 'vertical'. |
 | styleClass | string | null | Style class of the element. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### MeterGroup Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -151,7 +161,7 @@ List of class names used in the styled mode.
 | p-metergroup-label-marker | Class name of the label marker element |
 | p-metergroup-label-text | Class name of the label text element |
 
-#### MeterGroup Design Tokens
+#### MeterGroup Design Tokens {#theming-metergroup-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -167,7 +177,7 @@ List of design tokens used in a preset.
 | metergroup.labelList.verticalGap | metergroup.label.list.vertical.gap | --p-metergroup-label-list-vertical-gap | Vertical gap of label list |
 | metergroup.labelList.horizontalGap | metergroup.label.list.horizontal.gap | --p-metergroup-label-list-horizontal-gap | Horizontal gap of label list |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -178,6 +188,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/metergroup)

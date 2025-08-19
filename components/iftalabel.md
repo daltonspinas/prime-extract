@@ -2,15 +2,21 @@
 
 IftaLabel is used to create infield top aligned labels.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { IftaLabelModule } from 'primeng/iftalabel';
 ```
 
-### Basic
+### Basic {#basic}
 
 IftaLabel is used by wrapping the input and its label.
 
@@ -21,7 +27,7 @@ IftaLabel is used by wrapping the input and its label.
 </p-iftalabel>
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 When the form element is invalid, the label is also highlighted.
 
@@ -32,29 +38,33 @@ When the form element is invalid, the label is also highlighted.
 </p-iftalabel>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 IftaLabel does not require any roles and attributes.
 
-### IftaLabel
+### IftaLabel {#iftalabel}
 
 IftaLabel is used to create infield top aligned labels.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### IftaLabel API
 
 API defines helper props, events and others for the PrimeNG IftaLabel module.
 
-#### IftaLabel
+#### IftaLabel {#api-iftalabel}
 
 IftaLabel is used to create infield top aligned labels.
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### IftaLabel Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -62,7 +72,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-iftalabel | Class name of the root element |
 
-#### IftaLabel Design Tokens
+#### IftaLabel Design Tokens {#theming-iftalabel-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -79,7 +89,7 @@ List of design tokens used in a preset.
 | iftalabel.input.paddingTop | iftalabel.input.padding.top | --p-iftalabel-input-padding-top | Padding top of input |
 | iftalabel.input.paddingBottom | iftalabel.input.padding.bottom | --p-iftalabel-input-padding-bottom | Padding bottom of input |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -90,6 +100,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/iftalabel)

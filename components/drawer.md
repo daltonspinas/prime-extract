@@ -2,15 +2,21 @@
 
 Drawer is a container component displayed as an overlay.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { DrawerModule } from 'primeng/drawer';
 ```
 
-### Basic
+### Basic {#basic}
 
 Drawer is used as a container and visibility is controlled with a binding to visible.
 
@@ -25,7 +31,7 @@ Drawer is used as a container and visibility is controlled with a binding to vis
 <p-button (click)="visible = true" icon="pi pi-arrow-right" />
 ```
 
-### Position
+### Position {#position}
 
 Drawer location is configured with the position property that can take left, right, top and bottom as a value.
 
@@ -69,7 +75,7 @@ Drawer location is configured with the position property that can take left, rig
 </div>
 ```
 
-### Size
+### Size {#size}
 
 Drawer dimension can be defined with style or class properties, this responsive example utilizes Tailwind.
 
@@ -82,7 +88,7 @@ Drawer dimension can be defined with style or class properties, this responsive 
 <p-button (click)="visible = true" icon="pi pi-arrow-right" />
 ```
 
-### Full Screen
+### Full Screen {#full-screen}
 
 Drawer can cover the whole page when fullScreen property is enabled.
 
@@ -95,7 +101,7 @@ Drawer can cover the whole page when fullScreen property is enabled.
 <p-button (click)="visible = true" icon="pi pi-window-maximize" />
 ```
 
-### Template
+### Template {#template}
 
 Drawer is customizable by header, content, footer templates.
 
@@ -121,7 +127,7 @@ Drawer is customizable by header, content, footer templates.
 <button pButton (click)="visible = true" icon="pi pi-plus"></button>
 ```
 
-### Headless
+### Headless {#headless}
 
 Headless mode allows you to customize the entire user interface instead of the default elements.
 
@@ -304,7 +310,7 @@ Headless mode allows you to customize the entire user interface instead of the d
 <p-button (click)="visible = true" icon="pi pi-bars" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Drawer component uses complementary role by default, since any attribute is passed to the root element aria role can be changed depending on your use case and additional attributes like aria-labelledby can be added. In addition aria-modal is added since focus is kept within the drawer when opened.
 
@@ -325,21 +331,23 @@ Drawer component uses complementary role by default, since any attribute is pass
 </p-drawer>
 ```
 
-### Drawer
+### Drawer {#drawer}
 
 Sidebar is a panel component displayed as an overlay at the edges of the screen.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Drawer API
 
 API defines helper props, events and others for the PrimeNG Drawer module.
 
-#### Drawer
+#### Drawer {#api-drawer}
 
 Sidebar is a panel component displayed as an overlay at the edges of the screen.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -365,7 +373,7 @@ Defines the input properties of the component.
 | maskStyle | { [klass: string]: any } | null | Style of the mask. |
 | closable | boolean | true | Whether to display close button. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -375,7 +383,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onHide | value :  any | Callback to invoke when dialog is hidden. |
 | visibleChange | value :  boolean | Callback to invoke when dialog visibility is changed. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -387,11 +395,13 @@ Defines the templates used by the component.
 | closeicon |  | Close icon template for the close icon of the drawer. |
 | headless |  | Headless template for the headless drawer. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Drawer Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -404,7 +414,7 @@ List of class names used in the styled mode.
 | p-drawer-close-button | Class name of the close button element |
 | p-drawer-content | Class name of the content element |
 
-#### Drawer Design Tokens
+#### Drawer Design Tokens {#theming-drawer-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -420,7 +430,7 @@ List of design tokens used in a preset.
 | drawer.content.padding | drawer.content.padding | --p-drawer-content-padding | Padding of content |
 | drawer.footer.padding | drawer.footer.padding | --p-drawer-footer-padding | Padding of footer |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -431,6 +441,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/drawer)

@@ -2,16 +2,22 @@
 
 IconField wraps an input and an icon.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 ```
 
-### Basic
+### Basic {#basic}
 
 A group is created by wrapping the input and icon with the IconField component. Each icon is defined as a child of InputIcon component. In addition, position of the icon can be changed using iconPosition property that the default value is right and also left option is available.
 
@@ -26,7 +32,7 @@ A group is created by wrapping the input and icon with the IconField component. 
 </p-iconfield>
 ```
 
-### Template
+### Template {#template}
 
 An eye icon is displayed by default when the image is hovered in preview mode. Use the indicator template for custom content.
 
@@ -42,7 +48,7 @@ An eye icon is displayed by default when the image is hovered in preview mode. U
 </p-iconfield>
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 FloatLabel visually integrates a label with its form element. Visit FloatLabel documentation for more information.
 
@@ -72,7 +78,7 @@ FloatLabel visually integrates a label with its form element. Visit FloatLabel d
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -86,7 +92,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 IconField is compatible with the pSize setting of the input field.
 
@@ -108,27 +114,29 @@ IconField is compatible with the pSize setting of the input field.
 </p-iconfield>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 IconField and InputIcon does not require any roles and attributes.
 
-### IconField
+### IconField {#iconfield}
 
 IconField wraps an input and an icon.
 
-### InputIcon
+### InputIcon {#inputicon}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### IconField API
 
 API defines helper props, events and others for the PrimeNG IconField module.
 
-#### IconField
+#### IconField {#api-iconfield}
 
 IconField wraps an input and an icon.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -137,13 +145,15 @@ Defines the input properties of the component.
 | iconPosition | "right" | "left" | left | Position of the icon. |
 | styleClass | string | null | Style class of the component. |
 
-#### InputIcon
+#### InputIcon {#api-inputicon}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### IconField Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -151,7 +161,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-iconfield | Class name of the root element |
 
-#### IconField Design Tokens
+#### IconField Design Tokens {#theming-iconfield-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -159,7 +169,7 @@ List of design tokens used in a preset.
 | --- | --- | --- | --- |
 | iconfield.icon.color | iconfield.icon.color | --p-iconfield-icon-color | Color of icon |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -170,6 +180,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/iconfield)

@@ -2,15 +2,21 @@
 
 Table displays data in tabular format.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TableModule } from 'primeng/table';
 ```
 
-### Basic
+### Basic {#basic}
 
 DataTable requires a collection to display along with column components for the representation of the data.
 
@@ -35,7 +41,7 @@ DataTable requires a collection to display along with column components for the 
 </p-table>
 ```
 
-### Dynamic Columns
+### Dynamic Columns {#dynamic-columns}
 
 Columns can be defined dynamically using the *ngFor directive.
 
@@ -58,7 +64,7 @@ Columns can be defined dynamically using the *ngFor directive.
 </p-table>
 ```
 
-### Template
+### Template {#template}
 
 Custom content at header, body and footer sections are supported via templating.
 
@@ -106,7 +112,7 @@ Custom content at header, body and footer sections are supported via templating.
 </p-table>
 ```
 
-### Size
+### Size {#size}
 
 In addition to a regular table, alternatives with alternative sizes are available.
 
@@ -134,7 +140,7 @@ In addition to a regular table, alternatives with alternative sizes are availabl
 </p-table>
 ```
 
-### Grid Lines
+### Grid Lines {#grid-lines}
 
 Enabling showGridlines displays borders between cells.
 
@@ -162,7 +168,7 @@ Enabling showGridlines displays borders between cells.
 </p-table>
 ```
 
-### Striped Rows
+### Striped Rows {#striped-rows}
 
 Alternating rows are displayed when stripedRows property is present.
 
@@ -187,7 +193,7 @@ Alternating rows are displayed when stripedRows property is present.
 </p-table>
 ```
 
-### Conditional Style
+### Conditional Style {#conditional-style}
 
 Certain rows or cells can easily be styled based on conditions.
 
@@ -214,7 +220,7 @@ Certain rows or cells can easily be styled based on conditions.
 </p-table>
 ```
 
-### Pagination
+### Pagination {#pagination}
 
 Pagination is enabled by setting paginator property to true and defining a rows property to specify the number of rows per page.
 
@@ -287,8 +293,21 @@ Pagination is enabled by setting paginator property to true and defining a rows 
 </p-table>
 ```
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
+
+[↑ Back to Top](#table-of-contents)
 
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/table)

@@ -2,15 +2,21 @@
 
 Paginator displays data in paged format and provides navigation between pages.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { PaginatorModule } from 'primeng/paginator';
 ```
 
-### Basic
+### Basic {#basic}
 
 Paginator is used as a controlled component with first, rows and onPageChange properties to manage the first index and number of records to display per page. Total number of records need to be with totalRecords property. Default template includes a dropdown to change the rows so rowsPerPageOptions is also necessary for the dropdown options.
 
@@ -18,7 +24,7 @@ Paginator is used as a controlled component with first, rows and onPageChange pr
 <p-paginator (onPageChange)="onPageChange($event)" [first]="first" [rows]="rows" [totalRecords]="120" [rowsPerPageOptions]="[10, 20, 30]" />
 ```
 
-### Template
+### Template {#template}
 
 Templating allows overriding the default content of the UI elements by defining callbacks using the element name.
 
@@ -52,7 +58,7 @@ Templating allows overriding the default content of the UI elements by defining 
 </div>
 ```
 
-### Current Page Report
+### Current Page Report {#current-page-report}
 
 Current page report item in the template displays information about the pagination state. Default value is ({currentPage} of {totalPages}) whereas available placeholders are the following;
 
@@ -68,25 +74,27 @@ Current page report item in the template displays information about the paginati
     currentPageReportTemplate="Showing {first} to {last} of {totalRecords}" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Paginator is placed inside a nav element to indicate a navigation section. All of the paginator elements can be customized using templating however the default behavious is listed below.
 
-### Paginator
+### Paginator {#paginator}
 
 Paginator is a generic component to display content in paged format.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Paginator API
 
 API defines helper props, events and others for the PrimeNG Paginator module.
 
-#### Paginator
+#### Paginator {#api-paginator}
 
 Paginator is a generic component to display content in paged format.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -114,7 +122,7 @@ Defines the input properties of the component.
 | first | number | null | Zero-relative number of the first row to be displayed. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -122,7 +130,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onPageChange | value :  PaginatorState | Callback to invoke when page changes, the event object contains information about the new state. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -134,11 +142,13 @@ Defines the templates used by the component.
 | lastpagelinkicon |  | Template for the last page link icon. |
 | nextpagelinkicon |  | Template for the next page link icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Paginator Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -162,7 +172,7 @@ List of class names used in the styled mode.
 | p-paginator-jtp-dropdown | Class name of the jump to page dropdown element |
 | p-paginator-jtp-input | Class name of the jump to page input element |
 
-#### Paginator Design Tokens
+#### Paginator Design Tokens {#theming-paginator-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -191,7 +201,7 @@ List of design tokens used in a preset.
 | paginator.currentPageReport.color | paginator.current.page.report.color | --p-paginator-current-page-report-color | Color of current page report |
 | paginator.jumpToPageInput.maxWidth | paginator.jump.to.page.input.max.width | --p-paginator-jump-to-page-input-max-width | Max width of jump to page input |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -202,6 +212,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/paginator)

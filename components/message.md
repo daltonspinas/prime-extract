@@ -2,15 +2,21 @@
 
 Message component is used to display inline messages.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { MessageModule } from 'primeng/message';
 ```
 
-### Basic
+### Basic {#basic}
 
 Message component requires a content to display.
 
@@ -18,7 +24,7 @@ Message component requires a content to display.
 <p-message>Message Content</p-message>
 ```
 
-### Severity
+### Severity {#severity}
 
 The severity option specifies the type of the message.
 
@@ -31,7 +37,7 @@ The severity option specifies the type of the message.
 <p-message severity="contrast">Contrast Message</p-message>
 ```
 
-### Icon
+### Icon {#icon}
 
 The severity option specifies the type of the message.
 
@@ -45,7 +51,7 @@ The severity option specifies the type of the message.
 </p-message>
 ```
 
-### Outlined
+### Outlined {#outlined}
 
 Configure the variant value as outlined for messages with borders and no background.
 
@@ -58,7 +64,7 @@ Configure the variant value as outlined for messages with borders and no backgro
 <p-message severity="contrast" variant="outlined">Contrast Message</p-message>
 ```
 
-### Simple
+### Simple {#simple}
 
 Configure the variant value as simple for messages without borders and backgrounds.
 
@@ -71,7 +77,7 @@ Configure the variant value as simple for messages without borders and backgroun
 <p-message severity="contrast" variant="simple">Contrast Message</p-message>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 Message provides small and large sizes as alternatives to the base.
 
@@ -81,7 +87,7 @@ Message provides small and large sizes as alternatives to the base.
 <p-message size="large" icon="pi pi-check">Large Message</p-message>
 ```
 
-### Forms
+### Forms {#forms}
 
 Validation errors in a form are displayed with the error severity.
 
@@ -103,7 +109,7 @@ Validation errors in a form are displayed with the error severity.
 </div>
 ```
 
-### Dynamic
+### Dynamic {#dynamic}
 
 Multiple messages can be displayed using the standard for block.
 
@@ -119,7 +125,7 @@ Multiple messages can be displayed using the standard for block.
 </div>
 ```
 
-### Closable
+### Closable {#closable}
 
 Enable closable option to display an icon to remove a message.
 
@@ -127,7 +133,7 @@ Enable closable option to display an icon to remove a message.
 <p-message closable>Closable Message</p-message>
 ```
 
-### Life
+### Life {#life}
 
 Messages can disappear automatically by defined the life in milliseconds.
 
@@ -135,25 +141,27 @@ Messages can disappear automatically by defined the life in milliseconds.
 <p-message [life]="3000" severity="success">Auto disappear message</p-message>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Message component uses alert role that implicitly defines aria-live as "assertive" and aria-atomic as "true". Since any attribute is passed to the root element, attributes like aria-labelledby and aria-label can optionally be used as well.
 
-### Message
+### Message {#message}
 
 Message groups a collection of contents in tabs.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Message API
 
 API defines helper props, events and others for the PrimeNG Message module.
 
-#### Message
+#### Message {#api-message}
 
 Message groups a collection of contents in tabs.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -172,7 +180,7 @@ Defines the input properties of the component.
 | size | "small" | "large" | null | Defines the size of the component. |
 | variant | "text" | "outlined" | "simple" | null | Specifies the input variant of the component. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -180,7 +188,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onClose | event :  { originalEvent: Event } | Emits when the message is closed. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -188,7 +196,7 @@ Defines methods that can be accessed by the component's reference.
 | --- | --- | --- |
 | close | event :  Event | Closes the message. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -198,11 +206,13 @@ Defines the templates used by the component.
 | icon |  | Custom template of the message icon. |
 | closeicon |  | Custom template of the close icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Message Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -215,7 +225,7 @@ List of class names used in the styled mode.
 | p-message-close-button | Class name of the close button element |
 | p-message-close-icon | Class name of the close icon element |
 
-#### Message Design Tokens
+#### Message Design Tokens {#theming-message-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -307,7 +317,7 @@ List of design tokens used in a preset.
 | message.contrast.outlined.borderColor | message.contrast.outlined.border.color | --p-message-contrast-outlined-border-color | Outlined border color of contrast |
 | message.contrast.simple.color | message.contrast.simple.color | --p-message-contrast-simple-color | Simple color of contrast |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -318,6 +328,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/message)

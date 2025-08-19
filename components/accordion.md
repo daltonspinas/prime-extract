@@ -2,15 +2,21 @@
 
 Accordion groups a collection of contents in tabs.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { AccordionModule } from 'primeng/accordion';
 ```
 
-### Basic
+### Basic {#basic}
 
 Accordion is defined using AccordionPanel, AccordionHeader and AccordionContent components. Each AccordionPanel must contain a unique value property to specify the active item.
 
@@ -55,7 +61,7 @@ Accordion is defined using AccordionPanel, AccordionHeader and AccordionContent 
 </p-accordion>
 ```
 
-### Dynamic
+### Dynamic {#dynamic}
 
 AccordionPanel can be generated dynamically using the standard @for block.
 
@@ -72,7 +78,7 @@ AccordionPanel can be generated dynamically using the standard @for block.
 </p-accordion>
 ```
 
-### Multiple
+### Multiple {#multiple}
 
 Only one tab at a time can be active by default, enabling multiple property changes this behavior to allow multiple tabs. In this case activeIndex needs to be an array.
 
@@ -115,7 +121,7 @@ Only one tab at a time can be active by default, enabling multiple property chan
 </p-accordion>
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 Enabling disabled property of an AccordionTab prevents user interaction.
 
@@ -161,7 +167,7 @@ Enabling disabled property of an AccordionTab prevents user interaction.
 </p-accordion>
 ```
 
-### Controlled
+### Controlled {#controlled}
 
 Panels can be controlled programmatically using value property as a model.
 
@@ -210,7 +216,7 @@ Panels can be controlled programmatically using value property as a model.
     </p-accordion>
 ```
 
-### Template
+### Template {#template}
 
 Accordion is customized with toggleicon template.
 
@@ -292,33 +298,35 @@ Accordion is customized with toggleicon template.
 </p-accordion>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Accordion header elements have a button role and use aria-controls to define the id of the content section along with aria-expanded for the visibility state. The value to read a header element defaults to the value of the header property and can be customized by defining an aria-label or aria-labelledby property. Each header has a heading role, for which the level is customized by headerAriaLevel and has a default level of 2 as per W3C specifications.
 
-### Accordion
+### Accordion {#accordion}
 
 Accordion groups a collection of contents in tabs.
 
-### AccordionPanel
+### AccordionPanel {#accordionpanel}
 
 AccordionPanel is a helper component for Accordion component.
 
-### AccordionHeader
+### AccordionHeader {#accordionheader}
 
 AccordionHeader is a helper component for Accordion component.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Accordion API
 
 API defines helper props, events and others for the PrimeNG Accordion module.
 
-#### Accordion
+#### Accordion {#api-accordion}
 
 Accordion groups a collection of contents in tabs.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -332,7 +340,7 @@ Defines the input properties of the component.
 | selectOnFocus | InputSignalWithTransform<boolean, any> | false | When enabled, the focused tab is activated. |
 | transitionOptions | string | 400ms cubic-bezier(0.86, 0, 0.07, 1) | Transition options of the animation. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -341,11 +349,11 @@ Defines emit that determine the behavior of the component based on a given condi
 | onClose | event :  AccordionTabCloseEvent | Callback to invoke when an active tab is collapsed by clicking on the header. |
 | onOpen | event :  AccordionTabOpenEvent | Callback to invoke when a tab gets expanded. |
 
-#### AccordionPanel
+#### AccordionPanel {#api-accordionpanel}
 
 AccordionPanel is a helper component for Accordion component.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -354,11 +362,11 @@ Defines the input properties of the component.
 | value | ModelSignal<string | number | string[] | number[]> | undefined | Value of the active tab. |
 | disabled | InputSignalWithTransform<any, boolean> | false | Disables the tab when enabled. |
 
-#### AccordionHeader
+#### AccordionHeader {#api-accordionheader}
 
 AccordionHeader is a helper component for Accordion component.
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -366,11 +374,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | toggleicon |  | Toggle icon template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Accordion Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -383,7 +393,7 @@ List of class names used in the styled mode.
 | p-accordionheader-toggle-icon | Class name of the toggle icon |
 | p-accordionpanel | Class name of the panel |
 
-#### Accordion Design Tokens
+#### Accordion Design Tokens {#theming-accordion-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -424,7 +434,7 @@ List of design tokens used in a preset.
 | accordion.content.color | accordion.content.color | --p-accordion-content-color | Color of content |
 | accordion.content.padding | accordion.content.padding | --p-accordion-content-padding | Padding of content |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -435,6 +445,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/accordion)

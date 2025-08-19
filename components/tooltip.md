@@ -2,15 +2,21 @@
 
 Tooltip directive provides advisory information for a component. Tooltip is integrated within various PrimeNG components.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TooltipModule } from 'primeng/tooltip';
 ```
 
-### Position
+### Position {#position}
 
 Position of the tooltip is specified using tooltipPosition attribute. Valid values are top, bottom, right and left. Default position of the tooltip is right.
 
@@ -21,7 +27,7 @@ Position of the tooltip is specified using tooltipPosition attribute. Valid valu
 <input type="text" pInputText pTooltip="Enter your username" tooltipPosition="left" placeholder="Left" />
 ```
 
-### Event
+### Event {#event}
 
 Tooltip gets displayed on hover event of its target by default, other option is the focus event to display and blur to hide.
 
@@ -29,7 +35,7 @@ Tooltip gets displayed on hover event of its target by default, other option is 
 <input type="text" pInputText pTooltip="Enter your username" tooltipEvent="focus" placeholder="focus to display tooltip" />
 ```
 
-### Auto Hide
+### Auto Hide {#auto-hide}
 
 Tooltip is hidden when mouse leaves the target element, in cases where tooltip needs to be interacted with, set autoHide to false to change the default behavior.
 
@@ -38,7 +44,7 @@ Tooltip is hidden when mouse leaves the target element, in cases where tooltip n
 <input type="text" pInputText pTooltip="Enter your username" placeholder="autoHide: true" />
 ```
 
-### Delay
+### Delay {#delay}
 
 Adding delays to the show and hide events are defined with showDelay and hideDelay options respectively.
 
@@ -46,7 +52,7 @@ Adding delays to the show and hide events are defined with showDelay and hideDel
 <p-button pTooltip="Confirm to proceed" showDelay="1000" hideDelay="300" label="Save" />
 ```
 
-### Custom
+### Custom {#custom}
 
 Tooltip can use either a string or a TemplateRef.
 
@@ -65,7 +71,7 @@ Tooltip can use either a string or a TemplateRef.
 </ng-template>
 ```
 
-### Tooltip Options
+### Tooltip Options {#tooltip-options}
 
 Tooltip is also configurable by using tooltipOptions property.
 
@@ -73,27 +79,29 @@ Tooltip is also configurable by using tooltipOptions property.
 <input type="text" pInputText pTooltip="Enter your username" [tooltipOptions]="tooltipOptions" placeholder="hover to display tooltip" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Tooltip component uses tooltip role and when it becomes visible the generated id of the tooltip is defined as the aria-describedby of the target.
 
-### Tooltip
+### Tooltip {#tooltip}
 
 Tooltip directive provides advisory information for a component.
 
-### TooltipOptions
+### TooltipOptions {#tooltipoptions}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Tooltip API
 
 API defines helper props, events and others for the PrimeNG Tooltip module.
 
-#### Tooltip
+#### Tooltip {#api-tooltip}
 
 Tooltip directive provides advisory information for a component.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -118,13 +126,15 @@ Defines the input properties of the component.
 | tooltipOptions | TooltipOptions | null | Specifies the tooltip configuration options for the component. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-#### TooltipOptions
+#### TooltipOptions {#api-tooltipoptions}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Tooltip Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -134,7 +144,7 @@ List of class names used in the styled mode.
 | p-tooltip-arrow | Class name of the arrow element |
 | p-tooltip-text | Class name of the text element |
 
-#### Tooltip Design Tokens
+#### Tooltip Design Tokens {#theming-tooltip-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -148,7 +158,7 @@ List of design tokens used in a preset.
 | tooltip.root.background | tooltip.background | --p-tooltip-background | Background of root |
 | tooltip.root.color | tooltip.color | --p-tooltip-color | Color of root |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -159,6 +169,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/tooltip)

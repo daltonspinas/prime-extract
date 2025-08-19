@@ -2,15 +2,21 @@
 
 Select is used to choose an item from a collection of options.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { SelectModule } from 'primeng/select';
 ```
 
-### Basic
+### Basic {#basic}
 
 Select is used as a controlled component with ngModel property along with an options collection. Label and value of an option are defined with the optionLabel and optionValue properties respectively. Note that, when options are simple primitive values such as a string array, no optionLabel and optionValue would be necessary.
 
@@ -18,7 +24,7 @@ Select is used as a controlled component with ngModel property along with an opt
 <p-select [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" placeholder="Select a City" class="w-full md:w-56" />
 ```
 
-### Checkmark
+### Checkmark {#checkmark}
 
 An alternative way to highlight the selected option is displaying a checkmark instead.
 
@@ -26,7 +32,7 @@ An alternative way to highlight the selected option is displaying a checkmark in
 <p-select [options]="cities" [(ngModel)]="selectedCity" [checkmark]="true" optionLabel="name" [showClear]="true" placeholder="Select a City" class="w-full md:w-56" />
 ```
 
-### Editable
+### Editable {#editable}
 
 When editable is present, the input can also be entered with typing.
 
@@ -34,7 +40,7 @@ When editable is present, the input can also be entered with typing.
 <p-select [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City" [editable]="true" optionLabel="name" class="w-full md:w-56" />
 ```
 
-### Group
+### Group {#group}
 
 Options can be grouped when a nested data structures is provided.
 
@@ -49,7 +55,7 @@ Options can be grouped when a nested data structures is provided.
 </p-select>
 ```
 
-### Template
+### Template {#template}
 
 Both the selected option and the options list can be templated to provide customizated representation. Use selectedItem template to customize the selected label display and the item template to change the content of the options in the select panel. In addition when grouping is enabled, group template is available to customize the option groups. All templates get the option instance as the default local template variable.
 
@@ -89,7 +95,7 @@ Both the selected option and the options list can be templated to provide custom
 </p-select>
 ```
 
-### Filter
+### Filter {#filter}
 
 Select provides built-in filtering that is enabled by adding the filter property.
 
@@ -110,7 +116,7 @@ Select provides built-in filtering that is enabled by adding the filter property
 </p-select>
 ```
 
-### Clear Icon
+### Clear Icon {#clear-icon}
 
 When showClear is enabled, a clear icon is added to reset the Select.
 
@@ -118,7 +124,7 @@ When showClear is enabled, a clear icon is added to reset the Select.
 <p-select [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" [showClear]="true" placeholder="Select a City" class="w-full md:w-56" />
 ```
 
-### Loading State
+### Loading State {#loading-state}
 
 Loading state can be used loading property.
 
@@ -126,7 +132,7 @@ Loading state can be used loading property.
 <p-select [options]="cities" [(ngModel)]="selectedCity" [loading]="true" optionLabel="name" placeholder="Loading..." class="w-full md:w-56" />
 ```
 
-### Virtual Scroll
+### Virtual Scroll {#virtual-scroll}
 
 VirtualScrolling is an efficient way of rendering the options by displaying a small subset of data in the viewport at any time. When dealing with huge number of options, it is suggested to enable VirtualScrolling to avoid performance issues. Usage is simple as setting virtualScroll property to true and defining virtualScrollItemSize to specify the height of an item.
 
@@ -134,13 +140,13 @@ VirtualScrolling is an efficient way of rendering the options by displaying a sm
 <p-select [options]="items" [(ngModel)]="selectedItem" placeholder="Select Item" [virtualScroll]="true" [virtualScrollItemSize]="38" class="w-full md:w-56" />
 ```
 
-### Lazy Virtual Scroll
+### Lazy Virtual Scroll {#lazy-virtual-scroll}
 
 ```html
 <p-select [options]="items" [(ngModel)]="selectedItem" placeholder="Select Item" [virtualScroll]="true" [virtualScrollItemSize]="38" [virtualScrollOptions]="options" class="w-full md:w-56" />
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -148,7 +154,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-select [options]="cities" [(ngModel)]="selectedCity" variant="filled" optionLabel="name" placeholder="Select a City" class="w-full md:w-56" />
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -169,7 +175,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -180,7 +186,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 Select provides small and large sizes as alternatives to the base.
 
@@ -190,7 +196,7 @@ Select provides small and large sizes as alternatives to the base.
 <p-select [(ngModel)]="value3" [options]="cities" optionLabel="name" size="large" placeholder="Large" class="w-full md:w-56" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -198,7 +204,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-select [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City" optionLabel="name" [disabled]="true" class="w-full md:w-56" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -207,7 +213,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-select [options]="cities" [(ngModel)]="selectedCity2" optionLabel="name" [showClear]="true" [invalid]="value2" placeholder="Select a City" class="w-full md:w-56" variant="filled"/>
 ```
 
-### Forms
+### Forms {#forms}
 
 Select can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -235,7 +241,7 @@ Select can also be used with reactive forms. In this case, the formControlName p
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can either be provided with ariaLabelledBy or ariaLabel props. The select element has a combobox role in addition to aria-haspopup and aria-expanded attributes. If the editable option is enabled aria-autocomplete is also added. The relation between the combobox and the popup is created with aria-controls and aria-activedescendant attribute is used to instruct screen reader which option to read during keyboard navigation within the popup list.
 
@@ -246,21 +252,23 @@ Value to describe the component can either be provided with ariaLabelledBy or ar
 <p-select ariaLabel="Options"/>
 ```
 
-### Select
+### Select {#select}
 
 Select is used to choose an item from a collection of options.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Select API
 
 API defines helper props, events and others for the PrimeNG Select module.
 
-#### Select
+#### Select {#api-select}
 
 Select is used to choose an item from a collection of options.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -332,7 +340,7 @@ Defines the input properties of the component.
 | options | any[] | null | An array of objects to display as the available options. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -348,7 +356,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onClear | event :  Event | Callback to invoke when select clears the value. |
 | onLazyLoad | event :  SelectLazyLoadEvent | Callback to invoke in lazy mode to load new data. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -360,7 +368,7 @@ Defines methods that can be accessed by the component's reference.
 | focus |  | Applies focus. |
 | clear | event :  Event | Clears the model. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -383,11 +391,13 @@ Defines the templates used by the component.
 | officon |  | Custom off icon template. |
 | cancelicon |  | Custom cancel icon template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Select Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -412,7 +422,7 @@ List of class names used in the styled mode.
 | p-select-option-blank-icon | Class name of the option blank icon element |
 | p-select-empty-message | Class name of the empty message element |
 
-#### Select Design Tokens
+#### Select Design Tokens {#theming-select-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -476,7 +486,7 @@ List of design tokens used in a preset.
 | select.checkmark.gutterEnd | select.checkmark.gutter.end | --p-select-checkmark-gutter-end | Gutter end of checkmark |
 | select.emptyMessage.padding | select.empty.message.padding | --p-select-empty-message-padding | Padding of empty message |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -487,6 +497,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/select)

@@ -205,29 +205,53 @@ async function scrapeComponents() {
 
             // Extract title and intro
             const docIntro = docMain.find('.doc-intro').first();
+            let title = comp.name;
+            let intro = '';
+            
             if (docIntro.length) {
-                const title = docIntro.find('h1').text().trim() || comp.name;
-                const intro = docIntro.find('p').text().trim();
-                
-                markdown += `# ${title}\n\n`;
-                if (intro) {
-                    markdown += `${intro}\n\n`;
-                }
-            } else {
-                markdown += `# ${comp.name}\n\n`;
+                title = docIntro.find('h1').text().trim() || comp.name;
+                intro = docIntro.find('p').text().trim();
+            }
+
+            // Add title
+            markdown += `# ${title}\n\n`;
+            
+            if (intro) {
+                markdown += `${intro}\n\n`;
             }
 
             // Extract feature documentation sections
             const docSections = docMain.find('app-docsection section');
+
+            // Collect section information for TOC
+            const sections = [];
+            const hasFeatures = docSections.length > 0;
+            const hasApi = $('app-docapisection').length > 0;
+            const hasTheming = $('app-docthemingsection').length > 0;
+
+            if (hasFeatures) sections.push({ name: 'Features', anchor: '#features' });
+            if (hasApi) sections.push({ name: 'API', anchor: '#api' });
+            if (hasTheming) sections.push({ name: 'Theming', anchor: '#theming' });
+
+            // Add Table of Contents if we have multiple sections
+            if (sections.length > 1) {
+                markdown += `## Table of Contents\n\n`;
+                sections.forEach(section => {
+                    markdown += `- [${section.name}](${section.anchor})\n`;
+                });
+                markdown += '\n';
+            }
             
             if (docSections.length > 0) {
-                markdown += `## Features\n\n`;
+                markdown += `## Features {#features}\n\n`;
                 
                 docSections.each((i, section) => {
                     const sectionData = extractSectionContent($, section);
                     
                     if (sectionData.title) {
-                        markdown += `### ${sectionData.title}\n\n`;
+                        // Create anchor-friendly ID from title
+                        const anchorId = sectionData.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                        markdown += `### ${sectionData.title} {#${anchorId}}\n\n`;
                         
                         if (sectionData.description) {
                             markdown += `${sectionData.description}\n\n`;
@@ -241,12 +265,19 @@ async function scrapeComponents() {
                         });
                     }
                 });
+                
+                // Add back to top link
+                if (sections.length > 1) {
+                    markdown += `[↑ Back to Top](#table-of-contents)\n\n`;
+                }
             } else {
                 console.log(`No documentation sections found for ${comp.name}`);
                 // Fallback: extract any available content
                 const fallbackTitle = $('h1').first().text().trim() || comp.name;
                 const fallbackDesc = $('p').first().text().trim();
-                markdown += `${fallbackDesc}\n\n`;
+                if (fallbackDesc) {
+                    markdown += `## Features {#features}\n\n${fallbackDesc}\n\n`;
+                }
             }
 
             // Extract API documentation
@@ -256,7 +287,7 @@ async function scrapeComponents() {
                 const apiData = extractApiSection($, apiSection);
                 
                 if (apiData.title) {
-                    markdown += `## API\n\n`;
+                    markdown += `## API {#api}\n\n`;
                     markdown += `### ${apiData.title}\n\n`;
                     
                     if (apiData.description) {
@@ -266,7 +297,8 @@ async function scrapeComponents() {
                     // Process API sections
                     apiData.sections.forEach(section => {
                         if (section.title) {
-                            markdown += `#### ${section.title}\n\n`;
+                            const anchorId = section.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                            markdown += `#### ${section.title} {#api-${anchorId}}\n\n`;
                             if (section.description) {
                                 markdown += `${section.description}\n\n`;
                             }
@@ -275,7 +307,8 @@ async function scrapeComponents() {
                         // Process subsections (Properties, Emitters, etc.)
                         section.subsections.forEach(subsection => {
                             if (subsection.title) {
-                                markdown += `##### ${subsection.title}\n\n`;
+                                const anchorId = subsection.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                                markdown += `##### ${subsection.title} {#api-${anchorId}}\n\n`;
                                 if (subsection.description) {
                                     markdown += `${subsection.description}\n\n`;
                                 }
@@ -299,6 +332,11 @@ async function scrapeComponents() {
                         });
                     });
                 }
+                
+                // Add back to top link
+                if (sections.length > 1) {
+                    markdown += `[↑ Back to Top](#table-of-contents)\n\n`;
+                }
             } else {
                 console.log(`No API section found for ${comp.name}`);
             }
@@ -310,7 +348,7 @@ async function scrapeComponents() {
                 const themingData = extractThemingSection($, themingSection);
                 
                 if (themingData.title || themingData.sections.length > 0) {
-                    markdown += `## Theming\n\n`;
+                    markdown += `## Theming {#theming}\n\n`;
                     
                     if (themingData.title) {
                         markdown += `### ${themingData.title}\n\n`;
@@ -323,7 +361,8 @@ async function scrapeComponents() {
                     // Process theming sections (CSS Classes, Design Tokens, Built-in Presets)
                     themingData.sections.forEach(section => {
                         if (section.title) {
-                            markdown += `#### ${section.title}\n\n`;
+                            const anchorId = section.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+                            markdown += `#### ${section.title} {#theming-${anchorId}}\n\n`;
                             if (section.description) {
                                 markdown += `${section.description}\n\n`;
                             }
@@ -346,12 +385,29 @@ async function scrapeComponents() {
                         }
                     });
                 }
+                
+                // Add back to top link
+                if (sections.length > 1) {
+                    markdown += `[↑ Back to Top](#table-of-contents)\n\n`;
+                }
             } else {
                 console.log(`No Theming section found for ${comp.name}`);
             }
 
-            // Add source link
-            markdown += `---\n\n[View Official Documentation](${url})\n`;
+            // Add source link and quick navigation
+            markdown += `---\n\n`;
+            
+            // Add quick navigation section
+            if (sections.length > 1) {
+                markdown += `## Quick Navigation\n\n`;
+                markdown += `**Jump to Section:**\n`;
+                sections.forEach(section => {
+                    markdown += `- [${section.name}](${section.anchor})\n`;
+                });
+                markdown += '\n';
+            }
+            
+            markdown += `[View Official Documentation](${url})\n`;
 
             // Write to markdown file
             const filename = comp.name.toLowerCase().replace(/\s+/g, '');

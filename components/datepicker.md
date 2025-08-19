@@ -2,15 +2,21 @@
 
 DatePicker is an input component to select a date.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { DatePickerModule } from 'primeng/datepicker';
 ```
 
-### Basic
+### Basic {#basic}
 
 Two-way value binding is defined using the standard ngModel directive referencing to a Date property.
 
@@ -18,7 +24,7 @@ Two-way value binding is defined using the standard ngModel directive referencin
 <p-datepicker [(ngModel)]="date" />
 ```
 
-### Format
+### Format {#format}
 
 Default date format is mm/dd/yy which can be customized using the dateFormat property. Following options can be a part of the format.
 
@@ -26,11 +32,11 @@ Default date format is mm/dd/yy which can be customized using the dateFormat pro
 <p-datepicker [(ngModel)]="date" dateFormat="dd.mm.yy" />
 ```
 
-### Locale
+### Locale {#locale}
 
 Locale for different languages and formats is defined globally, refer to the PrimeNG Locale configuration for more information.
 
-### Icon
+### Icon {#icon}
 
 An additional icon is displayed next to the input field when showIcon is present.
 
@@ -46,7 +52,7 @@ An additional icon is displayed next to the input field when showIcon is present
 </p-datepicker>
 ```
 
-### Min / Max
+### Min / Max {#min-max}
 
 Boundaries for the permitted dates that can be entered are defined with minDate and maxDate properties.
 
@@ -54,7 +60,7 @@ Boundaries for the permitted dates that can be entered are defined with minDate 
 <p-datepicker [(ngModel)]="date" [minDate]="minDate" [maxDate]="maxDate" [readonlyInput]="true" />
 ```
 
-### Multiple
+### Multiple {#multiple}
 
 In order to choose multiple dates, set selectionMode as multiple. In this mode, the value binding should be an array.
 
@@ -62,7 +68,7 @@ In order to choose multiple dates, set selectionMode as multiple. In this mode, 
 <p-datepicker [(ngModel)]="dates" selectionMode="multiple" [readonlyInput]="true" />
 ```
 
-### Range
+### Range {#range}
 
 A range of dates can be selected by defining selectionMode as range, in this case the bound value would be an array with two values where first date is the start of the range and second date is the end.
 
@@ -70,7 +76,7 @@ A range of dates can be selected by defining selectionMode as range, in this cas
 <p-datepicker [(ngModel)]="rangeDates" selectionMode="range" [readonlyInput]="true" />
 ```
 
-### Button Bar
+### Button Bar {#button-bar}
 
 When showButtonBar is present, today and clear buttons are displayed at the footer.
 
@@ -78,7 +84,7 @@ When showButtonBar is present, today and clear buttons are displayed at the foot
 <p-datepicker [(ngModel)]="date" [showButtonBar]="true" />
 ```
 
-### Time
+### Time {#time}
 
 A time picker is displayed when showTime is enabled where 12/24 hour format is configured with hourFormat property. In case, only time needs to be selected, add timeOnly to hide the date section.
 
@@ -90,7 +96,7 @@ A time picker is displayed when showTime is enabled where 12/24 hour format is c
 <p-datepicker inputId="calendar-timeonly" [(ngModel)]="time" [timeOnly]="true" />
 ```
 
-### Month Picker
+### Month Picker {#month-picker}
 
 Month only picker is enabled by specifying view as month in addition to a suitable dateFormat.
 
@@ -98,7 +104,7 @@ Month only picker is enabled by specifying view as month in addition to a suitab
 <p-datepicker [(ngModel)]="date" view="month" dateFormat="mm/yy" [readonlyInput]="true" />
 ```
 
-### Year Picker
+### Year Picker {#year-picker}
 
 Specifying view as year in addition to a suitable dateFormat enables the year picker.
 
@@ -106,7 +112,7 @@ Specifying view as year in addition to a suitable dateFormat enables the year pi
 <p-datepicker [(ngModel)]="date" view="year" dateFormat="yy" />
 ```
 
-### Multiple Months
+### Multiple Months {#multiple-months}
 
 Number of months to display is configured with the numberOfMonths property.
 
@@ -114,7 +120,7 @@ Number of months to display is configured with the numberOfMonths property.
 <p-datepicker [(ngModel)]="date" [numberOfMonths]="2" />
 ```
 
-### Date Template
+### Date Template {#date-template}
 
 Custom content can be placed inside date cells with the ng-template property that takes a Date as a parameter.
 
@@ -127,7 +133,7 @@ Custom content can be placed inside date cells with the ng-template property tha
 </p-datepicker>
 ```
 
-### Inline
+### Inline {#inline}
 
 DatePicker is displayed as a popup by default, add inline property to customize this behavior.
 
@@ -135,7 +141,7 @@ DatePicker is displayed as a popup by default, add inline property to customize 
 <p-datepicker class="max-w-full" [(ngModel)]="date" [inline]="true" [showWeek]="true" />
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -156,7 +162,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -167,7 +173,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 DatePicker provides small and large sizes as alternatives to the base.
 
@@ -177,7 +183,7 @@ DatePicker provides small and large sizes as alternatives to the base.
 <p-datepicker [(ngModel)]="value3" size="large" placeholder="Large" showIcon iconDisplay="input" />
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -185,7 +191,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-datepicker [(ngModel)]="date" variant="filled" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -193,7 +199,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-datepicker [(ngModel)]="date" [disabled]="true" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -202,7 +208,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-datepicker [(ngModel)]="date2" [invalid]="!date2" variant="filled" placeholder="Date" />
 ```
 
-### Forms
+### Forms {#forms}
 
 DatePicker can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -230,7 +236,7 @@ DatePicker can also be used with reactive forms. In this case, the formControlNa
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can either be provided via label tag combined with inputId prop or using aria-labelledby, aria-label props. The input element has combobox role in addition to aria-autocomplete as "none", aria-haspopup as "dialog" and aria-expanded attributes. The relation between the input and the popup is created with aria-controls attribute that refers to the id of the popup.
 
@@ -244,21 +250,23 @@ Value to describe the component can either be provided via label tag combined wi
 <p-datepicker ariaLabel="Date"/>
 ```
 
-### DatePicker
+### DatePicker {#datepicker}
 
 DatePicker is a form component to work with dates.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### DatePicker API
 
 API defines helper props, events and others for the PrimeNG DatePicker module.
 
-#### DatePicker
+#### DatePicker {#api-datepicker}
 
 DatePicker is a form component to work with dates.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -337,7 +345,7 @@ Defines the input properties of the component.
 | defaultDate | Date | null | Set the date to highlight on first opening if the field is blank. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -356,7 +364,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onClickOutside | value :  any | Callback to invoke when clicked outside of the date panel. |
 | onShow | value :  any | Callback to invoke when datepicker panel is shown. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -375,11 +383,13 @@ Defines the templates used by the component.
 | incrementicon |  | Custom template for increment icon. |
 | inputicon |  | Custom template for input icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### DatePicker Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -425,7 +435,7 @@ List of class names used in the styled mode.
 | p-datepicker-clear-button | Class name of the clear button element |
 | p-datepicker-clear-icon | Class name of the clear icon |
 
-#### DatePicker Design Tokens
+#### DatePicker Design Tokens {#theming-datepicker-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -510,7 +520,7 @@ List of design tokens used in a preset.
 | datepicker.today.background | datepicker.today.background | --p-datepicker-today-background | Background of today |
 | datepicker.today.color | datepicker.today.color | --p-datepicker-today-color | Color of today |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -521,6 +531,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/datepicker)

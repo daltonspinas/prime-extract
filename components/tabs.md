@@ -2,15 +2,21 @@
 
 Tabs is a container component to group content with tabs.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TabsModule } from 'primeng/tabs';
 ```
 
-### Basic
+### Basic {#basic}
 
 Tabs is defined using TabList, Tab, TabPanels and TabPanel components. Tab and TabPanel components are associated with their value properties
 
@@ -53,7 +59,7 @@ Tabs is defined using TabList, Tab, TabPanels and TabPanel components. Tab and T
 </p-tabs>
 ```
 
-### Dynamic
+### Dynamic {#dynamic}
 
 Tabs can be generated dynamically using the standard @for block.
 
@@ -74,7 +80,7 @@ Tabs can be generated dynamically using the standard @for block.
 </p-tabs>
 ```
 
-### Controlled
+### Controlled {#controlled}
 
 Tabs can be controlled programmatically using value property as a model.
 
@@ -120,7 +126,7 @@ Tabs can be controlled programmatically using value property as a model.
 </p-tabs>
 ```
 
-### Scrollable
+### Scrollable {#scrollable}
 
 Adding scrollable property displays navigational buttons at each side to scroll between tabs.
 
@@ -143,7 +149,7 @@ Adding scrollable property displays navigational buttons at each side to scroll 
 </p-tabs>
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 Enabling disabled property of a Tab prevents user interaction.
 
@@ -187,7 +193,7 @@ Enabling disabled property of a Tab prevents user interaction.
 </p-tabs>
 ```
 
-### Template
+### Template {#template}
 
 Custom content for a tab is defined with the default ng-content.
 
@@ -246,7 +252,7 @@ Custom content for a tab is defined with the default ng-content.
 </p-tabs>
 ```
 
-### Tab Menu
+### Tab Menu {#tab-menu}
 
 A navigation menu is implemented using tabs without the panels where the content of a tab is provided by a route component like router-outlet. For the purpose of this demo, router-outlet is not included.
 
@@ -264,29 +270,31 @@ A navigation menu is implemented using tabs without the panels where the content
 <!--<router-outlet></router-outlet>-->
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Tabs container is defined with the tablist role, as any attribute is passed to the container element aria-labelledby can be optionally used to specify an element to describe the Tabs. Each tab header has a tab role along with aria-selected state attribute and aria-controls to refer to the corresponding tab content element. The content element of each tab has tabpanel role, an id to match thearia-controls of the header and aria-labelledby reference to the header as the accessible name.
 
-### Tabs
+### Tabs {#tabs}
 
 Tabs facilitates seamless switching between different views.
 
-### TabPanel
+### TabPanel {#tabpanel}
 
-### Tab
+### Tab {#tab}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Tabs API
 
 API defines helper props, events and others for the PrimeNG Tabs module.
 
-#### Tabs
+#### Tabs {#api-tabs}
 
 Tabs facilitates seamless switching between different views.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -299,15 +307,17 @@ Defines the input properties of the component.
 | showNavigators | InputSignalWithTransform<boolean, unknown> | true | Whether to display navigation buttons in container when scrollable is enabled. |
 | tabindex | InputSignalWithTransform<number, unknown> | 0 | Tabindex of the tab buttons. |
 
-#### TabPanel
+#### TabPanel {#api-tabpanel}
 
-#### Tab
+#### Tab {#api-tab}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Tabs Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -323,7 +333,7 @@ List of class names used in the styled mode.
 | p-tabpanels | Class name of the tab panels wrapper |
 | p-tabs-panel | Class name of the tab panel element |
 
-#### Tabs Design Tokens
+#### Tabs Design Tokens {#theming-tabs-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -374,7 +384,7 @@ List of design tokens used in a preset.
 | tabs.activeBar.bottom | tabs.active.bar.bottom | --p-tabs-active-bar-bottom | Bottom of active bar |
 | tabs.activeBar.background | tabs.active.bar.background | --p-tabs-active-bar-background | Background of active bar |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -385,6 +395,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/tabs)

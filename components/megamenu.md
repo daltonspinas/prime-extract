@@ -2,15 +2,21 @@
 
 MegaMenu is navigation component that displays submenus together.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { MegaMenuModule } from 'primeng/megamenu';
 ```
 
-### Basic
+### Basic {#basic}
 
 MegaMenu requires a collection of menuitems as its model.
 
@@ -18,7 +24,7 @@ MegaMenu requires a collection of menuitems as its model.
 <p-megamenu [model]="items" />
 ```
 
-### Vertical
+### Vertical {#vertical}
 
 Layout of the MegaMenu is changed with the orientation property that accepts horizontal and vertical as options.
 
@@ -26,7 +32,7 @@ Layout of the MegaMenu is changed with the orientation property that accepts hor
 <p-megamenu [model]="items" orientation="vertical" />
 ```
 
-### Template
+### Template {#template}
 
 Custom content can be placed between p-megamenu tags. Megamenu should be horizontal for custom content.
 
@@ -63,7 +69,7 @@ Custom content can be placed between p-megamenu tags. Megamenu should be horizon
 </p-megamenu>
 ```
 
-### Command
+### Command {#command}
 
 The command property of a menuitem defines the callback to run when an item is activated by click or a key event.
 
@@ -77,7 +83,7 @@ The command property of a menuitem defines the callback to run when an item is a
 }
 ```
 
-### Router
+### Router {#router}
 
 Menu items support navigation via routerLink, programmatic routing using commands, or external URLs.
 
@@ -85,27 +91,29 @@ Menu items support navigation via routerLink, programmatic routing using command
 <p-megamenu [model]="items" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 MegaMenu component uses the menubar role along with aria-orientation and the value to describe the component can either be provided with aria-labelledby or aria-label props. Each list item has a presentation role whereas anchor elements have a menuitem role with aria-label referring to the label of the item and aria-disabled defined if the item is disabled. A submenu within a MegaMenu uses the menu role with an aria-labelledby defined as the id of the submenu root menuitem label. In addition, root menuitems that open a submenu have aria-haspopup, aria-expanded and aria-controls to define the relation between the item and the submenu.
 
-### MegaMenu
+### MegaMenu {#megamenu}
 
 MegaMenu is navigation component that displays submenus together.
 
-### MegaMenuItem
+### MegaMenuItem {#megamenuitem}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### MegaMenu API
 
 API defines helper props, events and others for the PrimeNG MegaMenu module.
 
-#### MegaMenu
+#### MegaMenu {#api-megamenu}
 
 MegaMenu is navigation component that displays submenus together.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -122,7 +130,7 @@ Defines the input properties of the component.
 | disabled | boolean | false | When present, it specifies that the component should be disabled. |
 | tabindex | number | 0 | Index of the element in tabbing order. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -136,13 +144,15 @@ Defines the templates used by the component.
 | button |  | Custom menu button template on responsive mode. |
 | buttonicon |  | Custom menu button icon template on responsive mode. |
 
-#### MegaMenuItem
+#### MegaMenuItem {#api-megamenuitem}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### MegaMenu Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -166,7 +176,7 @@ List of class names used in the styled mode.
 | p-megamenu-separator | Class name of the separator element |
 | p-megamenu-end | Class name of the end element |
 
-#### MegaMenu Design Tokens
+#### MegaMenu Design Tokens {#theming-megamenu-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -224,7 +234,7 @@ List of design tokens used in a preset.
 | megamenu.mobileButton.focusRing.offset | megamenu.mobile.button.focus.ring.offset | --p-megamenu-mobile-button-focus-ring-offset | Focus ring offset of mobile button |
 | megamenu.mobileButton.focusRing.shadow | megamenu.mobile.button.focus.ring.shadow | --p-megamenu-mobile-button-focus-ring-shadow | Focus ring shadow of mobile button |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -235,6 +245,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/megamenu)

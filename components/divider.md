@@ -2,15 +2,21 @@
 
 Divider is used to separate contents.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { DividerModule } from 'primeng/divider';
 ```
 
-### Basic
+### Basic {#basic}
 
 Divider is basically placed between the items to separate.
 
@@ -32,7 +38,7 @@ Divider is basically placed between the items to separate.
 </p>
 ```
 
-### Type
+### Type {#type}
 
 Style of the border is configured with the type property that can either be solid, dotted or dashed.
 
@@ -54,7 +60,7 @@ Style of the border is configured with the type property that can either be soli
 </p>
 ```
 
-### Vertical
+### Vertical {#vertical}
 
 Vertical divider is enabled by setting the layout property as vertical.
 
@@ -72,7 +78,7 @@ Vertical divider is enabled by setting the layout property as vertical.
 </p>
 ```
 
-### Content
+### Content {#content}
 
 Children are rendered within the boundaries of the divider where location of the content is configured with the align property. In horizontal layout, alignment options are left, center and right whereas vertical mode supports top, center and bottom.
 
@@ -106,7 +112,7 @@ Children are rendered within the boundaries of the divider where location of the
 </p>
 ```
 
-### Login
+### Login {#login}
 
 Sample implementation of a login form using a divider with content.
 
@@ -135,25 +141,27 @@ Sample implementation of a login form using a divider with content.
 </div>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Divider uses a separator role with aria-orientation set to either "horizontal" or "vertical".
 
-### Divider
+### Divider {#divider}
 
 Divider is used to separate contents.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Divider API
 
 API defines helper props, events and others for the PrimeNG Divider module.
 
-#### Divider
+#### Divider {#api-divider}
 
 Divider is used to separate contents.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -164,11 +172,13 @@ Defines the input properties of the component.
 | type | "solid" | "dashed" | "dotted" | solid | Border style type. |
 | align | "right" | "left" | "top" | "bottom" | "center" | null | Alignment of the content. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Divider Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -177,7 +187,7 @@ List of class names used in the styled mode.
 | p-divider | Class name of the root element |
 | p-divider-content | Class name of the content element |
 
-#### Divider Design Tokens
+#### Divider Design Tokens {#theming-divider-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -193,7 +203,7 @@ List of design tokens used in a preset.
 | divider.vertical.padding | divider.vertical.padding | --p-divider-vertical-padding | Padding of vertical |
 | divider.vertical.content.padding | divider.vertical.content.padding | --p-divider-vertical-content-padding | Content padding of vertical |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -204,6 +214,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/divider)

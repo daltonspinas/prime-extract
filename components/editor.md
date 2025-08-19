@@ -2,15 +2,21 @@
 
 Editor is rich text editor component based on Quill.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { EditorModule } from 'primeng/editor';
 ```
 
-### Quill
+### Quill {#quill}
 
 Editor uses Quill editor underneath so it needs to be installed as a dependency.
 
@@ -18,7 +24,7 @@ Editor uses Quill editor underneath so it needs to be installed as a dependency.
 npm install quill
 ```
 
-### Basic
+### Basic {#basic}
 
 A model can be bound using the standard ngModel directive.
 
@@ -26,7 +32,7 @@ A model can be bound using the standard ngModel directive.
 <p-editor [(ngModel)]="text" [style]="{ height: '320px' }" />
 ```
 
-### ReadOnly
+### ReadOnly {#readonly}
 
 When readonly is present, the value cannot be edited.
 
@@ -34,7 +40,7 @@ When readonly is present, the value cannot be edited.
 <p-editor [(ngModel)]="text" [readonly]="true" [style]="{ height: '320px' }" />
 ```
 
-### Template
+### Template {#template}
 
 Editor provides a default toolbar with common options, to customize it define your elements inside the header element. Refer to Quill documentation for available controls.
 
@@ -50,7 +56,7 @@ Editor provides a default toolbar with common options, to customize it define yo
 </p-editor>
 ```
 
-### Forms
+### Forms {#forms}
 
 Editor can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -78,25 +84,27 @@ Editor can also be used with reactive forms. In this case, the formControlName p
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Quill performs generally well in terms of accessibility. The elements in the toolbar can be tabbed and have the necessary ARIA roles/attributes for screen readers. One known limitation is the lack of arrow key support for dropdowns in the toolbar that may be overcome with a custom toolbar.
 
-### Editor
+### Editor {#editor}
 
 Editor groups a collection of contents in tabs.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Editor API
 
 API defines helper props, events and others for the PrimeNG Editor module.
 
-#### Editor
+#### Editor {#api-editor}
 
 Editor groups a collection of contents in tabs.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -116,7 +124,7 @@ Defines the input properties of the component.
 | debug | string | null | Shortcut for debug. Note debug is a static method and will affect other instances of Quill editors on the page. Only warning and error messages are enabled by default. |
 | readonly | boolean | null | Whether to instantiate the editor to read-only mode. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -126,7 +134,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onTextChange | event :  EditorTextChangeEvent | Callback to invoke when text of editor changes. |
 | onSelectionChange | event :  EditorSelectionChangeEvent | Callback to invoke when selection of the text changes. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -134,11 +142,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | header |  | Custom item template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Editor Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -148,7 +158,7 @@ List of class names used in the styled mode.
 | p-editor-toolbar | Class name of the toolbar element |
 | p-editor-content | Class name of the content element |
 
-#### Editor Design Tokens
+#### Editor Design Tokens {#theming-editor-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -177,7 +187,7 @@ List of design tokens used in a preset.
 | editor.content.color | editor.content.color | --p-editor-content-color | Color of content |
 | editor.content.borderRadius | editor.content.border.radius | --p-editor-content-border-radius | Border radius of content |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -188,6 +198,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/editor)

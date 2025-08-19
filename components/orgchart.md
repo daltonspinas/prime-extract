@@ -2,15 +2,20 @@
 
 OrganizationChart visualizes hierarchical organization data.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { OrganizationChartModule } from 'primeng/organizationchart';
 ```
 
-### Basic
+### Basic {#basic}
 
 OrganizationChart requires a collection of TreeNode instances as a value.
 
@@ -18,7 +23,7 @@ OrganizationChart requires a collection of TreeNode instances as a value.
 <p-organization-chart [value]="data" />
 ```
 
-### Template
+### Template {#template}
 
 Custom content instead of a node label is defined using the pTemplate property.
 
@@ -33,7 +38,7 @@ Custom content instead of a node label is defined using the pTemplate property.
 </p-organization-chart>
 ```
 
-### Selection
+### Selection {#selection}
 
 Nodes can be selected by defining selectionMode along with a value binding with selection properties. By default only one node can be selected, set selectionMode as multiple to select more than one.
 
@@ -51,7 +56,7 @@ Nodes can be selected by defining selectionMode along with a value binding with 
 </p-organization-chart>
 ```
 
-### Colored
+### Colored {#colored}
 
 Styling a specific node is configured with class and style options of a TreeNode.
 
@@ -69,25 +74,27 @@ Styling a specific node is configured with class and style options of a TreeNode
 </p-organization-chart>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Component currently uses a table based implementation and does not provide high level of screen reader support, a nested list implementation replacement is planned with aria roles and attributes aligned to a tree widget for high level of reader support in the upcoming versions.
 
-### OrganizationChart
+### OrganizationChart {#organizationchart}
 
 OrganizationChart visualizes hierarchical organization data.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### OrganizationChart API
 
 API defines helper props, events and others for the PrimeNG OrganizationChart module.
 
-#### OrganizationChart
+#### OrganizationChart {#api-organizationchart}
 
 OrganizationChart visualizes hierarchical organization data.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -100,7 +107,7 @@ Defines the input properties of the component.
 | preserveSpace | boolean | true | Whether the space allocated by a node is preserved when hidden. |
 | selection | any | null | A single treenode instance or an array to refer to the selections. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -112,6 +119,14 @@ Defines emit that determine the behavior of the component based on a given condi
 | onNodeExpand | event :  OrganizationChartNodeExpandEvent | Callback to invoke when a node is expanded. |
 | onNodeCollapse | event :  OrganizationChartNodeCollapseEvent | Callback to invoke when a node is collapsed. |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
 
 [View Official Documentation](https://primeng.org/organizationchart)

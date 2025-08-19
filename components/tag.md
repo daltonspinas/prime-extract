@@ -2,15 +2,21 @@
 
 Tag component is used to categorize content.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TagModule } from 'primeng/tag';
 ```
 
-### Basic
+### Basic {#basic}
 
 Label of the tag is defined with the value property.
 
@@ -18,7 +24,7 @@ Label of the tag is defined with the value property.
 <p-tag value="New" />
 ```
 
-### Severity
+### Severity {#severity}
 
 Severity defines the color of the tag, possible values are success, info, warn and danger in addition to the default theme color.
 
@@ -32,7 +38,7 @@ Severity defines the color of the tag, possible values are success, info, warn a
 <p-tag severity="contrast" value="Contrast" />
 ```
 
-### Pill
+### Pill {#pill}
 
 Enabling rounded, displays a tag as a pill.
 
@@ -46,7 +52,7 @@ Enabling rounded, displays a tag as a pill.
 <p-tag severity="contrast" value="Contrast" [rounded]="true" />
 ```
 
-### Icon
+### Icon {#icon}
 
 A font icon next to the value can be displayed with the icon property.
 
@@ -60,7 +66,7 @@ A font icon next to the value can be displayed with the icon property.
 <p-tag icon="pi pi-cog" severity="contrast" value="Contrast" />
 ```
 
-### Template
+### Template {#template}
 
 Children of the component are passed as the content for templating.
 
@@ -75,25 +81,27 @@ Children of the component are passed as the content for templating.
 </p-tag>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Tag does not include any roles and attributes by default, any attribute is passed to the root element so aria roles and attributes can be added if required. If the tags are dynamic,aria-live may be utilized as well. In case badges need to be tabbable, tabIndex can be added to implement custom key handlers.
 
-### Tag
+### Tag {#tag}
 
 Tag component is used to categorize content.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Tag API
 
 API defines helper props, events and others for the PrimeNG Tag module.
 
-#### Tag
+#### Tag {#api-tag}
 
 Tag component is used to categorize content.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -105,11 +113,13 @@ Defines the input properties of the component.
 | icon | string | null | Icon of the tag to display next to the value. |
 | rounded | boolean | false | Whether the corners of the tag are rounded. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Tag Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -119,7 +129,7 @@ List of class names used in the styled mode.
 | p-tag-icon | Class name of the icon element |
 | p-tag-label | Class name of the label element |
 
-#### Tag Design Tokens
+#### Tag Design Tokens {#theming-tag-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -147,7 +157,7 @@ List of design tokens used in a preset.
 | tag.contrast.background | tag.contrast.background | --p-tag-contrast-background | Background of contrast |
 | tag.contrast.color | tag.contrast.color | --p-tag-contrast-color | Color of contrast |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -158,6 +168,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/tag)

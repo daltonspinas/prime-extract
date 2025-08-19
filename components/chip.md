@@ -2,15 +2,21 @@
 
 Chip represents entities using icons, labels and images.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ChipModule } from 'primeng/chip';
 ```
 
-### Basic
+### Basic {#basic}
 
 A basic chip with a text is created with the label property. In addition when removable is added, a delete icon is displayed to remove a chip, the optional onRemove event is available to get notified when a chip is hidden.
 
@@ -21,7 +27,7 @@ A basic chip with a text is created with the label property. In addition when re
 <p-chip label="Thriller" [removable]="true" />
 ```
 
-### Icon
+### Icon {#icon}
 
 A font icon next to the label can be displayed with the icon property.
 
@@ -29,7 +35,7 @@ A font icon next to the label can be displayed with the icon property.
 <p-chip label="Apple" icon="pi pi-apple" />
 ```
 
-### Image
+### Image {#image}
 
 The image property is used to display an image like an avatar.
 
@@ -40,7 +46,7 @@ The image property is used to display an image like an avatar.
 <p-chip label="Xuxue Feng" image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png" alt="Avatar image" [removable]="true" />
 ```
 
-### Template
+### Template {#template}
 
 Content can easily be customized with the dynamic content instead of using the built-in modes.
 
@@ -55,25 +61,27 @@ Content can easily be customized with the dynamic content instead of using the b
 </p-chip>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Chip uses the label property as the default aria-label, since any attribute is passed to the root element aria-labelledby or aria-label can be used to override the default behavior. Removable chips have a tabindex and focusable with the tab key.
 
-### Chip
+### Chip {#chip}
 
 Chip represents people using icons, labels and images.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Chip API
 
 API defines helper props, events and others for the PrimeNG Chip module.
 
-#### Chip
+#### Chip {#api-chip}
 
 Chip represents people using icons, labels and images.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -88,7 +96,7 @@ Defines the input properties of the component.
 | removeIcon | string | null | Icon of the remove element. |
 | chipProps | ChipProps | null | Used to pass all properties of the chipProps to the Chip component. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -97,11 +105,13 @@ Defines emit that determine the behavior of the component based on a given condi
 | onRemove | event :  MouseEvent | Callback to invoke when a chip is removed. |
 | onImageError | event :  Event | This event is triggered if an error occurs while loading an image file. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Chip Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -113,7 +123,7 @@ List of class names used in the styled mode.
 | p-chip-label | Class name of the label element |
 | p-chip-remove-icon | Class name of the remove icon element |
 
-#### Chip Design Tokens
+#### Chip Design Tokens {#theming-chip-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -138,7 +148,7 @@ List of design tokens used in a preset.
 | chip.removeIcon.focusRing.shadow | chip.remove.icon.focus.ring.shadow | --p-chip-remove-icon-focus-ring-shadow | Focus ring shadow of remove icon |
 | chip.removeIcon.color | chip.remove.icon.color | --p-chip-remove-icon-color | Color of remove icon |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -149,6 +159,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/chip)

@@ -2,15 +2,21 @@
 
 VirtualScroller is a performance-approach to handle huge data efficiently.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ScrollerModule } from 'primeng/scroller';
 ```
 
-### Basic
+### Basic {#basic}
 
 VirtualScroller requires items as the data to display, itemSize for the dimensions of an item and item template are required on component. In addition, an initial array is required based on the total number of items to display. Size of the viewport is configured using scrollWidth, scrollHeight properties directly or with CSS width and height styles.
 
@@ -24,7 +30,7 @@ VirtualScroller requires items as the data to display, itemSize for the dimensio
 </p-virtualscroller>
 ```
 
-### Horizontal
+### Horizontal {#horizontal}
 
 Setting orientation to horizontal enables scrolling horizontally. In this case, the itemSize should refer to the width of an item.
 
@@ -38,7 +44,7 @@ Setting orientation to horizontal enables scrolling horizontally. In this case, 
 </p-virtualscroller>
 ```
 
-### Grid
+### Grid {#grid}
 
 Scrolling can be enabled vertically and horizontally when orientation is set as both. In this mode, itemSize should be an array where first value is the height of an item and second is the width.
 
@@ -52,7 +58,7 @@ Scrolling can be enabled vertically and horizontally when orientation is set as 
 </p-virtualscroller>
 ```
 
-### Delay
+### Delay {#delay}
 
 Scroll delay is adjusted by using delay property.
 
@@ -82,7 +88,7 @@ Scroll delay is adjusted by using delay property.
 </p-virtualscroller>
 ```
 
-### Loading
+### Loading {#loading}
 
 Busy state is enabled by adding showLoader property which blocks the UI with a modal by default. Alternatively, loader template can be used to customize items e.g. with Skeleton.
 
@@ -109,7 +115,7 @@ Busy state is enabled by adding showLoader property which blocks the UI with a m
 </p-virtualscroller>
 ```
 
-### Lazy
+### Lazy {#lazy}
 
 Lazy mode is handy to deal with large datasets where instead of loading the entire data, small chunks of data are loaded on demand by invoking onLazyLoad callback everytime scrolling requires a new chunk. To implement lazy loading, enable lazy attribute, initialize your data as a placeholder with a length and finally implement a method callback using onLazyLoad that actually loads a chunk from a datasource. onLazyLoad gets an event object that contains information about the chunk of data to load such as the index and number of items to load. Notice that a new template called loadingItem is also required to display as a placeholder while the new items are being loaded.
 
@@ -123,7 +129,7 @@ Lazy mode is handy to deal with large datasets where instead of loading the enti
 </p-virtualscroller>
 ```
 
-### Programmatic
+### Programmatic {#programmatic}
 
 Scrolling to a specific index can be done with the scrollToIndex function.
 
@@ -138,7 +144,7 @@ Scrolling to a specific index can be done with the scrollToIndex function.
 </p-virtualscroller>
 ```
 
-### Template
+### Template {#template}
 
 Scroller content is customizable by using ng-template. Valid values are content, item, loader and loadericon
 
@@ -169,25 +175,27 @@ Scroller content is customizable by using ng-template. Valid values are content,
 </p-virtualscroller>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 VirtualScroller uses a semantic list element to list the items. No specific role is enforced, still you may use any aria role and attributes as any valid attribute is passed to the container element.
 
-### Scroller
+### Scroller {#scroller}
 
 Scroller is a performance-approach to handle huge data efficiently.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Scroller API
 
 API defines helper props, events and others for the PrimeNG Scroller module.
 
-#### Scroller
+#### Scroller {#api-scroller}
 
 Scroller is a performance-approach to handle huge data efficiently.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -219,7 +227,7 @@ Defines the input properties of the component.
 | trackBy | Function | null | Function to optimize the dom operations by delegating to ngForTrackBy, default algoritm checks for object identity. |
 | options | ScrollerOptions | null | Defines whether to use the scroller feature. The properties of scroller component can be used like an object in it. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -229,7 +237,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onScroll | event :  ScrollerScrollEvent | Callback to invoke when scroll position changes. |
 | onScrollIndexChange | event :  ScrollerScrollIndexChangeEvent | Callback to invoke when scroll position and item's range in view changes. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -240,11 +248,13 @@ Defines the templates used by the component.
 | loader |  | Loader template of the component. |
 | loadericon |  | Loader icon template of the component. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Scroller Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -256,7 +266,7 @@ List of class names used in the styled mode.
 | p-virtualscroller-loader | Class name of the loader element |
 | p-virtualscroller-loading-icon | Class name of the loading icon element |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -267,6 +277,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/virtualscroller)

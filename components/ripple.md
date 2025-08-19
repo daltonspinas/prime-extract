@@ -2,15 +2,20 @@
 
 Ripple directive adds ripple effect to the host element.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { RippleModule } from 'primeng/ripple';
 ```
 
-### Default
+### Default {#default}
 
 Default Demo Content.
 
@@ -18,7 +23,7 @@ Default Demo Content.
 <div pRipple class="ripple-box">Default</div>
 ```
 
-### Custom
+### Custom {#custom}
 
 Styling Demo Content.
 
@@ -34,15 +39,17 @@ Styling Demo Content.
 </div>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Ripple element has the aria-hidden attribute as true so that it gets ignored by the screen readers.
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Ripple Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -50,7 +57,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-ink | Class name of the root element |
 
-#### Ripple Design Tokens
+#### Ripple Design Tokens {#theming-ripple-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -58,7 +65,7 @@ List of design tokens used in a preset.
 | --- | --- | --- | --- |
 | ripple.root.background | ripple.background | --p-ripple-background | Background of root |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -69,6 +76,14 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/ripple)

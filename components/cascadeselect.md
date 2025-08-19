@@ -2,15 +2,21 @@
 
 CascadeSelect displays a nested structure of options.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { CascadeSelectModule } from 'primeng/cascadeselect';
 ```
 
-### Basic
+### Basic {#basic}
 
 CascadeSelect requires a value to bind and a collection of arbitrary objects with a nested hierarchy. optionGroupLabel is used for the text of a category and optionGroupChildren is to define the children of the category. Note that order of the optionGroupChildren matters and it should correspond to the data hierarchy.
 
@@ -18,7 +24,7 @@ CascadeSelect requires a value to bind and a collection of arbitrary objects wit
 <p-cascadeselect [(ngModel)]="selectedCity" [options]="countries" optionLabel="cname" optionGroupLabel="name" [optionGroupChildren]="['states', 'cities']" [style]="{ minWidth: '14rem' }" placeholder="Select a City" />
 ```
 
-### Template
+### Template {#template}
 
 Label of an option is used as the display text of an item by default, for custom content support define an option template that gets the option instance as a parameter. In addition value, dropdownicon, loadingicon, and optiongroupicon slots are provided for further customization.
 
@@ -46,7 +52,7 @@ Label of an option is used as the display text of an item by default, for custom
 </p-cascadeselect>
 ```
 
-### Loading State
+### Loading State {#loading-state}
 
 Loading state can be used loading property.
 
@@ -54,7 +60,7 @@ Loading state can be used loading property.
 <p-cascadeselect [loading]="true" [style]="{ minWidth: '14rem' }" placeholder="Loading..." />
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -75,7 +81,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -86,7 +92,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 CascadeSelect provides small and large sizes as alternatives to the base.
 
@@ -96,7 +102,7 @@ CascadeSelect provides small and large sizes as alternatives to the base.
 <p-cascadeselect [(ngModel)]="value3" [options]="countries" optionLabel="cname" optionGroupLabel="name" [optionGroupChildren]="['states', 'cities']" class="w-56" size="large" placeholder="Large" />
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -104,7 +110,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-cascadeselect [(ngModel)]="selectedCity" variant="filled" [options]="countries" optionLabel="cname" optionGroupLabel="name" [optionGroupChildren]="['states', 'cities']" [style]="{ minWidth: '14rem' }" placeholder="Select a City" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -112,7 +118,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-cascadeselect [disabled]="true" placeholder="Disabled" [style]="{ minWidth: '14rem' }" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -121,7 +127,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-cascadeselect [(ngModel)]="selectedCity2" [invalid]="!selectedCity2" [options]="countries" optionLabel="cname" optionGroupLabel="name" [optionGroupChildren]="['states', 'cities']" class="w-full sm:w-56" placeholder="Select a City" variant="filled" />
 ```
 
-### Forms
+### Forms {#forms}
 
 CascadeSelect can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -171,7 +177,7 @@ CascadeSelect can also be used with reactive forms. In this case, the formContro
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can either be provided with ariaLabelledBy or ariaLabel props. The cascadeselect element has a combobox role in addition to aria-haspopup and aria-expanded attributes. The relation between the combobox and the popup is created with aria-controls that refers to the id of the popup.
 
@@ -182,21 +188,23 @@ Value to describe the component can either be provided with ariaLabelledBy or ar
 <p-cascadeselect ariaLabel="Options"/>
 ```
 
-### CascadeSelect
+### CascadeSelect {#cascadeselect}
 
 CascadeSelect is a form component to select a value from a nested structure of options.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### CascadeSelect API
 
 API defines helper props, events and others for the PrimeNG CascadeSelect module.
 
-#### CascadeSelect
+#### CascadeSelect {#api-cascadeselect}
 
 CascadeSelect is a form component to select a value from a nested structure of options.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -244,7 +252,7 @@ Defines the input properties of the component.
 | fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -260,7 +268,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onFocus | event :  FocusEvent | Callback to invoke when input receives focus. |
 | onBlur | event :  FocusEvent | Callback to invoke when input loses focus. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -275,11 +283,13 @@ Defines the templates used by the component.
 | groupicon |  | Content template for customizing the group icon. |
 | clearicon |  | Content template for customizing the clear icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### CascadeSelect Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -300,7 +310,7 @@ List of class names used in the styled mode.
 | p-cascadeselect-group-icon | Class name of the group icon element |
 | p-cascadeselect-item-list | Class name of the item list element |
 
-#### CascadeSelect Design Tokens
+#### CascadeSelect Design Tokens {#theming-cascadeselect-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -359,7 +369,7 @@ List of design tokens used in a preset.
 | cascadeselect.option.icon.size | cascadeselect.option.icon.size | --p-cascadeselect-option-icon-size | Icon size of option |
 | cascadeselect.clearIcon.color | cascadeselect.clear.icon.color | --p-cascadeselect-clear-icon-color | Color of clear icon |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -370,6 +380,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/cascadeselect)

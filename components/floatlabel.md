@@ -2,15 +2,21 @@
 
 FloatLabel appears on top of the input field when focused.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { FloatLabelModule } from 'primeng/floatlabel';
 ```
 
-### Basic
+### Basic {#basic}
 
 FloatLabel is used by wrapping the input and its label.
 
@@ -21,7 +27,7 @@ FloatLabel is used by wrapping the input and its label.
 </p-floatlabel>
 ```
 
-### Variants
+### Variants {#variants}
 
 The variant property defines the position of the label. Default value is over, whereas in and on are the alternatives.
 
@@ -37,7 +43,7 @@ The variant property defines the position of the label. Default value is over, w
 </p-floatlabel>
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 When the form element is invalid, the label is also highlighted.
 
@@ -58,25 +64,27 @@ When the form element is invalid, the label is also highlighted.
 </p-floatlabel>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 FloatLabel does not require any roles and attributes.
 
-### FloatLabel
+### FloatLabel {#floatlabel}
 
 FloatLabel appears on top of the input field when focused.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### FloatLabel API
 
 API defines helper props, events and others for the PrimeNG FloatLabel module.
 
-#### FloatLabel
+#### FloatLabel {#api-floatlabel}
 
 FloatLabel appears on top of the input field when focused.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -84,11 +92,13 @@ Defines the input properties of the component.
 | --- | --- | --- | --- |
 | variant | "in" | "over" | "on" | over | Defines the positioning of the label relative to the input. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### FloatLabel Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -96,7 +106,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-floatlabel | Class name of the root element |
 
-#### FloatLabel Design Tokens
+#### FloatLabel Design Tokens {#theming-floatlabel-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -120,7 +130,7 @@ List of design tokens used in a preset.
 | floatlabel.on.active.background | floatlabel.on.active.background | --p-floatlabel-on-active-background | Active background of on |
 | floatlabel.on.active.padding | floatlabel.on.active.padding | --p-floatlabel-on-active-padding | Active padding of on |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -131,6 +141,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/floatlabel)

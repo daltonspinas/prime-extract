@@ -2,15 +2,21 @@
 
 The Stepper component displays a wizard-like workflow by guiding users through the multi-step progression.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { StepperModule } from 'primeng/stepper';
 ```
 
-### Horizontal
+### Horizontal {#horizontal}
 
 Stepper consists of a combination of StepList, Step, StepPanels and StepPanel components. The value property is essential for associating Step and StepPanel with each other.
 
@@ -71,7 +77,7 @@ Stepper consists of a combination of StepList, Step, StepPanels and StepPanel co
 </p-stepper>
 ```
 
-### Vertical
+### Vertical {#vertical}
 
 Vertical layout requires StepItem as a wrapper of Step and StepPanel components.
 
@@ -134,7 +140,7 @@ Vertical layout requires StepItem as a wrapper of Step and StepPanel components.
 </p-stepper>
 ```
 
-### Linear
+### Linear {#linear}
 
 When linear property is set to true, current step must be completed in order to move to the next step.
 
@@ -195,7 +201,7 @@ When linear property is set to true, current step must be completed in order to 
 </p-stepper>
 ```
 
-### Steps Only
+### Steps Only {#steps-only}
 
 Use Stepper with a StepList only for custom requirements where a progress indicator is needed.
 
@@ -209,7 +215,7 @@ Use Stepper with a StepList only for custom requirements where a progress indica
 </p-stepper>
 ```
 
-### Template
+### Template {#template}
 
 Stepper provides various templating options to customize the default UI design.
 
@@ -327,37 +333,39 @@ Stepper provides various templating options to customize the default UI design.
 </p-stepper>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Stepper container is defined with the tablist role, as any attribute is passed to the container element aria-labelledby can be optionally used to specify an element to describe the Stepper. Each stepper header has a tab role and aria-controls to refer to the corresponding stepper content element. The content element of each stepper has tabpanel role, an id to match the aria-controls of the header and aria-labelledby reference to the header as the accessible name.
 
-### Stepper
+### Stepper {#stepper}
 
 Stepper is a component that streamlines a wizard-like workflow, organizing content into coherent steps and visually guiding users through a numbered progression in a multistep process.
 
-### Step
+### Step {#step}
 
 Step is a helper component for Stepper component.
 
-### StepItem
+### StepItem {#stepitem}
 
 StepItem is a helper component for Stepper component used in vertical orientation.
 
-### StepPanel
+### StepPanel {#steppanel}
 
 StepPanel is a helper component for Stepper component.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Stepper API
 
 API defines helper props, events and others for the PrimeNG Stepper module.
 
-#### Stepper
+#### Stepper {#api-stepper}
 
 Stepper is a component that streamlines a wizard-like workflow, organizing content into coherent steps and visually guiding users through a numbered progression in a multistep process.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -367,11 +375,11 @@ Defines the input properties of the component.
 | linear | InputSignalWithTransform<any, boolean> | false | A boolean variable that captures user input. |
 | transitionOptions | InputSignal<string> | 400ms cubic-bezier(0.86, 0, 0.07, 1) | Transition options of the animation. |
 
-#### Step
+#### Step {#api-step}
 
 Step is a helper component for Stepper component.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -380,7 +388,7 @@ Defines the input properties of the component.
 | value | ModelSignal<number> | undefined | Active value of stepper. |
 | disabled | InputSignalWithTransform<any, boolean> | false | Whether the step is disabled. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -388,11 +396,11 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | content |  | Content template. |
 
-#### StepItem
+#### StepItem {#api-stepitem}
 
 StepItem is a helper component for Stepper component used in vertical orientation.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -400,11 +408,11 @@ Defines the input properties of the component.
 | --- | --- | --- | --- |
 | value | ModelSignal<number> | undefined | Value of step. |
 
-#### StepPanel
+#### StepPanel {#api-steppanel}
 
 StepPanel is a helper component for Stepper component.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -412,7 +420,7 @@ Defines the input properties of the component.
 | --- | --- | --- | --- |
 | value | ModelSignal<number> | undefined | Active value of stepper. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -420,11 +428,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | content | context :  StepPanelContentTemplateContext | Content template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Stepper Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -433,7 +443,7 @@ List of class names used in the styled mode.
 | p-stepper | Class name of the root element |
 | p-stepper-separator | Class name of the separator element |
 
-#### Stepper Design Tokens
+#### Stepper Design Tokens {#theming-stepper-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -474,7 +484,7 @@ List of design tokens used in a preset.
 | stepper.steppanel.padding | stepper.steppanel.padding | --p-stepper-steppanel-padding | Padding of steppanel |
 | stepper.steppanel.indent | stepper.steppanel.indent | --p-stepper-steppanel-indent | Indent of steppanel |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -485,6 +495,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/stepper)

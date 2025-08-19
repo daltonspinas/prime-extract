@@ -2,15 +2,21 @@
 
 OrderList is used to sort a collection.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { OrderListModule } from 'primeng/orderlist';
 ```
 
-### Basic
+### Basic {#basic}
 
 OrderList is used as a controlled input with value property. Content of a list item needs to be defined with the item template that receives an object in the list as parameter.
 
@@ -22,7 +28,7 @@ OrderList is used as a controlled input with value property. Content of a list i
 </p-orderlist>
 ```
 
-### Filter
+### Filter {#filter}
 
 Filter value is checked against the property of an object configured with the filterBy property
 
@@ -53,7 +59,7 @@ Filter value is checked against the property of an object configured with the fi
 </p-orderlist>
 ```
 
-### Template
+### Template {#template}
 
 For custom content support define an item template that gets the item instance as a parameter. In addition header template is provided for further customization.
 
@@ -84,7 +90,7 @@ For custom content support define an item template that gets the item instance a
 </p-orderlist>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the source listbox and target listbox can be provided with sourceListProps and targetListProps by passing aria-labelledby or aria-label props. The list elements has a listbox role with the aria-multiselectable attribute. Each list item has an option role with aria-selected and aria-disabled as their attributes.
 
@@ -95,21 +101,23 @@ Value to describe the source listbox and target listbox can be provided with sou
 <p-orderlist ariaLabel="City" />
 ```
 
-### OrderList
+### OrderList {#orderlist}
 
 OrderList is used to manage the order of a collection.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### OrderList API
 
 API defines helper props, events and others for the PrimeNG OrderList module.
 
-#### OrderList
+#### OrderList {#api-orderlist}
 
 OrderList is used to manage the order of a collection.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -145,7 +153,7 @@ It represents the data source for the list of items. |
 | moveDownButtonProps | ButtonProps | null | Used to pass all properties of the ButtonProps to the move down button inside the component. |
 | moveBottomButtonProps | ButtonProps | null | Used to pass all properties of the ButtonProps to the move bottom button inside the component. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -158,7 +166,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onFocus | event :  Event | Callback to invoke when the list is focused |
 | onBlur | event :  Event | Callback to invoke when the list is blurred |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -166,7 +174,7 @@ Defines methods that can be accessed by the component's reference.
 | --- | --- | --- |
 | resetFilter |  | Callback to invoke on filter reset. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -183,11 +191,13 @@ Defines the templates used by the component.
 | movebottomicon |  | Custom move bottom icon template. |
 | filtericon |  | Custom filter icon template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### OrderList Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -196,7 +206,7 @@ List of class names used in the styled mode.
 | p-orderlist | Class name of the root element |
 | p-orderlist-controls | Class name of the controls element |
 
-#### OrderList Design Tokens
+#### OrderList Design Tokens {#theming-orderlist-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -205,7 +215,7 @@ List of design tokens used in a preset.
 | orderlist.root.gap | orderlist.gap | --p-orderlist-gap | Gap of root |
 | orderlist.controls.gap | orderlist.controls.gap | --p-orderlist-controls-gap | Gap of controls |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -216,6 +226,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/orderlist)

@@ -2,16 +2,22 @@
 
 Badge is a small status indicator for another element.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { BadgeModule } from 'primeng/badge';
 import { OverlayBadgeModule } from 'primeng/overlaybadge';
 ```
 
-### Basic
+### Basic {#basic}
 
 Content of the badge is specified using the value property.
 
@@ -19,7 +25,7 @@ Content of the badge is specified using the value property.
 <p-badge value="2" />
 ```
 
-### Severity
+### Severity {#severity}
 
 Severity defines the color of the badge, possible values are success, info, warn and danger
 
@@ -27,7 +33,7 @@ Severity defines the color of the badge, possible values are success, info, warn
 <p-badge [value]="2" severity="success" />
 ```
 
-### Size
+### Size {#size}
 
 Badge sizes are adjusted with the badgeSize property that accepts small, large and xlarge as the possible alternatives to the default size. Currently sizes only apply to component mode.
 
@@ -35,7 +41,7 @@ Badge sizes are adjusted with the badgeSize property that accepts small, large a
 <p-badge value="8" badgeSize="xlarge" severity="success" />
 ```
 
-### Overlay
+### Overlay {#overlay}
 
 A badge can be added to any element by encapsulating the content with the OverlayBadge component.
 
@@ -51,7 +57,7 @@ A badge can be added to any element by encapsulating the content with the Overla
 </p-overlaybadge>
 ```
 
-### Button
+### Button {#button}
 
 Buttons have built-in support for badges to display a badge inline.
 
@@ -59,29 +65,31 @@ Buttons have built-in support for badges to display a badge inline.
 <p-button label="Emails" icon="pi pi-bell" label="Notifications" badge="2" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Badge does not include any roles and attributes by default, any attribute is passed to the root element so aria roles and attributes can be added if required. If the badges are dynamic, aria-live may be utilized as well. In case badges need to be tabbable, tabIndex can be added to implement custom key handlers.
 
-### Badge
+### Badge {#badge}
 
 Badge is a small status indicator for another element.
 
-### BadgeDirective
+### BadgeDirective {#badgedirective}
 
 Badge Directive is directive usage of badge component.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Badge API
 
 API defines helper props, events and others for the PrimeNG Badge module.
 
-#### Badge
+#### Badge {#api-badge}
 
 Badge is a small status indicator for another element.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -94,11 +102,11 @@ Defines the input properties of the component.
 | value | InputSignal<string | number> | ... | Value to display inside the badge. |
 | badgeDisabled | InputSignalWithTransform<boolean, boolean> | ... | When specified, disables the component. |
 
-#### BadgeDirective
+#### BadgeDirective {#api-badgedirective}
 
 Badge Directive is directive usage of badge component.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -112,11 +120,13 @@ Defines the input properties of the component.
 | badgeStyle | { [klass: string]: any } | null | Inline style of the element. |
 | badgeStyleClass | string | null | Class of the element. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Badge Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -124,7 +134,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-badge | Class name of the root element |
 
-#### Badge Design Tokens
+#### Badge Design Tokens {#theming-badge-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -161,7 +171,7 @@ List of design tokens used in a preset.
 | badge.contrast.background | badge.contrast.background | --p-badge-contrast-background | Background of contrast |
 | badge.contrast.color | badge.contrast.color | --p-badge-contrast-color | Color of contrast |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -172,6 +182,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/badge)

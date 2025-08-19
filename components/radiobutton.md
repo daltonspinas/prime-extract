@@ -2,15 +2,21 @@
 
 RadioButton is an extension to standard radio button element with theming.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { RadioButtonModule } from 'primeng/radiobutton';
 ```
 
-### Group
+### Group {#group}
 
 RadioButton is used as a controlled input with value and ngModel properties.
 
@@ -38,7 +44,7 @@ RadioButton is used as a controlled input with value and ngModel properties.
 </div>
 ```
 
-### Dynamic
+### Dynamic {#dynamic}
 
 RadioButtons can be generated using a list of values.
 
@@ -51,7 +57,7 @@ RadioButtons can be generated using a list of values.
 </div>
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -59,7 +65,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-radiobutton [(ngModel)]="checked" variant="filled" />
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 RadioButton provides small and large sizes as alternatives to the base.
 
@@ -80,7 +86,7 @@ RadioButton provides small and large sizes as alternatives to the base.
 </div>
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -89,7 +95,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-radiobutton [(ngModel)]="value" [value]="2" [disabled]="true" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -97,7 +103,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-radiobutton [(ngModel)]="value" [invalid]="!value"  />
 ```
 
-### Forms
+### Forms {#forms}
 
 RadioButton can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -140,7 +146,7 @@ RadioButton can also be used with reactive forms. In this case, the formControlN
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 RadioButton component uses a hidden native radio button element internally that is only visible to screen readers. Value to describe the component can either be provided via label tag combined with inputId prop or using ariaLabelledBy, ariaLabel props.
 
@@ -154,21 +160,23 @@ RadioButton component uses a hidden native radio button element internally that 
 <p-radiobutton ariaLabel="Three" />
 ```
 
-### RadioButton
+### RadioButton {#radiobutton}
 
 RadioButton is an extension to standard radio button element with theming.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### RadioButton API
 
 API defines helper props, events and others for the PrimeNG RadioButton module.
 
-#### RadioButton
+#### RadioButton {#api-radiobutton}
 
 RadioButton is an extension to standard radio button element with theming.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -189,7 +197,7 @@ Defines the input properties of the component.
 | variant | InputSignal<"outlined" | "filled"> | undefined | Specifies the input variant of the component. |
 | size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -199,7 +207,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onFocus | event :  Event | Callback to invoke when the receives focus. |
 | onBlur | event :  Event | Callback to invoke when the loses focus. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -207,11 +215,13 @@ Defines methods that can be accessed by the component's reference.
 | --- | --- | --- |
 | focus |  | Applies focus to input field. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### RadioButton Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -222,7 +232,7 @@ List of class names used in the styled mode.
 | p-radiobutton-input | Class name of the input element |
 | p-radiobutton-icon | Class name of the icon element |
 
-#### RadioButton Design Tokens
+#### RadioButton Design Tokens {#theming-radiobutton-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -261,7 +271,7 @@ List of design tokens used in a preset.
 | radiobutton.icon.sm.size | radiobutton.icon.sm.size | --p-radiobutton-icon-sm-size | Sm size of icon |
 | radiobutton.icon.lg.size | radiobutton.icon.lg.size | --p-radiobutton-icon-lg-size | Lg size of icon |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -272,6 +282,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/radiobutton)

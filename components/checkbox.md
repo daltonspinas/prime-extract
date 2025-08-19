@@ -2,15 +2,21 @@
 
 Checkbox is an extension to standard checkbox element with theming.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { CheckboxModule } from 'primeng/checkbox';
 ```
 
-### Basic
+### Basic {#basic}
 
 Binary checkbox is used as a controlled input with ngModel and binary properties.
 
@@ -18,7 +24,7 @@ Binary checkbox is used as a controlled input with ngModel and binary properties
 <p-checkbox [(ngModel)]="checked" [binary]="true" />
 ```
 
-### Indeterminate
+### Indeterminate {#indeterminate}
 
 The indeterminate state indicates that a checkbox is neither "on" or "off".
 
@@ -26,7 +32,7 @@ The indeterminate state indicates that a checkbox is neither "on" or "off".
 <p-checkbox [(ngModel)]="checked" [binary]="true" [indeterminate]="true" />
 ```
 
-### Group
+### Group {#group}
 
 Multiple checkboxes can be grouped together.
 
@@ -49,7 +55,7 @@ Multiple checkboxes can be grouped together.
 </div>
 ```
 
-### Dynamic
+### Dynamic {#dynamic}
 
 Checkboxes can be generated using a list of values.
 
@@ -60,7 +66,7 @@ Checkboxes can be generated using a list of values.
 </div>
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -68,7 +74,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-checkbox [(ngModel)]="checked" [binary]="true" variant="filled" />
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 Checkbox provides small and large sizes as alternatives to the base.
 
@@ -87,7 +93,7 @@ Checkbox provides small and large sizes as alternatives to the base.
 </div>
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -96,7 +102,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-checkbox [(ngModel)]="checked2" [binary]="true" [disabled]="true" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -104,7 +110,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-checkbox [(ngModel)]="checked" [binary]="true" [invalid]="!checked" />
 ```
 
-### Forms
+### Forms {#forms}
 
 Checkbox can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -147,7 +153,7 @@ Checkbox can also be used with reactive forms. In this case, the formControlName
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Checkbox component uses a hidden native checkbox element internally that is only visible to screen readers. Value to describe the component can either be provided via label tag combined with inputId prop or using ariaLabelledBy, ariaLabel props.
 
@@ -161,21 +167,23 @@ Checkbox component uses a hidden native checkbox element internally that is only
 <p-checkbox ariaLabel="Remember Me"/>
 ```
 
-### Checkbox
+### Checkbox {#checkbox}
 
 Checkbox is an extension to standard checkbox element with theming.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Checkbox API
 
 API defines helper props, events and others for the PrimeNG Checkbox module.
 
-#### Checkbox
+#### Checkbox {#api-checkbox}
 
 Checkbox is an extension to standard checkbox element with theming.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -204,7 +212,7 @@ Defines the input properties of the component.
 | variant | InputSignal<"outlined" | "filled"> | undefined | Specifies the input variant of the component. |
 | size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -214,7 +222,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onFocus | event :  Event | Callback to invoke when the receives focus. |
 | onBlur | event :  Event | Callback to invoke when the loses focus. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -222,11 +230,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | checkboxicon |  | The template of the checkbox icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Checkbox Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -237,7 +247,7 @@ List of class names used in the styled mode.
 | p-checkbox-input | Class name of the input element |
 | p-checkbox-icon | Class name of the icon element |
 
-#### Checkbox Design Tokens
+#### Checkbox Design Tokens {#theming-checkbox-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -278,7 +288,7 @@ List of design tokens used in a preset.
 | checkbox.icon.sm.size | checkbox.icon.sm.size | --p-checkbox-icon-sm-size | Sm size of icon |
 | checkbox.icon.lg.size | checkbox.icon.lg.size | --p-checkbox-icon-lg-size | Lg size of icon |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -289,6 +299,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/checkbox)

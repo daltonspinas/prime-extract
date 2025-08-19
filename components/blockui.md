@@ -2,15 +2,21 @@
 
 BlockUI can either block other components or the whole page.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { BlockUIModule } from 'primeng/blockui';
 ```
 
-### Basic
+### Basic {#basic}
 
 The element to block should be placed as a child of BlockUI and blocked property is required to control the state.
 
@@ -25,7 +31,7 @@ The element to block should be placed as a child of BlockUI and blocked property
 </p-panel>
 ```
 
-### Document
+### Document {#document}
 
 If the target element is not specified, BlockUI blocks the document by default.
 
@@ -33,25 +39,27 @@ If the target element is not specified, BlockUI blocks the document by default.
 <p-blockui [blocked]="blockedDocument" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 BlockUI manages aria-busy state attribute when the UI gets blocked and unblocked. Any valid attribute is passed to the root element so additional attributes like role and aria-live can be used to define live regions.
 
-### BlockUI
+### BlockUI {#blockui}
 
 BlockUI can either block other components or the whole page.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### BlockUI API
 
 API defines helper props, events and others for the PrimeNG BlockUI module.
 
-#### BlockUI
+#### BlockUI {#api-blockui}
 
 BlockUI can either block other components or the whole page.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -63,7 +71,7 @@ Defines the input properties of the component.
 | styleClass | string | null | Class of the element. |
 | blocked | boolean | null | Current blocked state as a boolean. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -71,11 +79,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | content |  | template of the content |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### BlockUI Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -83,7 +93,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-blockui | Class name of the root element |
 
-#### BlockUI Design Tokens
+#### BlockUI Design Tokens {#theming-blockui-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -91,7 +101,7 @@ List of design tokens used in a preset.
 | --- | --- | --- | --- |
 | blockui.root.borderRadius | blockui.border.radius | --p-blockui-border-radius | Border radius of root |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -102,6 +112,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/blockui)

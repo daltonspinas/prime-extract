@@ -2,16 +2,22 @@
 
 Avatar represents people using icons, labels and images.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 ```
 
-### Label
+### Label {#label}
 
 A letter Avatar is defined with the label property.
 
@@ -28,7 +34,7 @@ A letter Avatar is defined with the label property.
 </p-overlay-badge>
 ```
 
-### Icon
+### Icon {#icon}
 
 A font icon is displayed as an Avatar with the icon property.
 
@@ -45,7 +51,7 @@ A font icon is displayed as an Avatar with the icon property.
 </p-overlay-badge>
 ```
 
-### Image
+### Image {#image}
 
 Use the image property to display an image as an Avatar.
 
@@ -61,7 +67,7 @@ Use the image property to display an image as an Avatar.
 <p-avatar image="https://www.gravatar.com/avatar/05dfd4b41340d09cae045235eb0893c3?d=mp" class="flex items-center justify-center mr-2" size="xlarge" />
 ```
 
-### AvatarGroup
+### AvatarGroup {#avatargroup}
 
 Grouping is available by wrapping multiple Avatar components inside an AvatarGroup.
 
@@ -74,7 +80,7 @@ Grouping is available by wrapping multiple Avatar components inside an AvatarGro
 <p-avatar label="+2" shape="circle" size="large" />
 ```
 
-### Shape
+### Shape {#shape}
 
 Avatar comes in two different styles specified with the shape property, square is the default and circle is the alternative.
 
@@ -83,27 +89,29 @@ Avatar comes in two different styles specified with the shape property, square i
 <p-avatar label="T" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Avatar does not include any roles and attributes by default. Any attribute is passed to the root element so you may add a role like img along with aria-labelledby or aria-label to describe the component. In case avatars need to be tabbable, tabIndex can be added as well to implement custom key handlers.
 
-### Avatar
+### Avatar {#avatar}
 
 Avatar represents people using icons, labels and images.
 
-### AvatarGroup
+### AvatarGroup {#avatargroup}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Avatar API
 
 API defines helper props, events and others for the PrimeNG Avatar module.
 
-#### Avatar
+#### Avatar {#api-avatar}
 
 Avatar represents people using icons, labels and images.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -118,7 +126,7 @@ Defines the input properties of the component.
 | ariaLabel | string | null | Establishes a string value that labels the component. |
 | ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -126,13 +134,15 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onImageError | event :  Event | This event is triggered if an error occurs while loading an image file. |
 
-#### AvatarGroup
+#### AvatarGroup {#api-avatargroup}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Avatar Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -142,7 +152,7 @@ List of class names used in the styled mode.
 | p-avatar-label | Class name of the label element |
 | p-avatar-icon | Class name of the icon element |
 
-#### Avatar Design Tokens
+#### Avatar Design Tokens {#theming-avatar-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -168,7 +178,7 @@ List of design tokens used in a preset.
 | avatar.xl.icon.size | avatar.xl.icon.size | --p-avatar-xl-icon-size | Icon size of xl |
 | avatar.xl.group.offset | avatar.xl.group.offset | --p-avatar-xl-group-offset | Group offset of xl |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -179,6 +189,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/avatar)

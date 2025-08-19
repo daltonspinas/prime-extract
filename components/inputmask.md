@@ -2,15 +2,21 @@
 
 InputMask component is used to enter input in a certain format such as numeric, date, currency and phone.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { InputMaskModule } from 'primeng/inputmask';
 ```
 
-### Basic
+### Basic {#basic}
 
 InputMask is used as a controlled input with ngModel properties.
 
@@ -18,7 +24,7 @@ InputMask is used as a controlled input with ngModel properties.
 <p-inputmask mask="99-999999" [(ngModel)]="value" placeholder="99-999999" />
 ```
 
-### Mask
+### Mask {#mask}
 
 Mask format can be a combination of the following definitions; a for alphabetic characters, 9 for numeric characters and * for alphanumberic characters. In addition, formatting characters like ( , ) , - are also accepted.
 
@@ -31,7 +37,7 @@ Mask format can be a combination of the following definitions; a for alphabetic 
 <p-inputmask mask="a*-999-a999" [(ngModel)]="value3" placeholder="a*-999-a999" />
 ```
 
-### Optional
+### Optional {#optional}
 
 When the input does not complete the mask definition, it is cleared by default. Use autoClear property to control this behavior. In addition, ? is used to mark anything after the question mark optional.
 
@@ -39,7 +45,7 @@ When the input does not complete the mask definition, it is cleared by default. 
 <p-inputmask mask="(999) 999-9999? x99999" [(ngModel)]="value" placeholder="(999) 999-9999? x99999" />
 ```
 
-### SlotChar
+### SlotChar {#slotchar}
 
 Default placeholder for a mask is underscore that can be customized using slotChar property.
 
@@ -47,7 +53,7 @@ Default placeholder for a mask is underscore that can be customized using slotCh
 <p-inputmask [(ngModel)]="value" mask="99/99/9999" placeholder="99/99/9999" slotChar="mm/dd/yyyy" />
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -55,7 +61,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-inputmask mask="99-999999" [(ngModel)]="value" variant="filled" placeholder="99-999999" />
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 FloatLabel visually integrates a label with its form element. Visit FloatLabel documentation for more information.
 
@@ -76,7 +82,7 @@ FloatLabel visually integrates a label with its form element. Visit FloatLabel d
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -87,7 +93,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 InputMask provides small and large sizes as alternatives to the base.
 
@@ -97,7 +103,7 @@ InputMask provides small and large sizes as alternatives to the base.
 <p-inputmask [(ngModel)]="value3" placeholder="Large" size="large" mask="99-999999" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -105,7 +111,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-inputmask mask="999-99-9999" [(ngModel)]="value" [disabled]="true" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -114,7 +120,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-inputmask [(ngModel)]="value2" mask="99-999999" placeholder="Serial Key" [invalid]="!value2" variant="filled" />
 ```
 
-### Forms
+### Forms {#forms}
 
 InputMask can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -142,7 +148,7 @@ InputMask can also be used with reactive forms. In this case, the formControlNam
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 InputMask component renders a native input element that implicitly includes any passed prop. Value to describe the component can either be provided via label tag combined with id prop or using ariaLabelledBy, ariaLabel props.
 
@@ -156,21 +162,23 @@ InputMask component renders a native input element that implicitly includes any 
 <p-inputmask ariaLabel="Age"/>
 ```
 
-### InputMask
+### InputMask {#inputmask}
 
 InputMask component is used to enter input in a certain format such as numeric, date, currency, email and phone.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### InputMask API
 
 API defines helper props, events and others for the PrimeNG InputMask module.
 
-#### InputMask
+#### InputMask {#api-inputmask}
 
 InputMask component is used to enter input in a certain format such as numeric, date, currency, email and phone.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -211,7 +219,7 @@ Defines the input properties of the component.
 | keepBuffer | boolean | false | When present, it specifies that whether to clean buffer value from model. |
 | mask | string | null | Mask pattern. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -224,7 +232,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onKeydown | event :  Event | Callback to invoke on input key press. |
 | onClear | value :  any | Callback to invoke when input field is cleared. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -232,11 +240,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | clearicon |  | Template of the clear icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### InputMask Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -245,7 +255,7 @@ List of class names used in the styled mode.
 | p-inputmask | Class name of the root element |
 | p-inputmask-clear-icon | Class name of the clear icon element |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -256,6 +266,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/inputmask)

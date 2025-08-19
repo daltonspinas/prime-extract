@@ -2,15 +2,21 @@
 
 Fieldset is a grouping component with a content toggle feature.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { FieldsetModule } from 'primeng/fieldset';
 ```
 
-### Basic
+### Basic {#basic}
 
 A simple Fieldset is created with a legend property along with the content as children.
 
@@ -22,7 +28,7 @@ A simple Fieldset is created with a legend property along with the content as ch
 </p-fieldset>
 ```
 
-### Toggleable
+### Toggleable {#toggleable}
 
 Content of the fieldset can be expanded and collapsed using toggleable option, default state is defined with collapsed option.
 
@@ -34,7 +40,7 @@ Content of the fieldset can be expanded and collapsed using toggleable option, d
 </p-fieldset>
 ```
 
-### Template
+### Template {#template}
 
 Header section can also be defined with custom content instead of primitive values.
 
@@ -54,25 +60,27 @@ Header section can also be defined with custom content instead of primitive valu
 </p-fieldset>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Fieldset component uses the semantic fieldset element. When toggleable option is enabled, a clickable element with button role is included inside the legend element, this button has aria-controls to define the id of the content section along with aria-expanded for the visibility state. The value to read the button defaults to the value of the legend property and can be customized by defining an aria-label or aria-labelledby via the toggleButtonProps property.
 
-### Fieldset
+### Fieldset {#fieldset}
 
 Fieldset is a grouping component with the optional content toggle feature.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Fieldset API
 
 API defines helper props, events and others for the PrimeNG Fieldset module.
 
-#### Fieldset
+#### Fieldset {#api-fieldset}
 
 Fieldset is a grouping component with the optional content toggle feature.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -86,7 +94,7 @@ Defines the input properties of the component.
 | styleClass | string | null | Style class of the component. |
 | transitionOptions | string | 400ms cubic-bezier(0.86, 0, 0.07, 1) | Transition options of the panel animation. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -96,7 +104,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onBeforeToggle | event :  FieldsetBeforeToggleEvent | Callback to invoke before panel toggle. |
 | onAfterToggle | event :  FieldsetAfterToggleEvent | Callback to invoke after panel toggle. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -107,11 +115,13 @@ Defines the templates used by the component.
 | collapseicon |  | Defines the collapseicon template. |
 | content |  | Defines the content template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Fieldset Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -124,7 +134,7 @@ List of class names used in the styled mode.
 | p-fieldset-content-container | Class name of the content container element |
 | p-fieldset-content | Class name of the content element |
 
-#### Fieldset Design Tokens
+#### Fieldset Design Tokens {#theming-fieldset-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -155,7 +165,7 @@ List of design tokens used in a preset.
 | fieldset.toggleIcon.hoverColor | fieldset.toggle.icon.hover.color | --p-fieldset-toggle-icon-hover-color | Hover color of toggle icon |
 | fieldset.content.padding | fieldset.content.padding | --p-fieldset-content-padding | Padding of content |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -166,6 +176,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/fieldset)

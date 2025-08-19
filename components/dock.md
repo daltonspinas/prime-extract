@@ -2,15 +2,21 @@
 
 Dock is a navigation component consisting of menuitems.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { DockModule } from 'primeng/dock';
 ```
 
-### Basic
+### Basic {#basic}
 
 Dock requires a collection of menuitems as its model. Default location is bottom and other sides are also available when defined with the position property. Content of the dock component is defined by item template.
 
@@ -22,7 +28,7 @@ Dock requires a collection of menuitems as its model. Default location is bottom
 </p-dock>
 ```
 
-### Advanced
+### Advanced {#advanced}
 
 A mock desktop UI implemented with various components in addition to Dock.
 
@@ -92,27 +98,29 @@ A mock desktop UI implemented with various components in addition to Dock.
     </p-galleria>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Dock component uses the menu role with the aria-orientation and the value to describe the menu can either be provided with aria-labelledby or aria-label props. Each list item has a presentation role whereas anchor elements have a menuitem role with aria-label referring to the label of the item and aria-disabled defined if the item is disabled.
 
-### Dock
+### Dock {#dock}
 
 Dock is a navigation component consisting of menuitems.
 
-### MenuItem
+### MenuItem {#menuitem}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Dock API
 
 API defines helper props, events and others for the PrimeNG Dock module.
 
-#### Dock
+#### Dock {#api-dock}
 
 Dock is a navigation component consisting of menuitems.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -126,7 +134,7 @@ Defines the input properties of the component.
 | breakpoint | string | 960px | The breakpoint to define the maximum width boundary. |
 | ariaLabelledBy | string | null | Defines a string that labels the dropdown button for accessibility. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -135,13 +143,15 @@ Defines emit that determine the behavior of the component based on a given condi
 | onFocus | event :  FocusEvent | Callback to execute when button is focused. |
 | onBlur | event :  FocusEvent | Callback to invoke when the component loses focus. |
 
-#### MenuItem
+#### MenuItem {#api-menuitem}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Dock Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -155,7 +165,7 @@ List of class names used in the styled mode.
 | p-dock-item-link | Class name of the item link element |
 | p-dock-item-icon | Class name of the item icon element |
 
-#### Dock Design Tokens
+#### Dock Design Tokens {#theming-dock-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -174,7 +184,7 @@ List of design tokens used in a preset.
 | dock.item.focusRing.offset | dock.item.focus.ring.offset | --p-dock-item-focus-ring-offset | Focus ring offset of item |
 | dock.item.focusRing.shadow | dock.item.focus.ring.shadow | --p-dock-item-focus-ring-shadow | Focus ring shadow of item |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -185,6 +195,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/dock)

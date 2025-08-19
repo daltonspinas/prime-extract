@@ -2,15 +2,21 @@
 
 Password displays strength indicator for password fields.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { PasswordModule } from 'primeng/password';
 ```
 
-### Basic
+### Basic {#basic}
 
 Two-way value binding is defined using ngModel.
 
@@ -18,7 +24,7 @@ Two-way value binding is defined using ngModel.
 <p-password [(ngModel)]="value" [feedback]="false" />
 ```
 
-### Meter
+### Meter {#meter}
 
 Strength meter is displayed as a popup while a value is being entered.
 
@@ -26,7 +32,7 @@ Strength meter is displayed as a popup while a value is being entered.
 <p-password [(ngModel)]="value" />
 ```
 
-### Locale
+### Locale {#locale}
 
 Labels are translated at component level by promptLabel, weakLabel, mediumLabel and strongLabel properties. In order to apply global translations for all Password components in the application, refer to the locale
 
@@ -34,7 +40,7 @@ Labels are translated at component level by promptLabel, weakLabel, mediumLabel 
 <p-password [(ngModel)]="value" promptLabel="Choose a password" weakLabel="Too simple" mediumLabel="Average complexity" strongLabel="Complex password" />
 ```
 
-### Toggle Mask
+### Toggle Mask {#toggle-mask}
 
 When toggleMask is present, an icon is displayed to show the value as plain text.
 
@@ -42,7 +48,7 @@ When toggleMask is present, an icon is displayed to show the value as plain text
 <p-password [(ngModel)]="value" [toggleMask]="true" />
 ```
 
-### Template
+### Template {#template}
 
 3 templates are included to customize the overlay. These are header, content and footer. Note that content overrides the default meter.
 
@@ -63,7 +69,7 @@ When toggleMask is present, an icon is displayed to show the value as plain text
 </p-password>
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -84,7 +90,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -95,7 +101,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 Password provides small and large sizes as alternatives to the base.
 
@@ -105,7 +111,7 @@ Password provides small and large sizes as alternatives to the base.
 <p-password [(ngModel)]="value3" type="text" size="large" placeholder="Large" />
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -113,7 +119,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-password [(ngModel)]="value" [feedback]="false" variant="filled" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -121,7 +127,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-password [(ngModel)]="value" [disabled]="true" placeholder="Disabled" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -130,7 +136,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-password [(ngModel)]="value2" [invalid]="!value2" variant="filled" placeholder="Password" />
 ```
 
-### Forms
+### Forms {#forms}
 
 Password can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -160,7 +166,7 @@ Password can also be used with reactive forms. In this case, the formControlName
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can either be provided via label tag combined with id prop or using ariaLabelledBy, ariaLabel props. Screen reader is notified about the changes to the strength of the password using a section that has aria-live while typing.
 
@@ -174,25 +180,27 @@ Value to describe the component can either be provided via label tag combined wi
 <p-password ariaLabel="Password" />
 ```
 
-### Password
+### Password {#password}
 
 Password displays strength indicator for password fields.
 
-### PasswordDirective
+### PasswordDirective {#passworddirective}
 
 Password directive.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Password API
 
 API defines helper props, events and others for the PrimeNG Password module.
 
-#### Password
+#### Password {#api-password}
 
 Password displays strength indicator for password fields.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -237,7 +245,7 @@ Defines the input properties of the component.
 | tabindex | number | null | Index of the element in tabbing order. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -247,11 +255,11 @@ Defines emit that determine the behavior of the component based on a given condi
 | onBlur | event :  Event | Callback to invoke when the component loses focus. |
 | onClear | value :  any | Callback to invoke when clear button is clicked. |
 
-#### PasswordDirective
+#### PasswordDirective {#api-passworddirective}
 
 Password directive.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -271,11 +279,13 @@ Defines the input properties of the component.
 | fluid | InputSignalWithTransform<boolean, unknown> | false | Spans 100% width of the container when enabled. |
 | size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Password Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -291,7 +301,7 @@ List of class names used in the styled mode.
 | p-password-meter-text | Class name of the meter text element |
 | p-password-clear-icon | Class name of the clear icon |
 
-#### Password Design Tokens
+#### Password Design Tokens {#theming-password-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -312,7 +322,7 @@ List of design tokens used in a preset.
 | password.strength.mediumBackground | password.strength.medium.background | --p-password-strength-medium-background | Medium background of strength |
 | password.strength.strongBackground | password.strength.strong.background | --p-password-strength-strong-background | Strong background of strength |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -323,6 +333,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/password)

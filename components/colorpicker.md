@@ -2,15 +2,21 @@
 
 ColorPicker is an input component to select a color.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ColorPickerModule } from 'primeng/colorpicker';
 ```
 
-### Basic
+### Basic {#basic}
 
 ColorPicker is used as a controlled input with ngModel property.
 
@@ -18,7 +24,7 @@ ColorPicker is used as a controlled input with ngModel property.
 <p-colorpicker [(ngModel)]="color" />
 ```
 
-### Inline
+### Inline {#inline}
 
 ColorPicker is displayed as a popup by default, add inline property to customize this behavior.
 
@@ -26,7 +32,7 @@ ColorPicker is displayed as a popup by default, add inline property to customize
 <p-colorpicker [(ngModel)]="color" [inline]="true" />
 ```
 
-### Format
+### Format {#format}
 
 Default color format to use in value binding is hex and other possible values can be rgb and hsb using the format property.
 
@@ -38,7 +44,7 @@ Default color format to use in value binding is hex and other possible values ca
 <p-colorpicker [(ngModel)]="colorHSB" format="hsb" inputId="cp-hsb" />
 ```
 
-### Forms
+### Forms {#forms}
 
 ColorPicker can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -66,7 +72,7 @@ ColorPicker can also be used with reactive forms. In this case, the formControlN
 </form>
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -74,25 +80,27 @@ When disabled is present, the element cannot be edited and focused.
 <p-colorpicker [(ngModel)]="color" [disabled]="true" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Specification does not cover a color picker yet and using a semantic native color picker is not consistent across browsers so currently component is not compatible with screen readers. In the upcoming versions, text fields will be introduced below the slider section to be able to pick a color using accessible text boxes in hsl, rgba and hex formats.
 
-### ColorPicker
+### ColorPicker {#colorpicker}
 
 ColorPicker groups a collection of contents in tabs.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ColorPicker API
 
 API defines helper props, events and others for the PrimeNG ColorPicker module.
 
-#### ColorPicker
+#### ColorPicker {#api-colorpicker}
 
 ColorPicker groups a collection of contents in tabs.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -114,7 +122,7 @@ Defines the input properties of the component.
 | defaultColor | string | ff0000 | Default color to display initially when model value is not present. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -124,11 +132,13 @@ Defines emit that determine the behavior of the component based on a given condi
 | onShow | value :  any | Callback to invoke on panel is shown. |
 | onHide | value :  any | Callback to invoke on panel is hidden. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ColorPicker Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -143,7 +153,7 @@ List of class names used in the styled mode.
 | p-colorpicker-hue | Class name of the hue element |
 | p-colorpicker-hue-handle | Class name of the hue handle element |
 
-#### ColorPicker Design Tokens
+#### ColorPicker Design Tokens {#theming-colorpicker-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -164,7 +174,7 @@ List of design tokens used in a preset.
 | colorpicker.panel.borderColor | colorpicker.panel.border.color | --p-colorpicker-panel-border-color | Border color of panel |
 | colorpicker.handle.color | colorpicker.handle.color | --p-colorpicker-handle-color | Color of handle |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -175,6 +185,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/colorpicker)

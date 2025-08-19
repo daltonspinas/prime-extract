@@ -2,15 +2,21 @@
 
 ConfirmPopup displays a confirmation overlay displayed relatively to its target.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ConfirmPopupModule } from 'primeng/confirmpopup';
 ```
 
-### Basic
+### Basic {#basic}
 
 ConfirmPopup is defined using p-confirmPopup tag and an instance of ConfirmationService is required to display it bycalling confirm method.
 
@@ -21,7 +27,7 @@ ConfirmPopup is defined using p-confirmPopup tag and an instance of Confirmation
 <p-button (onClick)="confirm2($event)" label="Delete" severity="danger" [outlined]="true" />
 ```
 
-### Template
+### Template {#template}
 
 Content section can be customized using content template.
 
@@ -40,7 +46,7 @@ Content section can be customized using content template.
 <p-button (click)="confirm($event)" label="Save" />
 ```
 
-### Headless
+### Headless {#headless}
 
 Headless mode allows you to customize the entire user interface instead of the default elements.
 
@@ -60,29 +66,31 @@ Headless mode allows you to customize the entire user interface instead of the d
 <p-button (onClick)="confirm($event)" label="Save" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 ConfirmPopup component uses alertdialog role and since any attribute is passed to the root element you may define attributes like aria-label or aria-labelledby to describe the popup contents. In addition aria-modal is added since focus is kept within the popup.
 
-### ConfirmPopup
+### ConfirmPopup {#confirmpopup}
 
 ConfirmPopup displays a confirmation overlay displayed relatively to its target.
 
-### Confirmation
+### Confirmation {#confirmation}
 
-### ConfirmationService
+### ConfirmationService {#confirmationservice}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ConfirmPopup API
 
 API defines helper props, events and others for the PrimeNG ConfirmPopup module.
 
-#### ConfirmPopup
+#### ConfirmPopup {#api-confirmpopup}
 
 ConfirmPopup displays a confirmation overlay displayed relatively to its target.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -98,15 +106,17 @@ Defines the input properties of the component.
 | styleClass | string | null | Style class of the component. |
 | visible | any | null | Defines if the component is visible. |
 
-#### Confirmation
+#### Confirmation {#api-confirmation}
 
-#### ConfirmationService
+#### ConfirmationService {#api-confirmationservice}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ConfirmPopup Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -120,7 +130,7 @@ List of class names used in the styled mode.
 | p-confirmpopup-reject-button | Class name of the reject button element |
 | p-confirmpopup-accept-button | Class name of the accept button element |
 
-#### ConfirmPopup Design Tokens
+#### ConfirmPopup Design Tokens {#theming-confirmpopup-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -140,7 +150,7 @@ List of design tokens used in a preset.
 | confirmpopup.footer.gap | confirmpopup.footer.gap | --p-confirmpopup-footer-gap | Gap of footer |
 | confirmpopup.footer.padding | confirmpopup.footer.padding | --p-confirmpopup-footer-padding | Padding of footer |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -151,6 +161,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/confirmpopup)

@@ -2,15 +2,21 @@
 
 ConfirmDialog is backed by a service utilizing Observables to display confirmation windows easily that can be shared by multiple actions on the same component.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 ```
 
-### Basic
+### Basic {#basic}
 
 ConfirmDialog is defined using p-confirmDialog tag and an instance of ConfirmationService is required to display it bycalling confirm method.
 
@@ -21,7 +27,7 @@ ConfirmDialog is defined using p-confirmDialog tag and an instance of Confirmati
 <p-button (click)="confirm2($event)" label="Delete" severity="danger" [outlined]="true" />
 ```
 
-### Position
+### Position {#position}
 
 The position property of the confirm options is used to display a Dialog at all edges and corners of the screen.
 
@@ -44,7 +50,7 @@ The position property of the confirm options is used to display a Dialog at all 
 </div>
 ```
 
-### Template
+### Template {#template}
 
 Properties of the dialog are defined in two ways, message, icon, header properties can either be defined using confirm method or declaratively on p-confirmDialog ng-template by header, message, icon and footer templates. If these values are unlikely to change then declarative approach would be useful, still properties defined in a ng-template can be overridden with confirm method call.
 
@@ -61,7 +67,7 @@ Properties of the dialog are defined in two ways, message, icon, header properti
 <p-button (click)="confirm()" label="Save" />
 ```
 
-### Headless
+### Headless {#headless}
 
 Headless mode allows you to customize the entire user interface instead of the default elements.
 
@@ -87,7 +93,7 @@ Headless mode allows you to customize the entire user interface instead of the d
 <p-button (click)="confirm()" label="Save"/>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 ConfirmDialog component uses alertdialog role along with aria-labelledby referring to the header element however any attribute is passed to the root element so you may use aria-labelledby to override this default behavior. In addition aria-modal is added since focus is kept within the popup.
 
@@ -112,25 +118,27 @@ this.confirmationService.confirm({
 <p-button (click)="visible = true" icon="pi pi-check" label="Confirm" aria-controls="{{visible ? 'dialog' : null}} aria-expanded="{{visible ? true : false}}" />
 ```
 
-### ConfirmDialog
+### ConfirmDialog {#confirmdialog}
 
 ConfirmDialog uses a Dialog UI that is integrated with the Confirmation API.
 
-### ConfirmationService
+### ConfirmationService {#confirmationservice}
 
-### Confirmation
+### Confirmation {#confirmation}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ConfirmDialog API
 
 API defines helper props, events and others for the PrimeNG ConfirmDialog module.
 
-#### ConfirmDialog
+#### ConfirmDialog {#api-confirmdialog}
 
 ConfirmDialog uses a Dialog UI that is integrated with the Confirmation API.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -170,7 +178,7 @@ Defines the input properties of the component.
 | position | "right" | "left" | "top" | "bottom" | "center" | "topleft" | "bottomleft" | "topright" | "bottomright" | null | Allows getting the position of the component. |
 | draggable | boolean | true | Enables dragging to change the position using header. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -178,15 +186,17 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onHide | event :  ConfirmEventType | Callback to invoke when dialog is hidden. |
 
-#### ConfirmationService
+#### ConfirmationService {#api-confirmationservice}
 
-#### Confirmation
+#### Confirmation {#api-confirmation}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ConfirmDialog Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -198,7 +208,7 @@ List of class names used in the styled mode.
 | p-confirmdialog-reject-button | Class name of the reject button element |
 | p-confirmdialog-accept-button | Class name of the accept button element |
 
-#### ConfirmDialog Design Tokens
+#### ConfirmDialog Design Tokens {#theming-confirmdialog-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -208,7 +218,7 @@ List of design tokens used in a preset.
 | confirmdialog.icon.color | confirmdialog.icon.color | --p-confirmdialog-icon-color | Color of icon |
 | confirmdialog.content.gap | confirmdialog.content.gap | --p-confirmdialog-content-gap | Gap of content |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -219,6 +229,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/confirmdialog)

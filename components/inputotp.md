@@ -2,15 +2,21 @@
 
 Input Otp is used to enter one time passwords.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { InputOtpModule } from 'primeng/inputotp';
 ```
 
-### Basic
+### Basic {#basic}
 
 Two-way value binding is defined using ngModel. The number of characters is defined with the length property, which is set to 4 by default.
 
@@ -18,7 +24,7 @@ Two-way value binding is defined using ngModel. The number of characters is defi
 <p-inputotp [(ngModel)]="value" />
 ```
 
-### Mask
+### Mask {#mask}
 
 Enable the mask option to hide the values in the input fields.
 
@@ -26,7 +32,7 @@ Enable the mask option to hide the values in the input fields.
 <p-inputotp [(ngModel)]="value" [mask]="true" />
 ```
 
-### Integer Only
+### Integer Only {#integer-only}
 
 When integerOnly is present, only integers can be accepted as input.
 
@@ -34,7 +40,7 @@ When integerOnly is present, only integers can be accepted as input.
 <p-inputotp [(ngModel)]="value" [integerOnly]="true" />
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 InputOtp provides small and large sizes as alternatives to the base.
 
@@ -44,7 +50,7 @@ InputOtp provides small and large sizes as alternatives to the base.
 <p-inputotp [(ngModel)]="value3" size="large" />
 ```
 
-### Template
+### Template {#template}
 
 Define a template with your own UI elements with bindings to the provided events and attributes to replace the default design.
 
@@ -56,7 +62,7 @@ Define a template with your own UI elements with bindings to the provided events
 </p-inputotp>
 ```
 
-### Forms
+### Forms {#forms}
 
 InputOtp can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -85,7 +91,7 @@ InputOtp can also be used with reactive forms. In this case, the formControlName
 </form>
 ```
 
-### Sample
+### Sample {#sample}
 
 A sample UI implementation with templating and additional elements.
 
@@ -108,25 +114,27 @@ A sample UI implementation with templating and additional elements.
 </div>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Input OTP uses a set of InputText components, refer to the InputText component for more information about the screen reader support.
 
-### InputOtp
+### InputOtp {#inputotp}
 
 Input Otp is used to enter one time passwords.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### InputOtp API
 
 API defines helper props, events and others for the PrimeNG InputOtp module.
 
-#### InputOtp
+#### InputOtp {#api-inputotp}
 
 Input Otp is used to enter one time passwords.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -146,7 +154,7 @@ Defines the input properties of the component.
 | variant | InputSignal<"outlined" | "filled"> | undefined | Specifies the input variant of the component. |
 | size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -156,7 +164,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onFocus | event :  Event | Callback to invoke when the component receives focus. |
 | onBlur | event :  Event | Callback to invoke when the component loses focus. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -164,11 +172,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | input | context :  any | Input template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### InputOtp Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -177,7 +187,7 @@ List of class names used in the styled mode.
 | p-inputotp | Class name of the root element |
 | p-inputotp-input | Class name of the input element |
 
-#### InputOtp Design Tokens
+#### InputOtp Design Tokens {#theming-inputotp-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -188,7 +198,7 @@ List of design tokens used in a preset.
 | inputotp.input.sm.width | inputotp.input.sm.width | --p-inputotp-input-sm-width | Width of input in small screens |
 | inputotp.input.lg.width | inputotp.input.lg.width | --p-inputotp-input-lg-width | Width of input in large screens |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -199,6 +209,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/inputotp)

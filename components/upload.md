@@ -2,15 +2,21 @@
 
 FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { FileUploadModule } from 'primeng/fileupload';
 ```
 
-### Basic
+### Basic {#basic}
 
 FileUpload basic mode provides a simpler UI as an alternative to default advanced mode.
 
@@ -19,7 +25,7 @@ FileUpload basic mode provides a simpler UI as an alternative to default advance
 <p-button label="Upload" (onClick)="fu.upload()" severity="secondary" />
 ```
 
-### Auto
+### Auto {#auto}
 
 When auto property is enabled, a file gets uploaded instantly after selection.
 
@@ -27,7 +33,7 @@ When auto property is enabled, a file gets uploaded instantly after selection.
 <p-fileupload mode="basic" name="demo[]" chooseIcon="pi pi-upload" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" maxFileSize="1000000" (onUpload)="onBasicUploadAuto($event)" [auto]="true" chooseLabel="Browse" />
 ```
 
-### Advanced
+### Advanced {#advanced}
 
 Advanced uploader provides dragdrop support, multi file uploads, auto uploading, progress tracking and validations.
 
@@ -39,7 +45,7 @@ Advanced uploader provides dragdrop support, multi file uploads, auto uploading,
 </p-fileupload>
 ```
 
-### Template
+### Template {#template}
 
 Uploader UI is customizable using a ng-template called file that gets the File instance as the implicit variable. Second ng-template named content can be used to place custom content inside the content section which would be useful to implement a user interface to manage the uploaded files such as removing them. This template gets the selected files as the implicit variable. Third and final ng-template option is toolbar to display custom content at toolbar.
 
@@ -100,25 +106,27 @@ Uploader UI is customizable using a ng-template called file that gets the File i
 </p-fileupload>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 FileUpload uses a hidden native input element with type="file" for screen readers.
 
-### FileUpload
+### FileUpload {#fileupload}
 
 FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### FileUpload API
 
 API defines helper props, events and others for the PrimeNG FileUpload module.
 
-#### FileUpload
+#### FileUpload {#api-fileupload}
 
 FileUpload is an advanced uploader with dragdrop support, multi file uploads, auto uploading, progress tracking and validations.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -162,7 +170,7 @@ Defines the input properties of the component.
 | uploadButtonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the upload button inside the component. |
 | cancelButtonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the cancel button inside the component. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -180,7 +188,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onImageError | event :  Event | This event is triggered if an error occurs while loading an image file. |
 | onRemoveUploadedFile | event :  RemoveUploadedFileEvent | This event is triggered if an error occurs while loading an image file. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -191,7 +199,7 @@ Defines methods that can be accessed by the component's reference.
 | remove | event :  Eventindex :  number | Removes a single file. |
 | removeUploadedFile | index :  any | Removes uploaded file. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -207,11 +215,13 @@ Defines the templates used by the component.
 | cancelicon |  | Template for cancel icon. |
 | empty |  | Template for empty state. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### FileUpload Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -234,7 +244,7 @@ List of class names used in the styled mode.
 | p-fileupload-file-remove-button | Class name of the file remove button element |
 | p-fileupload-basic-content | Class name of the content in basic mode |
 
-#### FileUpload Design Tokens
+#### FileUpload Design Tokens {#theming-fileupload-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -263,7 +273,7 @@ List of design tokens used in a preset.
 | fileupload.progressbar.height | fileupload.progressbar.height | --p-fileupload-progressbar-height | Height of progressbar |
 | fileupload.basic.gap | fileupload.basic.gap | --p-fileupload-basic-gap | Gap of basic |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -274,6 +284,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/fileupload)

@@ -2,15 +2,21 @@
 
 TreeTable is used to display hierarchical data in tabular format.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TreeTableModule } from 'primeng/treetable';
 ```
 
-### Basic
+### Basic {#basic}
 
 TreeTable requires a collection of TreeNode instances as a value components as children for the representation.
 
@@ -36,7 +42,7 @@ TreeTable requires a collection of TreeNode instances as a value components as c
 </p-treetable>
 ```
 
-### Dynamic Columns
+### Dynamic Columns {#dynamic-columns}
 
 Columns can be created programmatically.
 
@@ -60,7 +66,7 @@ Columns can be created programmatically.
 </p-treetable>
 ```
 
-### Controlled
+### Controlled {#controlled}
 
 Expansion state is controlled with expandedKeys property.
 
@@ -87,7 +93,7 @@ Expansion state is controlled with expandedKeys property.
 </p-treetable>
 ```
 
-### Template
+### Template {#template}
 
 Custom content at caption, header, body and summary sections are supported via templating.
 
@@ -121,7 +127,7 @@ Custom content at caption, header, body and summary sections are supported via t
 </p-treetable>
 ```
 
-### Size
+### Size {#size}
 
 In addition to a regular treetable, alternatives with alternative sizes are available. Add p-treetable-sm class to reduce the size of treetable or p-treetable-lg to enlarge it.
 
@@ -150,7 +156,7 @@ In addition to a regular treetable, alternatives with alternative sizes are avai
 </p-treetable>
 ```
 
-### Grid Lines
+### Grid Lines {#grid-lines}
 
 Enabling showGridlines displays grid lines.
 
@@ -176,7 +182,7 @@ Enabling showGridlines displays grid lines.
 </p-treetable>
 ```
 
-### Paginator
+### Paginator {#paginator}
 
 Pagination is enabled by adding paginator property and defining rows per page.
 
@@ -226,7 +232,7 @@ Pagination is enabled by adding paginator property and defining rows per page.
 </p-treetable>
 ```
 
-### Sort
+### Sort {#sort}
 
 Sorting on a column is enabled by adding the ttSortableColumn property.
 
@@ -276,7 +282,7 @@ Sorting on a column is enabled by adding the ttSortableColumn property.
 </p-treetable>
 ```
 
-### Filter
+### Filter {#filter}
 
 The filterMode specifies the filtering strategy, in lenient mode when the query matches a node, children of the node are not searched further as all descendants of the node are included. On the other hand, in strict mode when the query matches a node, filtering continues on all descendants. A general filled called filterGlobal is also provided to search all columns that support filtering.
 
@@ -320,7 +326,7 @@ The filterMode specifies the filtering strategy, in lenient mode when the query 
 </p-treetable>
 ```
 
-### Selection
+### Selection {#selection}
 
 Single node selection is configured by setting selectionMode as single along with selection properties to manage the selection value binding.
 
@@ -437,7 +443,7 @@ Single node selection is configured by setting selectionMode as single along wit
 </p-treetable>
 ```
 
-### Column Group
+### Column Group {#column-group}
 
 ```html
 <p-treetable [value]="sales" [scrollable]="true" [tableStyle]="{'min-width':'50rem'}">
@@ -479,7 +485,7 @@ Single node selection is configured by setting selectionMode as single along wit
 </p-treetable>
 ```
 
-### Lazy Load
+### Lazy Load {#lazy-load}
 
 Lazy mode is handy to deal with large datasets, instead of loading the entire data, small chunks of data is loaded by invoking corresponding callbacks everytime paging, sorting and filtering occurs. Sample below imitates lazy loading data from a remote datasource using an in-memory list and timeouts to mimic network connection.
 
@@ -515,7 +521,7 @@ Lazy mode is handy to deal with large datasets, instead of loading the entire da
 </p-treetable>
 ```
 
-### Scroll
+### Scroll {#scroll}
 
 Adding scrollable property along with a scrollHeight for the data viewport enables vertical scrolling with fixed headers.
 
@@ -626,7 +632,7 @@ Adding scrollable property along with a scrollHeight for the data viewport enabl
 </p-treetable>
 ```
 
-### Column Resize
+### Column Resize {#column-resize}
 
 Columns can be resized with drag and drop when resizableColumns is enabled. Default resize mode is fit that does not change the overall table width.
 
@@ -695,7 +701,7 @@ Columns can be resized with drag and drop when resizableColumns is enabled. Defa
 </p-treetable>
 ```
 
-### Reorder
+### Reorder {#reorder}
 
 Order of the columns can be changed using drag and drop when reorderableColumns is present.
 
@@ -719,7 +725,7 @@ Order of the columns can be changed using drag and drop when reorderableColumns 
 </p-treetable>
 ```
 
-### Column Toggle
+### Column Toggle {#column-toggle}
 
 Column visibility based on a condition can be implemented with dynamic columns, in this sample a MultiSelect is used to manage the visible columns.
 
@@ -748,7 +754,7 @@ Column visibility based on a condition can be implemented with dynamic columns, 
 </p-treetable>
 ```
 
-### Conditional Style
+### Conditional Style {#conditional-style}
 
 Particular rows and cells can be styled based on conditions. The ngClass receives a row data as a parameter to return a style class for a row whereas cells are customized using the body template.
 
@@ -772,7 +778,7 @@ Particular rows and cells can be styled based on conditions. The ngClass receive
 </p-treetable>
 ```
 
-### Context Menu
+### Context Menu {#context-menu}
 
 TreeTable has exclusive integration with ContextMenu using the contextMenu event to open a menu on right click alont with contextMenuSelection properties to control the selection via the menu.
 
@@ -800,29 +806,31 @@ TreeTable has exclusive integration with ContextMenu using the contextMenu event
 <p-contextmenu #cm [model]="items" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Default role of the table is table. Header, body and footer elements use rowgroup, rows use row role, header cells have columnheader and body cells use cell roles. Sortable headers utilizer aria-sort attribute either set to "ascending" or "descending".
 
-### TreeTable
+### TreeTable {#treetable}
 
 TreeTable is used to display hierarchical data in tabular format.
 
-### TreeTableNode
+### TreeTableNode {#treetablenode}
 
-### TreeNode
+### TreeNode {#treenode}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### TreeTable API
 
 API defines helper props, events and others for the PrimeNG TreeTable module.
 
-#### TreeTable
+#### TreeTable {#api-treetable}
 
 TreeTable is used to display hierarchical data in tabular format.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -892,7 +900,7 @@ Defines the input properties of the component.
 | selectionKeys | any | null | A map of keys to control the selection state. |
 | showGridlines | boolean | false | Whether to show grid lines between cells. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -918,7 +926,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onEditCancel | event :  TreeTableEditEvent | Callback to invoke when cell edit is cancelled with escape key. |
 | selectionKeysChange | value :  any | Callback to invoke when selectionKeys are changed. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -929,15 +937,17 @@ Defines methods that can be accessed by the component's reference.
 | scrollTo | options :  ScrollToOptions | Scrolls to given index. |
 | reset |  | Clears the sort and paginator state. |
 
-#### TreeTableNode
+#### TreeTableNode {#api-treetablenode}
 
-#### TreeNode
+#### TreeNode {#api-treenode}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### TreeTable Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -980,7 +990,7 @@ List of class names used in the styled mode.
 | p-treetable-scrollable-footer-table | Class name of the scrollable footer table element |
 | p-sortable-column-icon | Class name of the sortable column icon element |
 
-#### TreeTable Design Tokens
+#### TreeTable Design Tokens {#theming-treetable-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -1057,7 +1067,7 @@ List of design tokens used in a preset.
 | treetable.paginatorBottom.borderColor | treetable.paginator.bottom.border.color | --p-treetable-paginator-bottom-border-color | Border color of paginator bottom |
 | treetable.paginatorBottom.borderWidth | treetable.paginator.bottom.border.width | --p-treetable-paginator-bottom-border-width | Border width of paginator bottom |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -1068,6 +1078,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/treetable)

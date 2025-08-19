@@ -2,15 +2,21 @@
 
 TreeSelect is a form component to choose from hierarchical data.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TreeSelectModule } from 'primeng/treeselect';
 ```
 
-### Basic
+### Basic {#basic}
 
 TreeSelect is used as a controlled component with ng-model directive along with an options collection. Internally Tree component is used so the options model is based on TreeNode API.
 
@@ -18,7 +24,7 @@ TreeSelect is used as a controlled component with ng-model directive along with 
 <p-treeselect class="md:w-80 w-full" [(ngModel)]="selectedNodes" [options]="nodes" placeholder="Select Item" />
 ```
 
-### Multiple
+### Multiple {#multiple}
 
 More than one node is selectable by setting selectionMode to multiple. By default in multiple selection mode, metaKey press (e.g. ⌘) is necessary to add to existing selections however this can be configured with disabling the metaKeySelection property. Note that in touch enabled devices, TreeSelect always ignores metaKey.
 
@@ -33,7 +39,7 @@ More than one node is selectable by setting selectionMode to multiple. By defaul
 <p-treeselect class="w-full md:w-80" [(ngModel)]="selectedNodes" [options]="nodes" [metaKeySelection]="false" selectionMode="multiple" placeholder="Select Item" />
 ```
 
-### Checkbox
+### Checkbox {#checkbox}
 
 Selection of multiple nodes via checkboxes is enabled by configuring selectionMode as checkbox.
 
@@ -41,7 +47,7 @@ Selection of multiple nodes via checkboxes is enabled by configuring selectionMo
 <p-treeselect class="w-full md:w-80" [(ngModel)]="selectedNodes" [options]="nodes" display="chip" [metaKeySelection]="false" selectionMode="checkbox" placeholder="Select Item" />
 ```
 
-### Virtual Scroll
+### Virtual Scroll {#virtual-scroll}
 
 VirtualScrolling is an efficient way of rendering the options by displaying a small subset of data in the viewport at any time. When dealing with huge number of options, it is suggested to enable VirtualScrolling to avoid performance issues. Usage is simple as setting virtualScroll property to true and defining virtualScrollItemSize to specify the height of an item.
 
@@ -49,7 +55,7 @@ VirtualScrolling is an efficient way of rendering the options by displaying a sm
 <p-treeselect class="w-full md:w-80" [(ngModel)]="selectedNodes" [options]="nodes" display="chip" [metaKeySelection]="false" selectionMode="checkbox" placeholder="Select Item" [virtualScroll]="true" [virtualScrollItemSize]="46" [virtualScrollOptions]="{scrollHeight: '200px'}" />
 ```
 
-### Lazy
+### Lazy {#lazy}
 
 Lazy loading is useful when dealing with huge datasets, in this example nodes are dynamically loaded on demand using loading property and onNodeExpand method.
 
@@ -57,7 +63,7 @@ Lazy loading is useful when dealing with huge datasets, in this example nodes ar
 <p-treeselect class="w-full md:w-80" [(ngModel)]="selectedNodes" [loading]="loading" (onNodeExpand)="onNodeExpand($event)" [options]="nodes" display="chip" [metaKeySelection]="false" selectionMode="checkbox" placeholder="Select Item" [loading]="loading"/>
 ```
 
-### Filter
+### Filter {#filter}
 
 Filtering is enabled by adding the filter property, by default label property of a node is used to compare against the value in the text field, in order to customize which field(s) should be used during search define filterBy property. In addition filterMode specifies the filtering strategy. In lenient mode when the query matches a node, children of the node are not searched further as all descendants of the node are included. On the other hand, in strict mode when the query matches a node, filtering continues on all descendants.
 
@@ -65,7 +71,7 @@ Filtering is enabled by adding the filter property, by default label property of
 <p-treeselect class="md:w-80 w-full" [(ngModel)]="selectedNodes" [options]="nodes" placeholder="Select Item" [filter]="true" [filterInputAutoFocus]="true" />
 ```
 
-### Template
+### Template {#template}
 
 TreeSelect offers multiple templates for customization through templating.
 
@@ -86,7 +92,7 @@ TreeSelect offers multiple templates for customization through templating.
 </p-treeselect>
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -107,7 +113,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -118,7 +124,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 TreeSelect provides small and large sizes as alternatives to the base.
 
@@ -128,7 +134,7 @@ TreeSelect provides small and large sizes as alternatives to the base.
 <p-treeselect [(ngModel)]="value3" [options]="nodes" size="large" placeholder="Large" class="md:w-80 w-full" />
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -136,7 +142,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-treeselect class="md:w-80 w-full" [(ngModel)]="selectedNodes" variant="filled" [options]="nodes" placeholder="Select Item" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -144,7 +150,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-treeselect class="md:w-80 w-full" [(ngModel)]="selectedNodes" [options]="nodes" [disabled]="true" placeholder="TreeSelect" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -153,7 +159,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-treeselect [invalid]="selectedValue2 === undefined" [(ngModel)]="selectedValue2" [options]="nodes" placeholder="TreeSelect" class="md:w-80 w-full" />
 ```
 
-### Forms
+### Forms {#forms}
 
 TreeSelect can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -182,7 +188,7 @@ TreeSelect can also be used with reactive forms. In this case, the formControlNa
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can either be provided with ariaLabelledby or ariaLabel props. The treeselect element has a combobox role in addition to aria-haspopup and aria-expanded attributes. The relation between the combobox and the popup is created with aria-controls that refers to the id of the popup.
 
@@ -193,23 +199,25 @@ Value to describe the component can either be provided with ariaLabelledby or ar
 <p-treeselect ariaLabel="Options" />
 ```
 
-### TreeSelect
+### TreeSelect {#treeselect}
 
 TreeSelect is a form component to choose from hierarchical data.
 
-### TreeNode
+### TreeNode {#treenode}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### TreeSelect API
 
 API defines helper props, events and others for the PrimeNG TreeSelect module.
 
-#### TreeSelect
+#### TreeSelect {#api-treeselect}
 
 TreeSelect is a form component to choose from hierarchical data.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -258,7 +266,7 @@ Defines the input properties of the component.
 | fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -275,7 +283,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onNodeUnselect | event :  TreeNodeUnSelectEvent | Callback to invoke when a node is unselected. |
 | onNodeSelect | event :  TreeNodeSelectEvent | Callback to invoke when a node is selected. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -294,13 +302,15 @@ Defines the templates used by the component.
 | itemcheckboxicon |  | Custom item checkbox icon template. |
 | itemloadingicon |  | Custom item loading icon template. |
 
-#### TreeNode
+#### TreeNode {#api-treenode}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### TreeSelect Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -317,7 +327,7 @@ List of class names used in the styled mode.
 | p-treeselect-tree-container | Class name of the tree container element |
 | p-treeselect-empty-message | Class name of the empty message element |
 
-#### TreeSelect Design Tokens
+#### TreeSelect Design Tokens {#theming-treeselect-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -364,7 +374,7 @@ List of design tokens used in a preset.
 | treeselect.emptyMessage.padding | treeselect.empty.message.padding | --p-treeselect-empty-message-padding | Padding of empty message |
 | treeselect.chip.borderRadius | treeselect.chip.border.radius | --p-treeselect-chip-border-radius | Border radius of chip |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -375,6 +385,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/treeselect)

@@ -2,15 +2,21 @@
 
 InputNumber is an input component to provide numerical input.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { InputNumberModule } from 'primeng/inputnumber';
 ```
 
-### Numerals
+### Numerals {#numerals}
 
 InputNumber is used as a controlled input with ngModel property.
 
@@ -21,7 +27,7 @@ InputNumber is used as a controlled input with ngModel property.
 <p-inputnumber [(ngModel)]="value4" inputId="minmax" mode="decimal" [min]="0" [max]="100" />
 ```
 
-### Locale
+### Locale {#locale}
 
 Localization information such as grouping and decimal symbols are defined with the locale property which defaults to the user locale.
 
@@ -32,7 +38,7 @@ Localization information such as grouping and decimal symbols are defined with t
 <p-inputnumber [(ngModel)]="value4" inputId="locale-indian" mode="decimal" locale="en-IN" [minFractionDigits]="2" />
 ```
 
-### Currency
+### Currency {#currency}
 
 Currency formatting is specified by setting the mode option to currency and currency property. In addition currencyDisplay option allows how the currency is displayed, valid values are "symbol" (default) or "code".
 
@@ -43,7 +49,7 @@ Currency formatting is specified by setting the mode option to currency and curr
 <p-inputnumber [(ngModel)]="value4" mode="currency" inputId="currency-japan" currency="JPY" locale="jp-JP" />
 ```
 
-### Prefix & Suffix
+### Prefix & Suffix {#prefix-suffix}
 
 Custom texts e.g. units can be placed before or after the input section with the prefix and suffix properties.
 
@@ -54,7 +60,7 @@ Custom texts e.g. units can be placed before or after the input section with the
 <p-inputnumber [(ngModel)]="value4" prefix="↑ " inputId="temperature" suffix="℃" [min]="0" [max]="40" />
 ```
 
-### Buttons
+### Buttons {#buttons}
 
 Spinner buttons are enabled using the showButtons options and layout is defined with the buttonLayout. Default value is "stacked" whereas "horizontal" and "stacked" are alternatives. Note that even there are no buttons, up and down arrow keys can be used to spin the values with keyboard.
 
@@ -71,7 +77,7 @@ Spinner buttons are enabled using the showButtons options and layout is defined 
 </p-inputnumber>
 ```
 
-### Vertical
+### Vertical {#vertical}
 
 Buttons can also placed vertically by setting buttonLayout as vertical.
 
@@ -86,7 +92,7 @@ Buttons can also placed vertically by setting buttonLayout as vertical.
 </p-inputnumber>
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -107,7 +113,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -118,7 +124,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 InputNumber provides small and large sizes as alternatives to the base.
 
@@ -128,7 +134,7 @@ InputNumber provides small and large sizes as alternatives to the base.
 <p-inputnumber [(ngModel)]="value3" size="large" placeholder="Large" mode="currency" currency="USD" locale="en-US" />
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -136,7 +142,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-inputnumber variant="filled" [(ngModel)]="value1" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -144,7 +150,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-inputnumber inputId="integeronly" [disabled]="true" prefix="%" [(ngModel)]="value1" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -153,7 +159,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-inputnumber [(ngModel)]="value2" [invalid]="value2 === undefined" mode="decimal" [minFractionDigits]="2" variant="filled" placeholder="Amount" />
 ```
 
-### Forms
+### Forms {#forms}
 
 InputNumber can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -181,7 +187,7 @@ InputNumber can also be used with reactive forms. In this case, the formControlN
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can either be provided via label tag combined with inputId prop or using ariaLabelledBy, ariaLabel, ariaDescribedBy props. The input element uses spinbutton role in addition to the aria-valuemin, aria-valuemax and aria-valuenow attributes.
 
@@ -198,21 +204,23 @@ Value to describe the component can either be provided via label tag combined wi
 <small id="describe">Information</small>
 ```
 
-### InputNumber
+### InputNumber {#inputnumber}
 
 InputNumber is an input component to provide numerical input.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### InputNumber API
 
 API defines helper props, events and others for the PrimeNG InputNumber module.
 
-#### InputNumber
+#### InputNumber {#api-inputnumber}
 
 InputNumber is an input component to provide numerical input.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -266,7 +274,7 @@ Defines the input properties of the component.
 | showClear | boolean | false | When enabled, a clear icon is displayed to clear the value. |
 | autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -278,7 +286,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onKeyDown | event :  KeyboardEvent | Callback to invoke on input key press. |
 | onClear | value :  void | Callback to invoke when clear token is clicked. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -288,11 +296,13 @@ Defines the templates used by the component.
 | incrementbuttonicon |  | Template of the increment button icon. |
 | decrementbuttonicon |  | Template of the decrement button icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### InputNumber Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -305,7 +315,7 @@ List of class names used in the styled mode.
 | p-inputnumber-decrement-button | Class name of the decrement button element |
 | p-autocomplete-clear-icon | Class name of the clear icon |
 
-#### InputNumber Design Tokens
+#### InputNumber Design Tokens {#theming-inputnumber-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -325,7 +335,7 @@ List of design tokens used in a preset.
 | inputnumber.button.hoverColor | inputnumber.button.hover.color | --p-inputnumber-button-hover-color | Hover color of button |
 | inputnumber.button.activeColor | inputnumber.button.active.color | --p-inputnumber-button-active-color | Active color of button |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -336,6 +346,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/inputnumber)

@@ -2,15 +2,20 @@
 
 Galleria is an advanced content gallery component.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { GalleriaModule } from 'primeng/galleria';
 ```
 
-### Basic
+### Basic {#basic}
 
 Galleria requires a value as a collection of images, item template for the higher resolution image and thumbnail template to display as a thumbnail.
 
@@ -25,7 +30,7 @@ Galleria requires a value as a collection of images, item template for the highe
 </p-galleria>
 ```
 
-### Controlled
+### Controlled {#controlled}
 
 Galleria can be controlled programmatically using the activeIndex property.
 
@@ -44,7 +49,7 @@ Galleria can be controlled programmatically using the activeIndex property.
 </p-galleria>
 ```
 
-### Indicator
+### Indicator {#indicator}
 
 Indicators are displayed at the bottom by enabling showIndicators property and interacted with the click event by default.
 
@@ -85,7 +90,7 @@ Indicators are displayed at the bottom by enabling showIndicators property and i
 </p-galleria>
 ```
 
-### Thumbnail
+### Thumbnail {#thumbnail}
 
 Galleria can be controlled programmatically using the activeIndex property.
 
@@ -108,7 +113,7 @@ Galleria can be controlled programmatically using the activeIndex property.
 </p-galleria>
 ```
 
-### Responsive
+### Responsive {#responsive}
 
 Galleria responsiveness is defined with the responsiveOptions property.
 
@@ -123,7 +128,7 @@ Galleria responsiveness is defined with the responsiveOptions property.
 </p-galleria>
 ```
 
-### Full Screen
+### Full Screen {#full-screen}
 
 Full screen mode is enabled by adding fullScreen property.
 
@@ -154,7 +159,7 @@ Full screen mode is enabled by adding fullScreen property.
 </p-galleria>
 ```
 
-### Navigator
+### Navigator {#navigator}
 
 Add showItemNavigators to display navigator elements and the left and right side.
 
@@ -199,7 +204,7 @@ Add showItemNavigators to display navigator elements and the left and right side
 </p-galleria>
 ```
 
-### AutoPlay
+### AutoPlay {#autoplay}
 
 A slideshow implementation is defined by adding circular and autoPlay properties.
 
@@ -214,7 +219,7 @@ A slideshow implementation is defined by adding circular and autoPlay properties
 </p-galleria>
 ```
 
-### Caption
+### Caption {#caption}
 
 Description of an image is specified with the caption template.
 
@@ -233,7 +238,7 @@ Description of an image is specified with the caption template.
 </p-galleria>
 ```
 
-### Advanced
+### Advanced {#advanced}
 
 Galleria can be extended further to implement complex requirements.
 
@@ -282,25 +287,27 @@ Galleria can be extended further to implement complex requirements.
 </p-galleria>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Galleria uses region role and since any attribute is passed to the main container element, attributes such as aria-label and aria-roledescription can be used as well. The slides container has aria-live attribute set as "polite" if galleria is not in autoplay mode, otherwise "off" would be the value in autoplay.
 
-### Galleria
+### Galleria {#galleria}
 
 Galleria is an advanced content gallery component.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Galleria API
 
 API defines helper props, events and others for the PrimeNG Galleria module.
 
-#### Galleria
+#### Galleria {#api-galleria}
 
 Galleria is an advanced content gallery component.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -334,7 +341,7 @@ Defines the input properties of the component.
 | hideTransitionOptions | string | 150ms cubic-bezier(0, 0, 0.2, 1) | Transition options of the hide animation. |
 | visible | boolean | null | Specifies the visibility of the mask on fullscreen mode. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -343,6 +350,14 @@ Defines emit that determine the behavior of the component based on a given condi
 | activeIndexChange | value :  number | Callback to invoke on active index change. |
 | visibleChange | value :  boolean | Callback to invoke on visiblity change. |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
 
 [View Official Documentation](https://primeng.org/galleria)

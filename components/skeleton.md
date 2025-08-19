@@ -2,15 +2,21 @@
 
 Skeleton is a placeholder to display instead of the actual content.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { SkeletonModule } from 'primeng/skeleton';
 ```
 
-### Shapes
+### Shapes {#shapes}
 
 Various shapes and sizes can be created using styling properties like shape, width, height, borderRadius and class.
 
@@ -42,7 +48,7 @@ Various shapes and sizes can be created using styling properties like shape, wid
 <p-skeleton shape="circle" size="5rem" />
 ```
 
-### Card
+### Card {#card}
 
 Sample Card implementation using different Skeleton components and Tailwind CSS utilities.
 
@@ -64,7 +70,7 @@ Sample Card implementation using different Skeleton components and Tailwind CSS 
 </div>
 ```
 
-### List
+### List {#list}
 
 Sample List implementation using different Skeleton components and Tailwind CSS utilities.
 
@@ -111,7 +117,7 @@ Sample List implementation using different Skeleton components and Tailwind CSS 
 </div>
 ```
 
-### DataTable
+### DataTable {#datatable}
 
 Sample DataTable implementation using different Skeleton components and Tailwind CSS utilities.
 
@@ -136,25 +142,27 @@ Sample DataTable implementation using different Skeleton components and Tailwind
 </p-table>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Skeleton uses aria-hidden as "true" so that it gets ignored by screen readers, any valid attribute is passed to the root element so you may customize it further if required. If multiple skeletons are grouped inside a container, you may use aria-busy on the container element as well to indicate the loading process.
 
-### Skeleton
+### Skeleton {#skeleton}
 
 Skeleton is a placeholder to display instead of the actual content.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Skeleton API
 
 API defines helper props, events and others for the PrimeNG Skeleton module.
 
-#### Skeleton
+#### Skeleton {#api-skeleton}
 
 Skeleton is a placeholder to display instead of the actual content.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -167,11 +175,13 @@ Defines the input properties of the component.
 | width | string | 100% | Width of the element. |
 | height | string | 1rem | Height of the element. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Skeleton Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -179,7 +189,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-skeleton | Class name of the root element |
 
-#### Skeleton Design Tokens
+#### Skeleton Design Tokens {#theming-skeleton-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -189,7 +199,7 @@ List of design tokens used in a preset.
 | skeleton.root.background | skeleton.background | --p-skeleton-background | Background of root |
 | skeleton.root.animationBackground | skeleton.animation.background | --p-skeleton-animation-background | Animation background of root |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -200,6 +210,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/skeleton)

@@ -2,15 +2,21 @@
 
 Dialog is a container to display content in an overlay window.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { DialogModule } from 'primeng/dialog';
 ```
 
-### Basic
+### Basic {#basic}
 
 Dialog is used as a container and visibility is controlled with visible property.
 
@@ -33,7 +39,7 @@ Dialog is used as a container and visibility is controlled with visible property
 </p-dialog>
 ```
 
-### Template
+### Template {#template}
 
 Dialog can be customized using header and footer templates.
 
@@ -62,7 +68,7 @@ Dialog can be customized using header and footer templates.
 </p-dialog>
 ```
 
-### Position
+### Position {#position}
 
 The position property is used to display a Dialog at all edges and corners of the screen.
 
@@ -98,7 +104,7 @@ The position property is used to display a Dialog at all edges and corners of th
 </p-dialog>
 ```
 
-### Maximizable
+### Maximizable {#maximizable}
 
 Setting maximizable property to true enables the full screen mode.
 
@@ -111,7 +117,7 @@ Setting maximizable property to true enables the full screen mode.
 </p-dialog>
 ```
 
-### Long Content
+### Long Content {#long-content}
 
 Dialog automatically displays a scroller when content exceeds viewport.
 
@@ -139,7 +145,7 @@ Dialog automatically displays a scroller when content exceeds viewport.
 </p-dialog>
 ```
 
-### Without Modal
+### Without Modal {#without-modal}
 
 Mask layer behind the Dialog is configured with the modal property. By default, no modal layer is added.
 
@@ -162,7 +168,7 @@ Mask layer behind the Dialog is configured with the modal property. By default, 
 </p-dialog>
 ```
 
-### Responsive
+### Responsive {#responsive}
 
 Dialog width can be adjusted per screen size with the breakpoints option where a key defines the max-width for the breakpoint and value for the corresponding width. When no breakpoint matches width defined in style property is used.
 
@@ -175,7 +181,7 @@ Dialog width can be adjusted per screen size with the breakpoints option where a
 </p-dialog>
 ```
 
-### Headless
+### Headless {#headless}
 
 Headless mode allows you to customize the entire user interface instead of the default elements.
 
@@ -234,7 +240,7 @@ Headless mode allows you to customize the entire user interface instead of the d
 </p-dialog>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Dialog component uses dialog role along with aria-labelledby referring to the header element however any attribute is passed to the root element so you may use aria-labelledby to override this default behavior. In addition aria-modal is added since focus is kept within the popup.
 
@@ -246,21 +252,23 @@ Dialog component uses dialog role along with aria-labelledby referring to the he
 </p-dialog>
 ```
 
-### Dialog
+### Dialog {#dialog}
 
 Dialog is a container to display content in an overlay window.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Dialog API
 
 API defines helper props, events and others for the PrimeNG Dialog module.
 
-#### Dialog
+#### Dialog {#api-dialog}
 
 Dialog is a container to display content in an overlay window.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -310,7 +318,7 @@ Defines the input properties of the component.
 | minimizeIconTemplate | TemplateRef<any> | null | Minimize icon template. |
 | headlessTemplate | TemplateRef<any> | null | Headless template. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -325,11 +333,13 @@ Defines emit that determine the behavior of the component based on a given condi
 | onDragEnd | event :  DragEvent | Callback to invoke when dialog dragging is completed. |
 | onMaximize | value :  any | Callback to invoke when dialog maximized or unmaximized. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Dialog Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -345,7 +355,7 @@ List of class names used in the styled mode.
 | p-dialog-content | Class name of the content element |
 | p-dialog-footer | Class name of the footer element |
 
-#### Dialog Design Tokens
+#### Dialog Design Tokens {#theming-dialog-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -364,7 +374,7 @@ List of design tokens used in a preset.
 | dialog.footer.padding | dialog.footer.padding | --p-dialog-footer-padding | Padding of footer |
 | dialog.footer.gap | dialog.footer.gap | --p-dialog-footer-gap | Gap of footer |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -375,6 +385,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/dialog)

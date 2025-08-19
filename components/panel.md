@@ -2,15 +2,21 @@
 
 Panel is a container component with an optional content toggle feature.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { PanelModule } from 'primeng/panel';
 ```
 
-### Basic
+### Basic {#basic}
 
 A simple Panel is created with a header property along with the content as children.
 
@@ -22,7 +28,7 @@ A simple Panel is created with a header property along with the content as child
 </p-panel>
 ```
 
-### Toggleable
+### Toggleable {#toggleable}
 
 Content of the panel can be expanded and collapsed using toggleable option, default state is defined with collapsed option. By default, toggle icon is used to toggle the contents whereas setting toggler to "header" enables clicking anywhere in the header to trigger a toggle.
 
@@ -34,7 +40,7 @@ Content of the panel can be expanded and collapsed using toggleable option, defa
 </p-panel>
 ```
 
-### Template
+### Template {#template}
 
 Header and Footers sections can be customized using header and footer templates.
 
@@ -68,25 +74,27 @@ Header and Footers sections can be customized using header and footer templates.
 </p-panel>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Toggleable panels use a content toggle button at the header that has aria-controls to define the id of the content section along with aria-expanded for the visibility state. The value to read the button defaults to the value of the header property and can be customized by defining an aria-label or aria-labelledby via the toggleButtonProps property.
 
-### Panel
+### Panel {#panel}
 
 Panel is a container with the optional content toggle feature.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Panel API
 
 API defines helper props, events and others for the PrimeNG Panel module.
 
-#### Panel
+#### Panel {#api-panel}
 
 Panel is a container with the optional content toggle feature.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -102,7 +110,7 @@ Defines the input properties of the component.
 | transitionOptions | string | 400ms cubic-bezier(0.86, 0, 0.07, 1) | Transition options of the animation. |
 | toggleButtonProps | any | null | Used to pass all properties of the ButtonProps to the Button component. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -112,7 +120,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onBeforeToggle | event :  PanelBeforeToggleEvent | Callback to invoke before panel toggle. |
 | onAfterToggle | event :  PanelAfterToggleEvent | Callback to invoke after panel toggle. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -124,11 +132,13 @@ Defines the templates used by the component.
 | footer |  | Defines template option for footer. |
 | headericons |  | Defines template option for headerIcon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Panel Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -143,7 +153,7 @@ List of class names used in the styled mode.
 | p-panel-content | Class name of the content element |
 | p-panel-footer | Class name of the footer element |
 
-#### Panel Design Tokens
+#### Panel Design Tokens {#theming-panel-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -164,7 +174,7 @@ List of design tokens used in a preset.
 | panel.content.padding | panel.content.padding | --p-panel-content-padding | Padding of content |
 | panel.footer.padding | panel.footer.padding | --p-panel-footer-padding | Padding of footer |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -175,6 +185,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/panel)

@@ -2,15 +2,21 @@
 
 Displays an image with preview and tranformation options.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ImageModule } from 'primeng/image';
 ```
 
-### Basic
+### Basic {#basic}
 
 Image is used as the native img element and supports all properties that the native element has. For multiple image, see Galleria.
 
@@ -18,7 +24,7 @@ Image is used as the native img element and supports all properties that the nat
 <p-image src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image" width="250" />
 ```
 
-### Preview
+### Preview {#preview}
 
 Preview mode displays a modal layer when the image is clicked that provides transformation options such as rotating and zooming.
 
@@ -26,7 +32,7 @@ Preview mode displays a modal layer when the image is clicked that provides tran
 <p-image src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image" width="250" [preview]="true" />
 ```
 
-### Template
+### Template {#template}
 
 An eye icon is displayed by default when the image is hovered in preview mode. Use the indicator template for custom content.
 
@@ -44,25 +50,27 @@ An eye icon is displayed by default when the image is hovered in preview mode. U
 </p-image>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 The preview button is a native button element with an aria-label that refers to the aria.zoomImage property of the locale API by default.
 
-### Image
+### Image {#image}
 
 Displays an image with preview and tranformation options. For multiple image, see Galleria.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Image API
 
 API defines helper props, events and others for the PrimeNG Image module.
 
-#### Image
+#### Image {#api-image}
 
 Displays an image with preview and tranformation options. For multiple image, see Galleria.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -86,7 +94,7 @@ Defines the input properties of the component.
 | hideTransitionOptions | string | 150ms cubic-bezier(0, 0, 0.2, 1) | Transition options of the hide animation |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -96,7 +104,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onHide | value :  any | Triggered when the preview overlay is hidden. |
 | onImageError | event :  Event | This event is triggered if an error occurs while loading an image file. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -111,11 +119,13 @@ Defines the templates used by the component.
 | preview |  | Custom template of preview. |
 | image |  | Custom template of image. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Image Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -133,7 +143,7 @@ List of class names used in the styled mode.
 | p-image-close-button | Class name of the close button element |
 | p-image-original | Class name of the original element |
 
-#### Image Design Tokens
+#### Image Design Tokens {#theming-image-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -166,7 +176,7 @@ List of design tokens used in a preset.
 | image.action.focusRing.offset | image.action.focus.ring.offset | --p-image-action-focus-ring-offset | Focus ring offset of action |
 | image.action.focusRing.shadow | image.action.focus.ring.shadow | --p-image-action-focus-ring-shadow | Focus ring shadow of action |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -177,6 +187,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/image)

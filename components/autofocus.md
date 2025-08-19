@@ -2,15 +2,20 @@
 
 AutoFocus manages focus on focusable element on load.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { AutoFocusModule } from 'primeng/autofocus';
 ```
 
-### Basic
+### Basic {#basic}
 
 AutoFocus is applied to any focusable input element with the pAutoFocus directive.
 
@@ -18,21 +23,23 @@ AutoFocus is applied to any focusable input element with the pAutoFocus directiv
 <input type="text" pInputText [pAutoFocus]="true" placeholder="Automatically focused" />
 ```
 
-### AutoFocus
+### AutoFocus {#autofocus}
 
 AutoFocus manages focus on focusable element on load.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### AutoFocus API
 
 API defines helper props, events and others for the PrimeNG AutoFocus module.
 
-#### AutoFocus
+#### AutoFocus {#api-autofocus}
 
 AutoFocus manages focus on focusable element on load.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -40,6 +47,14 @@ Defines the input properties of the component.
 | --- | --- | --- | --- |
 | autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
 
 [View Official Documentation](https://primeng.org/autofocus)

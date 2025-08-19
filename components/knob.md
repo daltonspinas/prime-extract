@@ -2,15 +2,21 @@
 
 Knob is a form component to define number inputs with a dial.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { KnobModule } from 'primeng/knob';
 ```
 
-### Basic
+### Basic {#basic}
 
 Knob is an input component and used with the standard ngModel directive.
 
@@ -18,7 +24,7 @@ Knob is an input component and used with the standard ngModel directive.
 <p-knob [(ngModel)]="value" />
 ```
 
-### Min/Max
+### Min/Max {#min-max}
 
 Boundaries are configured with the min and max properties whose defaults are 0 and 100 respectively.
 
@@ -26,7 +32,7 @@ Boundaries are configured with the min and max properties whose defaults are 0 a
 <p-knob [(ngModel)]="value" [min]="-50" [max]="50" />
 ```
 
-### Step
+### Step {#step}
 
 Size of each movement is defined with the step property.
 
@@ -34,7 +40,7 @@ Size of each movement is defined with the step property.
 <p-knob [(ngModel)]="value" [step]="10" />
 ```
 
-### Template
+### Template {#template}
 
 Label is a string template that can be customized with the valueTemplate property having 60 as the placeholder .
 
@@ -42,7 +48,7 @@ Label is a string template that can be customized with the valueTemplate propert
 <p-knob [(ngModel)]="value" valueTemplate="{value}%" />
 ```
 
-### Stroke
+### Stroke {#stroke}
 
 The border size is specified with the strokeWidth property as a number in pixels.
 
@@ -50,7 +56,7 @@ The border size is specified with the strokeWidth property as a number in pixels
 <p-knob [(ngModel)]="value" [strokeWidth]="5" />
 ```
 
-### Size
+### Size {#size}
 
 Diameter of the knob is defined in pixels using the size property.
 
@@ -58,7 +64,7 @@ Diameter of the knob is defined in pixels using the size property.
 <p-knob [(ngModel)]="value" [size]="200" />
 ```
 
-### Color
+### Color {#color}
 
 Colors are customized with the textColor, rangeColor and valueColor properties.
 
@@ -66,7 +72,7 @@ Colors are customized with the textColor, rangeColor and valueColor properties.
 <p-knob [(ngModel)]="value" valueColor="SlateGray" rangeColor="MediumTurquoise" />
 ```
 
-### Reactive
+### Reactive {#reactive}
 
 Knob can be controlled with custom controls as well.
 
@@ -78,7 +84,7 @@ Knob can be controlled with custom controls as well.
 </div>
 ```
 
-### ReadOnly
+### ReadOnly {#readonly}
 
 When readonly present, value cannot be edited.
 
@@ -86,7 +92,7 @@ When readonly present, value cannot be edited.
 <p-knob [(ngModel)]="value" [readonly]="true" />
 ```
 
-### Forms
+### Forms {#forms}
 
 Knob can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -114,7 +120,7 @@ Knob can also be used with reactive forms. In this case, the formControlName pro
 </form>
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, a visual hint is applied to indicate that the Knob cannot be interacted with.
 
@@ -122,7 +128,7 @@ When disabled is present, a visual hint is applied to indicate that the Knob can
 <p-knob [(ngModel)]="value" [disabled]="true" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Knob element component uses slider role in addition to the aria-valuemin, aria-valuemax and aria-valuenow attributes. Value to describe the component can be defined using ariaLabelledBy and ariaLabel props.
 
@@ -133,21 +139,23 @@ Knob element component uses slider role in addition to the aria-valuemin, aria-v
 <p-knob ariaLabel="Number"/>
 ```
 
-### Knob
+### Knob {#knob}
 
 Knob is a form component to define number inputs with a dial.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Knob API
 
 API defines helper props, events and others for the PrimeNG Knob module.
 
-#### Knob
+#### Knob {#api-knob}
 
 Knob is a form component to define number inputs with a dial.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -173,7 +181,7 @@ Defines the input properties of the component.
 | showValue | boolean | true | Whether the show the value inside the knob. |
 | readonly | boolean | false | When present, it specifies that the component value cannot be edited. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -181,11 +189,13 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onChange | value :  number | Callback to invoke on value change. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Knob Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -196,7 +206,7 @@ List of class names used in the styled mode.
 | p-knob-value | Class name of the value element |
 | p-knob-text | Class name of the text element |
 
-#### Knob Design Tokens
+#### Knob Design Tokens {#theming-knob-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -212,7 +222,7 @@ List of design tokens used in a preset.
 | knob.range.background | knob.range.background | --p-knob-range-background | Background of range |
 | knob.text.color | knob.text.color | --p-knob-text-color | Color of text |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -223,6 +233,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/knob)

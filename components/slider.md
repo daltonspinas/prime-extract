@@ -2,15 +2,21 @@
 
 Slider is a component to provide input with a drag handle.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { SliderModule } from 'primeng/slider';
 ```
 
-### Basic
+### Basic {#basic}
 
 Two-way binding is defined using the standard ngModel directive.
 
@@ -18,7 +24,7 @@ Two-way binding is defined using the standard ngModel directive.
 <p-slider [(ngModel)]="value" class="w-56" />
 ```
 
-### Input
+### Input {#input}
 
 Slider is connected to an input field using two-way binding.
 
@@ -27,7 +33,7 @@ Slider is connected to an input field using two-way binding.
 <p-slider [(ngModel)]="value" class="w-full" />
 ```
 
-### Step
+### Step {#step}
 
 Size of each movement is defined with the step property.
 
@@ -35,7 +41,7 @@ Size of each movement is defined with the step property.
 <p-slider [(ngModel)]="value" [step]="20" class="w-56" />
 ```
 
-### Range
+### Range {#range}
 
 When range property is present, slider provides two handles to define two values. In range mode, value should be an array instead of a single value.
 
@@ -43,7 +49,7 @@ When range property is present, slider provides two handles to define two values
 <p-slider [(ngModel)]="rangeValues" [range]="true" class="w-56" />
 ```
 
-### Filter
+### Filter {#filter}
 
 Image filter implementation using multiple sliders.
 
@@ -53,7 +59,7 @@ Image filter implementation using multiple sliders.
 <p-slider [(ngModel)]="filterValues[filter]" class="w-56" [min]="0" [max]="200" />
 ```
 
-### Vertical
+### Vertical {#vertical}
 
 Default layout of slider is horizontal, use orientation property for the alternative vertical mode.
 
@@ -61,7 +67,7 @@ Default layout of slider is horizontal, use orientation property for the alterna
 <p-slider [(ngModel)]="value" orientation="vertical" class="h-56" />
 ```
 
-### Forms
+### Forms {#forms}
 
 Slider can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -89,7 +95,7 @@ Slider can also be used with reactive forms. In this case, the formControlName p
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Slider element component uses slider role on the handle in addition to the aria-orientation, aria-valuemin, aria-valuemax and aria-valuenow attributes. Value to describe the component can be defined using ariaLabelledBy and ariaLabel props.
 
@@ -100,21 +106,23 @@ Slider element component uses slider role on the handle in addition to the aria-
 <p-slider ariaLabel="Number" />
 ```
 
-### Slider
+### Slider {#slider}
 
 Slider is a component to provide input with a drag handle.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Slider API
 
 API defines helper props, events and others for the PrimeNG Slider module.
 
-#### Slider
+#### Slider {#api-slider}
 
 Slider is a component to provide input with a drag handle.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -136,7 +144,7 @@ Defines the input properties of the component.
 | tabindex | number | 0 | Index of the element in tabbing order. |
 | autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -145,11 +153,13 @@ Defines emit that determine the behavior of the component based on a given condi
 | onChange | event :  SliderChangeEvent | Callback to invoke on value change. |
 | onSlideEnd | event :  SliderSlideEndEvent | Callback to invoke when slide ended. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Slider Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -159,7 +169,7 @@ List of class names used in the styled mode.
 | p-slider-range | Class name of the range element |
 | p-slider-handle | Class name of the handle element |
 
-#### Slider Design Tokens
+#### Slider Design Tokens {#theming-slider-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -187,7 +197,7 @@ List of design tokens used in a preset.
 | slider.handle.focusRing.offset | slider.handle.focus.ring.offset | --p-slider-handle-focus-ring-offset | Focus ring offset of handle |
 | slider.handle.focusRing.shadow | slider.handle.focus.ring.shadow | --p-slider-handle-focus-ring-shadow | Focus ring shadow of handle |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -198,6 +208,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/slider)

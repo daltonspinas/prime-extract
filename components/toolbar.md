@@ -2,15 +2,21 @@
 
 Toolbar is a grouping component for buttons and other content.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ToolbarModule } from 'primeng/toolbar';
 ```
 
-### Basic
+### Basic {#basic}
 
 Toolbar is a grouping component for buttons and other content. Its content can be placed inside the start, center and end sections.
 
@@ -33,7 +39,7 @@ Toolbar is a grouping component for buttons and other content. Its content can b
 </p-toolbar>
 ```
 
-### Custom
+### Custom {#custom}
 
 Content can also be placed using the start, center and end templates.
 
@@ -60,7 +66,7 @@ Content can also be placed using the start, center and end templates.
 </p-toolbar>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Toolbar uses toolbar role for the root element, aria-orientation is not included as it defaults to horizontal. Any valid attribute is passed to the root element so you may add additional properties like aria-labelledby and aria-labelled to define the element if required.
 
@@ -70,21 +76,23 @@ Toolbar uses toolbar role for the root element, aria-orientation is not included
 </p-toolbar>
 ```
 
-### Toolbar
+### Toolbar {#toolbar}
 
 Toolbar is a grouping component for buttons and other content.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Toolbar API
 
 API defines helper props, events and others for the PrimeNG Toolbar module.
 
-#### Toolbar
+#### Toolbar {#api-toolbar}
 
 Toolbar is a grouping component for buttons and other content.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -93,7 +101,7 @@ Defines the input properties of the component.
 | styleClass | string | null | Style class of the component. |
 | ariaLabelledBy | string | null | Defines a string value that labels an interactive element. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -103,11 +111,13 @@ Defines the templates used by the component.
 | end |  | Defines template option for end. |
 | center |  | Defines template option for center. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Toolbar Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -118,7 +128,7 @@ List of class names used in the styled mode.
 | p-toolbar-center | Class name of the center element |
 | p-toolbar-end | Class name of the end element |
 
-#### Toolbar Design Tokens
+#### Toolbar Design Tokens {#theming-toolbar-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -131,7 +141,7 @@ List of design tokens used in a preset.
 | toolbar.root.gap | toolbar.gap | --p-toolbar-gap | Gap of root |
 | toolbar.root.padding | toolbar.padding | --p-toolbar-padding | Padding of root |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -142,6 +152,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/toolbar)

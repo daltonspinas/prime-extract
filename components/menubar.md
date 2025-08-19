@@ -2,15 +2,21 @@
 
 Menubar is a horizontal menu component.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { MenubarModule } from 'primeng/menubar';
 ```
 
-### Basic
+### Basic {#basic}
 
 Menubar requires nested menuitems as its model.
 
@@ -18,7 +24,7 @@ Menubar requires nested menuitems as its model.
 <p-menubar [model]="items" />
 ```
 
-### Template
+### Template {#template}
 
 Custom content can be placed inside the menubar using the start and end templates.
 
@@ -46,7 +52,7 @@ Custom content can be placed inside the menubar using the start and end template
 </p-menubar>
 ```
 
-### Command
+### Command {#command}
 
 The command property defines the callback to run when an item is activated by click or a key event.
 
@@ -55,7 +61,7 @@ The command property defines the callback to run when an item is activated by cl
 <p-menubar [model]="items" />
 ```
 
-### Router
+### Router {#router}
 
 Menu items support navigation via routerLink, programmatic routing using commands, or external URLs.
 
@@ -63,27 +69,29 @@ Menu items support navigation via routerLink, programmatic routing using command
 <p-menubar [model]="items" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Menubar component uses the menubar role and the value to describe the menu can either be provided with aria-labelledby or aria-label props. Each list item has a presentation role whereas anchor elements have a menuitem role with aria-label referring to the label of the item and aria-disabled defined if the item is disabled. A submenu within a MenuBar uses the menu role with an aria-labelledby defined as the id of the submenu root menuitem label. In addition, menuitems that open a submenu have aria-haspopup, aria-expanded and aria-controls to define the relation between the item and the submenu.
 
-### Menubar
+### Menubar {#menubar}
 
 Menubar is a horizontal menu component.
 
-### MenuItem
+### MenuItem {#menuitem}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Menubar API
 
 API defines helper props, events and others for the PrimeNG Menubar module.
 
-#### Menubar
+#### Menubar {#api-menubar}
 
 Menubar is a horizontal menu component.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -101,7 +109,7 @@ Defines the input properties of the component.
 | ariaLabel | string | null | Defines a string value that labels an interactive element. |
 | ariaLabelledBy | string | null | Identifier of the underlying input element. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -110,7 +118,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onFocus | event :  FocusEvent | Callback to execute when button is focused. |
 | onBlur | event :  FocusEvent | Callback to execute when button loses focus. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -122,13 +130,15 @@ Defines the templates used by the component.
 | menuicon |  | Defines template option for item. |
 | submenuicon |  | Defines template option for submenu icon. |
 
-#### MenuItem
+#### MenuItem {#api-menuitem}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Menubar Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -148,7 +158,7 @@ List of class names used in the styled mode.
 | p-menubar-separator | Class name of the separator element |
 | p-menubar-end | Class name of the end element |
 
-#### Menubar Design Tokens
+#### Menubar Design Tokens {#theming-menubar-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -197,7 +207,7 @@ List of design tokens used in a preset.
 | menubar.mobileButton.focusRing.offset | menubar.mobile.button.focus.ring.offset | --p-menubar-mobile-button-focus-ring-offset | Focus ring offset of mobile button |
 | menubar.mobileButton.focusRing.shadow | menubar.mobile.button.focus.ring.shadow | --p-menubar-mobile-button-focus-ring-shadow | Focus ring shadow of mobile button |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -208,6 +218,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/menubar)

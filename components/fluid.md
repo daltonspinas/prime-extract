@@ -2,15 +2,20 @@
 
 Fluid is a layout component to make descendant components span full width of their container.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { FluidModule } from 'primeng/fluid';
 ```
 
-### Basic
+### Basic {#basic}
 
 Components with the fluid option like InputText have the ability to span the full width of their component. Enabling the fluid for each component individually may be cumbersome so wrap the content with Fluid to instead for an easier alternative.
 
@@ -34,15 +39,17 @@ Components with the fluid option like InputText have the ability to span the ful
 </p-fluid>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Fluid does not require any roles and attributes.
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Fluid Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -50,7 +57,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-fluid | Class name of the root element |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -61,6 +68,14 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/fluid)

@@ -2,15 +2,21 @@
 
 Tree is used to display hierarchical data.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TreeModule } from 'primeng/tree';
 ```
 
-### Basic
+### Basic {#basic}
 
 Tree component requires an array of TreeNode objects as its value.
 
@@ -18,7 +24,7 @@ Tree component requires an array of TreeNode objects as its value.
 <p-tree [value]="files" class="w-full md:w-[30rem]" />
 ```
 
-### Controlled
+### Controlled {#controlled}
 
 Tree requires a collection of TreeNode instances as a value.
 
@@ -30,7 +36,7 @@ Tree requires a collection of TreeNode instances as a value.
 <p-tree [value]="files" class="w-full md:w-[30rem]" />
 ```
 
-### Selection
+### Selection {#selection}
 
 Single node selection is configured by setting selectionMode as single along with selection properties to manage the selection value binding.
 
@@ -50,7 +56,7 @@ Single node selection is configured by setting selectionMode as single along wit
 <p-tree [value]="files" selectionMode="checkbox" class="w-full md:w-[30rem]" [(selection)]="selectedFiles" />
 ```
 
-### Events
+### Events {#events}
 
 An event is provided for each type of user interaction such as expand, collapse and selection.
 
@@ -58,7 +64,7 @@ An event is provided for each type of user interaction such as expand, collapse 
 <p-tree [value]="files" class="w-full md:w-[30rem]" selectionMode="single" [(selection)]="selectedFile" (onNodeExpand)="nodeExpand($event)" (onNodeCollapse)="nodeCollapse($event)" (onNodeSelect)="nodeSelect($event)" (onNodeUnselect)="nodeUnselect($event)" />
 ```
 
-### Lazy
+### Lazy {#lazy}
 
 Lazy loading is useful when dealing with huge datasets, in this example nodes are dynamically loaded on demand using loading property and onNodeExpand method. Default value of loadingMode is mask and also icon is available.
 
@@ -67,7 +73,7 @@ Lazy loading is useful when dealing with huge datasets, in this example nodes ar
 <p-tree class="w-full md:w-[30rem]" [value]="nodes2" loadingMode="icon" (onNodeExpand)="onNodeExpand2($event)" />
 ```
 
-### Template
+### Template {#template}
 
 Custom node content instead of a node label is defined with the pTemplate property.
 
@@ -84,7 +90,7 @@ Custom node content instead of a node label is defined with the pTemplate proper
 </p-tree>
 ```
 
-### Filter
+### Filter {#filter}
 
 Filtering is enabled by adding the filter property, by default label property of a node is used to compare against the value in the text field, in order to customize which field(s) should be used during search define filterBy property. In addition filterMode specifies the filtering strategy. In lenient mode when the query matches a node, children of the node are not searched further as all descendants of the node are included. On the other hand, in strict mode when the query matches a node, filtering continues on all descendants.
 
@@ -93,7 +99,7 @@ Filtering is enabled by adding the filter property, by default label property of
 <p-tree [value]="files2" [filter]="true" filterMode="strict" filterPlaceholder="Strict Filter" />
 ```
 
-### Virtual Scroll
+### Virtual Scroll {#virtual-scroll}
 
 VirtualScroller is a performance-approach to handle huge data efficiently. Setting virtualScroll property as true and providing a virtualScrollItemSize in pixels would be enough to enable this functionality.
 
@@ -105,7 +111,7 @@ VirtualScroller is a performance-approach to handle huge data efficiently. Setti
 <p-tree [value]="nodes" scrollHeight="250px" [virtualScroll]="true" [lazy]="true" [virtualScrollItemSize]="46" (onNodeExpand)="nodeExpand($event)" [loading]="loading" />
 ```
 
-### DragDrop
+### DragDrop {#dragdrop}
 
 Nodes can be reordered within the same tree and also can be transferred between other trees using drag&drop.
 
@@ -113,7 +119,7 @@ Nodes can be reordered within the same tree and also can be transferred between 
 <p-tree [value]="files" class="w-full md:w-[30rem]" [draggableNodes]="true" [droppableNodes]="true" draggableScope="self" droppableScope="self" />
 ```
 
-### Context Menu
+### Context Menu {#context-menu}
 
 Tree requires a collection of TreeNode instances as a value.
 
@@ -123,27 +129,29 @@ Tree requires a collection of TreeNode instances as a value.
 <p-toast />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can either be provided with aria-labelledby or aria-label props. The root list element has a tree role whereas each list item has a treeitem role along with aria-label, aria-selected and aria-expanded attributes. In checkbox selection, aria-checked is used instead of aria-selected. The container element of a treenode has the group role. Checkbox and toggle icons are hidden from screen readers as their parent element with treeitem role and attributes are used instead for readers and keyboard support. The aria-setsize, aria-posinset and aria-level attributes are calculated implicitly and added to each treeitem.
 
-### Tree
+### Tree {#tree}
 
 Tree is used to display hierarchical data.
 
-### TreeNode
+### TreeNode {#treenode}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Tree API
 
 API defines helper props, events and others for the PrimeNG Tree module.
 
-#### Tree
+#### Tree {#api-tree}
 
 Tree is used to display hierarchical data.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -187,7 +195,7 @@ Defines the input properties of the component.
 | trackBy | Function | ... | Function to optimize the node list rendering, default algorithm checks for object identity. |
 | highlightOnSelect | boolean | false | Highlights the node on select. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -206,7 +214,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onScrollIndexChange | event :  TreeScrollIndexChangeEvent | Callback to invoke in virtual scroll mode when scroll position and item's range in view changes. |
 | onFilter | event :  TreeFilterEvent | Callback to invoke when data is filtered. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -216,7 +224,7 @@ Defines methods that can be accessed by the component's reference.
 | scrollToVirtualIndex | index :  number | Scrolls to virtual index. |
 | scrollTo | options :  any | Scrolls to virtual index. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -233,13 +241,15 @@ Defines the templates used by the component.
 | loadingicon |  | Loading icon template. |
 | filtericon |  | Filter icon template. |
 
-#### TreeNode
+#### TreeNode {#api-treenode}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Tree Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -262,7 +272,7 @@ List of class names used in the styled mode.
 | p-tree-empty-message | Class name of the empty message element |
 | p-tree-node-droppoint | Class name of the drop point element |
 
-#### Tree Design Tokens
+#### Tree Design Tokens {#theming-tree-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -305,7 +315,7 @@ List of design tokens used in a preset.
 | tree.loadingIcon.size | tree.loading.icon.size | --p-tree-loading-icon-size | Size of loading icon |
 | tree.filter.margin | tree.filter.margin | --p-tree-filter-margin | Margin of filter |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -316,6 +326,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/tree)

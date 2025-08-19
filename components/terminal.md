@@ -2,15 +2,21 @@
 
 Terminal is a text based user interface. Enter "date" to display the current date.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TerminalModule } from 'primeng/terminal';
 ```
 
-### Basic
+### Basic {#basic}
 
 Commands are processed using observables via the TerminalService. Import this service into your component and subscribe to commandHandler to process commands by sending replies with sendResponse function.
 
@@ -21,25 +27,27 @@ to get a random number.</p>
 <p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Terminal component has an input element that can be described with aria-label or aria-labelledby props. The element that lists the previous commands has aria-live so that changes are received by the screen reader.
 
-### Terminal
+### Terminal {#terminal}
 
 Terminal is a text based user interface.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Terminal API
 
 API defines helper props, events and others for the PrimeNG Terminal module.
 
-#### Terminal
+#### Terminal {#api-terminal}
 
 Terminal is a text based user interface.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -49,11 +57,13 @@ Defines the input properties of the component.
 | prompt | string | null | Prompt text for each command. |
 | styleClass | string | null | Style class of the component. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Terminal Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -69,7 +79,7 @@ List of class names used in the styled mode.
 | p-terminal-prompt-label | Class name of the prompt label element |
 | p-terminal-prompt-value | Class name of the prompt value element |
 
-#### Terminal Design Tokens
+#### Terminal Design Tokens {#theming-terminal-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -84,7 +94,7 @@ List of design tokens used in a preset.
 | terminal.prompt.gap | terminal.prompt.gap | --p-terminal-prompt-gap | Gap of prompt |
 | terminal.commandResponse.margin | terminal.command.response.margin | --p-terminal-command-response-margin | Margin of command response |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -95,6 +105,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/terminal)

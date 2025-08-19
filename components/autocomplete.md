@@ -2,15 +2,21 @@
 
 AutoComplete is an input component that provides real-time suggestions when being typed.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { AutoCompleteModule } from 'primeng/autocomplete';
 ```
 
-### Basic
+### Basic {#basic}
 
 AutoComplete uses ngModel for two-way binding, requires a list of suggestions and a completeMethod to query for the results. The completeMethod gets the query text as event.query property and should update the suggestions with the search results.
 
@@ -18,7 +24,7 @@ AutoComplete uses ngModel for two-way binding, requires a list of suggestions an
 <p-autocomplete [(ngModel)]="value" [suggestions]="items" (completeMethod)="search($event)" />
 ```
 
-### Dropdown
+### Dropdown {#dropdown}
 
 Enabling dropdown property displays a button next to the input field where click behavior of the button is defined using dropdownMode property that takes blank or current as possible values. blank is the default mode to send a query with an empty string whereas current setting sends a query with the current value of the input.
 
@@ -26,7 +32,7 @@ Enabling dropdown property displays a button next to the input field where click
 <p-autocomplete [(ngModel)]="value" [dropdown]="true" [suggestions]="items" (completeMethod)="search($event)" />
 ```
 
-### Objects
+### Objects {#objects}
 
 AutoComplete can also work with objects using the optionLabel property that defines the label to display as a suggestion. The value passed to the model would still be the object instance of a suggestion. Here is an example with a Country object that has name and code fields such as {name: "United States", code:"USA"}.
 
@@ -34,7 +40,7 @@ AutoComplete can also work with objects using the optionLabel property that defi
 <p-autocomplete [(ngModel)]="selectedCountry" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" optionLabel="name" />
 ```
 
-### Template
+### Template {#template}
 
 AutoComplete offers multiple templates for customization through templating.
 
@@ -57,7 +63,7 @@ AutoComplete offers multiple templates for customization through templating.
 </p-autocomplete>
 ```
 
-### Group
+### Group {#group}
 
 Option grouping is enabled when group property is set to true. group template is available to customize the option groups. All templates get the option instance as the default local template variable.
 
@@ -72,7 +78,7 @@ Option grouping is enabled when group property is set to true. group template is
 </p-autocomplete>
 ```
 
-### Force Selection
+### Force Selection {#force-selection}
 
 ForceSelection mode validates the manual input to check whether it also exists in the suggestions list, if not the input value is cleared to make sure the value passed to the model is always one of the suggestions.
 
@@ -80,7 +86,7 @@ ForceSelection mode validates the manual input to check whether it also exists i
 <p-autocomplete [(ngModel)]="selectedCountry" [forceSelection]="true" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" optionLabel="name" />
 ```
 
-### Virtual Scroll
+### Virtual Scroll {#virtual-scroll}
 
 Virtual scrolling is an efficient way of rendering the options by displaying a small subset of data in the viewport at any time. When dealing with huge number of options, it is suggested to enable virtual scrolling to avoid performance issues. Usage is simple as setting virtualScroll property to true and defining virtualScrollItemSize to specify the height of an item.
 
@@ -88,7 +94,7 @@ Virtual scrolling is an efficient way of rendering the options by displaying a s
 <p-autocomplete [(ngModel)]="selectedItem" [virtualScroll]="true" [suggestions]="filteredItems" [virtualScrollItemSize]="34" (completeMethod)="filterItems($event)" optionLabel="label" [dropdown]="true" />
 ```
 
-### Multiple
+### Multiple {#multiple}
 
 Multiple mode is enabled using multiple property used to select more than one value from the autocomplete. In this case, value reference should be an array.
 
@@ -100,7 +106,7 @@ Multiple mode is enabled using multiple property used to select more than one va
 <p-autocomplete [(ngModel)]="value2" inputId="multiple-ac-2" multiple fluid (completeMethod)="search($event)" [typeahead]="false" />
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -121,7 +127,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -132,7 +138,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 AutoComplete provides small and large sizes as alternatives to the base.
 
@@ -142,7 +148,7 @@ AutoComplete provides small and large sizes as alternatives to the base.
 <p-autocomplete [(ngModel)]="value3" [suggestions]="items" (completeMethod)="search()" size="large" placeholder="Large" dropdown />
 ```
 
-### Filled
+### Filled {#filled}
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -150,7 +156,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-autocomplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)" variant="filled" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -158,7 +164,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-autocomplete [(ngModel)]="selectedItem" [suggestions]="suggestions" placeholder="Disabled" (completeMethod)="search($event)" [disabled]="true" />
 ```
 
-### Invalid
+### Invalid {#invalid}
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -167,7 +173,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-autocomplete [(ngModel)]="value2" [suggestions]="suggestions" [invalid]="!value2" (completeMethod)="search($event)" variant="filled" placeholder="Code" />
 ```
 
-### Forms
+### Forms {#forms}
 
 AutoComplete can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -204,7 +210,7 @@ AutoComplete can also be used with reactive forms. In this case, the formControl
 </form>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the component can either be provided via label tag combined with inputId prop or using ariaLabelledBy, ariaLabel props. The input element has combobox role in addition to aria-autocomplete, aria-haspopup and aria-expanded attributes. The relation between the input and the popup is created with aria-controls and aria-activedescendant attribute is used to instruct screen reader which option to read during keyboard navigation within the popup list.
 
@@ -218,21 +224,23 @@ Value to describe the component can either be provided via label tag combined wi
 <p-autocomplete ariaLabel="City" />
 ```
 
-### AutoComplete
+### AutoComplete {#autocomplete}
 
 AutoComplete is an input component that provides real-time suggestions when being typed.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### AutoComplete API
 
 API defines helper props, events and others for the PrimeNG AutoComplete module.
 
-#### AutoComplete
+#### AutoComplete {#api-autocomplete}
 
 AutoComplete is an input component that provides real-time suggestions when being typed.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -310,7 +318,7 @@ Defines the input properties of the component.
 | minlength | InputSignal<number> | undefined | The number of characters (code points) must not be less than the value of the attribute, if non-empty. |
 | maxlength | InputSignal<number> | undefined | The number of characters (code points) must not exceed the value of the attribute. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -328,7 +336,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onHide | event :  Event | Callback to invoke on overlay is hidden. |
 | onLazyLoad | event :  AutoCompleteLazyLoadEvent | Callback to invoke on lazy load data. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -346,11 +354,13 @@ Defines the templates used by the component.
 | clearicon |  | Custom clear icon template. |
 | dropdownicon |  | Custom dropdown icon template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### AutoComplete Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -372,7 +382,7 @@ List of class names used in the styled mode.
 | p-autocomplete-empty-message | Class name of the empty message element |
 | p-autocomplete-clear-icon | Class name of the clear icon |
 
-#### AutoComplete Design Tokens
+#### AutoComplete Design Tokens {#theming-autocomplete-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -444,7 +454,7 @@ List of design tokens used in a preset.
 | autocomplete.chip.focusColor | autocomplete.chip.focus.color | --p-autocomplete-chip-focus-color | Focus color of chip |
 | autocomplete.emptyMessage.padding | autocomplete.empty.message.padding | --p-autocomplete-empty-message-padding | Padding of empty message |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -455,6 +465,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/autocomplete)

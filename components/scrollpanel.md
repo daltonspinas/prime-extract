@@ -2,15 +2,21 @@
 
 ScrollPanel is a cross browser, lightweight and skinnable alternative to native browser scrollbar.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 ```
 
-### Basic
+### Basic {#basic}
 
 ScrollPanel is defined using dimensions for the scrollable viewport.
 
@@ -28,7 +34,7 @@ ScrollPanel is defined using dimensions for the scrollable viewport.
 </p-scrollpanel>
 ```
 
-### Custom
+### Custom {#custom}
 
 Scrollbar visuals can be styled for a unified look across different platforms.
 
@@ -55,25 +61,27 @@ Scrollbar visuals can be styled for a unified look across different platforms.
 </p-scrollpanel>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Scrollbars of the ScrollPanel has a scrollbar role along with the aria-controls attribute that refers to the id of the scrollable content container and the aria-orientation to indicate the orientation of scrolling.
 
-### ScrollPanel
+### ScrollPanel {#scrollpanel}
 
 ScrollPanel is a cross browser, lightweight and themable alternative to native browser scrollbar.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ScrollPanel API
 
 API defines helper props, events and others for the PrimeNG ScrollPanel module.
 
-#### ScrollPanel
+#### ScrollPanel {#api-scrollpanel}
 
 ScrollPanel is a cross browser, lightweight and themable alternative to native browser scrollbar.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -82,7 +90,7 @@ Defines the input properties of the component.
 | styleClass | string | null | Style class of the component. |
 | step | number | 5 | Step factor to scroll the content while pressing the arrow keys. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -91,7 +99,7 @@ Defines methods that can be accessed by the component's reference.
 | scrollTop | scrollTop :  number | Scrolls the top location to the given value. |
 | refresh |  | Refreshes the position and size of the scrollbar. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -99,11 +107,13 @@ Defines the templates used by the component.
 | --- | --- | --- |
 | content |  | Defines template option for content. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ScrollPanel Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -115,7 +125,7 @@ List of class names used in the styled mode.
 | p-scrollpanel-bar-x | Class name of the bar x element |
 | p-scrollpanel-bar-y | Class name of the bar y element |
 
-#### ScrollPanel Design Tokens
+#### ScrollPanel Design Tokens {#theming-scrollpanel-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -131,7 +141,7 @@ List of design tokens used in a preset.
 | scrollpanel.bar.focusRing.shadow | scrollpanel.bar.focus.ring.shadow | --p-scrollpanel-bar-focus-ring-shadow | Focus ring shadow of bar |
 | scrollpanel.bar.background | scrollpanel.bar.background | --p-scrollpanel-bar-background | Background of bar |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -142,6 +152,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/scrollpanel)

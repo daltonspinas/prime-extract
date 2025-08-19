@@ -2,15 +2,21 @@
 
 PickList is used to reorder items between different lists.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { PickListModule } from 'primeng/picklist';
 ```
 
-### Basic
+### Basic {#basic}
 
 PickList is used as a controlled input with source and target properties. Content of a list item needs to be defined with the item template that receives an object in the list as parameter. Drag & drop functionality depends on @angular/cdk package.
 
@@ -22,7 +28,7 @@ PickList is used as a controlled input with source and target properties. Conten
 </p-picklist>
 ```
 
-### Filter
+### Filter {#filter}
 
 Filter value is checked against the property of an object configured with the filterBy property.
 
@@ -62,7 +68,7 @@ Filter value is checked against the property of an object configured with the fi
 </p-picklist>
 ```
 
-### Template
+### Template {#template}
 
 For custom content support define an item template that gets the item instance as a parameter. In addition sourceheader and targetheader templates are provided for further customization.
 
@@ -92,7 +98,7 @@ For custom content support define an item template that gets the item instance a
 </p-picklist>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Value to describe the source listbox and target listbox can be provided with ariaLabelledBy or ariaLabel props. The list elements has a listbox role with the aria-multiselectable attribute. Each list item has an option role with aria-selected and aria-disabled as their attributes.
 
@@ -103,21 +109,23 @@ Value to describe the source listbox and target listbox can be provided with ari
 <p-picklist ariaLabel="City" />
 ```
 
-### PickList
+### PickList {#picklist}
 
 PickList is used to reorder items between different lists.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### PickList API
 
 API defines helper props, events and others for the PrimeNG PickList module.
 
-#### PickList
+#### PickList {#api-picklist}
 
 PickList is used to reorder items between different lists.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -175,7 +183,7 @@ Defines the input properties of the component.
 | moveAllToSourceProps | ButtonProps | null | Used to pass all properties of the ButtonProps to the move all to source button inside the component. |
 | breakpoint | string | null | Indicates the width of the screen at which the component should change its behavior. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -194,7 +202,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onFocus | event :  Event | Callback to invoke when the list is focused |
 | onBlur | event :  Event | Callback to invoke when the list is blurred |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -220,11 +228,13 @@ Defines the templates used by the component.
 | targetfiltericon |  | Custom target filter icon template. |
 | sourcefiltericon |  | Custom source filter icon template. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### PickList Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -237,7 +247,7 @@ List of class names used in the styled mode.
 | p-picklist-target-list-container | Class name of the target list container element |
 | p-picklist-target-controls | Class name of the target controls element |
 
-#### PickList Design Tokens
+#### PickList Design Tokens {#theming-picklist-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -246,7 +256,7 @@ List of design tokens used in a preset.
 | picklist.root.gap | picklist.gap | --p-picklist-gap | Gap of root |
 | picklist.controls.gap | picklist.controls.gap | --p-picklist-controls-gap | Gap of controls |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -257,6 +267,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/picklist)

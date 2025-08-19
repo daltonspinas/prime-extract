@@ -2,16 +2,21 @@
 
 Text, icon, buttons and other content can be grouped next to an input.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 ```
 
-### Basic
+### Basic {#basic}
 
 A group is created by wrapping the input and add-ons with the p-inputgroup component. Each add-on element is defined as a child of p-inputgroup-addon component.
 
@@ -42,7 +47,7 @@ A group is created by wrapping the input and add-ons with the p-inputgroup compo
 </p-inputgroup>
 ```
 
-### Multiple
+### Multiple {#multiple}
 
 Multiple add-ons can be placed inside the same group.
 
@@ -60,7 +65,7 @@ Multiple add-ons can be placed inside the same group.
 </p-inputgroup>
 ```
 
-### Button
+### Button {#button}
 
 Buttons can be placed at either side of an input element.
 
@@ -89,7 +94,7 @@ Buttons can be placed at either side of an input element.
 </p-inputgroup>
 ```
 
-### Checkbox & Radio
+### Checkbox & Radio {#checkbox-radio}
 
 Checkbox and RadioButton components can be combined with an input element under the same group.
 
@@ -113,7 +118,7 @@ Checkbox and RadioButton components can be combined with an input element under 
 </p-inputgroup>
 ```
 
-### Float Label
+### Float Label {#float-label}
 
 FloatLabel visually integrates a label with its form element. Visit FloatLabel documentation for more information.
 
@@ -146,7 +151,7 @@ FloatLabel visually integrates a label with its form element. Visit FloatLabel d
 </p-inputgroup>
 ```
 
-### Ifta Label
+### Ifta Label {#ifta-label}
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -162,15 +167,17 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-inputgroup>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 InputGroup and InputGroupAddon does not require any roles and attributes.
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### InputGroup Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -178,7 +185,7 @@ List of class names used in the styled mode.
 | --- | --- |
 | p-inputgroup | Class name of the root element |
 
-#### InputGroup Design Tokens
+#### InputGroup Design Tokens {#theming-inputgroup-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -191,7 +198,7 @@ List of design tokens used in a preset.
 | inputgroup.addon.padding | inputgroup.addon.padding | --p-inputgroup-addon-padding | Padding of addon |
 | inputgroup.addon.minWidth | inputgroup.addon.min.width | --p-inputgroup-addon-min-width | Min width of addon |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -202,6 +209,14 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/inputgroup)

@@ -2,15 +2,21 @@
 
 Carousel is a content slider featuring various customization options.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { CarouselModule } from 'primeng/carousel';
 ```
 
-### Basic
+### Basic {#basic}
 
 Carousel requires a collection of items as its value along with a template to render each item.
 
@@ -37,7 +43,7 @@ Carousel requires a collection of items as its value along with a template to re
 </p-carousel>
 ```
 
-### Circular
+### Circular {#circular}
 
 When autoplayInterval is defined in milliseconds, items are scrolled automatically. In addition, for infinite scrolling circular property needs to be added which is enabled automatically in auto play mode.
 
@@ -64,7 +70,7 @@ When autoplayInterval is defined in milliseconds, items are scrolled automatical
 </p-carousel>
 ```
 
-### Responsive
+### Responsive {#responsive}
 
 Carousel supports specific configuration per screen size with the responsiveOptions property that takes an array of objects where each object defines the max-width breakpoint, numVisible for the number of items items per page and numScroll for number of items to scroll. When responsiveOptions is defined, the numScroll and numVisible properties of the Carousel are used as default when there is breakpoint that applies.
 
@@ -91,7 +97,7 @@ Carousel supports specific configuration per screen size with the responsiveOpti
 </p-carousel>
 ```
 
-### Vertical
+### Vertical {#vertical}
 
 To create a vertical Carousel, orientation needs to be set to vertical along with a verticalViewPortHeight.
 
@@ -118,25 +124,27 @@ To create a vertical Carousel, orientation needs to be set to vertical along wit
 </p-carousel>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Carousel uses region role and since any attribute is passed to the main container element, attributes such as aria-label and aria-roledescription can be used as well. The slides container has aria-live attribute set as "polite" if carousel is not in autoplay mode, otherwise "off" would be the value in autoplay.
 
-### Carousel
+### Carousel {#carousel}
 
 Carousel is a content slider featuring various customization options.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Carousel API
 
 API defines helper props, events and others for the PrimeNG Carousel module.
 
-#### Carousel
+#### Carousel {#api-carousel}
 
 Carousel is a content slider featuring various customization options.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -162,7 +170,7 @@ Defines the input properties of the component.
 | prevButtonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the Button component. |
 | nextButtonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the Button component. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -170,7 +178,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | --- | --- | --- |
 | onPage | event :  CarouselPageEvent | Callback to invoke after scroll. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -182,11 +190,13 @@ Defines the templates used by the component.
 | previousicon |  | Template for the previous button icon. |
 | nexticon |  | Template for the next button icon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Carousel Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -207,7 +217,7 @@ List of class names used in the styled mode.
 | p-carousel-indicator-button | Class name of the indicator button element |
 | p-carousel-footer | Class name of the footer element |
 
-#### Carousel Design Tokens
+#### Carousel Design Tokens {#theming-carousel-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -229,7 +239,7 @@ List of design tokens used in a preset.
 | carousel.indicator.hoverBackground | carousel.indicator.hover.background | --p-carousel-indicator-hover-background | Hover background of indicator |
 | carousel.indicator.activeBackground | carousel.indicator.active.background | --p-carousel-indicator-active-background | Active background of indicator |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -240,6 +250,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/carousel)

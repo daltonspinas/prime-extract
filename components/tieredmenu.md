@@ -2,15 +2,21 @@
 
 TieredMenu displays submenus in nested overlays.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { TieredMenuModule } from 'primeng/tieredmenu';
 ```
 
-### Basic
+### Basic {#basic}
 
 TieredMenu requires a collection of menuitems as its model.
 
@@ -18,7 +24,7 @@ TieredMenu requires a collection of menuitems as its model.
 <p-tieredmenu [model]="items" />
 ```
 
-### Popup
+### Popup {#popup}
 
 Popup mode is enabled by adding popup property and calling toggle method with an event of the target.
 
@@ -27,7 +33,7 @@ Popup mode is enabled by adding popup property and calling toggle method with an
 <p-tieredmenu #menu [model]="items" [popup]="true" />
 ```
 
-### Template
+### Template {#template}
 
 TieredMenu offers item customization with the item template that receives the menuitem instance from the model as a parameter.
 
@@ -47,7 +53,7 @@ TieredMenu offers item customization with the item template that receives the me
 </p-tieredMenu>
 ```
 
-### Command
+### Command {#command}
 
 The command property defines the callback to run when an item is activated by click or a key event.
 
@@ -56,7 +62,7 @@ The command property defines the callback to run when an item is activated by cl
 <p-tieredmenu [model]="items" />
 ```
 
-### Router
+### Router {#router}
 
 Menu items support navigation via routerLink, programmatic routing using commands, or external URLs.
 
@@ -64,27 +70,29 @@ Menu items support navigation via routerLink, programmatic routing using command
 <p-tieredmenu [model]="items" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 TieredMenu component uses the menubar role with aria-orientation set to "vertical" and the value to describe the menu can either be provided with aria-labelledby or aria-label props. Each list item has a presentation role whereas anchor elements have a menuitem role with aria-label referring to the label of the item and aria-disabled defined if the item is disabled. A submenu within a TieredMenu uses the menu role with an aria-labelledby defined as the id of the submenu root menuitem label. In addition, menuitems that open a submenu have aria-haspopup, aria-expanded and aria-controls to define the relation between the item and the submenu.
 
-### TieredMenu
+### TieredMenu {#tieredmenu}
 
 TieredMenu displays submenus in nested overlays.
 
-### MenuItem
+### MenuItem {#menuitem}
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### TieredMenu API
 
 API defines helper props, events and others for the PrimeNG TieredMenu module.
 
-#### TieredMenu
+#### TieredMenu {#api-tieredmenu}
 
 TieredMenu displays submenus in nested overlays.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -107,7 +115,7 @@ Defines the input properties of the component.
 | tabindex | number | 0 | Index of the element in tabbing order. |
 | appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -116,7 +124,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onShow | value :  any | Callback to invoke when overlay menu is shown. |
 | onHide | value :  any | Callback to invoke when overlay menu is hidden. |
 
-##### Methods
+##### Methods {#api-methods}
 
 Defines methods that can be accessed by the component's reference.
 
@@ -126,7 +134,7 @@ Defines methods that can be accessed by the component's reference.
 | toggle | event :  any | Toggles the visibility of the popup menu. |
 | show | event :  anyisFocus :  any | Displays the popup menu. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -135,13 +143,15 @@ Defines the templates used by the component.
 | submenuicon |  | Template of the submenu icon. |
 | item |  | Template of the item. |
 
-#### MenuItem
+#### MenuItem {#api-menuitem}
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### TieredMenu Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -160,7 +170,7 @@ List of class names used in the styled mode.
 | p-tieredmenu-separator | Class name of the separator element |
 | p-tieredmenu-end | Class name of the end element |
 
-#### TieredMenu Design Tokens
+#### TieredMenu Design Tokens {#theming-tieredmenu-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -192,7 +202,7 @@ List of design tokens used in a preset.
 | tieredmenu.submenuIcon.activeColor | tieredmenu.submenu.icon.active.color | --p-tieredmenu-submenu-icon-active-color | Active color of submenu icon |
 | tieredmenu.separator.borderColor | tieredmenu.separator.border.color | --p-tieredmenu-separator-border-color | Border color of separator |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -203,6 +213,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/tieredmenu)

@@ -2,15 +2,21 @@
 
 Button is an extension to standard button element with icons and theming.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ButtonModule } from 'primeng/button';
 ```
 
-### Basic
+### Basic {#basic}
 
 Text to display on a button is defined with the label property.
 
@@ -18,7 +24,7 @@ Text to display on a button is defined with the label property.
 <p-button label="Submit" />
 ```
 
-### Directive
+### Directive {#directive}
 
 Button can also be used as directive using pButton along with pButtonLabel and pButtonIcon helper directives.
 
@@ -29,7 +35,7 @@ Button can also be used as directive using pButton along with pButtonLabel and p
 </button>
 ```
 
-### Link
+### Link {#link}
 
 A button can be rendered as a link when link property is present, while the pButton directive can be applied on an anchor element to style the link as a button.
 
@@ -43,7 +49,7 @@ A button can be rendered as a link when link property is present, while the pBut
 </a>
 ```
 
-### Icons
+### Icons {#icons}
 
 Icon of a button is specified with icon property and position is configured using iconPos attribute.
 
@@ -55,7 +61,7 @@ Icon of a button is specified with icon property and position is configured usin
 <p-button label="Update" icon="pi pi-refresh" iconPos="bottom" />
 ```
 
-### Loading
+### Loading {#loading}
 
 Busy state is controlled with the loading property.
 
@@ -63,7 +69,7 @@ Busy state is controlled with the loading property.
 <p-button label="Search" icon="pi pi-check" [loading]="loading" (onClick)="load()" />
 ```
 
-### Severity
+### Severity {#severity}
 
 Severity defines the type of button.
 
@@ -78,7 +84,7 @@ Severity defines the type of button.
 <p-button label="Contrast" severity="contrast" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -86,7 +92,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-button label="Submit" [disabled]="true" />
 ```
 
-### Raised
+### Raised {#raised}
 
 Raised buttons display a shadow to indicate elevation.
 
@@ -101,7 +107,7 @@ Raised buttons display a shadow to indicate elevation.
 <p-button label="Contrast" [raised]="true" severity="contrast" />
 ```
 
-### Rounded
+### Rounded {#rounded}
 
 Rounded buttons have a circular border radius.
 
@@ -116,7 +122,7 @@ Rounded buttons have a circular border radius.
 <p-button label="Contrast" [rounded]="true" severity="contrast" />
 ```
 
-### Text
+### Text {#text}
 
 Text buttons are displayed as textual elements.
 
@@ -131,7 +137,7 @@ Text buttons are displayed as textual elements.
 <p-button label="Plain" variant="text" />
 ```
 
-### Raised Text
+### Raised Text {#raised-text}
 
 Text buttons can be displayed as raised for elevation.
 
@@ -146,7 +152,7 @@ Text buttons can be displayed as raised for elevation.
 <p-button label="Plain" variant="text" [raised]="true" />
 ```
 
-### Outlined
+### Outlined {#outlined}
 
 Outlined buttons display a border without a background initially.
 
@@ -161,7 +167,7 @@ Outlined buttons display a border without a background initially.
 <p-button label="Contrast" variant="outlined" severity="contrast" />
 ```
 
-### Icon Only
+### Icon Only {#icon-only}
 
 Buttons can have icons without labels.
 
@@ -207,7 +213,7 @@ Buttons can have icons without labels.
 <p-button icon="pi pi-times" [rounded]="true" [text]="true" severity="danger" />
 ```
 
-### Badge
+### Badge {#badge}
 
 Buttons have built-in badge support with badge and badgeClass properties.
 
@@ -216,7 +222,7 @@ Buttons have built-in badge support with badge and badgeClass properties.
 <p-button label="Messages" icon="pi pi-users" badge="2" badgeSeverity="contrast" styleClass="m-0" [outlined]="true" />
 ```
 
-### Button Group
+### Button Group {#button-group}
 
 Multiple buttons are grouped when wrapped inside an element with ButtonGroup component.
 
@@ -228,7 +234,7 @@ Multiple buttons are grouped when wrapped inside an element with ButtonGroup com
 </p-buttongroup>
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 Button provides small and large sizes as alternatives to the standard.
 
@@ -238,7 +244,7 @@ Button provides small and large sizes as alternatives to the standard.
 <p-button label="Large" icon="pi pi-check" size="large" />
 ```
 
-### Template
+### Template {#template}
 
 Custom content inside a button is defined as children.
 
@@ -250,7 +256,7 @@ Custom content inside a button is defined as children.
 </p-button>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Button component renders a native button element that implicitly includes any passed prop. Text to describe the button is defined with the aria-label prop, if not present label prop is used as the value. If the button is icon only or custom templating is used, it is recommended to use aria-label so that screen readers would be able to read the element properly.
 
@@ -264,25 +270,27 @@ Button component renders a native button element that implicitly includes any pa
 </p-button>
 ```
 
-### Button
+### Button {#button}
 
 Button is an extension to standard button element with icons and theming.
 
-### ButtonDirective
+### ButtonDirective {#buttondirective}
 
 Button directive is an extension to button component.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Button API
 
 API defines helper props, events and others for the PrimeNG Button module.
 
-#### Button
+#### Button {#api-button}
 
 Button is an extension to standard button element with icons and theming.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -315,7 +323,7 @@ Defines the input properties of the component.
 | autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
 | fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -328,7 +336,7 @@ This event is intended to be used with the <p-button> component. Using a regular
 | onBlur | event :  FocusEvent | Callback to execute when button loses focus.
 This event is intended to be used with the <p-button> component. Using a regular <button> element, use (blur). |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -338,11 +346,11 @@ Defines the templates used by the component.
 | loadingicon |  | Template of the loading. |
 | icon |  | Template of the icon. |
 
-#### ButtonDirective
+#### ButtonDirective {#api-buttondirective}
 
 Button directive is an extension to button component.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -363,11 +371,13 @@ Defines the input properties of the component.
 | plain | boolean | false | Add a plain textual class to the button without a background initially. |
 | fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Button Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -378,7 +388,7 @@ List of class names used in the styled mode.
 | p-button-icon | Class name of the icon element |
 | p-button-label | Class name of the label element |
 
-#### Button Design Tokens
+#### Button Design Tokens {#theming-button-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -560,7 +570,7 @@ List of design tokens used in a preset.
 | button.link.hoverColor | button.link.hover.color | --p-button-link-hover-color | Hover color of link |
 | button.link.activeColor | button.link.active.color | --p-button-link-active-color | Active color of link |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -571,6 +581,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/button)

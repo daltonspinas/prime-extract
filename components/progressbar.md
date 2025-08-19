@@ -2,9 +2,15 @@
 
 ProgressBar is a process status indicator.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { ProgressBarModule } from 'primeng/progressbar';
@@ -12,7 +18,7 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { ToastModule } from 'primeng/toast';
 ```
 
-### Basic
+### Basic {#basic}
 
 ProgressBar is used with the value property.
 
@@ -20,7 +26,7 @@ ProgressBar is used with the value property.
 <p-progressbar [value]="50" />
 ```
 
-### Dynamic
+### Dynamic {#dynamic}
 
 Value is reactive so updating it dynamically changes the bar as well.
 
@@ -28,7 +34,7 @@ Value is reactive so updating it dynamically changes the bar as well.
 <p-progressbar [value]="value" />
 ```
 
-### Template
+### Template {#template}
 
 content template allows displaying custom content inside the progressbar.
 
@@ -40,7 +46,7 @@ content template allows displaying custom content inside the progressbar.
 </p-progressbar>
 ```
 
-### Indeterminate
+### Indeterminate {#indeterminate}
 
 For progresses with no value to track, set the mode property to indeterminate.
 
@@ -48,7 +54,7 @@ For progresses with no value to track, set the mode property to indeterminate.
 <p-progressbar mode="indeterminate" [style]="{ height: '6px' }" />
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 ProgressBar components uses progressbar role along with aria-valuemin, aria-valuemax and aria-valuenow attributes. Value to describe the component can be defined usingaria-labelledby and aria-label props.
 
@@ -59,21 +65,23 @@ ProgressBar components uses progressbar role along with aria-valuemin, aria-valu
 <p-progressbar aria-label="Status" />
 ```
 
-### ProgressBar
+### ProgressBar {#progressbar}
 
 ProgressBar is a process status indicator.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### ProgressBar API
 
 API defines helper props, events and others for the PrimeNG ProgressBar module.
 
-#### ProgressBar
+#### ProgressBar {#api-progressbar}
 
 ProgressBar is a process status indicator.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -87,11 +95,13 @@ Defines the input properties of the component.
 | mode | string | determinate | Defines the mode of the progress |
 | color | string | null | Color for the background of the progress. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### ProgressBar Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -101,7 +111,7 @@ List of class names used in the styled mode.
 | p-progressbar-value | Class name of the value element |
 | p-progressbar-label | Class name of the label element |
 
-#### ProgressBar Design Tokens
+#### ProgressBar Design Tokens {#theming-progressbar-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -115,7 +125,7 @@ List of design tokens used in a preset.
 | progressbar.label.fontSize | progressbar.label.font.size | --p-progressbar-label-font-size | Font size of label |
 | progressbar.label.fontWeight | progressbar.label.font.weight | --p-progressbar-label-font-weight | Font weight of label |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -126,6 +136,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/progressbar)

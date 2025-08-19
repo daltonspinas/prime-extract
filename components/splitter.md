@@ -2,15 +2,21 @@
 
 Splitter is utilized to separate and resize panels.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { SplitterModule } from 'primeng/splitter';
 ```
 
-### Horizontal
+### Horizontal {#horizontal}
 
 Splitter requires two SplitterPanel components as children which are displayed horizontally by default.
 
@@ -25,7 +31,7 @@ Splitter requires two SplitterPanel components as children which are displayed h
 </p-splitter>
 ```
 
-### Size
+### Size {#size}
 
 When no panelSizes are defined, panels are split 50/50, use the panelSizes property to give relative widths e.g. [25, 75].
 
@@ -40,7 +46,7 @@ When no panelSizes are defined, panels are split 50/50, use the panelSizes prope
 </p-splitter>
 ```
 
-### Vertical
+### Vertical {#vertical}
 
 Panels are displayed as stacked by setting the layout to vertical.
 
@@ -55,7 +61,7 @@ Panels are displayed as stacked by setting the layout to vertical.
 </p-splitter>
 ```
 
-### Nested
+### Nested {#nested}
 
 Splitters can be combined to create advanced layouts.
 
@@ -84,25 +90,27 @@ Splitters can be combined to create advanced layouts.
 </p-splitter>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 Splitter bar defines separator as the role with aria-orientation set to either horizontal or vertical.
 
-### Splitter
+### Splitter {#splitter}
 
 Splitter is utilized to separate and resize panels.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### Splitter API
 
 API defines helper props, events and others for the PrimeNG Splitter module.
 
-#### Splitter
+#### Splitter {#api-splitter}
 
 Splitter is utilized to separate and resize panels.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -119,7 +127,7 @@ Defines the input properties of the component.
 | minSizes | number[] | [] | Minimum size of the elements relative to 100%. |
 | panelSizes | number[] | null | Size of the elements relative to 100%. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -128,11 +136,13 @@ Defines emit that determine the behavior of the component based on a given condi
 | onResizeEnd | event :  SplitterResizeEndEvent | Callback to invoke when resize ends. |
 | onResizeStart | event :  SplitterResizeStartEvent | Callback to invoke when resize starts. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### Splitter Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -142,7 +152,7 @@ List of class names used in the styled mode.
 | p-splitter-gutter | Class name of the gutter element |
 | p-splitter-gutter-handle | Class name of the gutter handle element |
 
-#### Splitter Design Tokens
+#### Splitter Design Tokens {#theming-splitter-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -162,7 +172,7 @@ List of design tokens used in a preset.
 | splitter.handle.focusRing.offset | splitter.handle.focus.ring.offset | --p-splitter-handle-focus-ring-offset | Focus ring offset of handle |
 | splitter.handle.focusRing.shadow | splitter.handle.focus.ring.shadow | --p-splitter-handle-focus-ring-shadow | Focus ring shadow of handle |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -173,6 +183,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/splitter)

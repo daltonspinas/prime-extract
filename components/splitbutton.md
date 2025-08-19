@@ -2,15 +2,21 @@
 
 SplitButton groups a set of commands in an overlay with a default action item.
 
-## Features
+## Table of Contents
 
-### Import
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
+
+## Features {#features}
+
+### Import {#import}
 
 ```typescript
 import { SplitButtonModule } from 'primeng/splitbutton';
 ```
 
-### Basic
+### Basic {#basic}
 
 SplitButton has a default action button and a collection of additional options defined by the model property based on MenuModel API.
 
@@ -18,7 +24,7 @@ SplitButton has a default action button and a collection of additional options d
 <p-splitbutton label="Save" (onClick)="save()" [model]="items" />
 ```
 
-### Icons
+### Icons {#icons}
 
 The buttons and menuitems have support to display icons.
 
@@ -26,7 +32,7 @@ The buttons and menuitems have support to display icons.
 <p-splitbutton label="Save" icon="pi pi-check" dropdownIcon="pi pi-cog" [model]="items" />
 ```
 
-### Nested
+### Nested {#nested}
 
 SplitButton has a default action button and a collection of additional options defined by the model property based on MenuModel API.
 
@@ -34,7 +40,7 @@ SplitButton has a default action button and a collection of additional options d
 <p-splitbutton label="Save" (onClick)="save('info')" [model]="items" />
 ```
 
-### Severity
+### Severity {#severity}
 
 The severity property defines the type of button.
 
@@ -48,7 +54,7 @@ The severity property defines the type of button.
 <p-splitbutton label="Save" (onClick)="save()" [model]="items" severity="danger" />
 ```
 
-### Disabled
+### Disabled {#disabled}
 
 When the disabled attribute is present, the element is uneditable and unfocused. Additionally, the disabled states of the button and menu button can be handled independently. The button is disabled when buttonDisabled is present, and the menu button is disabled when menuButtonDisabled is present.
 
@@ -56,7 +62,7 @@ When the disabled attribute is present, the element is uneditable and unfocused.
 <p-splitbutton label="Save" icon="pi pi-plus" (onClick)="save('info')" [model]="items" [disabled]="true" />
 ```
 
-### Raised
+### Raised {#raised}
 
 Raised buttons display a shadow to indicate elevation.
 
@@ -71,7 +77,7 @@ Raised buttons display a shadow to indicate elevation.
 <p-splitbutton label="Contrast" (onClick)="save('info')" [model]="items" severity="contrast" />
 ```
 
-### Rounded
+### Rounded {#rounded}
 
 Rounded buttons have a circular border radius.
 
@@ -86,7 +92,7 @@ Rounded buttons have a circular border radius.
 <p-splitbutton label="Contrast" [model]="items" (onClick)="save('info')" rounded severity="contrast" />
 ```
 
-### Text
+### Text {#text}
 
 Text buttons are displayed as textual elements.
 
@@ -101,7 +107,7 @@ Text buttons are displayed as textual elements.
 <p-splitbutton label="Contrast" [model]="items" (onClick)="save('info')" text severity="contrast" />
 ```
 
-### Raised Text
+### Raised Text {#raised-text}
 
 Text buttons can be displayed as raised as well for elevation.
 
@@ -116,7 +122,7 @@ Text buttons can be displayed as raised as well for elevation.
 <p-splitbutton label="Contrast" [model]="items" (onClick)="save('info')" raised text severity="contrast" />
 ```
 
-### Outlined
+### Outlined {#outlined}
 
 Outlined buttons display a border without a background initially.
 
@@ -131,7 +137,7 @@ Outlined buttons display a border without a background initially.
 <p-splitbutton label="Contrast" [model]="items" (onClick)="save('info')" outlined severity="contrast" />
 ```
 
-### Sizes
+### Sizes {#sizes}
 
 SplitButton provides small and large sizes as alternatives to the standard.
 
@@ -141,7 +147,7 @@ SplitButton provides small and large sizes as alternatives to the standard.
 <p-splitbutton label="Large" [model]="items" (onClick)="save('info')" size="large" />
 ```
 
-### Template
+### Template {#template}
 
 SplitButton has a default action button and a collection of additional options defined by the model property based on MenuModel API.
 
@@ -156,7 +162,7 @@ SplitButton has a default action button and a collection of additional options d
 </p-splitbutton>
 ```
 
-### Accessibility
+### Accessibility {#accessibility}
 
 SplitButton component renders two native button elements, main button uses the label property to define aria-label by default which can be customized with buttonProps. Dropdown button requires an explicit definition to describe it using menuButtonProps option and also includes aria-haspopup, aria-expanded for states along with aria-controls to define the relation between the popup and the button.
 
@@ -164,21 +170,23 @@ SplitButton component renders two native button elements, main button uses the l
 <p-splitbutton [buttonProps]="{'aria-label': 'Default Action'}" [menuButtonProps]="{'aria-label': 'More Options'}" />
 ```
 
-### SplitButton
+### SplitButton {#splitbutton}
 
 SplitButton groups a set of commands in an overlay with a default command.
 
-## API
+[↑ Back to Top](#table-of-contents)
+
+## API {#api}
 
 ### SplitButton API
 
 API defines helper props, events and others for the PrimeNG SplitButton module.
 
-#### SplitButton
+#### SplitButton {#api-splitbutton}
 
 SplitButton groups a set of commands in an overlay with a default command.
 
-##### Properties
+##### Properties {#api-properties}
 
 Defines the input properties of the component.
 
@@ -212,7 +220,7 @@ Defines the input properties of the component.
 | menuButtonDisabled | boolean | false | When present, it specifies that the menu button element should be disabled. |
 | buttonDisabled | boolean | false | When present, it specifies that the button element should be disabled. |
 
-##### Emitters
+##### Emitters {#api-emitters}
 
 Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
 
@@ -223,7 +231,7 @@ Defines emit that determine the behavior of the component based on a given condi
 | onMenuShow | value :  any | Callback to invoke when overlay menu is shown. |
 | onDropdownClick | event :  MouseEvent | Callback to invoke when dropdown button is clicked. |
 
-##### Templates
+##### Templates {#api-templates}
 
 Defines the templates used by the component.
 
@@ -232,11 +240,13 @@ Defines the templates used by the component.
 | content |  | Template of the content. |
 | dropdownicon |  | Template of the dropdownicon. |
 
-## Theming
+[↑ Back to Top](#table-of-contents)
+
+## Theming {#theming}
 
 ### SplitButton Theming
 
-#### CSS Classes
+#### CSS Classes {#theming-css-classes}
 
 List of class names used in the styled mode.
 
@@ -246,7 +256,7 @@ List of class names used in the styled mode.
 | p-splitbutton-button | Class name of the button element |
 | p-splitbutton-dropdown | Class name of the dropdown element |
 
-#### SplitButton Design Tokens
+#### SplitButton Design Tokens {#theming-splitbutton-design-tokens}
 
 List of design tokens used in a preset.
 
@@ -256,7 +266,7 @@ List of design tokens used in a preset.
 | splitbutton.root.roundedBorderRadius | splitbutton.rounded.border.radius | --p-splitbutton-rounded-border-radius | Rounded border radius of root |
 | splitbutton.root.raisedShadow | splitbutton.raised.shadow | --p-splitbutton-raised-shadow | Raised shadow of root |
 
-#### Built-in Presets
+#### Built-in Presets {#theming-built-in-presets}
 
 PrimeNG offers various preset options that allow you to customize the component's styling to match your application's design system. Below you'll find links to the implementation and type definitions for each preset.
 
@@ -267,6 +277,15 @@ PrimeNG offers various preset options that allow you to customize the component'
 | Nora | Nora | Nora |
 | Material | Material | Material |
 
+[↑ Back to Top](#table-of-contents)
+
 ---
+
+## Quick Navigation
+
+**Jump to Section:**
+- [Features](#features)
+- [API](#api)
+- [Theming](#theming)
 
 [View Official Documentation](https://primeng.org/splitbutton)
