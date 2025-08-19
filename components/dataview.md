@@ -2,13 +2,15 @@
 
 DataView displays data in grid grid-cols-12 gap-4 or list layout with pagination and sorting features.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { DataViewModule } from 'primeng/dataview';
 ```
 
-## Basic
+### Basic
 
 DataView requires a value to display along with a list template that receives an object in the collection to return content.
 
@@ -75,7 +77,7 @@ DataView requires a value to display along with a list template that receives an
 </p-dataview>
 ```
 
-## Pagination
+### Pagination
 
 Pagination is enabled with the paginator and rows properties. Refer to the Paginator for more information about customizing the paginator.
 
@@ -142,7 +144,7 @@ Pagination is enabled with the paginator and rows properties. Refer to the Pagin
 </p-dataview>
 ```
 
-## Sorting
+### Sorting
 
 Built-in sorting is controlled by bindings sortField and sortOrder properties from a custom UI.
 
@@ -220,7 +222,7 @@ Built-in sorting is controlled by bindings sortField and sortOrder properties fr
 </p-dataview>
 ```
 
-## Layout
+### Layout
 
 DataView supports list and grid display modes defined with the layout property. The grid mode is not built-in for flexibility purposes and requires a library with CSS grid features like Tailwind.
 
@@ -350,7 +352,7 @@ DataView supports list and grid display modes defined with the layout property. 
 </p-dataview>
 ```
 
-## Loading
+### Loading
 
 While data is being loaded. Skeleton component may be used to indicate the busy state.
 
@@ -423,13 +425,89 @@ While data is being loaded. Skeleton component may be used to indicate the busy 
 </p-dataview>
 ```
 
-## Accessibility
+### Accessibility
 
 The container element that wraps the layout options buttons has a group role whereas each button element uses button role and aria-pressed is updated depending on selection state. Values to describe the buttons are derived from the aria.listView and aria.gridView properties of the locale API respectively.
 
-## DataView
+### DataView
 
 DataView displays data in grid or list layout with pagination and sorting features.
+
+## API
+
+### DataView API
+
+API defines helper props, events and others for the PrimeNG DataView module.
+
+#### DataView
+
+DataView displays data in grid or list layout with pagination and sorting features.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| paginator | boolean | false | When specified as true, enables the pagination. |
+| rows | number | null | Number of rows to display per page. |
+| totalRecords | number | null | Number of total records, defaults to length of value when not defined. |
+| pageLinks | number | 5 | Number of page links to display in paginator. |
+| rowsPerPageOptions | any[] | number[] | null | Array of integer/object values to display inside rows per page dropdown of paginator |
+| paginatorPosition | "top" | "bottom" | "both" | bottom | Position of the paginator. |
+| paginatorStyleClass | string | null | Custom style class for paginator |
+| alwaysShowPaginator | boolean | true | Whether to show it even there is only one page. |
+| paginatorDropdownAppendTo | any | null | Target element to attach the paginator dropdown overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+| paginatorDropdownScrollHeight | string | 200px | Paginator dropdown height of the viewport in pixels, a scrollbar is defined if height of list exceeds this value. |
+| currentPageReportTemplate | string | {currentPage} of {totalPages} | Template of the current page report element. Available placeholders are {currentPage},{totalPages},{rows},{first},{last} and {totalRecords} |
+| showCurrentPageReport | boolean | false | Whether to display current page report. |
+| showJumpToPageDropdown | boolean | false | Whether to display a dropdown to navigate to any page. |
+| showFirstLastIcon | boolean | true | When enabled, icons are displayed on paginator to go first and last page. |
+| showPageLinks | boolean | true | Whether to show page links. |
+| lazy | boolean | false | Defines if data is loaded and interacted with in lazy manner. |
+| lazyLoadOnInit | boolean | true | Whether to call lazy loading on initialization. |
+| emptyMessage | string | null | Text to display when there is no data. Defaults to global value in i18n translation configuration. |
+| styleClass | string | null | Style class of the component. |
+| gridStyleClass | string | null | Style class of the grid. |
+| trackBy | Function | ... | Function to optimize the dom operations by delegating to ngForTrackBy, default algorithm checks for object identity. |
+| filterBy | string | null | Comma separated list of fields in the object graph to search against. |
+| filterLocale | string | null | Locale to use in filtering. The default locale is the host environment's current locale. |
+| loading | boolean | false | Displays a loader to indicate data load is in progress. |
+| loadingIcon | string | null | The icon to show while indicating data load is in progress. |
+| first | number | 0 | Index of the first row to be displayed. |
+| sortField | string | null | Property name of data to use in sorting by default. |
+| sortOrder | number | null | Order to sort the data by default. |
+| value | any[] | null | An array of objects to display. |
+| layout | "list" | "grid" | list | Defines the layout mode. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onLazyLoad | event :  DataViewLazyLoadEvent | Callback to invoke when paging, sorting or filtering happens in lazy mode. |
+| onPage | event :  DataViewPageEvent | Callback to invoke when pagination occurs. |
+| onSort | event :  DataViewSortEvent | Callback to invoke when sorting occurs. |
+| onChangeLayout | event :  DataViewLayoutChangeEvent | Callback to invoke when changing layout. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| list |  | Template for the list layout. |
+| grid |  | Template for grid layout. |
+| header |  | Template for the header section. |
+| emptymessage |  | Template for the empty message section. |
+| footer |  | Template for the footer section. |
+| paginatorleft |  | Template for the left side of paginator. |
+| paginatorright |  | r* Template for the right side of paginator. |
+| paginatordropdownitem |  | Template for items in paginator dropdown. |
+| loadingicon |  | Template for loading icon. |
+| listicon |  | Template for list icon. |
+| gridicon |  | Template for grid icon. |
 
 ---
 

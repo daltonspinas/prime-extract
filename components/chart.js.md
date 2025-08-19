@@ -2,13 +2,15 @@
 
 Chart components are based on Charts.js 3.3.2+, an open source HTML5 based charting library.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ChartModule } from 'primeng/chart';
 ```
 
-## Chart.js
+### Chart.js
 
 To begin with, first you must install the charts.js package using npm and then include it in your project. An example with CLI would be;
 
@@ -16,7 +18,7 @@ To begin with, first you must install the charts.js package using npm and then i
 npm install chart.js --save
 ```
 
-## Basic
+### Basic
 
 A chart is configured with 3 properties; type, data and options. Chart type is defined using the type property that accepts pie, doughtnut, line, bar, radar and polarArea as a value. The data defines datasets represented with the chart and the options provide numerous customization options to customize the presentation.
 
@@ -24,7 +26,7 @@ A chart is configured with 3 properties; type, data and options. Chart type is d
 <p-chart type="bar" [data]="basicData" [options]="basicOptions" />
 ```
 
-## Pie
+### Pie
 
 A pie chart is a circular statistical graphic which is divided into slices to illustrate numerical proportion.
 
@@ -32,7 +34,7 @@ A pie chart is a circular statistical graphic which is divided into slices to il
 <p-chart type="pie" [data]="data" [options]="options" class="w-full md:w-[30rem]" />
 ```
 
-## Doughnut
+### Doughnut
 
 A doughnut chart is a variant of the pie chart, with a blank center allowing for additional information about the data as a whole to be included.
 
@@ -40,7 +42,7 @@ A doughnut chart is a variant of the pie chart, with a blank center allowing for
 <p-chart type="doughnut" [data]="data" [options]="options" class="w-full md:w-[30rem]" />
 ```
 
-## Vertical Bar
+### Vertical Bar
 
 A bar chart or bar graph is a chart that presents grouped data with rectangular bars with lengths proportional to the values that they represent.
 
@@ -48,7 +50,7 @@ A bar chart or bar graph is a chart that presents grouped data with rectangular 
 <p-chart type="bar" [data]="data" [options]="options" class="h-[30rem]" />
 ```
 
-## Horizontal Bar
+### Horizontal Bar
 
 A bar chart is rendered horizontally when indexAxis option is set as y.
 
@@ -56,7 +58,7 @@ A bar chart is rendered horizontally when indexAxis option is set as y.
 <p-chart type="bar" [data]="data" [options]="options" class="h-[30rem]" />
 ```
 
-## Stacked Bar
+### Stacked Bar
 
 Bars can be stacked on top of each other when stacked option of a scale is enabled.
 
@@ -64,7 +66,7 @@ Bars can be stacked on top of each other when stacked option of a scale is enabl
 <p-chart type="bar" [data]="data" [options]="options" class="h-[30rem]" />
 ```
 
-## Line
+### Line
 
 A line chart or line graph is a type of chart which displays information as a series of data points called 'markers' connected by straight line segments.
 
@@ -72,7 +74,7 @@ A line chart or line graph is a type of chart which displays information as a se
 <p-chart type="line" [data]="data" [options]="options" class="h-[30rem]" />
 ```
 
-## MultiAxis
+### MultiAxis
 
 Multiple axes can be added using the scales option.
 
@@ -80,7 +82,7 @@ Multiple axes can be added using the scales option.
 <p-chart type="line" [data]="data" [options]="options" class="h-[30rem]" />
 ```
 
-## Line Styles
+### Line Styles
 
 Various styles of a line series can be customized to display customizations like an area chart.
 
@@ -88,7 +90,7 @@ Various styles of a line series can be customized to display customizations like
 <p-chart type="line" [data]="data" [options]="options" class="h-[30rem]" />
 ```
 
-## Polar Area
+### Polar Area
 
 Polar area charts are similar to pie charts, but each segment has the same angle - the radius of the segment differs depending on the value.
 
@@ -96,7 +98,7 @@ Polar area charts are similar to pie charts, but each segment has the same angle
 <p-chart type="polarArea" [data]="data" [options]="options" class="w-full md:w-[30rem]" />
 ```
 
-## Radar
+### Radar
 
 A radar chart is a graphical method of displaying multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point.
 
@@ -104,7 +106,7 @@ A radar chart is a graphical method of displaying multivariate data in the form 
 <p-chart type="radar" [data]="data" [options]="options" class="w-full md:w-[30rem]" />
 ```
 
-## Combo
+### Combo
 
 Different chart types can be combined in the same graph using the type option of a dataset.
 
@@ -112,7 +114,7 @@ Different chart types can be combined in the same graph using the type option of
 <p-chart type="line" [data]="data" [options]="options" class="h-[30rem]" />
 ```
 
-## Accessibility
+### Accessibility
 
 Chart components internally use canvas element, refer to the Chart.js accessibility guide for more information.
 
@@ -120,7 +122,15 @@ Chart components internally use canvas element, refer to the Chart.js accessibil
 <p-chart type="line" [data]="data" ariaLabel="Data" />
 ```
 
-## Chart
+### Chart
+
+## API
+
+### Charts API
+
+API defines helper props, events and others for the PrimeNG Charts module.
+
+#### Chart
 
 ---
 

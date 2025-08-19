@@ -2,13 +2,15 @@
 
 Toast is used to display messages in an overlay.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ToastModule } from 'primeng/toast';
 ```
 
-## Basic
+### Basic
 
 Toasts are displayed by calling the add and addAll method provided by the messageService. A single toast is specified by the Message interface that defines various properties such as severity, summary and detail.
 
@@ -17,7 +19,7 @@ Toasts are displayed by calling the add and addAll method provided by the messag
 <p-button (onClick)="show()" label="Show" />
 ```
 
-## Severity
+### Severity
 
 The severity option specifies the type of the message. There are four types of messages: success, info, warn and error. The severity of the message is used to display the icon and the color of the toast.
 
@@ -31,7 +33,7 @@ The severity option specifies the type of the message. There are four types of m
 <p-button type="button" pRipple (click)="showContrast()" label="Contrast" severity="contrast" />
 ```
 
-## Position
+### Position
 
 Location of the toast is customized with the position property. Valid values are top-left, top-center, top-right, bottom-left, bottom-center, bottom-right and center.
 
@@ -44,7 +46,7 @@ Location of the toast is customized with the position property. Valid values are
 <p-button pRipple (click)="showBottomRight()" label="Bottom Right" />
 ```
 
-## Multiple
+### Multiple
 
 Multiple toasts are displayed by passing an array to the showAll method of the messageService.
 
@@ -53,7 +55,7 @@ Multiple toasts are displayed by passing an array to the showAll method of the m
 <p-button pRipple (click)="show()" label="Multiple" severity="warn" />
 ```
 
-## Sticky
+### Sticky
 
 A toast disappears after the time defined by the life option, set sticky option true on the message to override this and not hide the toast automatically.
 
@@ -65,7 +67,7 @@ A toast disappears after the time defined by the life option, set sticky option 
 </div>
 ```
 
-## Template
+### Template
 
 Templating allows customizing the content where the message instance is available as the implicit variable.
 
@@ -85,7 +87,7 @@ Templating allows customizing the content where the message instance is availabl
 <p-button (click)="showConfirm()" label="View" />
 ```
 
-## Headless
+### Headless
 
 Headless mode allows you to customize the entire user interface instead of the default elements.
 
@@ -111,7 +113,7 @@ Headless mode allows you to customize the entire user interface instead of the d
 <p-button (click)="showConfirm()" label="Confirm" />
 ```
 
-## Responsive
+### Responsive
 
 Toast styling can be adjusted per screen size with the breakpoints option. The value of breakpoints should be an object literal whose keys are the maximum screen sizes and values are the styles per screen. In example below, width of the toast messages cover the whole page on screens whose widths is smaller than 921px.
 
@@ -120,7 +122,7 @@ Toast styling can be adjusted per screen size with the breakpoints option. The v
 <p-button (click)="show()" label="Show" />
 ```
 
-## Animation
+### Animation
 
 Transition of the animations can be customized using the showTransitionOptions, hideTransitionOptions, showTransformOptions and hideTransformOptions properties.
 
@@ -129,15 +131,64 @@ Transition of the animations can be customized using the showTransitionOptions, 
 <p-button (click)="show()" label="Show" />
 ```
 
-## Accessibility
+### Accessibility
 
 Toast component use alert role that implicitly defines aria-live as "assertive" and aria-atomic as "true".
 
-## Toast
+### Toast
 
 Toast is used to display messages in an overlay.
 
-## ToastMessage
+### ToastMessage
+
+## API
+
+### Toast API
+
+API defines helper props, events and others for the PrimeNG Toast module.
+
+#### Toast
+
+Toast is used to display messages in an overlay.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| key | string | null | Key of the message in case message is targeted to a specific toast component. |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| life | number | 3000 | The default time to display messages for in milliseconds. |
+| styleClass | string | null | Inline class of the component. |
+| position | ToastPositionType | null | Position of the toast in viewport. |
+| preventOpenDuplicates | boolean | false | It does not add the new message if there is already a toast displayed with the same content |
+| preventDuplicates | boolean | false | Displays only once a message with the same content. |
+| showTransformOptions | string | translateY(100%) | Transform options of the show animation. |
+| hideTransformOptions | string | translateY(-100%) | Transform options of the hide animation. |
+| showTransitionOptions | string | 300ms ease-out | Transition options of the show animation. |
+| hideTransitionOptions | string | 250ms ease-in | Transition options of the hide animation. |
+| breakpoints | { [key: string]: any } | null | Object literal to define styles per screen size. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onClose | event :  ToastCloseEvent | Callback to invoke when a message is closed. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| template |  | Custom template of message. |
+| headless |  | Custom headless template. |
+
+#### ToastMessage
 
 ---
 

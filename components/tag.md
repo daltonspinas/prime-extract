@@ -2,13 +2,15 @@
 
 Tag component is used to categorize content.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { TagModule } from 'primeng/tag';
 ```
 
-## Basic
+### Basic
 
 Label of the tag is defined with the value property.
 
@@ -16,7 +18,7 @@ Label of the tag is defined with the value property.
 <p-tag value="New" />
 ```
 
-## Severity
+### Severity
 
 Severity defines the color of the tag, possible values are success, info, warn and danger in addition to the default theme color.
 
@@ -30,7 +32,7 @@ Severity defines the color of the tag, possible values are success, info, warn a
 <p-tag severity="contrast" value="Contrast" />
 ```
 
-## Pill
+### Pill
 
 Enabling rounded, displays a tag as a pill.
 
@@ -44,7 +46,7 @@ Enabling rounded, displays a tag as a pill.
 <p-tag severity="contrast" value="Contrast" [rounded]="true" />
 ```
 
-## Icon
+### Icon
 
 A font icon next to the value can be displayed with the icon property.
 
@@ -58,7 +60,7 @@ A font icon next to the value can be displayed with the icon property.
 <p-tag icon="pi pi-cog" severity="contrast" value="Contrast" />
 ```
 
-## Template
+### Template
 
 Children of the component are passed as the content for templating.
 
@@ -73,13 +75,35 @@ Children of the component are passed as the content for templating.
 </p-tag>
 ```
 
-## Accessibility
+### Accessibility
 
 Tag does not include any roles and attributes by default, any attribute is passed to the root element so aria roles and attributes can be added if required. If the tags are dynamic,aria-live may be utilized as well. In case badges need to be tabbable, tabIndex can be added to implement custom key handlers.
 
-## Tag
+### Tag
 
 Tag component is used to categorize content.
+
+## API
+
+### Tag API
+
+API defines helper props, events and others for the PrimeNG Tag module.
+
+#### Tag
+
+Tag component is used to categorize content.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| styleClass | string | null | Style class of the component. |
+| severity | string | null | Severity type of the tag. |
+| value | string | null | Value to display inside the tag. |
+| icon | string | null | Icon of the tag to display next to the value. |
+| rounded | boolean | false | Whether the corners of the tag are rounded. |
 
 ---
 

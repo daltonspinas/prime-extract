@@ -2,13 +2,15 @@
 
 OrganizationChart visualizes hierarchical organization data.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { OrganizationChartModule } from 'primeng/organizationchart';
 ```
 
-## Basic
+### Basic
 
 OrganizationChart requires a collection of TreeNode instances as a value.
 
@@ -16,7 +18,7 @@ OrganizationChart requires a collection of TreeNode instances as a value.
 <p-organization-chart [value]="data" />
 ```
 
-## Template
+### Template
 
 Custom content instead of a node label is defined using the pTemplate property.
 
@@ -31,7 +33,7 @@ Custom content instead of a node label is defined using the pTemplate property.
 </p-organization-chart>
 ```
 
-## Selection
+### Selection
 
 Nodes can be selected by defining selectionMode along with a value binding with selection properties. By default only one node can be selected, set selectionMode as multiple to select more than one.
 
@@ -49,7 +51,7 @@ Nodes can be selected by defining selectionMode along with a value binding with 
 </p-organization-chart>
 ```
 
-## Colored
+### Colored
 
 Styling a specific node is configured with class and style options of a TreeNode.
 
@@ -67,13 +69,48 @@ Styling a specific node is configured with class and style options of a TreeNode
 </p-organization-chart>
 ```
 
-## Accessibility
+### Accessibility
 
 Component currently uses a table based implementation and does not provide high level of screen reader support, a nested list implementation replacement is planned with aria roles and attributes aligned to a tree widget for high level of reader support in the upcoming versions.
 
-## OrganizationChart
+### OrganizationChart
 
 OrganizationChart visualizes hierarchical organization data.
+
+## API
+
+### OrganizationChart API
+
+API defines helper props, events and others for the PrimeNG OrganizationChart module.
+
+#### OrganizationChart
+
+OrganizationChart visualizes hierarchical organization data.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | TreeNode<any>[] | null | An array of nested TreeNodes. |
+| styleClass | string | null | Style class of the component. |
+| selectionMode | "single" | "multiple" | null | Defines the selection mode. |
+| collapsible | boolean | false | Whether the nodes can be expanded or toggled. |
+| preserveSpace | boolean | true | Whether the space allocated by a node is preserved when hidden. |
+| selection | any | null | A single treenode instance or an array to refer to the selections. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| selectionChange | value :  any | Callback to invoke on selection change. |
+| onNodeSelect | event :  OrganizationChartNodeSelectEvent | Callback to invoke when a node is selected. |
+| onNodeUnselect | event :  OrganizationChartNodeUnSelectEvent | Callback to invoke when a node is unselected. |
+| onNodeExpand | event :  OrganizationChartNodeExpandEvent | Callback to invoke when a node is expanded. |
+| onNodeCollapse | event :  OrganizationChartNodeCollapseEvent | Callback to invoke when a node is collapsed. |
 
 ---
 

@@ -2,13 +2,15 @@
 
 MeterGroup displays scalar measurements within a known range.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { MeterGroupModule } from 'primeng/metergroup';
 ```
 
-## Basic
+### Basic
 
 MeterGroup requires a value as the data to display where each item in the collection should be a type of MeterItem.
 
@@ -16,7 +18,7 @@ MeterGroup requires a value as the data to display where each item in the collec
 <p-metergroup [value]="value" />
 ```
 
-## Multiple
+### Multiple
 
 Adding more items to the array displays the meters in a group.
 
@@ -24,7 +26,7 @@ Adding more items to the array displays the meters in a group.
 <p-metergroup [value]="value" />
 ```
 
-## Icon
+### Icon
 
 Icons can be displayed next to the labels instead of the default marker.
 
@@ -32,7 +34,7 @@ Icons can be displayed next to the labels instead of the default marker.
 <p-metergroup [value]="value" />
 ```
 
-## Label
+### Label
 
 The position of the labels relative to the meters is defined using the labelPosition property. The default orientation of the labels is horizontal, and the vertical alternative is available through the labelOrientation option.
 
@@ -40,7 +42,7 @@ The position of the labels relative to the meters is defined using the labelPosi
 <p-metergroup [value]="value" labelPosition="start" labelOrientation="vertical" />
 ```
 
-## Vertical
+### Vertical
 
 Layout of the MeterGroup is configured with the orientation property that accepts either horizontal or vertical as available options.
 
@@ -48,7 +50,7 @@ Layout of the MeterGroup is configured with the orientation property that accept
 <p-metergroup [value]="value" orientation="vertical" labelOrientation="vertical" [style]="{ height: '300px' }" />
 ```
 
-## Min Max
+### Min Max
 
 Boundaries are configured with the min and max values whose defaults are 0 and 100 respectively.
 
@@ -56,7 +58,7 @@ Boundaries are configured with the min and max values whose defaults are 0 and 1
 <p-metergroup [value]="value" [max]="200" />
 ```
 
-## Template
+### Template
 
 MeterGroup provides templating support for labels, meter items, and content around the meters.
 
@@ -98,13 +100,37 @@ MeterGroup provides templating support for labels, meter items, and content arou
 </p-metergroup>
 ```
 
-## Accessibility
+### Accessibility
 
 MeterGroup component uses meter role in addition to the aria-valuemin, aria-valuemax and aria-valuenow attributes. Value to describe the component can be defined using aria-labelledby prop.
 
-## MeterGroup
+### MeterGroup
 
 MeterGroup displays scalar measurements within a known range.
+
+## API
+
+### MeterGroup API
+
+API defines helper props, events and others for the PrimeNG MeterGroup module.
+
+#### MeterGroup
+
+MeterGroup displays scalar measurements within a known range.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | MeterItem[] | null | Current value of the metergroup. |
+| min | number | 0 | Mininum boundary value. |
+| max | number | 100 | Maximum boundary value. |
+| orientation | "vertical" | "horizontal" | horizontal | Specifies the layout of the component, valid values are 'horizontal' and 'vertical'. |
+| labelPosition | "end" | "start" | end | Specifies the label position of the component, valid values are 'start' and 'end'. |
+| labelOrientation | "vertical" | "horizontal" | horizontal | Specifies the label orientation of the component, valid values are 'horizontal' and 'vertical'. |
+| styleClass | string | null | Style class of the element. |
 
 ---
 

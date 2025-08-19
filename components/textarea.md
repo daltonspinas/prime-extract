@@ -2,13 +2,15 @@
 
 Textarea adds styling and autoResize functionality to standard textarea element.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { TextareaModule } from 'primeng/textarea';
 ```
 
-## Basic
+### Basic
 
 Textarea is applied to an input field with pTextarea directive.
 
@@ -16,7 +18,7 @@ Textarea is applied to an input field with pTextarea directive.
 <textarea rows="5" cols="30" pTextarea [(ngModel)]="value"></textarea>
 ```
 
-## AutoResize
+### AutoResize
 
 When autoResize is enabled, textarea grows instead of displaying a scrollbar.
 
@@ -24,7 +26,7 @@ When autoResize is enabled, textarea grows instead of displaying a scrollbar.
 <textarea rows="5"cols="30" pTextarea [autoResize]="true"></textarea>
 ```
 
-## Float Label
+### Float Label
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -45,7 +47,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-## Ifta Label
+### Ifta Label
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -56,7 +58,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-## Sizes
+### Sizes
 
 Textarea provides small and large sizes as alternatives to the base.
 
@@ -66,7 +68,7 @@ Textarea provides small and large sizes as alternatives to the base.
 <textarea pTextarea [(ngModel)]="value3" pSize="large" placeholder="Large" rows="3"></textarea>
 ```
 
-## Filled
+### Filled
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -74,7 +76,7 @@ Specify the variant property as filled to display the component with a higher vi
 <textarea [(ngModel)]="value" variant="filled" rows="5" cols="30" pTextarea></textarea>
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -82,7 +84,7 @@ When disabled is present, the element cannot be edited and focused.
 <textarea rows="5"cols="30" pTextarea [disabled]="true"></textarea>
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -90,7 +92,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <textarea rows="5" cols="30" pTextarea [(ngModel)]="value" [invalid]="!value" placeholder="Address"></textarea>
 ```
 
-## Forms
+### Forms
 
 Textarea can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -118,7 +120,7 @@ Textarea can also be used with reactive forms. In this case, the formControlName
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 Textarea component renders a native textarea element that implicitly includes any passed prop. Value to describe the component can either be provided via label tag combined with id prop or using aria-labelledby, aria-label props.
 
@@ -132,9 +134,39 @@ Textarea component renders a native textarea element that implicitly includes an
 <textarea pTextarea aria-label="Address Details"></textarea>
 ```
 
-## Textarea
+### Textarea
 
 Textarea adds styling and autoResize functionality to standard textarea element.
+
+## API
+
+### Textarea API
+
+API defines helper props, events and others for the PrimeNG Textarea module.
+
+#### Textarea
+
+Textarea adds styling and autoResize functionality to standard textarea element.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| autoResize | boolean | false | When present, textarea size changes as being typed. |
+| pSize | "small" | "large" | null | Defines the size of the component. |
+| variant | InputSignal<"outlined" | "filled"> | undefined | Specifies the input variant of the component. |
+| fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onResize | event :  {} | Event | Callback to invoke on textarea resize. |
 
 ---
 

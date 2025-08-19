@@ -2,13 +2,15 @@
 
 ColorPicker is an input component to select a color.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ColorPickerModule } from 'primeng/colorpicker';
 ```
 
-## Basic
+### Basic
 
 ColorPicker is used as a controlled input with ngModel property.
 
@@ -16,7 +18,7 @@ ColorPicker is used as a controlled input with ngModel property.
 <p-colorpicker [(ngModel)]="color" />
 ```
 
-## Inline
+### Inline
 
 ColorPicker is displayed as a popup by default, add inline property to customize this behavior.
 
@@ -24,7 +26,7 @@ ColorPicker is displayed as a popup by default, add inline property to customize
 <p-colorpicker [(ngModel)]="color" [inline]="true" />
 ```
 
-## Format
+### Format
 
 Default color format to use in value binding is hex and other possible values can be rgb and hsb using the format property.
 
@@ -36,7 +38,7 @@ Default color format to use in value binding is hex and other possible values ca
 <p-colorpicker [(ngModel)]="colorHSB" format="hsb" inputId="cp-hsb" />
 ```
 
-## Forms
+### Forms
 
 ColorPicker can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -64,7 +66,7 @@ ColorPicker can also be used with reactive forms. In this case, the formControlN
 </form>
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -72,13 +74,55 @@ When disabled is present, the element cannot be edited and focused.
 <p-colorpicker [(ngModel)]="color" [disabled]="true" />
 ```
 
-## Accessibility
+### Accessibility
 
 Specification does not cover a color picker yet and using a semantic native color picker is not consistent across browsers so currently component is not compatible with screen readers. In the upcoming versions, text fields will be introduced below the slider section to be able to pick a color using accessible text boxes in hsl, rgba and hex formats.
 
-## ColorPicker
+### ColorPicker
 
 ColorPicker groups a collection of contents in tabs.
+
+## API
+
+### ColorPicker API
+
+API defines helper props, events and others for the PrimeNG ColorPicker module.
+
+#### ColorPicker
+
+ColorPicker groups a collection of contents in tabs.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| styleClass | string | null | Style class of the component. |
+| inline | boolean | false | Whether to display as an overlay or not. |
+| format | "rgb" | "hex" | "hsb" | hex | Format to use in value binding. |
+| tabindex | string | null | Index of the element in tabbing order. |
+| inputId | string | null | Identifier of the focus input to match a label defined for the dropdown. |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| showTransitionOptions | string | .12s cubic-bezier(0, 0, 0.2, 1) | Transition options of the show animation. |
+| hideTransitionOptions | string | .1s linear | Transition options of the hide animation. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| defaultColor | string | ff0000 | Default color to display initially when model value is not present. |
+| appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onChange | event :  ColorPickerChangeEvent | Callback to invoke on value change. |
+| onShow | value :  any | Callback to invoke on panel is shown. |
+| onHide | value :  any | Callback to invoke on panel is hidden. |
 
 ---
 

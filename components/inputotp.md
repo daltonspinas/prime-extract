@@ -2,13 +2,15 @@
 
 Input Otp is used to enter one time passwords.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { InputOtpModule } from 'primeng/inputotp';
 ```
 
-## Basic
+### Basic
 
 Two-way value binding is defined using ngModel. The number of characters is defined with the length property, which is set to 4 by default.
 
@@ -16,7 +18,7 @@ Two-way value binding is defined using ngModel. The number of characters is defi
 <p-inputotp [(ngModel)]="value" />
 ```
 
-## Mask
+### Mask
 
 Enable the mask option to hide the values in the input fields.
 
@@ -24,7 +26,7 @@ Enable the mask option to hide the values in the input fields.
 <p-inputotp [(ngModel)]="value" [mask]="true" />
 ```
 
-## Integer Only
+### Integer Only
 
 When integerOnly is present, only integers can be accepted as input.
 
@@ -32,7 +34,7 @@ When integerOnly is present, only integers can be accepted as input.
 <p-inputotp [(ngModel)]="value" [integerOnly]="true" />
 ```
 
-## Sizes
+### Sizes
 
 InputOtp provides small and large sizes as alternatives to the base.
 
@@ -42,7 +44,7 @@ InputOtp provides small and large sizes as alternatives to the base.
 <p-inputotp [(ngModel)]="value3" size="large" />
 ```
 
-## Template
+### Template
 
 Define a template with your own UI elements with bindings to the provided events and attributes to replace the default design.
 
@@ -54,7 +56,7 @@ Define a template with your own UI elements with bindings to the provided events
 </p-inputotp>
 ```
 
-## Forms
+### Forms
 
 InputOtp can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -83,7 +85,7 @@ InputOtp can also be used with reactive forms. In this case, the formControlName
 </form>
 ```
 
-## Sample
+### Sample
 
 A sample UI implementation with templating and additional elements.
 
@@ -106,13 +108,61 @@ A sample UI implementation with templating and additional elements.
 </div>
 ```
 
-## Accessibility
+### Accessibility
 
 Input OTP uses a set of InputText components, refer to the InputText component for more information about the screen reader support.
 
-## InputOtp
+### InputOtp
 
 Input Otp is used to enter one time passwords.
+
+## API
+
+### InputOtp API
+
+API defines helper props, events and others for the PrimeNG InputOtp module.
+
+#### InputOtp
+
+Input Otp is used to enter one time passwords.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| readonly | boolean | false | When present, it specifies that an input field is read-only. |
+| tabindex | number | null | Index of the element in tabbing order. |
+| length | number | 4 | Number of characters to initiate. |
+| styleClass | string | null | Style class of the input element. |
+| mask | boolean | false | Mask pattern. |
+| integerOnly | boolean | false | When present, it specifies that an input field is integer-only. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| variant | InputSignal<"outlined" | "filled"> | undefined | Specifies the input variant of the component. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onChange | event :  InputOtpChangeEvent | Callback to invoke on value change. |
+| onFocus | event :  Event | Callback to invoke when the component receives focus. |
+| onBlur | event :  Event | Callback to invoke when the component loses focus. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| input | context :  any | Input template. |
 
 ---
 

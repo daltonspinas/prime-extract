@@ -2,13 +2,15 @@
 
 Toolbar is a grouping component for buttons and other content.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ToolbarModule } from 'primeng/toolbar';
 ```
 
-## Basic
+### Basic
 
 Toolbar is a grouping component for buttons and other content. Its content can be placed inside the start, center and end sections.
 
@@ -31,7 +33,7 @@ Toolbar is a grouping component for buttons and other content. Its content can b
 </p-toolbar>
 ```
 
-## Custom
+### Custom
 
 Content can also be placed using the start, center and end templates.
 
@@ -58,7 +60,7 @@ Content can also be placed using the start, center and end templates.
 </p-toolbar>
 ```
 
-## Accessibility
+### Accessibility
 
 Toolbar uses toolbar role for the root element, aria-orientation is not included as it defaults to horizontal. Any valid attribute is passed to the root element so you may add additional properties like aria-labelledby and aria-labelled to define the element if required.
 
@@ -68,9 +70,38 @@ Toolbar uses toolbar role for the root element, aria-orientation is not included
 </p-toolbar>
 ```
 
-## Toolbar
+### Toolbar
 
 Toolbar is a grouping component for buttons and other content.
+
+## API
+
+### Toolbar API
+
+API defines helper props, events and others for the PrimeNG Toolbar module.
+
+#### Toolbar
+
+Toolbar is a grouping component for buttons and other content.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| styleClass | string | null | Style class of the component. |
+| ariaLabelledBy | string | null | Defines a string value that labels an interactive element. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| start |  | Defines template option for start. |
+| end |  | Defines template option for end. |
+| center |  | Defines template option for center. |
 
 ---
 

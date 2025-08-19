@@ -2,13 +2,15 @@
 
 InputText is an extension to standard input element with theming and keyfiltering.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { InputTextModule } from 'primeng/inputtext';
 ```
 
-## Basic
+### Basic
 
 InputText is used as a controlled input with ngModel property.
 
@@ -16,7 +18,7 @@ InputText is used as a controlled input with ngModel property.
 <input type="text" pInputText [(ngModel)]="value" />
 ```
 
-## Float Label
+### Float Label
 
 FloatLabel visually integrates a label with its form element. Visit FloatLabel documentation for more information.
 
@@ -37,7 +39,7 @@ FloatLabel visually integrates a label with its form element. Visit FloatLabel d
 </p-floatlabel>
 ```
 
-## Ifta Label
+### Ifta Label
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -48,7 +50,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-## Sizes
+### Sizes
 
 InputText provides small and large sizes as alternatives to the standard.
 
@@ -58,7 +60,7 @@ InputText provides small and large sizes as alternatives to the standard.
 <input pInputText [(ngModel)]="value3" type="text" pSize="large" placeholder="Large" />
 ```
 
-## Help Text
+### Help Text
 
 An advisory text can be defined with the semantic small tag.
 
@@ -70,7 +72,7 @@ An advisory text can be defined with the semantic small tag.
 </div>
 ```
 
-## Filled
+### Filled
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -78,7 +80,7 @@ Specify the variant property as filled to display the component with a higher vi
 <input type="text" pInputText [(ngModel)]="value" variant="filled" />
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -86,7 +88,7 @@ When disabled is present, the element cannot be edited and focused.
 <input pInputText [disabled]="true" [(ngModel)]="value" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -95,7 +97,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <input pInputText [(ngModel)]="value2" [invalid]="!value2" variant="filled" placeholder="Name" />
 ```
 
-## Forms
+### Forms
 
 ```html
 <form #exampleForm="ngForm" (ngSubmit)="onSubmit(exampleForm)" class="flex flex-col gap-4 w-full sm:w-56">
@@ -145,7 +147,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 InputText component renders a native input element that implicitly includes any passed prop. Value to describe the component can either be provided via label tag combined with id prop or using aria-labelledby, aria-label props.
 
@@ -159,9 +161,30 @@ InputText component renders a native input element that implicitly includes any 
 <input pInputText aria-label="Age" />
 ```
 
-## InputText
+### InputText
 
 InputText directive is an extension to standard input element with theming.
+
+## API
+
+### InputText API
+
+API defines helper props, events and others for the PrimeNG InputText module.
+
+#### InputText
+
+InputText directive is an extension to standard input element with theming.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| pSize | "small" | "large" | null | Defines the size of the component. |
+| variant | InputSignal<"outlined" | "filled"> | undefined | Specifies the input variant of the component. |
+| fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
 
 ---
 

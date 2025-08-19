@@ -2,13 +2,15 @@
 
 Slider is a component to provide input with a drag handle.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { SliderModule } from 'primeng/slider';
 ```
 
-## Basic
+### Basic
 
 Two-way binding is defined using the standard ngModel directive.
 
@@ -16,7 +18,7 @@ Two-way binding is defined using the standard ngModel directive.
 <p-slider [(ngModel)]="value" class="w-56" />
 ```
 
-## Input
+### Input
 
 Slider is connected to an input field using two-way binding.
 
@@ -25,7 +27,7 @@ Slider is connected to an input field using two-way binding.
 <p-slider [(ngModel)]="value" class="w-full" />
 ```
 
-## Step
+### Step
 
 Size of each movement is defined with the step property.
 
@@ -33,7 +35,7 @@ Size of each movement is defined with the step property.
 <p-slider [(ngModel)]="value" [step]="20" class="w-56" />
 ```
 
-## Range
+### Range
 
 When range property is present, slider provides two handles to define two values. In range mode, value should be an array instead of a single value.
 
@@ -41,7 +43,7 @@ When range property is present, slider provides two handles to define two values
 <p-slider [(ngModel)]="rangeValues" [range]="true" class="w-56" />
 ```
 
-## Filter
+### Filter
 
 Image filter implementation using multiple sliders.
 
@@ -51,7 +53,7 @@ Image filter implementation using multiple sliders.
 <p-slider [(ngModel)]="filterValues[filter]" class="w-56" [min]="0" [max]="200" />
 ```
 
-## Vertical
+### Vertical
 
 Default layout of slider is horizontal, use orientation property for the alternative vertical mode.
 
@@ -59,7 +61,7 @@ Default layout of slider is horizontal, use orientation property for the alterna
 <p-slider [(ngModel)]="value" orientation="vertical" class="h-56" />
 ```
 
-## Forms
+### Forms
 
 Slider can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -87,7 +89,7 @@ Slider can also be used with reactive forms. In this case, the formControlName p
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 Slider element component uses slider role on the handle in addition to the aria-orientation, aria-valuemin, aria-valuemax and aria-valuenow attributes. Value to describe the component can be defined using ariaLabelledBy and ariaLabel props.
 
@@ -98,9 +100,50 @@ Slider element component uses slider role on the handle in addition to the aria-
 <p-slider ariaLabel="Number" />
 ```
 
-## Slider
+### Slider
 
 Slider is a component to provide input with a drag handle.
+
+## API
+
+### Slider API
+
+API defines helper props, events and others for the PrimeNG Slider module.
+
+#### Slider
+
+Slider is a component to provide input with a drag handle.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| animate | boolean | false | When enabled, displays an animation on click of the slider bar. |
+| min | number | 0 | Mininum boundary value. |
+| max | number | 100 | Maximum boundary value. |
+| orientation | "vertical" | "horizontal" | horizontal | Orientation of the slider. |
+| step | number | null | Step factor to increment/decrement the value. |
+| range | boolean | false | When specified, allows two boundary values to be picked. |
+| styleClass | string | null | Style class of the component. |
+| ariaLabel | string | null | Defines a string that labels the input for accessibility. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+| tabindex | number | 0 | Index of the element in tabbing order. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onChange | event :  SliderChangeEvent | Callback to invoke on value change. |
+| onSlideEnd | event :  SliderSlideEndEvent | Callback to invoke when slide ended. |
 
 ---
 

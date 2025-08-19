@@ -2,7 +2,9 @@
 
 ProgressBar is a process status indicator.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ProgressBarModule } from 'primeng/progressbar';
@@ -10,7 +12,7 @@ import { ProgressBarModule } from 'primeng/progressbar';
 import { ToastModule } from 'primeng/toast';
 ```
 
-## Basic
+### Basic
 
 ProgressBar is used with the value property.
 
@@ -18,7 +20,7 @@ ProgressBar is used with the value property.
 <p-progressbar [value]="50" />
 ```
 
-## Dynamic
+### Dynamic
 
 Value is reactive so updating it dynamically changes the bar as well.
 
@@ -26,7 +28,7 @@ Value is reactive so updating it dynamically changes the bar as well.
 <p-progressbar [value]="value" />
 ```
 
-## Template
+### Template
 
 content template allows displaying custom content inside the progressbar.
 
@@ -38,7 +40,7 @@ content template allows displaying custom content inside the progressbar.
 </p-progressbar>
 ```
 
-## Indeterminate
+### Indeterminate
 
 For progresses with no value to track, set the mode property to indeterminate.
 
@@ -46,7 +48,7 @@ For progresses with no value to track, set the mode property to indeterminate.
 <p-progressbar mode="indeterminate" [style]="{ height: '6px' }" />
 ```
 
-## Accessibility
+### Accessibility
 
 ProgressBar components uses progressbar role along with aria-valuemin, aria-valuemax and aria-valuenow attributes. Value to describe the component can be defined usingaria-labelledby and aria-label props.
 
@@ -57,9 +59,33 @@ ProgressBar components uses progressbar role along with aria-valuemin, aria-valu
 <p-progressbar aria-label="Status" />
 ```
 
-## ProgressBar
+### ProgressBar
 
 ProgressBar is a process status indicator.
+
+## API
+
+### ProgressBar API
+
+API defines helper props, events and others for the PrimeNG ProgressBar module.
+
+#### ProgressBar
+
+ProgressBar is a process status indicator.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | number | null | Current value of the progress. |
+| showValue | boolean | true | Whether to display the progress bar value. |
+| styleClass | string | null | Style class of the element. |
+| valueStyleClass | string | null | Style class of the value element. |
+| unit | string | % | Unit sign appended to the value. |
+| mode | string | determinate | Defines the mode of the progress |
+| color | string | null | Color for the background of the progress. |
 
 ---
 

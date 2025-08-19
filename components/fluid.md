@@ -2,13 +2,15 @@
 
 Fluid is a layout component to make descendant components span full width of their container.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { FluidModule } from 'primeng/fluid';
 ```
 
-## Basic
+### Basic
 
 Components with the fluid option like InputText have the ability to span the full width of their component. Enabling the fluid for each component individually may be cumbersome so wrap the content with Fluid to instead for an easier alternative.
 
@@ -32,7 +34,7 @@ Components with the fluid option like InputText have the ability to span the ful
 </p-fluid>
 ```
 
-## Accessibility
+### Accessibility
 
 Fluid does not require any roles and attributes.
 

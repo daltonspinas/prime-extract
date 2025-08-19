@@ -2,13 +2,15 @@
 
 MegaMenu is navigation component that displays submenus together.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { MegaMenuModule } from 'primeng/megamenu';
 ```
 
-## Basic
+### Basic
 
 MegaMenu requires a collection of menuitems as its model.
 
@@ -16,7 +18,7 @@ MegaMenu requires a collection of menuitems as its model.
 <p-megamenu [model]="items" />
 ```
 
-## Vertical
+### Vertical
 
 Layout of the MegaMenu is changed with the orientation property that accepts horizontal and vertical as options.
 
@@ -24,7 +26,7 @@ Layout of the MegaMenu is changed with the orientation property that accepts hor
 <p-megamenu [model]="items" orientation="vertical" />
 ```
 
-## Template
+### Template
 
 Custom content can be placed between p-megamenu tags. Megamenu should be horizontal for custom content.
 
@@ -61,7 +63,7 @@ Custom content can be placed between p-megamenu tags. Megamenu should be horizon
 </p-megamenu>
 ```
 
-## Command
+### Command
 
 The command property of a menuitem defines the callback to run when an item is activated by click or a key event.
 
@@ -75,7 +77,7 @@ The command property of a menuitem defines the callback to run when an item is a
 }
 ```
 
-## Router
+### Router
 
 Menu items support navigation via routerLink, programmatic routing using commands, or external URLs.
 
@@ -83,15 +85,58 @@ Menu items support navigation via routerLink, programmatic routing using command
 <p-megamenu [model]="items" />
 ```
 
-## Accessibility
+### Accessibility
 
 MegaMenu component uses the menubar role along with aria-orientation and the value to describe the component can either be provided with aria-labelledby or aria-label props. Each list item has a presentation role whereas anchor elements have a menuitem role with aria-label referring to the label of the item and aria-disabled defined if the item is disabled. A submenu within a MegaMenu uses the menu role with an aria-labelledby defined as the id of the submenu root menuitem label. In addition, root menuitems that open a submenu have aria-haspopup, aria-expanded and aria-controls to define the relation between the item and the submenu.
 
-## MegaMenu
+### MegaMenu
 
 MegaMenu is navigation component that displays submenus together.
 
-## MegaMenuItem
+### MegaMenuItem
+
+## API
+
+### MegaMenu API
+
+API defines helper props, events and others for the PrimeNG MegaMenu module.
+
+#### MegaMenu
+
+MegaMenu is navigation component that displays submenus together.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| model | MegaMenuItem[] | null | An array of menuitems. |
+| styleClass | string | null | Class of the element. |
+| orientation | string | horizontal | Defines the orientation. |
+| id | string | null | Current id state as a string. |
+| ariaLabel | string | null | Defines a string value that labels an interactive element. |
+| ariaLabelledBy | string | null | Identifier of the underlying input element. |
+| breakpoint | string | 960px | The breakpoint to define the maximum width boundary. |
+| scrollHeight | string | 20rem | Height of the viewport, a scrollbar is defined if height of list exceeds this value. |
+| disabled | boolean | false | When present, it specifies that the component should be disabled. |
+| tabindex | number | 0 | Index of the element in tabbing order. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| start |  | Defines template option for start. |
+| end |  | Defines template option for end. |
+| menuicon |  | Defines template option for menu icon. |
+| submenuicon |  | Defines template option for submenu icon. |
+| item |  | Defines template option for submenu icon. |
+| button |  | Custom menu button template on responsive mode. |
+| buttonicon |  | Custom menu button icon template on responsive mode. |
+
+#### MegaMenuItem
 
 ---
 

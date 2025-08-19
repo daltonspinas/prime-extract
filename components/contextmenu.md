@@ -2,13 +2,15 @@
 
 ContextMenu displays an overlay menu on right click of its target.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ContextMenuModule } from 'primeng/contextmenu';
 ```
 
-## Basic
+### Basic
 
 ContextMenu can be attached to a particular element whose local template variable name is defined using the target property.
 
@@ -17,7 +19,7 @@ ContextMenu can be attached to a particular element whose local template variabl
 <p-contextmenu [target]="img" [model]="items" />
 ```
 
-## Document
+### Document
 
 Setting global property to true attaches the context menu to the document.
 
@@ -25,7 +27,7 @@ Setting global property to true attaches the context menu to the document.
 <p-contextmenu [model]="items" [global]="true" />
 ```
 
-## Template
+### Template
 
 ContextMenu offers item customization with the item template that receives the menuitem instance from the model as a parameter.
 
@@ -64,7 +66,7 @@ ContextMenu offers item customization with the item template that receives the m
 </p-contextmenu>
 ```
 
-## Command
+### Command
 
 The function to invoke when an item is clicked is defined using the command property.
 
@@ -88,7 +90,7 @@ The function to invoke when an item is clicked is defined using the command prop
 <p-contextmenu #cm [model]="items" (onHide)="onHide()" />
 ```
 
-## Router
+### Router
 
 Menu items support navigation via routerLink, programmatic routing using commands, or external URLs.
 
@@ -101,19 +103,70 @@ Menu items support navigation via routerLink, programmatic routing using command
 <p-contextmenu [target]="span" [model]="items" />
 ```
 
-## Table
+### Table
 
 Table has built-in support for ContextMenu, see the ContextMenu demo for an example.
 
-## Accessibility
+### Accessibility
 
 ContextMenu component uses the menubar role with aria-orientation set to "vertical" and the value to describe the menu can either be provided with aria-labelledby or aria-label props. Each list item has a presentation role whereas anchor elements have a menuitem role with aria-label referring to the label of the item and aria-disabled defined if the item is disabled. A submenu within a ContextMenu uses the menu role with an aria-labelledby defined as the id of the submenu root menuitem label. In addition, menuitems that open a submenu have aria-haspopup, aria-expanded and aria-controls to define the relation between the item and the submenu.
 
-## ContextMenu
+### ContextMenu
 
 ContextMenu displays an overlay menu on right click of its target. Note that components like Table has special integration with ContextMenu.
 
-## MenuItem
+### MenuItem
+
+## API
+
+### ContextMenu API
+
+API defines helper props, events and others for the PrimeNG ContextMenu module.
+
+#### ContextMenu
+
+ContextMenu displays an overlay menu on right click of its target. Note that components like Table has special integration with ContextMenu.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| model | MenuItem[] | null | An array of menuitems. |
+| triggerEvent | string | contextmenu | Event for which the menu must be displayed. |
+| target | string | HTMLElement | null | Local template variable name of the element to attach the context menu. |
+| global | boolean | false | Attaches the menu to document instead of a particular item. |
+| style | { [klass: string]: any } | null | Inline style of the component. |
+| styleClass | string | null | Style class of the component. |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| id | string | null | Current id state as a string. |
+| breakpoint | string | 960px | The breakpoint to define the maximum width boundary. |
+| ariaLabel | string | null | Defines a string value that labels an interactive element. |
+| ariaLabelledBy | string | null | Identifier of the underlying input element. |
+| pressDelay | number | 500 | Press delay in touch devices as miliseconds. |
+| appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onShow | value :  null | Callback to invoke when overlay menu is shown. |
+| onHide | value :  null | Callback to invoke when overlay menu is hidden. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| item |  | Defines template option for item. |
+| submenuicon |  | Defines template option for submenuIcon. |
+
+#### MenuItem
 
 ---
 

@@ -2,13 +2,15 @@
 
 Select is used to choose an item from a collection of options.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { SelectModule } from 'primeng/select';
 ```
 
-## Basic
+### Basic
 
 Select is used as a controlled component with ngModel property along with an options collection. Label and value of an option are defined with the optionLabel and optionValue properties respectively. Note that, when options are simple primitive values such as a string array, no optionLabel and optionValue would be necessary.
 
@@ -16,7 +18,7 @@ Select is used as a controlled component with ngModel property along with an opt
 <p-select [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" placeholder="Select a City" class="w-full md:w-56" />
 ```
 
-## Checkmark
+### Checkmark
 
 An alternative way to highlight the selected option is displaying a checkmark instead.
 
@@ -24,7 +26,7 @@ An alternative way to highlight the selected option is displaying a checkmark in
 <p-select [options]="cities" [(ngModel)]="selectedCity" [checkmark]="true" optionLabel="name" [showClear]="true" placeholder="Select a City" class="w-full md:w-56" />
 ```
 
-## Editable
+### Editable
 
 When editable is present, the input can also be entered with typing.
 
@@ -32,7 +34,7 @@ When editable is present, the input can also be entered with typing.
 <p-select [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City" [editable]="true" optionLabel="name" class="w-full md:w-56" />
 ```
 
-## Group
+### Group
 
 Options can be grouped when a nested data structures is provided.
 
@@ -47,7 +49,7 @@ Options can be grouped when a nested data structures is provided.
 </p-select>
 ```
 
-## Template
+### Template
 
 Both the selected option and the options list can be templated to provide customizated representation. Use selectedItem template to customize the selected label display and the item template to change the content of the options in the select panel. In addition when grouping is enabled, group template is available to customize the option groups. All templates get the option instance as the default local template variable.
 
@@ -87,7 +89,7 @@ Both the selected option and the options list can be templated to provide custom
 </p-select>
 ```
 
-## Filter
+### Filter
 
 Select provides built-in filtering that is enabled by adding the filter property.
 
@@ -108,7 +110,7 @@ Select provides built-in filtering that is enabled by adding the filter property
 </p-select>
 ```
 
-## Clear Icon
+### Clear Icon
 
 When showClear is enabled, a clear icon is added to reset the Select.
 
@@ -116,7 +118,7 @@ When showClear is enabled, a clear icon is added to reset the Select.
 <p-select [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" [showClear]="true" placeholder="Select a City" class="w-full md:w-56" />
 ```
 
-## Loading State
+### Loading State
 
 Loading state can be used loading property.
 
@@ -124,7 +126,7 @@ Loading state can be used loading property.
 <p-select [options]="cities" [(ngModel)]="selectedCity" [loading]="true" optionLabel="name" placeholder="Loading..." class="w-full md:w-56" />
 ```
 
-## Virtual Scroll
+### Virtual Scroll
 
 VirtualScrolling is an efficient way of rendering the options by displaying a small subset of data in the viewport at any time. When dealing with huge number of options, it is suggested to enable VirtualScrolling to avoid performance issues. Usage is simple as setting virtualScroll property to true and defining virtualScrollItemSize to specify the height of an item.
 
@@ -132,13 +134,13 @@ VirtualScrolling is an efficient way of rendering the options by displaying a sm
 <p-select [options]="items" [(ngModel)]="selectedItem" placeholder="Select Item" [virtualScroll]="true" [virtualScrollItemSize]="38" class="w-full md:w-56" />
 ```
 
-## Lazy Virtual Scroll
+### Lazy Virtual Scroll
 
 ```html
 <p-select [options]="items" [(ngModel)]="selectedItem" placeholder="Select Item" [virtualScroll]="true" [virtualScrollItemSize]="38" [virtualScrollOptions]="options" class="w-full md:w-56" />
 ```
 
-## Filled
+### Filled
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -146,7 +148,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-select [options]="cities" [(ngModel)]="selectedCity" variant="filled" optionLabel="name" placeholder="Select a City" class="w-full md:w-56" />
 ```
 
-## Float Label
+### Float Label
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -167,7 +169,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-## Ifta Label
+### Ifta Label
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -178,7 +180,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-## Sizes
+### Sizes
 
 Select provides small and large sizes as alternatives to the base.
 
@@ -188,7 +190,7 @@ Select provides small and large sizes as alternatives to the base.
 <p-select [(ngModel)]="value3" [options]="cities" optionLabel="name" size="large" placeholder="Large" class="w-full md:w-56" />
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -196,7 +198,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-select [options]="cities" [(ngModel)]="selectedCity" placeholder="Select a City" optionLabel="name" [disabled]="true" class="w-full md:w-56" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -205,7 +207,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-select [options]="cities" [(ngModel)]="selectedCity2" optionLabel="name" [showClear]="true" [invalid]="value2" placeholder="Select a City" class="w-full md:w-56" variant="filled"/>
 ```
 
-## Forms
+### Forms
 
 Select can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -233,7 +235,7 @@ Select can also be used with reactive forms. In this case, the formControlName p
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 Value to describe the component can either be provided with ariaLabelledBy or ariaLabel props. The select element has a combobox role in addition to aria-haspopup and aria-expanded attributes. If the editable option is enabled aria-autocomplete is also added. The relation between the combobox and the popup is created with aria-controls and aria-activedescendant attribute is used to instruct screen reader which option to read during keyboard navigation within the popup list.
 
@@ -244,9 +246,142 @@ Value to describe the component can either be provided with ariaLabelledBy or ar
 <p-select ariaLabel="Options"/>
 ```
 
-## Select
+### Select
 
 Select is used to choose an item from a collection of options.
+
+## API
+
+### Select API
+
+API defines helper props, events and others for the PrimeNG Select module.
+
+#### Select
+
+Select is used to choose an item from a collection of options.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| fluid | InputSignalWithTransform<boolean, unknown> | false | Spans 100% width of the container when enabled. |
+| variant | InputSignal<"outlined" | "filled"> | 'outlined' | Specifies the input variant of the component. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
+| inputSize | InputSignal<number> | undefined | Specifies the visible width of the input element in characters. |
+| pattern | InputSignal<string> | undefined | Specifies the value must match the pattern. |
+| min | InputSignal<number> | undefined | The value must be greater than or equal to the value. |
+| max | InputSignal<number> | undefined | The value must be less than or equal to the value. |
+| step | InputSignal<number> | undefined | Unless the step is set to the any literal, the value must be min + an integral multiple of the step. |
+| minlength | InputSignal<number> | undefined | The number of characters (code points) must not be less than the value of the attribute, if non-empty. |
+| maxlength | InputSignal<number> | undefined | The number of characters (code points) must not exceed the value of the attribute. |
+| id | string | null | Unique identifier of the component |
+| scrollHeight | string | 200px | Height of the viewport in pixels, a scrollbar is defined if height of list exceeds this value. |
+| filter | boolean | false | When specified, displays an input field to filter the items on keyup. |
+| panelStyle | { [klass: string]: any } | null | Inline style of the overlay panel element. |
+| styleClass | string | null | Style class of the element. |
+| panelStyleClass | string | null | Style class of the overlay panel element. |
+| readonly | boolean | false | When present, it specifies that the component cannot be edited. |
+| editable | boolean | false | When present, custom value instead of predefined options can be entered using the editable input field. |
+| tabindex | number | 0 | Index of the element in tabbing order. |
+| placeholder | Signal<string> | null | Default text to display when no option is selected. |
+| loadingIcon | string | null | Icon to display in loading state. |
+| filterPlaceholder | string | null | Placeholder text to show when filter input is empty. |
+| filterLocale | string | null | Locale to use in filtering. The default locale is the host environment's current locale. |
+| inputId | string | null | Identifier of the accessible input element. |
+| dataKey | string | null | A property to uniquely identify a value in options. |
+| filterBy | string | null | When filtering is enabled, filterBy decides which field or fields (comma separated) to search against. |
+| filterFields | any[] | null | Fields used when filtering the options, defaults to optionLabel. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| resetFilterOnHide | boolean | false | Clears the filter value when hiding the select. |
+| checkmark | boolean | false | Whether the selected option will be shown with a check mark. |
+| dropdownIcon | string | null | Icon class of the select icon. |
+| loading | boolean | false | Whether the select is in loading state. |
+| optionLabel | string | null | Name of the label field of an option. |
+| optionValue | string | null | Name of the value field of an option. |
+| optionDisabled | string | null | Name of the disabled field of an option. |
+| optionGroupLabel | string | label | Name of the label field of an option group. |
+| optionGroupChildren | string | items | Name of the options field of an option group. |
+| group | boolean | false | Whether to display options as grouped when nested options are provided. |
+| showClear | boolean | false | When enabled, a clear icon is displayed to clear the value. |
+| emptyFilterMessage | string | null | Text to display when filtering does not return any results. Defaults to global value in i18n translation configuration. |
+| emptyMessage | string | null | Text to display when there is no data. Defaults to global value in i18n translation configuration. |
+| lazy | boolean | false | Defines if data is loaded and interacted with in lazy manner. |
+| virtualScroll | boolean | false | Whether the data should be loaded on demand during scroll. |
+| virtualScrollItemSize | number | null | Height of an item in the list for VirtualScrolling. |
+| virtualScrollOptions | ScrollerOptions | null | Whether to use the scroller feature. The properties of scroller component can be used like an object in it. |
+| overlayOptions | OverlayOptions | null | Whether to use overlay API feature. The properties of overlay API can be used like an object in it. |
+| ariaFilterLabel | string | null | Defines a string that labels the filter input. |
+| ariaLabel | string | null | Used to define a aria label attribute the current element. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+| filterMatchMode | "gt" | "lt" | "in" | "startsWith" | "contains" | "endsWith" | "equals" | "notEquals" | "lte" | "gte" | contains | Defines how the items are filtered. |
+| tooltip | string | null | Advisory information to display in a tooltip on hover. |
+| tooltipPosition | "right" | "left" | "top" | "bottom" | right | Position of the tooltip. |
+| tooltipPositionStyle | string | absolute | Type of CSS position. |
+| tooltipStyleClass | string | null | Style class of the tooltip. |
+| focusOnHover | boolean | true | Fields used when filtering the options, defaults to optionLabel. |
+| selectOnFocus | boolean | false | Determines if the option will be selected on focus. |
+| autoOptionFocus | boolean | false | Whether to focus on the first visible or selected element when the overlay panel is shown. |
+| autofocusFilter | boolean | true | Applies focus to the filter element when the overlay is shown. |
+| filterValue | string | null | When specified, filter displays with this value. |
+| options | any[] | null | An array of objects to display as the available options. |
+| appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onChange | event :  SelectChangeEvent | Callback to invoke when value of select changes. |
+| onFilter | event :  SelectFilterEvent | Callback to invoke when data is filtered. |
+| onFocus | event :  Event | Callback to invoke when select gets focus. |
+| onBlur | event :  Event | Callback to invoke when select loses focus. |
+| onClick | event :  MouseEvent | Callback to invoke when component is clicked. |
+| onShow | event :  AnimationEvent | Callback to invoke when select overlay gets visible. |
+| onHide | event :  AnimationEvent | Callback to invoke when select overlay gets hidden. |
+| onClear | event :  Event | Callback to invoke when select clears the value. |
+| onLazyLoad | event :  SelectLazyLoadEvent | Callback to invoke in lazy mode to load new data. |
+
+##### Methods
+
+Defines methods that can be accessed by the component's reference.
+
+| name | parameters | description |
+| --- | --- | --- |
+| resetFilter |  | Callback to invoke on filter reset. |
+| show | isFocus :  any | Displays the panel. |
+| hide | isFocus :  any | Hides the panel. |
+| focus |  | Applies focus. |
+| clear | event :  Event | Clears the model. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| item |  | Custom item template. |
+| group |  | Custom group template. |
+| loader |  | Custom loader template. |
+| selecteditem |  | Custom selected item template. |
+| header |  | Custom header template. |
+| filter |  | Custom filter template. |
+| footer |  | Custom footer template. |
+| emptyfilter |  | Custom empty filter template. |
+| empty |  | Custom empty template. |
+| dropdownicon |  | Custom dropdown icon template. |
+| loadingicon |  | Custom loading icon template. |
+| clearicon |  | Custom clear icon template. |
+| filtericon |  | Custom filter icon template. |
+| onicon |  | Custom on icon template. |
+| officon |  | Custom off icon template. |
+| cancelicon |  | Custom cancel icon template. |
 
 ---
 

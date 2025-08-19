@@ -2,13 +2,15 @@
 
 DatePicker is an input component to select a date.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { DatePickerModule } from 'primeng/datepicker';
 ```
 
-## Basic
+### Basic
 
 Two-way value binding is defined using the standard ngModel directive referencing to a Date property.
 
@@ -16,7 +18,7 @@ Two-way value binding is defined using the standard ngModel directive referencin
 <p-datepicker [(ngModel)]="date" />
 ```
 
-## Format
+### Format
 
 Default date format is mm/dd/yy which can be customized using the dateFormat property. Following options can be a part of the format.
 
@@ -24,11 +26,11 @@ Default date format is mm/dd/yy which can be customized using the dateFormat pro
 <p-datepicker [(ngModel)]="date" dateFormat="dd.mm.yy" />
 ```
 
-## Locale
+### Locale
 
 Locale for different languages and formats is defined globally, refer to the PrimeNG Locale configuration for more information.
 
-## Icon
+### Icon
 
 An additional icon is displayed next to the input field when showIcon is present.
 
@@ -44,7 +46,7 @@ An additional icon is displayed next to the input field when showIcon is present
 </p-datepicker>
 ```
 
-## Min / Max
+### Min / Max
 
 Boundaries for the permitted dates that can be entered are defined with minDate and maxDate properties.
 
@@ -52,7 +54,7 @@ Boundaries for the permitted dates that can be entered are defined with minDate 
 <p-datepicker [(ngModel)]="date" [minDate]="minDate" [maxDate]="maxDate" [readonlyInput]="true" />
 ```
 
-## Multiple
+### Multiple
 
 In order to choose multiple dates, set selectionMode as multiple. In this mode, the value binding should be an array.
 
@@ -60,7 +62,7 @@ In order to choose multiple dates, set selectionMode as multiple. In this mode, 
 <p-datepicker [(ngModel)]="dates" selectionMode="multiple" [readonlyInput]="true" />
 ```
 
-## Range
+### Range
 
 A range of dates can be selected by defining selectionMode as range, in this case the bound value would be an array with two values where first date is the start of the range and second date is the end.
 
@@ -68,7 +70,7 @@ A range of dates can be selected by defining selectionMode as range, in this cas
 <p-datepicker [(ngModel)]="rangeDates" selectionMode="range" [readonlyInput]="true" />
 ```
 
-## Button Bar
+### Button Bar
 
 When showButtonBar is present, today and clear buttons are displayed at the footer.
 
@@ -76,7 +78,7 @@ When showButtonBar is present, today and clear buttons are displayed at the foot
 <p-datepicker [(ngModel)]="date" [showButtonBar]="true" />
 ```
 
-## Time
+### Time
 
 A time picker is displayed when showTime is enabled where 12/24 hour format is configured with hourFormat property. In case, only time needs to be selected, add timeOnly to hide the date section.
 
@@ -88,7 +90,7 @@ A time picker is displayed when showTime is enabled where 12/24 hour format is c
 <p-datepicker inputId="calendar-timeonly" [(ngModel)]="time" [timeOnly]="true" />
 ```
 
-## Month Picker
+### Month Picker
 
 Month only picker is enabled by specifying view as month in addition to a suitable dateFormat.
 
@@ -96,7 +98,7 @@ Month only picker is enabled by specifying view as month in addition to a suitab
 <p-datepicker [(ngModel)]="date" view="month" dateFormat="mm/yy" [readonlyInput]="true" />
 ```
 
-## Year Picker
+### Year Picker
 
 Specifying view as year in addition to a suitable dateFormat enables the year picker.
 
@@ -104,7 +106,7 @@ Specifying view as year in addition to a suitable dateFormat enables the year pi
 <p-datepicker [(ngModel)]="date" view="year" dateFormat="yy" />
 ```
 
-## Multiple Months
+### Multiple Months
 
 Number of months to display is configured with the numberOfMonths property.
 
@@ -112,7 +114,7 @@ Number of months to display is configured with the numberOfMonths property.
 <p-datepicker [(ngModel)]="date" [numberOfMonths]="2" />
 ```
 
-## Date Template
+### Date Template
 
 Custom content can be placed inside date cells with the ng-template property that takes a Date as a parameter.
 
@@ -125,7 +127,7 @@ Custom content can be placed inside date cells with the ng-template property tha
 </p-datepicker>
 ```
 
-## Inline
+### Inline
 
 DatePicker is displayed as a popup by default, add inline property to customize this behavior.
 
@@ -133,7 +135,7 @@ DatePicker is displayed as a popup by default, add inline property to customize 
 <p-datepicker class="max-w-full" [(ngModel)]="date" [inline]="true" [showWeek]="true" />
 ```
 
-## Float Label
+### Float Label
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -154,7 +156,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-## Ifta Label
+### Ifta Label
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -165,7 +167,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-## Sizes
+### Sizes
 
 DatePicker provides small and large sizes as alternatives to the base.
 
@@ -175,7 +177,7 @@ DatePicker provides small and large sizes as alternatives to the base.
 <p-datepicker [(ngModel)]="value3" size="large" placeholder="Large" showIcon iconDisplay="input" />
 ```
 
-## Filled
+### Filled
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -183,7 +185,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-datepicker [(ngModel)]="date" variant="filled" />
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -191,7 +193,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-datepicker [(ngModel)]="date" [disabled]="true" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -200,7 +202,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-datepicker [(ngModel)]="date2" [invalid]="!date2" variant="filled" placeholder="Date" />
 ```
 
-## Forms
+### Forms
 
 DatePicker can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -228,7 +230,7 @@ DatePicker can also be used with reactive forms. In this case, the formControlNa
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 Value to describe the component can either be provided via label tag combined with inputId prop or using aria-labelledby, aria-label props. The input element has combobox role in addition to aria-autocomplete as "none", aria-haspopup as "dialog" and aria-expanded attributes. The relation between the input and the popup is created with aria-controls attribute that refers to the id of the popup.
 
@@ -242,9 +244,136 @@ Value to describe the component can either be provided via label tag combined wi
 <p-datepicker ariaLabel="Date"/>
 ```
 
-## DatePicker
+### DatePicker
 
 DatePicker is a form component to work with dates.
+
+## API
+
+### DatePicker API
+
+API defines helper props, events and others for the PrimeNG DatePicker module.
+
+#### DatePicker
+
+DatePicker is a form component to work with dates.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| fluid | InputSignalWithTransform<boolean, unknown> | false | Spans 100% width of the container when enabled. |
+| variant | InputSignal<"outlined" | "filled"> | 'outlined' | Specifies the input variant of the component. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
+| inputSize | InputSignal<number> | undefined | Specifies the visible width of the input element in characters. |
+| pattern | InputSignal<string> | undefined | Specifies the value must match the pattern. |
+| min | InputSignal<number> | undefined | The value must be greater than or equal to the value. |
+| max | InputSignal<number> | undefined | The value must be less than or equal to the value. |
+| step | InputSignal<number> | undefined | Unless the step is set to the any literal, the value must be min + an integral multiple of the step. |
+| minlength | InputSignal<number> | undefined | The number of characters (code points) must not be less than the value of the attribute, if non-empty. |
+| maxlength | InputSignal<number> | undefined | The number of characters (code points) must not exceed the value of the attribute. |
+| styleClass | string | null | Style class of the component. |
+| inputStyle | { [klass: string]: any } | null | Inline style of the input field. |
+| inputId | string | null | Identifier of the focus input to match a label defined for the component. |
+| inputStyleClass | string | null | Style class of the input field. |
+| placeholder | string | null | Placeholder text for the input. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+| ariaLabel | string | null | Defines a string that labels the input for accessibility. |
+| iconAriaLabel | string | null | Defines a string that labels the icon button for accessibility. |
+| dateFormat | string | null | Format of the date which can also be defined at locale settings. |
+| multipleSeparator | string | , | Separator for multiple selection mode. |
+| rangeSeparator | string | - | Separator for joining start and end dates on range selection mode. |
+| inline | boolean | false | When enabled, displays the datepicker as inline. Default is false for popup mode. |
+| showOtherMonths | boolean | true | Whether to display dates in other months (non-selectable) at the start or end of the current month. To make these days selectable use the selectOtherMonths option. |
+| selectOtherMonths | boolean | false | Whether days in other months shown before or after the current month are selectable. This only applies if the showOtherMonths option is set to true. |
+| showIcon | boolean | false | When enabled, displays a button with icon next to input. |
+| icon | string | null | Icon of the datepicker button. |
+| readonlyInput | boolean | false | When specified, prevents entering the date manually with keyboard. |
+| shortYearCutoff | any | +10 | The cutoff year for determining the century for a date. |
+| hourFormat | string | null | Specifies 12 or 24 hour format. |
+| timeOnly | boolean | false | Whether to display timepicker only. |
+| stepHour | number | 1 | Hours to change per step. |
+| stepMinute | number | 1 | Minutes to change per step. |
+| stepSecond | number | 1 | Seconds to change per step. |
+| showSeconds | boolean | false | Whether to show the seconds in time picker. |
+| showOnFocus | boolean | true | When disabled, datepicker will not be visible with input focus. |
+| showWeek | boolean | false | When enabled, datepicker will show week numbers. |
+| startWeekFromFirstDayOfYear | boolean | false | When enabled, datepicker will start week numbers from first day of the year. |
+| showClear | boolean | false | When enabled, a clear icon is displayed to clear the value. |
+| dataType | string | date | Type of the value to write back to ngModel, default is date and alternative is string. |
+| selectionMode | "single" | "multiple" | "range" | single | Defines the quantity of the selection, valid values are "single", "multiple" and "range". |
+| maxDateCount | number | null | Maximum number of selectable dates in multiple mode. |
+| showButtonBar | boolean | false | Whether to display today and clear buttons at the footer |
+| todayButtonStyleClass | string | null | Style class of the today button. |
+| clearButtonStyleClass | string | null | Style class of the clear button. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| panelStyleClass | string | null | Style class of the datetimepicker container element. |
+| panelStyle | any | null | Inline style of the datetimepicker container element. |
+| keepInvalid | boolean | false | Keep invalid value when input blur. |
+| hideOnDateTimeSelect | boolean | true | Whether to hide the overlay on date selection. |
+| touchUI | boolean | false | When enabled, datepicker overlay is displayed as optimized for touch devices. |
+| timeSeparator | string | : | Separator of time selector. |
+| focusTrap | boolean | true | When enabled, can only focus on elements inside the datepicker. |
+| showTransitionOptions | string | .12s cubic-bezier(0, 0, 0.2, 1) | Transition options of the show animation. |
+| hideTransitionOptions | string | .1s linear | Transition options of the hide animation. |
+| tabindex | number | null | Index of the element in tabbing order. |
+| minDate | Date | null | The minimum selectable date. |
+| maxDate | Date | null | The maximum selectable date. |
+| disabledDates | Date[] | null | Array with dates that should be disabled (not selectable). |
+| disabledDays | number[] | null | Array with weekday numbers that should be disabled (not selectable). |
+| showTime | boolean | null | Whether to display timepicker. |
+| responsiveOptions | DatePickerResponsiveOptions[] | null | An array of options for responsive design. |
+| numberOfMonths | number | null | Number of months to display. |
+| firstDayOfWeek | number | null | Defines the first of the week for various date calculations. |
+| view | DatePickerTypeView | null | Type of view to display, valid values are "date" for datepicker and "month" for month picker. |
+| defaultDate | Date | null | Set the date to highlight on first opening if the field is blank. |
+| appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onFocus | event :  Event | Callback to invoke on focus of input field. |
+| onBlur | event :  Event | Callback to invoke on blur of input field. |
+| onClose | event :  AnimationEvent | Callback to invoke when date panel closed. |
+| onSelect | value :  Date | Callback to invoke on date select. |
+| onClear | value :  any | Callback to invoke when input field cleared. |
+| onInput | value :  any | Callback to invoke when input field is being typed. |
+| onTodayClick | value :  Date | Callback to invoke when today button is clicked. |
+| onClearClick | value :  any | Callback to invoke when clear button is clicked. |
+| onMonthChange | event :  DatePickerMonthChangeEvent | Callback to invoke when a month is changed using the navigators. |
+| onYearChange | event :  DatePickerYearChangeEvent | Callback to invoke when a year is changed using the navigators. |
+| onClickOutside | value :  any | Callback to invoke when clicked outside of the date panel. |
+| onShow | value :  any | Callback to invoke when datepicker panel is shown. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| date |  | Custom template for date cells. |
+| header |  | Custom template for header section. |
+| footer |  | Custom template for footer section. |
+| disableddate |  | Custom template for disabled date cells. |
+| decade |  | Custom template for decade view. |
+| previousicon |  | Custom template for previous month icon. |
+| nexticon |  | Custom template for next month icon. |
+| triggericon |  | Custom template for trigger icon. |
+| clearicon |  | Custom template for clear icon. |
+| decrementicon |  | Custom template for decrement icon. |
+| incrementicon |  | Custom template for increment icon. |
+| inputicon |  | Custom template for input icon. |
 
 ---
 

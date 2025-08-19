@@ -2,13 +2,15 @@
 
 The Stepper component displays a wizard-like workflow by guiding users through the multi-step progression.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { StepperModule } from 'primeng/stepper';
 ```
 
-## Horizontal
+### Horizontal
 
 Stepper consists of a combination of StepList, Step, StepPanels and StepPanel components. The value property is essential for associating Step and StepPanel with each other.
 
@@ -69,7 +71,7 @@ Stepper consists of a combination of StepList, Step, StepPanels and StepPanel co
 </p-stepper>
 ```
 
-## Vertical
+### Vertical
 
 Vertical layout requires StepItem as a wrapper of Step and StepPanel components.
 
@@ -132,7 +134,7 @@ Vertical layout requires StepItem as a wrapper of Step and StepPanel components.
 </p-stepper>
 ```
 
-## Linear
+### Linear
 
 When linear property is set to true, current step must be completed in order to move to the next step.
 
@@ -193,7 +195,7 @@ When linear property is set to true, current step must be completed in order to 
 </p-stepper>
 ```
 
-## Steps Only
+### Steps Only
 
 Use Stepper with a StepList only for custom requirements where a progress indicator is needed.
 
@@ -207,7 +209,7 @@ Use Stepper with a StepList only for custom requirements where a progress indica
 </p-stepper>
 ```
 
-## Template
+### Template
 
 Stepper provides various templating options to customize the default UI design.
 
@@ -325,25 +327,98 @@ Stepper provides various templating options to customize the default UI design.
 </p-stepper>
 ```
 
-## Accessibility
+### Accessibility
 
 Stepper container is defined with the tablist role, as any attribute is passed to the container element aria-labelledby can be optionally used to specify an element to describe the Stepper. Each stepper header has a tab role and aria-controls to refer to the corresponding stepper content element. The content element of each stepper has tabpanel role, an id to match the aria-controls of the header and aria-labelledby reference to the header as the accessible name.
 
-## Stepper
+### Stepper
 
 Stepper is a component that streamlines a wizard-like workflow, organizing content into coherent steps and visually guiding users through a numbered progression in a multistep process.
 
-## Step
+### Step
 
 Step is a helper component for Stepper component.
 
-## StepItem
+### StepItem
 
 StepItem is a helper component for Stepper component used in vertical orientation.
 
-## StepPanel
+### StepPanel
 
 StepPanel is a helper component for Stepper component.
+
+## API
+
+### Stepper API
+
+API defines helper props, events and others for the PrimeNG Stepper module.
+
+#### Stepper
+
+Stepper is a component that streamlines a wizard-like workflow, organizing content into coherent steps and visually guiding users through a numbered progression in a multistep process.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | ModelSignal<number> | undefined | A model that can hold a numeric value or be undefined. |
+| linear | InputSignalWithTransform<any, boolean> | false | A boolean variable that captures user input. |
+| transitionOptions | InputSignal<string> | 400ms cubic-bezier(0.86, 0, 0.07, 1) | Transition options of the animation. |
+
+#### Step
+
+Step is a helper component for Stepper component.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | ModelSignal<number> | undefined | Active value of stepper. |
+| disabled | InputSignalWithTransform<any, boolean> | false | Whether the step is disabled. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| content |  | Content template. |
+
+#### StepItem
+
+StepItem is a helper component for Stepper component used in vertical orientation.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | ModelSignal<number> | undefined | Value of step. |
+
+#### StepPanel
+
+StepPanel is a helper component for Stepper component.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | ModelSignal<number> | undefined | Active value of stepper. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| content | context :  StepPanelContentTemplateContext | Content template. |
 
 ---
 

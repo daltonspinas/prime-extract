@@ -2,13 +2,15 @@
 
 Tooltip directive provides advisory information for a component. Tooltip is integrated within various PrimeNG components.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { TooltipModule } from 'primeng/tooltip';
 ```
 
-## Position
+### Position
 
 Position of the tooltip is specified using tooltipPosition attribute. Valid values are top, bottom, right and left. Default position of the tooltip is right.
 
@@ -19,7 +21,7 @@ Position of the tooltip is specified using tooltipPosition attribute. Valid valu
 <input type="text" pInputText pTooltip="Enter your username" tooltipPosition="left" placeholder="Left" />
 ```
 
-## Event
+### Event
 
 Tooltip gets displayed on hover event of its target by default, other option is the focus event to display and blur to hide.
 
@@ -27,7 +29,7 @@ Tooltip gets displayed on hover event of its target by default, other option is 
 <input type="text" pInputText pTooltip="Enter your username" tooltipEvent="focus" placeholder="focus to display tooltip" />
 ```
 
-## Auto Hide
+### Auto Hide
 
 Tooltip is hidden when mouse leaves the target element, in cases where tooltip needs to be interacted with, set autoHide to false to change the default behavior.
 
@@ -36,7 +38,7 @@ Tooltip is hidden when mouse leaves the target element, in cases where tooltip n
 <input type="text" pInputText pTooltip="Enter your username" placeholder="autoHide: true" />
 ```
 
-## Delay
+### Delay
 
 Adding delays to the show and hide events are defined with showDelay and hideDelay options respectively.
 
@@ -44,7 +46,7 @@ Adding delays to the show and hide events are defined with showDelay and hideDel
 <p-button pTooltip="Confirm to proceed" showDelay="1000" hideDelay="300" label="Save" />
 ```
 
-## Custom
+### Custom
 
 Tooltip can use either a string or a TemplateRef.
 
@@ -63,7 +65,7 @@ Tooltip can use either a string or a TemplateRef.
 </ng-template>
 ```
 
-## Tooltip Options
+### Tooltip Options
 
 Tooltip is also configurable by using tooltipOptions property.
 
@@ -71,15 +73,52 @@ Tooltip is also configurable by using tooltipOptions property.
 <input type="text" pInputText pTooltip="Enter your username" [tooltipOptions]="tooltipOptions" placeholder="hover to display tooltip" />
 ```
 
-## Accessibility
+### Accessibility
 
 Tooltip component uses tooltip role and when it becomes visible the generated id of the tooltip is defined as the aria-describedby of the target.
 
-## Tooltip
+### Tooltip
 
 Tooltip directive provides advisory information for a component.
 
-## TooltipOptions
+### TooltipOptions
+
+## API
+
+### Tooltip API
+
+API defines helper props, events and others for the PrimeNG Tooltip module.
+
+#### Tooltip
+
+Tooltip directive provides advisory information for a component.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| tooltipPosition | string | null | Position of the tooltip. |
+| tooltipEvent | any | hover | Event to show the tooltip. |
+| positionStyle | string | null | Type of CSS position. |
+| tooltipStyleClass | string | null | Style class of the tooltip. |
+| tooltipZIndex | string | null | Whether the z-index should be managed automatically to always go on top or have a fixed value. |
+| escape | boolean | true | By default the tooltip contents are rendered as text. Set to false to support html tags in the content. |
+| showDelay | number | null | Delay to show the tooltip in milliseconds. |
+| hideDelay | number | null | Delay to hide the tooltip in milliseconds. |
+| life | number | null | Time to wait in milliseconds to hide the tooltip even it is active. |
+| positionTop | number | null | Specifies the additional vertical offset of the tooltip from its default position. |
+| positionLeft | number | null | Specifies the additional horizontal offset of the tooltip from its default position. |
+| autoHide | boolean | true | Whether to hide tooltip when hovering over tooltip content. |
+| fitContent | boolean | true | Automatically adjusts the element position when there is not enough space on the selected position. |
+| hideOnEscape | boolean | true | Whether to hide tooltip on escape key press. |
+| content | string | TemplateRef<HTMLElement> | null | Content of the tooltip. |
+| disabled | boolean | null | When present, it specifies that the component should be disabled. |
+| tooltipOptions | TooltipOptions | null | Specifies the tooltip configuration options for the component. |
+| appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+
+#### TooltipOptions
 
 ---
 

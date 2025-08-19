@@ -2,13 +2,15 @@
 
 Password displays strength indicator for password fields.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { PasswordModule } from 'primeng/password';
 ```
 
-## Basic
+### Basic
 
 Two-way value binding is defined using ngModel.
 
@@ -16,7 +18,7 @@ Two-way value binding is defined using ngModel.
 <p-password [(ngModel)]="value" [feedback]="false" />
 ```
 
-## Meter
+### Meter
 
 Strength meter is displayed as a popup while a value is being entered.
 
@@ -24,7 +26,7 @@ Strength meter is displayed as a popup while a value is being entered.
 <p-password [(ngModel)]="value" />
 ```
 
-## Locale
+### Locale
 
 Labels are translated at component level by promptLabel, weakLabel, mediumLabel and strongLabel properties. In order to apply global translations for all Password components in the application, refer to the locale
 
@@ -32,7 +34,7 @@ Labels are translated at component level by promptLabel, weakLabel, mediumLabel 
 <p-password [(ngModel)]="value" promptLabel="Choose a password" weakLabel="Too simple" mediumLabel="Average complexity" strongLabel="Complex password" />
 ```
 
-## Toggle Mask
+### Toggle Mask
 
 When toggleMask is present, an icon is displayed to show the value as plain text.
 
@@ -40,7 +42,7 @@ When toggleMask is present, an icon is displayed to show the value as plain text
 <p-password [(ngModel)]="value" [toggleMask]="true" />
 ```
 
-## Template
+### Template
 
 3 templates are included to customize the overlay. These are header, content and footer. Note that content overrides the default meter.
 
@@ -61,7 +63,7 @@ When toggleMask is present, an icon is displayed to show the value as plain text
 </p-password>
 ```
 
-## Float Label
+### Float Label
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -82,7 +84,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-## Ifta Label
+### Ifta Label
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -93,7 +95,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-## Sizes
+### Sizes
 
 Password provides small and large sizes as alternatives to the base.
 
@@ -103,7 +105,7 @@ Password provides small and large sizes as alternatives to the base.
 <p-password [(ngModel)]="value3" type="text" size="large" placeholder="Large" />
 ```
 
-## Filled
+### Filled
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -111,7 +113,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-password [(ngModel)]="value" [feedback]="false" variant="filled" />
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -119,7 +121,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-password [(ngModel)]="value" [disabled]="true" placeholder="Disabled" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -128,7 +130,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-password [(ngModel)]="value2" [invalid]="!value2" variant="filled" placeholder="Password" />
 ```
 
-## Forms
+### Forms
 
 Password can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -158,7 +160,7 @@ Password can also be used with reactive forms. In this case, the formControlName
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 Value to describe the component can either be provided via label tag combined with id prop or using ariaLabelledBy, ariaLabel props. Screen reader is notified about the changes to the strength of the password using a section that has aria-live while typing.
 
@@ -172,13 +174,102 @@ Value to describe the component can either be provided via label tag combined wi
 <p-password ariaLabel="Password" />
 ```
 
-## Password
+### Password
 
 Password displays strength indicator for password fields.
 
-## PasswordDirective
+### PasswordDirective
 
 Password directive.
+
+## API
+
+### Password API
+
+API defines helper props, events and others for the PrimeNG Password module.
+
+#### Password
+
+Password displays strength indicator for password fields.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| fluid | InputSignalWithTransform<boolean, unknown> | false | Spans 100% width of the container when enabled. |
+| variant | InputSignal<"outlined" | "filled"> | 'outlined' | Specifies the input variant of the component. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
+| inputSize | InputSignal<number> | undefined | Specifies the visible width of the input element in characters. |
+| pattern | InputSignal<string> | undefined | Specifies the value must match the pattern. |
+| min | InputSignal<number> | undefined | The value must be greater than or equal to the value. |
+| max | InputSignal<number> | undefined | The value must be less than or equal to the value. |
+| step | InputSignal<number> | undefined | Unless the step is set to the any literal, the value must be min + an integral multiple of the step. |
+| minlength | InputSignal<number> | undefined | The number of characters (code points) must not be less than the value of the attribute, if non-empty. |
+| maxlength | InputSignal<number> | undefined | The number of characters (code points) must not exceed the value of the attribute. |
+| ariaLabel | string | null | Defines a string that labels the input for accessibility. |
+| ariaLabelledBy | string | null | Specifies one or more IDs in the DOM that labels the input field. |
+| label | string | null | Label of the input for accessibility. |
+| promptLabel | string | null | Text to prompt password entry. Defaults to PrimeNG I18N API configuration. |
+| mediumRegex | string | ^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,}) | Regex value for medium regex. |
+| strongRegex | string | ^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,}) | Regex value for strong regex. |
+| weakLabel | string | null | Text for a weak password. Defaults to PrimeNG I18N API configuration. |
+| mediumLabel | string | null | Text for a medium password. Defaults to PrimeNG I18N API configuration. |
+| maxLength | number | null | specifies the maximum number of characters allowed in the input element. |
+| strongLabel | string | null | Text for a strong password. Defaults to PrimeNG I18N API configuration. |
+| inputId | string | null | Identifier of the accessible input element. |
+| feedback | boolean | true | Whether to show the strength indicator or not. |
+| toggleMask | boolean | false | Whether to show an icon to display the password as plain text. |
+| inputStyleClass | string | null | Style class of the input field. |
+| styleClass | string | null | Style class of the element. |
+| inputStyle | { [klass: string]: any } | null | Inline style of the input field. |
+| showTransitionOptions | string | .12s cubic-bezier(0, 0, 0.2, 1) | Transition options of the show animation. |
+| hideTransitionOptions | string | .1s linear | Transition options of the hide animation. |
+| autocomplete | string | null | Specify automated assistance in filling out password by browser. |
+| placeholder | string | null | Advisory information to display on input. |
+| showClear | boolean | false | When enabled, a clear icon is displayed to clear the value. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| tabindex | number | null | Index of the element in tabbing order. |
+| appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onFocus | event :  Event | Callback to invoke when the component receives focus. |
+| onBlur | event :  Event | Callback to invoke when the component loses focus. |
+| onClear | value :  any | Callback to invoke when clear button is clicked. |
+
+#### PasswordDirective
+
+Password directive.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| promptLabel | string | Enter a password | Text to prompt password entry. Defaults to PrimeNG I18N API configuration. |
+| weakLabel | string | Weak | Text for a weak password. Defaults to PrimeNG I18N API configuration. |
+| mediumLabel | string | Medium | Text for a medium password. Defaults to PrimeNG I18N API configuration. |
+| strongLabel | string | Strong | Text for a strong password. Defaults to PrimeNG I18N API configuration. |
+| feedback | boolean | true | Whether to show the strength indicator or not. |
+| showPassword | - | null | Sets the visibility of the password field. |
+| variant | InputSignal<"outlined" | "filled"> | 'outlined' | Specifies the input variant of the component. |
+| fluid | InputSignalWithTransform<boolean, unknown> | false | Spans 100% width of the container when enabled. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
 
 ---
 

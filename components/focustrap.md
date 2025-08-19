@@ -2,13 +2,15 @@
 
 Focus Trap keeps focus within a certain DOM element while tabbing.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { FocusTrapModule } from 'primeng/focustrap';
 ```
 
-## Basic
+### Basic
 
 FocusTrap is applied to a container element with the pFocusTrap directive.
 
@@ -37,9 +39,27 @@ FocusTrap is applied to a container element with the pFocusTrap directive.
 </div>
 ```
 
-## FocusTrap
+### FocusTrap
 
 Focus Trap keeps focus within a certain DOM element while tabbing.
+
+## API
+
+### Focus Trap API
+
+API defines helper props, events and others for the PrimeNG Focus Trap module.
+
+#### FocusTrap
+
+Focus Trap keeps focus within a certain DOM element while tabbing.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| pFocusTrapDisabled | boolean | false | When set as true, focus wouldn't be managed. |
 
 ---
 

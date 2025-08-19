@@ -2,13 +2,15 @@
 
 Carousel is a content slider featuring various customization options.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { CarouselModule } from 'primeng/carousel';
 ```
 
-## Basic
+### Basic
 
 Carousel requires a collection of items as its value along with a template to render each item.
 
@@ -35,7 +37,7 @@ Carousel requires a collection of items as its value along with a template to re
 </p-carousel>
 ```
 
-## Circular
+### Circular
 
 When autoplayInterval is defined in milliseconds, items are scrolled automatically. In addition, for infinite scrolling circular property needs to be added which is enabled automatically in auto play mode.
 
@@ -62,7 +64,7 @@ When autoplayInterval is defined in milliseconds, items are scrolled automatical
 </p-carousel>
 ```
 
-## Responsive
+### Responsive
 
 Carousel supports specific configuration per screen size with the responsiveOptions property that takes an array of objects where each object defines the max-width breakpoint, numVisible for the number of items items per page and numScroll for number of items to scroll. When responsiveOptions is defined, the numScroll and numVisible properties of the Carousel are used as default when there is breakpoint that applies.
 
@@ -89,7 +91,7 @@ Carousel supports specific configuration per screen size with the responsiveOpti
 </p-carousel>
 ```
 
-## Vertical
+### Vertical
 
 To create a vertical Carousel, orientation needs to be set to vertical along with a verticalViewPortHeight.
 
@@ -116,13 +118,69 @@ To create a vertical Carousel, orientation needs to be set to vertical along wit
 </p-carousel>
 ```
 
-## Accessibility
+### Accessibility
 
 Carousel uses region role and since any attribute is passed to the main container element, attributes such as aria-label and aria-roledescription can be used as well. The slides container has aria-live attribute set as "polite" if carousel is not in autoplay mode, otherwise "off" would be the value in autoplay.
 
-## Carousel
+### Carousel
 
 Carousel is a content slider featuring various customization options.
+
+## API
+
+### Carousel API
+
+API defines helper props, events and others for the PrimeNG Carousel module.
+
+#### Carousel
+
+Carousel is a content slider featuring various customization options.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| page | number | null | Index of the first item. |
+| numVisible | number | null | Number of items per page. |
+| numScroll | number | null | Number of items to scroll. |
+| responsiveOptions | CarouselResponsiveOptions[] | null | An array of options for responsive design. |
+| orientation | "vertical" | "horizontal" | horizontal | Specifies the layout of the component. |
+| verticalViewPortHeight | string | 300px | Height of the viewport in vertical layout. |
+| contentClass | string | null | Style class of main content. |
+| indicatorsContentClass | string | null | Style class of the indicator items. |
+| indicatorsContentStyle | { [klass: string]: any } | null | Inline style of the indicator items. |
+| indicatorStyleClass | string | null | Style class of the indicators. |
+| indicatorStyle | { [klass: string]: any } | null | Style of the indicators. |
+| value | any[] | null | An array of objects to display. |
+| circular | boolean | false | Defines if scrolling would be infinite. |
+| showIndicators | boolean | true | Whether to display indicator container. |
+| showNavigators | boolean | true | Whether to display navigation buttons in container. |
+| autoplayInterval | number | 0 | Time in milliseconds to scroll items automatically. |
+| styleClass | string | null | Style class of the viewport container. |
+| prevButtonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the Button component. |
+| nextButtonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the Button component. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onPage | event :  CarouselPageEvent | Callback to invoke after scroll. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| item |  | Template for carousel items. |
+| header |  | Template for the carousel header. |
+| footer |  | Template for the carousel footer. |
+| previousicon |  | Template for the previous button icon. |
+| nexticon |  | Template for the next button icon. |
 
 ---
 

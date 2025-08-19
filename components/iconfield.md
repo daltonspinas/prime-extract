@@ -2,14 +2,16 @@
 
 IconField wraps an input and an icon.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 ```
 
-## Basic
+### Basic
 
 A group is created by wrapping the input and icon with the IconField component. Each icon is defined as a child of InputIcon component. In addition, position of the icon can be changed using iconPosition property that the default value is right and also left option is available.
 
@@ -24,7 +26,7 @@ A group is created by wrapping the input and icon with the IconField component. 
 </p-iconfield>
 ```
 
-## Template
+### Template
 
 An eye icon is displayed by default when the image is hovered in preview mode. Use the indicator template for custom content.
 
@@ -40,7 +42,7 @@ An eye icon is displayed by default when the image is hovered in preview mode. U
 </p-iconfield>
 ```
 
-## Float Label
+### Float Label
 
 FloatLabel visually integrates a label with its form element. Visit FloatLabel documentation for more information.
 
@@ -70,7 +72,7 @@ FloatLabel visually integrates a label with its form element. Visit FloatLabel d
 </p-floatlabel>
 ```
 
-## Ifta Label
+### Ifta Label
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -84,7 +86,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-## Sizes
+### Sizes
 
 IconField is compatible with the pSize setting of the input field.
 
@@ -106,15 +108,36 @@ IconField is compatible with the pSize setting of the input field.
 </p-iconfield>
 ```
 
-## Accessibility
+### Accessibility
 
 IconField and InputIcon does not require any roles and attributes.
 
-## IconField
+### IconField
 
 IconField wraps an input and an icon.
 
-## InputIcon
+### InputIcon
+
+## API
+
+### IconField API
+
+API defines helper props, events and others for the PrimeNG IconField module.
+
+#### IconField
+
+IconField wraps an input and an icon.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| iconPosition | "right" | "left" | left | Position of the icon. |
+| styleClass | string | null | Style class of the component. |
+
+#### InputIcon
 
 ---
 

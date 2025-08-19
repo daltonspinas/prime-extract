@@ -2,13 +2,15 @@
 
 Menu is a navigation / command component that supports dynamic and static positioning.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { MenuModule } from 'primeng/menu';
 ```
 
-## Basic
+### Basic
 
 Menu requires a collection of menuitems as its model.
 
@@ -16,7 +18,7 @@ Menu requires a collection of menuitems as its model.
 <p-menu [model]="items" />
 ```
 
-## Group
+### Group
 
 Menu supports one level of nesting by defining children with items property.
 
@@ -24,7 +26,7 @@ Menu supports one level of nesting by defining children with items property.
 <p-menu [model]="items" />
 ```
 
-## Popup
+### Popup
 
 Popup mode is enabled by setting popup property to true and calling toggle method with an event of the target.
 
@@ -33,7 +35,7 @@ Popup mode is enabled by setting popup property to true and calling toggle metho
 <p-button (click)="menu.toggle($event)" icon="pi pi-ellipsis-v"/>
 ```
 
-## Template
+### Template
 
 Menu offers item customization with the item template that receives the menuitem instance from the model as a parameter. The submenu header has its own submenuheader template, additional slots named start and end are provided to embed content before or after the menu.
 
@@ -74,7 +76,7 @@ Menu offers item customization with the item template that receives the menuitem
 </p-menu>
 ```
 
-## Command
+### Command
 
 The function to invoke when an item is clicked is defined using the command property.
 
@@ -83,7 +85,7 @@ The function to invoke when an item is clicked is defined using the command prop
 <p-menu [model]="items" />
 ```
 
-## Router
+### Router
 
 Menu items support navigation via routerLink, programmatic routing using commands, or external URLs.
 
@@ -91,15 +93,80 @@ Menu items support navigation via routerLink, programmatic routing using command
 <p-menu [model]="items" />
 ```
 
-## Accessibility
+### Accessibility
 
 Menu component uses the menu role and the value to describe the menu can either be provided with aria-labelledby or aria-label props. Each list item has a presentation role whereas anchor elements have a menuitem role with aria-label referring to the label of the item and aria-disabled defined if the item is disabled. A submenu within a Menu uses the group role with an aria-labelledby defined as the id of the submenu root menuitem label.
 
-## Menu
+### Menu
 
 Menu is a navigation / command component that supports dynamic and static positioning.
 
-## MenuItem
+### MenuItem
+
+## API
+
+### Menu API
+
+API defines helper props, events and others for the PrimeNG Menu module.
+
+#### Menu
+
+Menu is a navigation / command component that supports dynamic and static positioning.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| model | MenuItem[] | null | An array of menuitems. |
+| popup | boolean | false | Defines if menu would displayed as a popup. |
+| style | { [klass: string]: any } | null | Inline style of the component. |
+| styleClass | string | null | Style class of the component. |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| showTransitionOptions | string | .12s cubic-bezier(0, 0, 0.2, 1) | Transition options of the show animation. |
+| hideTransitionOptions | string | .1s linear | Transition options of the hide animation. |
+| ariaLabel | string | null | Defines a string value that labels an interactive element. |
+| ariaLabelledBy | string | null | Identifier of the underlying input element. |
+| id | string | null | Current id state as a string. |
+| tabindex | number | 0 | Index of the element in tabbing order. |
+| appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onShow | value :  any | Callback to invoke when overlay menu is shown. |
+| onHide | value :  any | Callback to invoke when overlay menu is hidden. |
+| onBlur | event :  Event | Callback to invoke when the list loses focus. |
+| onFocus | event :  Event | Callback to invoke when the list receives focus. |
+
+##### Methods
+
+Defines methods that can be accessed by the component's reference.
+
+| name | parameters | description |
+| --- | --- | --- |
+| toggle | event :  Event | Toggles the visibility of the popup menu. |
+| show | event :  any | Displays the popup menu. |
+| hide |  | Hides the popup menu. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| start |  | Defines template option for start. |
+| end |  | Defines template option for end. |
+| header |  | Defines template option for header. |
+| item |  | Defines template option for item. |
+| submenuheader |  | Defines template option for item. |
+
+#### MenuItem
 
 ---
 

@@ -2,13 +2,15 @@
 
 AutoComplete is an input component that provides real-time suggestions when being typed.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { AutoCompleteModule } from 'primeng/autocomplete';
 ```
 
-## Basic
+### Basic
 
 AutoComplete uses ngModel for two-way binding, requires a list of suggestions and a completeMethod to query for the results. The completeMethod gets the query text as event.query property and should update the suggestions with the search results.
 
@@ -16,7 +18,7 @@ AutoComplete uses ngModel for two-way binding, requires a list of suggestions an
 <p-autocomplete [(ngModel)]="value" [suggestions]="items" (completeMethod)="search($event)" />
 ```
 
-## Dropdown
+### Dropdown
 
 Enabling dropdown property displays a button next to the input field where click behavior of the button is defined using dropdownMode property that takes blank or current as possible values. blank is the default mode to send a query with an empty string whereas current setting sends a query with the current value of the input.
 
@@ -24,7 +26,7 @@ Enabling dropdown property displays a button next to the input field where click
 <p-autocomplete [(ngModel)]="value" [dropdown]="true" [suggestions]="items" (completeMethod)="search($event)" />
 ```
 
-## Objects
+### Objects
 
 AutoComplete can also work with objects using the optionLabel property that defines the label to display as a suggestion. The value passed to the model would still be the object instance of a suggestion. Here is an example with a Country object that has name and code fields such as {name: "United States", code:"USA"}.
 
@@ -32,7 +34,7 @@ AutoComplete can also work with objects using the optionLabel property that defi
 <p-autocomplete [(ngModel)]="selectedCountry" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" optionLabel="name" />
 ```
 
-## Template
+### Template
 
 AutoComplete offers multiple templates for customization through templating.
 
@@ -55,7 +57,7 @@ AutoComplete offers multiple templates for customization through templating.
 </p-autocomplete>
 ```
 
-## Group
+### Group
 
 Option grouping is enabled when group property is set to true. group template is available to customize the option groups. All templates get the option instance as the default local template variable.
 
@@ -70,7 +72,7 @@ Option grouping is enabled when group property is set to true. group template is
 </p-autocomplete>
 ```
 
-## Force Selection
+### Force Selection
 
 ForceSelection mode validates the manual input to check whether it also exists in the suggestions list, if not the input value is cleared to make sure the value passed to the model is always one of the suggestions.
 
@@ -78,7 +80,7 @@ ForceSelection mode validates the manual input to check whether it also exists i
 <p-autocomplete [(ngModel)]="selectedCountry" [forceSelection]="true" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" optionLabel="name" />
 ```
 
-## Virtual Scroll
+### Virtual Scroll
 
 Virtual scrolling is an efficient way of rendering the options by displaying a small subset of data in the viewport at any time. When dealing with huge number of options, it is suggested to enable virtual scrolling to avoid performance issues. Usage is simple as setting virtualScroll property to true and defining virtualScrollItemSize to specify the height of an item.
 
@@ -86,7 +88,7 @@ Virtual scrolling is an efficient way of rendering the options by displaying a s
 <p-autocomplete [(ngModel)]="selectedItem" [virtualScroll]="true" [suggestions]="filteredItems" [virtualScrollItemSize]="34" (completeMethod)="filterItems($event)" optionLabel="label" [dropdown]="true" />
 ```
 
-## Multiple
+### Multiple
 
 Multiple mode is enabled using multiple property used to select more than one value from the autocomplete. In this case, value reference should be an array.
 
@@ -98,7 +100,7 @@ Multiple mode is enabled using multiple property used to select more than one va
 <p-autocomplete [(ngModel)]="value2" inputId="multiple-ac-2" multiple fluid (completeMethod)="search($event)" [typeahead]="false" />
 ```
 
-## Float Label
+### Float Label
 
 A floating label appears on top of the input field when focused. Visit FloatLabel documentation for more information.
 
@@ -119,7 +121,7 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 </p-floatlabel>
 ```
 
-## Ifta Label
+### Ifta Label
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -130,7 +132,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-iftalabel>
 ```
 
-## Sizes
+### Sizes
 
 AutoComplete provides small and large sizes as alternatives to the base.
 
@@ -140,7 +142,7 @@ AutoComplete provides small and large sizes as alternatives to the base.
 <p-autocomplete [(ngModel)]="value3" [suggestions]="items" (completeMethod)="search()" size="large" placeholder="Large" dropdown />
 ```
 
-## Filled
+### Filled
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -148,7 +150,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-autocomplete [(ngModel)]="selectedItem" [suggestions]="suggestions" (completeMethod)="search($event)" variant="filled" />
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -156,7 +158,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-autocomplete [(ngModel)]="selectedItem" [suggestions]="suggestions" placeholder="Disabled" (completeMethod)="search($event)" [disabled]="true" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -165,7 +167,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-autocomplete [(ngModel)]="value2" [suggestions]="suggestions" [invalid]="!value2" (completeMethod)="search($event)" variant="filled" placeholder="Code" />
 ```
 
-## Forms
+### Forms
 
 AutoComplete can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -202,7 +204,7 @@ AutoComplete can also be used with reactive forms. In this case, the formControl
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 Value to describe the component can either be provided via label tag combined with inputId prop or using ariaLabelledBy, ariaLabel props. The input element has combobox role in addition to aria-autocomplete, aria-haspopup and aria-expanded attributes. The relation between the input and the popup is created with aria-controls and aria-activedescendant attribute is used to instruct screen reader which option to read during keyboard navigation within the popup list.
 
@@ -216,9 +218,133 @@ Value to describe the component can either be provided via label tag combined wi
 <p-autocomplete ariaLabel="City" />
 ```
 
-## AutoComplete
+### AutoComplete
 
 AutoComplete is an input component that provides real-time suggestions when being typed.
+
+## API
+
+### AutoComplete API
+
+API defines helper props, events and others for the PrimeNG AutoComplete module.
+
+#### AutoComplete
+
+AutoComplete is an input component that provides real-time suggestions when being typed.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| minLength | number | 1 | Minimum number of characters to initiate a search. |
+| minQueryLength | number | null | Minimum number of characters to initiate a search. |
+| delay | number | 300 | Delay between keystrokes to wait before sending a query. |
+| panelStyle | { [klass: string]: any } | null | Inline style of the overlay panel element. |
+| styleClass | string | null | Style class of the component. |
+| panelStyleClass | string | null | Style class of the overlay panel element. |
+| inputStyle | { [klass: string]: any } | null | Inline style of the input field. |
+| inputId | string | null | Identifier of the focus input to match a label defined for the component. |
+| inputStyleClass | string | null | Inline style of the input field. |
+| placeholder | string | null | Hint text for the input field. |
+| readonly | boolean | false | When present, it specifies that the input cannot be typed. |
+| scrollHeight | string | 200px | Maximum height of the suggestions panel. |
+| lazy | boolean | false | Defines if data is loaded and interacted with in lazy manner. |
+| virtualScroll | boolean | false | Whether the data should be loaded on demand during scroll. |
+| virtualScrollItemSize | number | null | Height of an item in the list for VirtualScrolling. |
+| virtualScrollOptions | ScrollerOptions | null | Whether to use the scroller feature. The properties of scroller component can be used like an object in it. |
+| autoHighlight | boolean | false | When enabled, highlights the first item in the list by default. |
+| forceSelection | boolean | false | When present, autocomplete clears the manual input if it does not match of the suggestions to force only accepting values from the suggestions. |
+| type | string | text | Type of the input, defaults to "text". |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| ariaLabel | string | null | Defines a string that labels the input for accessibility. |
+| dropdownAriaLabel | string | null | Defines a string that labels the dropdown button for accessibility. |
+| ariaLabelledBy | string | null | Specifies one or more IDs in the DOM that labels the input field. |
+| dropdownIcon | string | null | Icon class of the dropdown icon. |
+| unique | boolean | true | Ensures uniqueness of selected items on multiple mode. |
+| group | boolean | false | Whether to display options as grouped when nested options are provided. |
+| completeOnFocus | boolean | false | Whether to run a query when input receives focus. |
+| showClear | boolean | false | When enabled, a clear icon is displayed to clear the value. |
+| dropdown | boolean | false | Displays a button next to the input field when enabled. |
+| showEmptyMessage | boolean | true | Whether to show the empty message or not. |
+| dropdownMode | string | blank | Specifies the behavior dropdown button. Default "blank" mode sends an empty string and "current" mode sends the input value. |
+| multiple | boolean | false | Specifies if multiple values can be selected. |
+| tabindex | number | null | Index of the element in tabbing order. |
+| dataKey | string | null | A property to uniquely identify a value in options. |
+| emptyMessage | string | null | Text to display when there is no data. Defaults to global value in i18n translation configuration. |
+| showTransitionOptions | string | .12s cubic-bezier(0, 0, 0.2, 1) | Transition options of the show animation. |
+| hideTransitionOptions | string | .1s linear | Transition options of the hide animation. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| autocomplete | string | off | Used to define a string that autocomplete attribute the current element. |
+| optionGroupChildren | string | items | Name of the options field of an option group. |
+| optionGroupLabel | string | label | Name of the label field of an option group. |
+| overlayOptions | OverlayOptions | null | Options for the overlay element. |
+| suggestions | any[] | null | An array of suggestions to display. |
+| optionLabel | string | ((item: any) => string) | null | Property name or getter function to use as the label of an option. |
+| optionValue | string | ((item: any) => string) | null | Property name or getter function to use as the value of an option. |
+| id | string | null | Unique identifier of the component. |
+| searchMessage | string | '{0} results are available' | Text to display when the search is active. Defaults to global value in i18n translation configuration. |
+| emptySelectionMessage | string | 'No selected item' | Text to display when filtering does not return any results. Defaults to global value in i18n translation configuration. |
+| selectionMessage | string | '{0} items selected' | Text to be displayed in hidden accessible field when options are selected. Defaults to global value in i18n translation configuration. |
+| autoOptionFocus | boolean | false | Whether to focus on the first visible or selected element when the overlay panel is shown. |
+| selectOnFocus | boolean | false | When enabled, the focused option is selected. |
+| searchLocale | boolean | false | Locale to use in searching. The default locale is the host environment's current locale. |
+| optionDisabled | string | ((item: any) => string) | null | Property name or getter function to use as the disabled flag of an option, defaults to false when not defined. |
+| focusOnHover | boolean | true | When enabled, the hovered option will be focused. |
+| typeahead | boolean | true | Whether typeahead is active or not. |
+| appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| fluid | InputSignalWithTransform<boolean, unknown> | false | Spans 100% width of the container when enabled. |
+| variant | InputSignal<"outlined" | "filled"> | 'outlined' | Specifies the input variant of the component. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
+| inputSize | InputSignal<number> | undefined | Specifies the visible width of the input element in characters. |
+| pattern | InputSignal<string> | undefined | Specifies the value must match the pattern. |
+| min | InputSignal<number> | undefined | The value must be greater than or equal to the value. |
+| max | InputSignal<number> | undefined | The value must be less than or equal to the value. |
+| step | InputSignal<number> | undefined | Unless the step is set to the any literal, the value must be min + an integral multiple of the step. |
+| minlength | InputSignal<number> | undefined | The number of characters (code points) must not be less than the value of the attribute, if non-empty. |
+| maxlength | InputSignal<number> | undefined | The number of characters (code points) must not exceed the value of the attribute. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| completeMethod | event :  AutoCompleteCompleteEvent | Callback to invoke to search for suggestions. |
+| onSelect | event :  AutoCompleteSelectEvent | Callback to invoke when a suggestion is selected. |
+| onUnselect | event :  AutoCompleteUnselectEvent | Callback to invoke when a selected value is removed. |
+| onFocus | event :  Event | Callback to invoke when the component receives focus. |
+| onBlur | event :  Event | Callback to invoke when the component loses focus. |
+| onDropdownClick | event :  AutoCompleteDropdownClickEvent | Callback to invoke to when dropdown button is clicked. |
+| onClear | event :  Event | Callback to invoke when clear button is clicked. |
+| onKeyUp | event :  KeyboardEvent | Callback to invoke on input key up. |
+| onShow | event :  Event | Callback to invoke on overlay is shown. |
+| onHide | event :  Event | Callback to invoke on overlay is hidden. |
+| onLazyLoad | event :  AutoCompleteLazyLoadEvent | Callback to invoke on lazy load data. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| item |  | Custom item template. |
+| empty |  | Custom empty message template. |
+| header |  | Custom header template. |
+| footer |  | Custom footer template. |
+| selecteditem |  | Custom selected item template. |
+| group |  | Custom group item template. |
+| loader |  | Custom loader template. |
+| removeicon |  | Custom remove icon template. |
+| loadingicon |  | Custom loading icon template. |
+| clearicon |  | Custom clear icon template. |
+| dropdownicon |  | Custom dropdown icon template. |
 
 ---
 

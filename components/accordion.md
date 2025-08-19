@@ -2,13 +2,15 @@
 
 Accordion groups a collection of contents in tabs.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { AccordionModule } from 'primeng/accordion';
 ```
 
-## Basic
+### Basic
 
 Accordion is defined using AccordionPanel, AccordionHeader and AccordionContent components. Each AccordionPanel must contain a unique value property to specify the active item.
 
@@ -53,7 +55,7 @@ Accordion is defined using AccordionPanel, AccordionHeader and AccordionContent 
 </p-accordion>
 ```
 
-## Dynamic
+### Dynamic
 
 AccordionPanel can be generated dynamically using the standard @for block.
 
@@ -70,7 +72,7 @@ AccordionPanel can be generated dynamically using the standard @for block.
 </p-accordion>
 ```
 
-## Multiple
+### Multiple
 
 Only one tab at a time can be active by default, enabling multiple property changes this behavior to allow multiple tabs. In this case activeIndex needs to be an array.
 
@@ -113,7 +115,7 @@ Only one tab at a time can be active by default, enabling multiple property chan
 </p-accordion>
 ```
 
-## Disabled
+### Disabled
 
 Enabling disabled property of an AccordionTab prevents user interaction.
 
@@ -159,7 +161,7 @@ Enabling disabled property of an AccordionTab prevents user interaction.
 </p-accordion>
 ```
 
-## Controlled
+### Controlled
 
 Panels can be controlled programmatically using value property as a model.
 
@@ -208,7 +210,7 @@ Panels can be controlled programmatically using value property as a model.
     </p-accordion>
 ```
 
-## Template
+### Template
 
 Accordion is customized with toggleicon template.
 
@@ -290,21 +292,79 @@ Accordion is customized with toggleicon template.
 </p-accordion>
 ```
 
-## Accessibility
+### Accessibility
 
 Accordion header elements have a button role and use aria-controls to define the id of the content section along with aria-expanded for the visibility state. The value to read a header element defaults to the value of the header property and can be customized by defining an aria-label or aria-labelledby property. Each header has a heading role, for which the level is customized by headerAriaLevel and has a default level of 2 as per W3C specifications.
 
-## Accordion
+### Accordion
 
 Accordion groups a collection of contents in tabs.
 
-## AccordionPanel
+### AccordionPanel
 
 AccordionPanel is a helper component for Accordion component.
 
-## AccordionHeader
+### AccordionHeader
 
 AccordionHeader is a helper component for Accordion component.
+
+## API
+
+### Accordion API
+
+API defines helper props, events and others for the PrimeNG Accordion module.
+
+#### Accordion
+
+Accordion groups a collection of contents in tabs.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | ModelSignal<string | number | string[] | number[]> | undefined | Value of the active tab. |
+| multiple | InputSignalWithTransform<boolean, any> | false | When enabled, multiple tabs can be activated at the same time. |
+| styleClass | string | null | Class of the element. |
+| expandIcon | string | null | Icon of a collapsed tab. |
+| collapseIcon | string | null | Icon of an expanded tab. |
+| selectOnFocus | InputSignalWithTransform<boolean, any> | false | When enabled, the focused tab is activated. |
+| transitionOptions | string | 400ms cubic-bezier(0.86, 0, 0.07, 1) | Transition options of the animation. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onClose | event :  AccordionTabCloseEvent | Callback to invoke when an active tab is collapsed by clicking on the header. |
+| onOpen | event :  AccordionTabOpenEvent | Callback to invoke when a tab gets expanded. |
+
+#### AccordionPanel
+
+AccordionPanel is a helper component for Accordion component.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | ModelSignal<string | number | string[] | number[]> | undefined | Value of the active tab. |
+| disabled | InputSignalWithTransform<any, boolean> | false | Disables the tab when enabled. |
+
+#### AccordionHeader
+
+AccordionHeader is a helper component for Accordion component.
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| toggleicon |  | Toggle icon template. |
 
 ---
 

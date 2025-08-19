@@ -2,13 +2,15 @@
 
 Skeleton is a placeholder to display instead of the actual content.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { SkeletonModule } from 'primeng/skeleton';
 ```
 
-## Shapes
+### Shapes
 
 Various shapes and sizes can be created using styling properties like shape, width, height, borderRadius and class.
 
@@ -40,7 +42,7 @@ Various shapes and sizes can be created using styling properties like shape, wid
 <p-skeleton shape="circle" size="5rem" />
 ```
 
-## Card
+### Card
 
 Sample Card implementation using different Skeleton components and Tailwind CSS utilities.
 
@@ -62,7 +64,7 @@ Sample Card implementation using different Skeleton components and Tailwind CSS 
 </div>
 ```
 
-## List
+### List
 
 Sample List implementation using different Skeleton components and Tailwind CSS utilities.
 
@@ -109,7 +111,7 @@ Sample List implementation using different Skeleton components and Tailwind CSS 
 </div>
 ```
 
-## DataTable
+### DataTable
 
 Sample DataTable implementation using different Skeleton components and Tailwind CSS utilities.
 
@@ -134,13 +136,36 @@ Sample DataTable implementation using different Skeleton components and Tailwind
 </p-table>
 ```
 
-## Accessibility
+### Accessibility
 
 Skeleton uses aria-hidden as "true" so that it gets ignored by screen readers, any valid attribute is passed to the root element so you may customize it further if required. If multiple skeletons are grouped inside a container, you may use aria-busy on the container element as well to indicate the loading process.
 
-## Skeleton
+### Skeleton
 
 Skeleton is a placeholder to display instead of the actual content.
+
+## API
+
+### Skeleton API
+
+API defines helper props, events and others for the PrimeNG Skeleton module.
+
+#### Skeleton
+
+Skeleton is a placeholder to display instead of the actual content.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| styleClass | string | null | Class of the element. |
+| shape | string | rectangle | Shape of the element. |
+| borderRadius | string | null | Border radius of the element, defaults to value from theme. |
+| size | string | null | Size of the skeleton. |
+| width | string | 100% | Width of the element. |
+| height | string | 1rem | Height of the element. |
 
 ---
 

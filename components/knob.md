@@ -2,13 +2,15 @@
 
 Knob is a form component to define number inputs with a dial.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { KnobModule } from 'primeng/knob';
 ```
 
-## Basic
+### Basic
 
 Knob is an input component and used with the standard ngModel directive.
 
@@ -16,7 +18,7 @@ Knob is an input component and used with the standard ngModel directive.
 <p-knob [(ngModel)]="value" />
 ```
 
-## Min/Max
+### Min/Max
 
 Boundaries are configured with the min and max properties whose defaults are 0 and 100 respectively.
 
@@ -24,7 +26,7 @@ Boundaries are configured with the min and max properties whose defaults are 0 a
 <p-knob [(ngModel)]="value" [min]="-50" [max]="50" />
 ```
 
-## Step
+### Step
 
 Size of each movement is defined with the step property.
 
@@ -32,7 +34,7 @@ Size of each movement is defined with the step property.
 <p-knob [(ngModel)]="value" [step]="10" />
 ```
 
-## Template
+### Template
 
 Label is a string template that can be customized with the valueTemplate property having 60 as the placeholder .
 
@@ -40,7 +42,7 @@ Label is a string template that can be customized with the valueTemplate propert
 <p-knob [(ngModel)]="value" valueTemplate="{value}%" />
 ```
 
-## Stroke
+### Stroke
 
 The border size is specified with the strokeWidth property as a number in pixels.
 
@@ -48,7 +50,7 @@ The border size is specified with the strokeWidth property as a number in pixels
 <p-knob [(ngModel)]="value" [strokeWidth]="5" />
 ```
 
-## Size
+### Size
 
 Diameter of the knob is defined in pixels using the size property.
 
@@ -56,7 +58,7 @@ Diameter of the knob is defined in pixels using the size property.
 <p-knob [(ngModel)]="value" [size]="200" />
 ```
 
-## Color
+### Color
 
 Colors are customized with the textColor, rangeColor and valueColor properties.
 
@@ -64,7 +66,7 @@ Colors are customized with the textColor, rangeColor and valueColor properties.
 <p-knob [(ngModel)]="value" valueColor="SlateGray" rangeColor="MediumTurquoise" />
 ```
 
-## Reactive
+### Reactive
 
 Knob can be controlled with custom controls as well.
 
@@ -76,7 +78,7 @@ Knob can be controlled with custom controls as well.
 </div>
 ```
 
-## ReadOnly
+### ReadOnly
 
 When readonly present, value cannot be edited.
 
@@ -84,7 +86,7 @@ When readonly present, value cannot be edited.
 <p-knob [(ngModel)]="value" [readonly]="true" />
 ```
 
-## Forms
+### Forms
 
 Knob can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -112,7 +114,7 @@ Knob can also be used with reactive forms. In this case, the formControlName pro
 </form>
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, a visual hint is applied to indicate that the Knob cannot be interacted with.
 
@@ -120,7 +122,7 @@ When disabled is present, a visual hint is applied to indicate that the Knob can
 <p-knob [(ngModel)]="value" [disabled]="true" />
 ```
 
-## Accessibility
+### Accessibility
 
 Knob element component uses slider role in addition to the aria-valuemin, aria-valuemax and aria-valuenow attributes. Value to describe the component can be defined using ariaLabelledBy and ariaLabel props.
 
@@ -131,9 +133,53 @@ Knob element component uses slider role in addition to the aria-valuemin, aria-v
 <p-knob ariaLabel="Number"/>
 ```
 
-## Knob
+### Knob
 
 Knob is a form component to define number inputs with a dial.
+
+## API
+
+### Knob API
+
+API defines helper props, events and others for the PrimeNG Knob module.
+
+#### Knob
+
+Knob is a form component to define number inputs with a dial.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| styleClass | string | null | Style class of the component. |
+| ariaLabel | string | null | Defines a string that labels the input for accessibility. |
+| ariaLabelledBy | string | null | Specifies one or more IDs in the DOM that labels the input field. |
+| tabindex | number | 0 | Index of the element in tabbing order. |
+| valueColor | string | ... | Background of the value. |
+| rangeColor | string | ... | Background color of the range. |
+| textColor | string | ... | Color of the value text. |
+| valueTemplate | string | {value} | Template string of the value. |
+| size | number | 100 | Size of the component in pixels. |
+| min | number | 0 | Mininum boundary value. |
+| max | number | 100 | Maximum boundary value. |
+| step | number | 1 | Step factor to increment/decrement the value. |
+| strokeWidth | number | 14 | Width of the knob stroke. |
+| showValue | boolean | true | Whether the show the value inside the knob. |
+| readonly | boolean | false | When present, it specifies that the component value cannot be edited. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onChange | value :  number | Callback to invoke on value change. |
 
 ---
 

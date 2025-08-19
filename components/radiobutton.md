@@ -2,13 +2,15 @@
 
 RadioButton is an extension to standard radio button element with theming.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { RadioButtonModule } from 'primeng/radiobutton';
 ```
 
-## Group
+### Group
 
 RadioButton is used as a controlled input with value and ngModel properties.
 
@@ -36,7 +38,7 @@ RadioButton is used as a controlled input with value and ngModel properties.
 </div>
 ```
 
-## Dynamic
+### Dynamic
 
 RadioButtons can be generated using a list of values.
 
@@ -49,7 +51,7 @@ RadioButtons can be generated using a list of values.
 </div>
 ```
 
-## Filled
+### Filled
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -57,7 +59,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-radiobutton [(ngModel)]="checked" variant="filled" />
 ```
 
-## Sizes
+### Sizes
 
 RadioButton provides small and large sizes as alternatives to the base.
 
@@ -78,7 +80,7 @@ RadioButton provides small and large sizes as alternatives to the base.
 </div>
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -87,7 +89,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-radiobutton [(ngModel)]="value" [value]="2" [disabled]="true" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -95,7 +97,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-radiobutton [(ngModel)]="value" [invalid]="!value"  />
 ```
 
-## Forms
+### Forms
 
 RadioButton can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -138,7 +140,7 @@ RadioButton can also be used with reactive forms. In this case, the formControlN
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 RadioButton component uses a hidden native radio button element internally that is only visible to screen readers. Value to describe the component can either be provided via label tag combined with inputId prop or using ariaLabelledBy, ariaLabel props.
 
@@ -152,9 +154,58 @@ RadioButton component uses a hidden native radio button element internally that 
 <p-radiobutton ariaLabel="Three" />
 ```
 
-## RadioButton
+### RadioButton
 
 RadioButton is an extension to standard radio button element with theming.
+
+## API
+
+### RadioButton API
+
+API defines helper props, events and others for the PrimeNG RadioButton module.
+
+#### RadioButton
+
+RadioButton is an extension to standard radio button element with theming.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| value | any | null | Value of the radiobutton. |
+| tabindex | number | null | Index of the element in tabbing order. |
+| inputId | string | null | Identifier of the focus input to match a label defined for the component. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+| ariaLabel | string | null | Used to define a string that labels the input element. |
+| styleClass | string | null | Style class of the component. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| binary | boolean | false | Allows to select a boolean value. |
+| variant | InputSignal<"outlined" | "filled"> | undefined | Specifies the input variant of the component. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onClick | event :  RadioButtonClickEvent | Callback to invoke on radio button click. |
+| onFocus | event :  Event | Callback to invoke when the receives focus. |
+| onBlur | event :  Event | Callback to invoke when the loses focus. |
+
+##### Methods
+
+Defines methods that can be accessed by the component's reference.
+
+| name | parameters | description |
+| --- | --- | --- |
+| focus |  | Applies focus to input field. |
 
 ---
 

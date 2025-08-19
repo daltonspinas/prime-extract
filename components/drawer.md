@@ -2,13 +2,15 @@
 
 Drawer is a container component displayed as an overlay.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { DrawerModule } from 'primeng/drawer';
 ```
 
-## Basic
+### Basic
 
 Drawer is used as a container and visibility is controlled with a binding to visible.
 
@@ -23,7 +25,7 @@ Drawer is used as a container and visibility is controlled with a binding to vis
 <p-button (click)="visible = true" icon="pi pi-arrow-right" />
 ```
 
-## Position
+### Position
 
 Drawer location is configured with the position property that can take left, right, top and bottom as a value.
 
@@ -67,7 +69,7 @@ Drawer location is configured with the position property that can take left, rig
 </div>
 ```
 
-## Size
+### Size
 
 Drawer dimension can be defined with style or class properties, this responsive example utilizes Tailwind.
 
@@ -80,7 +82,7 @@ Drawer dimension can be defined with style or class properties, this responsive 
 <p-button (click)="visible = true" icon="pi pi-arrow-right" />
 ```
 
-## Full Screen
+### Full Screen
 
 Drawer can cover the whole page when fullScreen property is enabled.
 
@@ -93,7 +95,7 @@ Drawer can cover the whole page when fullScreen property is enabled.
 <p-button (click)="visible = true" icon="pi pi-window-maximize" />
 ```
 
-## Template
+### Template
 
 Drawer is customizable by header, content, footer templates.
 
@@ -119,7 +121,7 @@ Drawer is customizable by header, content, footer templates.
 <button pButton (click)="visible = true" icon="pi pi-plus"></button>
 ```
 
-## Headless
+### Headless
 
 Headless mode allows you to customize the entire user interface instead of the default elements.
 
@@ -302,7 +304,7 @@ Headless mode allows you to customize the entire user interface instead of the d
 <p-button (click)="visible = true" icon="pi pi-bars" />
 ```
 
-## Accessibility
+### Accessibility
 
 Drawer component uses complementary role by default, since any attribute is passed to the root element aria role can be changed depending on your use case and additional attributes like aria-labelledby can be added. In addition aria-modal is added since focus is kept within the drawer when opened.
 
@@ -323,9 +325,67 @@ Drawer component uses complementary role by default, since any attribute is pass
 </p-drawer>
 ```
 
-## Drawer
+### Drawer
 
 Sidebar is a panel component displayed as an overlay at the edges of the screen.
+
+## API
+
+### Drawer API
+
+API defines helper props, events and others for the PrimeNG Drawer module.
+
+#### Drawer
+
+Sidebar is a panel component displayed as an overlay at the edges of the screen.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| appendTo | any | body | Target element to attach the dialog, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+| blockScroll | boolean | false | Whether to block scrolling of the document when drawer is active. |
+| style | { [klass: string]: any } | null | Inline style of the component. |
+| styleClass | string | null | Style class of the component. |
+| ariaCloseLabel | string | null | Aria label of the close icon. |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| modal | boolean | true | Whether an overlay mask is displayed behind the drawer. |
+| closeButtonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the Button component. |
+| dismissible | boolean | true | Whether to dismiss drawer on click of the mask. |
+| showCloseIcon | boolean | true | Whether to display the close icon. |
+| closeOnEscape | boolean | true | Specifies if pressing escape key should hide the drawer. |
+| transitionOptions | string | 150ms cubic-bezier(0, 0, 0.2, 1) | Transition options of the animation. |
+| visible | boolean | null | Specifies the visibility of the dialog. |
+| position | string | null | Specifies the position of the drawer, valid values are "left", "right", "bottom" and "top". |
+| fullScreen | boolean | null | Adds a close icon to the header to hide the dialog. |
+| header | string | null | Title content of the dialog. |
+| maskStyle | { [klass: string]: any } | null | Style of the mask. |
+| closable | boolean | true | Whether to display close button. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onShow | value :  any | Callback to invoke when dialog is shown. |
+| onHide | value :  any | Callback to invoke when dialog is hidden. |
+| visibleChange | value :  boolean | Callback to invoke when dialog visibility is changed. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| header |  | Content template for the content of the drawer. |
+| footer |  | Header template for the header of the drawer. |
+| content |  | Content template for the footer of the drawer. |
+| closeicon |  | Close icon template for the close icon of the drawer. |
+| headless |  | Headless template for the headless drawer. |
 
 ---
 

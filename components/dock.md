@@ -2,13 +2,15 @@
 
 Dock is a navigation component consisting of menuitems.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { DockModule } from 'primeng/dock';
 ```
 
-## Basic
+### Basic
 
 Dock requires a collection of menuitems as its model. Default location is bottom and other sides are also available when defined with the position property. Content of the dock component is defined by item template.
 
@@ -20,7 +22,7 @@ Dock requires a collection of menuitems as its model. Default location is bottom
 </p-dock>
 ```
 
-## Advanced
+### Advanced
 
 A mock desktop UI implemented with various components in addition to Dock.
 
@@ -90,15 +92,50 @@ A mock desktop UI implemented with various components in addition to Dock.
     </p-galleria>
 ```
 
-## Accessibility
+### Accessibility
 
 Dock component uses the menu role with the aria-orientation and the value to describe the menu can either be provided with aria-labelledby or aria-label props. Each list item has a presentation role whereas anchor elements have a menuitem role with aria-label referring to the label of the item and aria-disabled defined if the item is disabled.
 
-## Dock
+### Dock
 
 Dock is a navigation component consisting of menuitems.
 
-## MenuItem
+### MenuItem
+
+## API
+
+### Dock API
+
+API defines helper props, events and others for the PrimeNG Dock module.
+
+#### Dock
+
+Dock is a navigation component consisting of menuitems.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| id | string | null | Current id state as a string. |
+| styleClass | string | null | Class of the element. |
+| model | MenuItem[] | null | MenuModel instance to define the action items. |
+| position | "right" | "left" | "top" | "bottom" | bottom | Position of element. |
+| ariaLabel | string | null | Defines a string that labels the input for accessibility. |
+| breakpoint | string | 960px | The breakpoint to define the maximum width boundary. |
+| ariaLabelledBy | string | null | Defines a string that labels the dropdown button for accessibility. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onFocus | event :  FocusEvent | Callback to execute when button is focused. |
+| onBlur | event :  FocusEvent | Callback to invoke when the component loses focus. |
+
+#### MenuItem
 
 ---
 

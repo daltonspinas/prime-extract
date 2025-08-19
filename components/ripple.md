@@ -2,13 +2,15 @@
 
 Ripple directive adds ripple effect to the host element.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { RippleModule } from 'primeng/ripple';
 ```
 
-## Default
+### Default
 
 Default Demo Content.
 
@@ -16,7 +18,7 @@ Default Demo Content.
 <div pRipple class="ripple-box">Default</div>
 ```
 
-## Custom
+### Custom
 
 Styling Demo Content.
 
@@ -32,7 +34,7 @@ Styling Demo Content.
 </div>
 ```
 
-## Accessibility
+### Accessibility
 
 Ripple element has the aria-hidden attribute as true so that it gets ignored by the screen readers.
 

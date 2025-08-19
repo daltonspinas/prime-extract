@@ -2,13 +2,15 @@
 
 Card is a flexible container component.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { CardModule } from 'primeng/card';
 ```
 
-## Basic
+### Basic
 
 A simple Card is created with a header property along with the content as children.
 
@@ -20,7 +22,7 @@ A simple Card is created with a header property along with the content as childr
 </p-card>
 ```
 
-## Advanced
+### Advanced
 
 Card content can be customized further with subHeader, header and footer properties.
 
@@ -44,7 +46,7 @@ Card content can be customized further with subHeader, header and footer propert
 </p-card>
 ```
 
-## Accessibility
+### Accessibility
 
 A card can be utilized in many use cases as a result no role is enforced, in fact a role may not be necessary if the card is used for presentational purposes only. Any valid attribute is passed to the container element so if you require to use one of the landmark roles like region, you may use the role property.
 
@@ -54,9 +56,30 @@ A card can be utilized in many use cases as a result no role is enforced, in fac
 </p-card>
 ```
 
-## Card
+### Card
 
 Card is a flexible container component.
+
+## API
+
+### Card API
+
+API defines helper props, events and others for the PrimeNG Card module.
+
+#### Card
+
+Card is a flexible container component.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| header | string | null | Header of the card. |
+| subheader | string | null | Subheader of the card. |
+| style | - | null | Inline style of the element. |
+| styleClass | string | null | Class of the element. |
 
 ---
 

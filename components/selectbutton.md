@@ -2,13 +2,15 @@
 
 SelectButton is used to choose single or multiple items from a list using buttons.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { SelectButtonModule } from 'primeng/selectbutton';
 ```
 
-## Basic
+### Basic
 
 SelectButton requires a value to bind and a collection of options.
 
@@ -16,7 +18,7 @@ SelectButton requires a value to bind and a collection of options.
 <p-selectbutton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value" aria-labelledby="basic" />
 ```
 
-## Multiple
+### Multiple
 
 SelectButton allows selecting only one item by default and setting multiple option enables choosing more than one item. In multiple case, model property should be an array.
 
@@ -24,7 +26,7 @@ SelectButton allows selecting only one item by default and setting multiple opti
 <p-selectbutton [options]="paymentOptions" [(ngModel)]="value" [multiple]="true" optionLabel="name" optionValue="value" />
 ```
 
-## Template
+### Template
 
 For custom content support define a template named item where the default local template variable refers to an option.
 
@@ -36,7 +38,7 @@ For custom content support define a template named item where the default local 
 </p-selectbutton>
 ```
 
-## Sizes
+### Sizes
 
 SelectButton provides small and large sizes as alternatives to the base.
 
@@ -46,7 +48,7 @@ SelectButton provides small and large sizes as alternatives to the base.
 <p-selectbutton [(ngModel)]="value3" [options]="options" size="large" />
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused entirely. Certain options can also be disabled using the optionDisabled property.
 
@@ -56,7 +58,7 @@ When disabled is present, the element cannot be edited and focused entirely. Cer
 <p-selectbutton [options]="stateOptions2" [(ngModel)]="value2" optionLabel="label" optionValue="value" optionDisabled="constant" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -64,7 +66,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-selectbutton [options]="stateOptions" [(ngModel)]="value" optionLabel="label" optionValue="value" [invalid]="value === null" />
 ```
 
-## Forms
+### Forms
 
 SelectButton can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -92,13 +94,65 @@ SelectButton can also be used with reactive forms. In this case, the formControl
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 The container element that wraps the buttons has a group role whereas each button element uses button role and aria-pressed is updated depending on selection state. Value to describe an option is automatically set using the ariaLabel property that refers to the label of an option so it is still suggested to define a label even the option display consists of presentational content like icons only.
 
-## SelectButton
+### SelectButton
 
 SelectButton is used to choose single or multiple items from a list using buttons.
+
+## API
+
+### SelectButton API
+
+API defines helper props, events and others for the PrimeNG SelectButton module.
+
+#### SelectButton
+
+SelectButton is used to choose single or multiple items from a list using buttons.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| options | any[] | null | An array of selectitems to display as the available options. |
+| optionLabel | string | null | Name of the label field of an option. |
+| optionValue | string | null | Name of the value field of an option. |
+| optionDisabled | string | null | Name of the disabled field of an option. |
+| unselectable | boolean | null | Whether selection can be cleared. |
+| tabindex | number | 0 | Index of the element in tabbing order. |
+| multiple | boolean | false | When specified, allows selecting multiple values. |
+| allowEmpty | boolean | true | Whether selection can not be cleared. |
+| styleClass | string | null | Style class of the component. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+| dataKey | string | null | A property to uniquely identify a value in options. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
+| fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onOptionClick | event :  SelectButtonOptionClickEvent | Callback to invoke on input click. |
+| onChange | event :  SelectButtonChangeEvent | Callback to invoke on selection change. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| item |  | Template of an item in the list. |
 
 ---
 

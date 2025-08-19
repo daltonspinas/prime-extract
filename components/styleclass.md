@@ -2,13 +2,15 @@
 
 StyleClass manages css classes declaratively to during enter/leave animations or just to toggle classes on an element.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { StyleClassModule } from 'primeng/styleclass';
 ```
 
-## Toggle Class
+### Toggle Class
 
 StyleClass has two modes, toggleClass to simply add-remove a class and enter/leave animations. The target element to change the styling is defined with the selector property that accepts any valid CSS selector or keywords including @next, prev, parent, grandparent
 
@@ -17,7 +19,7 @@ StyleClass has two modes, toggleClass to simply add-remove a class and enter/lea
 <input type="text" pInputText class="block mt-4" />
 ```
 
-## Animation
+### Animation
 
 Classes to apply during enter and leave animations are specified using the enterFromClass, enterActiveClass, enterToClass, leaveFromClass, leaveActiveClass,leaveToClassproperties. In addition in case the target is an overlay, hideOnOutsideClick would be handy to hide the target if outside of the popup is clicked, or enable hideOnEscape to close the popup by listening escape key.
 
@@ -72,7 +74,15 @@ Classes to apply during enter and leave animations are specified using the enter
 </div>
 ```
 
-## StyleClass
+### StyleClass
+
+## API
+
+### StyleClass API
+
+API defines helper props, events and others for the PrimeNG StyleClass module.
+
+#### StyleClass
 
 ---
 

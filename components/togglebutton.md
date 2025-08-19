@@ -2,13 +2,15 @@
 
 ToggleButton is used to select a boolean value using a button.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ToggleButtonModule } from 'primeng/togglebutton';
 ```
 
-## Basic
+### Basic
 
 Two-way binding to a boolean property is defined using the standard ngModel directive.
 
@@ -16,7 +18,7 @@ Two-way binding to a boolean property is defined using the standard ngModel dire
 <p-togglebutton [(ngModel)]="checked" onLabel="On" offLabel="Off" class="w-24" />
 ```
 
-## Customized
+### Customized
 
 Icons and Labels can be customized using onLabel, offLabel, onIcon and offIcon properties.
 
@@ -24,7 +26,7 @@ Icons and Labels can be customized using onLabel, offLabel, onIcon and offIcon p
 <p-togglebutton [(ngModel)]="checked" onLabel="Locked" offLabel="Unlocked" onIcon="pi pi-check" offIcon="pi pi-times" onIcon="pi pi-lock" offIcon="pi pi-lock-open" class="w-36" ariaLabel="Do you confirm" />
 ```
 
-## Sizes
+### Sizes
 
 ToggleButton provides small and large sizes as alternatives to the base.
 
@@ -34,7 +36,7 @@ ToggleButton provides small and large sizes as alternatives to the base.
 <p-togglebutton [(ngModel)]="value3" onLabel="On" offLabel="Off" size="large" class="min-w-24" />
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -42,7 +44,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-togglebutton disabled="true" onIcon="pi pi-check" offIcon="pi pi-times" [(ngModel)]="checked" onLabel="Yes" offLabel="No" class="w-full sm:w-40" ariaLabel="Confirmation" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -50,7 +52,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-togglebutton [(ngModel)]="checked" onIcon="pi pi-check" offIcon="pi pi-times" [invalid]="!checked" class="w-full sm:w-40" aria-label="Confirmation" />
 ```
 
-## Forms
+### Forms
 
 ToggleButton can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -78,7 +80,7 @@ ToggleButton can also be used with reactive forms. In this case, the formControl
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 ToggleButton component uses an element with button role and updates aria-pressed state for screen readers. Value to describe the component can be defined with ariaLabelledBy or ariaLabel props, it is highly suggested to use either of these props as the component changes the label displayed which will result in screen readers to read different labels when the component receives focus. To prevent this, always provide an aria label that does not change related to state.
 
@@ -89,9 +91,61 @@ ToggleButton component uses an element with button role and updates aria-pressed
 <p-togglebutton ariaLabel="Remember Me" />
 ```
 
-## ToggleButton
+### ToggleButton
 
 ToggleButton is used to select a boolean value using a button.
+
+## API
+
+### ToggleButton API
+
+API defines helper props, events and others for the PrimeNG ToggleButton module.
+
+#### ToggleButton
+
+ToggleButton is used to select a boolean value using a button.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| onLabel | string | Yes | Label for the on state. |
+| offLabel | string | No | Label for the off state. |
+| onIcon | string | null | Icon for the on state. |
+| offIcon | string | null | Icon for the off state. |
+| ariaLabel | string | null | Defines a string that labels the input for accessibility. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+| styleClass | string | null | Style class of the element. |
+| inputId | string | null | Identifier of the focus input to match a label defined for the component. |
+| tabindex | number | 0 | Index of the element in tabbing order. |
+| iconPos | "right" | "left" | left | Position of the icon. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| size | "small" | "large" | null | Defines the size of the component. |
+| allowEmpty | boolean | false | Whether selection can not be cleared. |
+| fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onChange | event :  ToggleButtonChangeEvent | Callback to invoke on value change. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| icon |  | Custom icon template. |
+| content |  | Custom content template. |
 
 ---
 

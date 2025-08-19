@@ -2,13 +2,15 @@
 
 Popover is a container component that can overlay other components on page.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { PopoverModule } from 'primeng/popover';
 ```
 
-## Basic
+### Basic
 
 Popover is accessed via its reference and visibility is controlled using toggle, show and hide methods with an event of the target.
 
@@ -56,7 +58,7 @@ Popover is accessed via its reference and visibility is controlled using toggle,
 </p-popover>
 ```
 
-## Select Data
+### Select Data
 
 In this sample, data is retrieved from the content inside the popover.
 
@@ -81,7 +83,7 @@ In this sample, data is retrieved from the content inside the popover.
 </p-popover>
 ```
 
-## DataTable
+### DataTable
 
 Place the Popover outside of the data iteration components to avoid rendering it multiple times.
 
@@ -170,13 +172,69 @@ Place the Popover outside of the data iteration components to avoid rendering it
 </p-popover>
 ```
 
-## Accessibility
+### Accessibility
 
 Popover component uses dialog role and since any attribute is passed to the root element you may define attributes like aria-label or aria-labelledby to describe the popup contents. In addition aria-modal is added since focus is kept within the popup.
 
-## Popover
+### Popover
 
 Popover is a container component that can overlay other components on page.
+
+## API
+
+### Popover API
+
+API defines helper props, events and others for the PrimeNG Popover module.
+
+#### Popover
+
+Popover is a container component that can overlay other components on page.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| ariaLabel | string | null | Defines a string that labels the input for accessibility. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+| dismissable | boolean | true | Enables to hide the overlay when outside is clicked. |
+| style | { [klass: string]: any } | null | Inline style of the component. |
+| styleClass | string | null | Style class of the component. |
+| appendTo | any | body | Target element to attach the panel, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| ariaCloseLabel | string | null | Aria label of the close icon. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| focusOnShow | boolean | true | When enabled, first button receives focus on show. |
+| showTransitionOptions | string | .12s cubic-bezier(0, 0, 0.2, 1) | Transition options of the show animation. |
+| hideTransitionOptions | string | .1s linear | Transition options of the hide animation. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onShow | value :  any | Callback to invoke when an overlay becomes visible. |
+| onHide | value :  any | Callback to invoke when an overlay gets hidden. |
+
+##### Methods
+
+Defines methods that can be accessed by the component's reference.
+
+| name | parameters | description |
+| --- | --- | --- |
+| toggle | event :  anytarget :  any | Toggles the visibility of the panel. |
+| show | event :  anytarget :  any | Displays the panel. |
+| hide |  | Hides the panel. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| content |  | Custom content template. |
 
 ---
 

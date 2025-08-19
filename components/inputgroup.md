@@ -2,14 +2,16 @@
 
 Text, icon, buttons and other content can be grouped next to an input.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 ```
 
-## Basic
+### Basic
 
 A group is created by wrapping the input and add-ons with the p-inputgroup component. Each add-on element is defined as a child of p-inputgroup-addon component.
 
@@ -40,7 +42,7 @@ A group is created by wrapping the input and add-ons with the p-inputgroup compo
 </p-inputgroup>
 ```
 
-## Multiple
+### Multiple
 
 Multiple add-ons can be placed inside the same group.
 
@@ -58,7 +60,7 @@ Multiple add-ons can be placed inside the same group.
 </p-inputgroup>
 ```
 
-## Button
+### Button
 
 Buttons can be placed at either side of an input element.
 
@@ -87,7 +89,7 @@ Buttons can be placed at either side of an input element.
 </p-inputgroup>
 ```
 
-## Checkbox & Radio
+### Checkbox & Radio
 
 Checkbox and RadioButton components can be combined with an input element under the same group.
 
@@ -111,7 +113,7 @@ Checkbox and RadioButton components can be combined with an input element under 
 </p-inputgroup>
 ```
 
-## Float Label
+### Float Label
 
 FloatLabel visually integrates a label with its form element. Visit FloatLabel documentation for more information.
 
@@ -144,7 +146,7 @@ FloatLabel visually integrates a label with its form element. Visit FloatLabel d
 </p-inputgroup>
 ```
 
-## Ifta Label
+### Ifta Label
 
 IftaLabel is used to create infield top aligned labels. Visit IftaLabel documentation for more information.
 
@@ -160,7 +162,7 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 </p-inputgroup>
 ```
 
-## Accessibility
+### Accessibility
 
 InputGroup and InputGroupAddon does not require any roles and attributes.
 

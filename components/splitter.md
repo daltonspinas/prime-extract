@@ -2,13 +2,15 @@
 
 Splitter is utilized to separate and resize panels.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { SplitterModule } from 'primeng/splitter';
 ```
 
-## Horizontal
+### Horizontal
 
 Splitter requires two SplitterPanel components as children which are displayed horizontally by default.
 
@@ -23,7 +25,7 @@ Splitter requires two SplitterPanel components as children which are displayed h
 </p-splitter>
 ```
 
-## Size
+### Size
 
 When no panelSizes are defined, panels are split 50/50, use the panelSizes property to give relative widths e.g. [25, 75].
 
@@ -38,7 +40,7 @@ When no panelSizes are defined, panels are split 50/50, use the panelSizes prope
 </p-splitter>
 ```
 
-## Vertical
+### Vertical
 
 Panels are displayed as stacked by setting the layout to vertical.
 
@@ -53,7 +55,7 @@ Panels are displayed as stacked by setting the layout to vertical.
 </p-splitter>
 ```
 
-## Nested
+### Nested
 
 Splitters can be combined to create advanced layouts.
 
@@ -82,13 +84,49 @@ Splitters can be combined to create advanced layouts.
 </p-splitter>
 ```
 
-## Accessibility
+### Accessibility
 
 Splitter bar defines separator as the role with aria-orientation set to either horizontal or vertical.
 
-## Splitter
+### Splitter
 
 Splitter is utilized to separate and resize panels.
+
+## API
+
+### Splitter API
+
+API defines helper props, events and others for the PrimeNG Splitter module.
+
+#### Splitter
+
+Splitter is utilized to separate and resize panels.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| styleClass | string | null | Style class of the component. |
+| panelStyleClass | string | null | Style class of the panel. |
+| panelStyle | { [klass: string]: any } | null | Inline style of the panel. |
+| stateStorage | string | session | Defines where a stateful splitter keeps its state, valid values are 'session' for sessionStorage and 'local' for localStorage. |
+| stateKey | string | null | Storage identifier of a stateful Splitter. |
+| layout | string | horizontal | Orientation of the panels. Valid values are 'horizontal' and 'vertical'. |
+| gutterSize | number | 4 | Size of the divider in pixels. |
+| step | number | 5 | Step factor to increment/decrement the size of the panels while pressing the arrow keys. |
+| minSizes | number[] | [] | Minimum size of the elements relative to 100%. |
+| panelSizes | number[] | null | Size of the elements relative to 100%. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onResizeEnd | event :  SplitterResizeEndEvent | Callback to invoke when resize ends. |
+| onResizeStart | event :  SplitterResizeStartEvent | Callback to invoke when resize starts. |
 
 ---
 

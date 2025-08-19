@@ -2,13 +2,15 @@
 
 Checkbox is an extension to standard checkbox element with theming.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { CheckboxModule } from 'primeng/checkbox';
 ```
 
-## Basic
+### Basic
 
 Binary checkbox is used as a controlled input with ngModel and binary properties.
 
@@ -16,7 +18,7 @@ Binary checkbox is used as a controlled input with ngModel and binary properties
 <p-checkbox [(ngModel)]="checked" [binary]="true" />
 ```
 
-## Indeterminate
+### Indeterminate
 
 The indeterminate state indicates that a checkbox is neither "on" or "off".
 
@@ -24,7 +26,7 @@ The indeterminate state indicates that a checkbox is neither "on" or "off".
 <p-checkbox [(ngModel)]="checked" [binary]="true" [indeterminate]="true" />
 ```
 
-## Group
+### Group
 
 Multiple checkboxes can be grouped together.
 
@@ -47,7 +49,7 @@ Multiple checkboxes can be grouped together.
 </div>
 ```
 
-## Dynamic
+### Dynamic
 
 Checkboxes can be generated using a list of values.
 
@@ -58,7 +60,7 @@ Checkboxes can be generated using a list of values.
 </div>
 ```
 
-## Filled
+### Filled
 
 Specify the variant property as filled to display the component with a higher visual emphasis than the default outlined style.
 
@@ -66,7 +68,7 @@ Specify the variant property as filled to display the component with a higher vi
 <p-checkbox [(ngModel)]="checked" [binary]="true" variant="filled" />
 ```
 
-## Sizes
+### Sizes
 
 Checkbox provides small and large sizes as alternatives to the base.
 
@@ -85,7 +87,7 @@ Checkbox provides small and large sizes as alternatives to the base.
 </div>
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -94,7 +96,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-checkbox [(ngModel)]="checked2" [binary]="true" [disabled]="true" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -102,7 +104,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-checkbox [(ngModel)]="checked" [binary]="true" [invalid]="!checked" />
 ```
 
-## Forms
+### Forms
 
 Checkbox can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -145,7 +147,7 @@ Checkbox can also be used with reactive forms. In this case, the formControlName
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 Checkbox component uses a hidden native checkbox element internally that is only visible to screen readers. Value to describe the component can either be provided via label tag combined with inputId prop or using ariaLabelledBy, ariaLabel props.
 
@@ -159,9 +161,66 @@ Checkbox component uses a hidden native checkbox element internally that is only
 <p-checkbox ariaLabel="Remember Me"/>
 ```
 
-## Checkbox
+### Checkbox
 
 Checkbox is an extension to standard checkbox element with theming.
+
+## API
+
+### Checkbox API
+
+API defines helper props, events and others for the PrimeNG Checkbox module.
+
+#### Checkbox
+
+Checkbox is an extension to standard checkbox element with theming.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| value | any | null | Value of the checkbox. |
+| binary | boolean | false | Allows to select a boolean value instead of multiple values. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+| ariaLabel | string | null | Used to define a string that labels the input element. |
+| tabindex | number | null | Index of the element in tabbing order. |
+| inputId | string | null | Identifier of the focus input to match a label defined for the component. |
+| inputStyle | { [klass: string]: any } | null | Inline style of the input element. |
+| styleClass | string | null | Style class of the component. |
+| inputClass | string | null | Style class of the input element. |
+| indeterminate | boolean | false | When present, it specifies input state as indeterminate. |
+| formControl | FormControl<any> | null | Form control value. |
+| checkboxIcon | string | null | Icon class of the checkbox icon. |
+| readonly | boolean | false | When present, it specifies that the component cannot be edited. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| trueValue | any | true | Value in checked state. |
+| falseValue | any | false | Value in unchecked state. |
+| variant | InputSignal<"outlined" | "filled"> | undefined | Specifies the input variant of the component. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onChange | event :  CheckboxChangeEvent | Callback to invoke on value change. |
+| onFocus | event :  Event | Callback to invoke when the receives focus. |
+| onBlur | event :  Event | Callback to invoke when the loses focus. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| checkboxicon |  | The template of the checkbox icon. |
 
 ---
 

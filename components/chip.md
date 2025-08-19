@@ -2,13 +2,15 @@
 
 Chip represents entities using icons, labels and images.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ChipModule } from 'primeng/chip';
 ```
 
-## Basic
+### Basic
 
 A basic chip with a text is created with the label property. In addition when removable is added, a delete icon is displayed to remove a chip, the optional onRemove event is available to get notified when a chip is hidden.
 
@@ -19,7 +21,7 @@ A basic chip with a text is created with the label property. In addition when re
 <p-chip label="Thriller" [removable]="true" />
 ```
 
-## Icon
+### Icon
 
 A font icon next to the label can be displayed with the icon property.
 
@@ -27,7 +29,7 @@ A font icon next to the label can be displayed with the icon property.
 <p-chip label="Apple" icon="pi pi-apple" />
 ```
 
-## Image
+### Image
 
 The image property is used to display an image like an avatar.
 
@@ -38,7 +40,7 @@ The image property is used to display an image like an avatar.
 <p-chip label="Xuxue Feng" image="https://primefaces.org/cdn/primeng/images/demo/avatar/xuxuefeng.png" alt="Avatar image" [removable]="true" />
 ```
 
-## Template
+### Template
 
 Content can easily be customized with the dynamic content instead of using the built-in modes.
 
@@ -53,13 +55,47 @@ Content can easily be customized with the dynamic content instead of using the b
 </p-chip>
 ```
 
-## Accessibility
+### Accessibility
 
 Chip uses the label property as the default aria-label, since any attribute is passed to the root element aria-labelledby or aria-label can be used to override the default behavior. Removable chips have a tabindex and focusable with the tab key.
 
-## Chip
+### Chip
 
 Chip represents people using icons, labels and images.
+
+## API
+
+### Chip API
+
+API defines helper props, events and others for the PrimeNG Chip module.
+
+#### Chip
+
+Chip represents people using icons, labels and images.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| label | string | null | Defines the text to display. |
+| icon | string | null | Defines the icon to display. |
+| image | string | null | Defines the image to display. |
+| alt | string | null | Alt attribute of the image. |
+| styleClass | string | null | Class of the element. |
+| removable | boolean | false | Whether to display a remove icon. |
+| removeIcon | string | null | Icon of the remove element. |
+| chipProps | ChipProps | null | Used to pass all properties of the chipProps to the Chip component. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onRemove | event :  MouseEvent | Callback to invoke when a chip is removed. |
+| onImageError | event :  Event | This event is triggered if an error occurs while loading an image file. |
 
 ---
 

@@ -2,13 +2,15 @@
 
 Divider is used to separate contents.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { DividerModule } from 'primeng/divider';
 ```
 
-## Basic
+### Basic
 
 Divider is basically placed between the items to separate.
 
@@ -30,7 +32,7 @@ Divider is basically placed between the items to separate.
 </p>
 ```
 
-## Type
+### Type
 
 Style of the border is configured with the type property that can either be solid, dotted or dashed.
 
@@ -52,7 +54,7 @@ Style of the border is configured with the type property that can either be soli
 </p>
 ```
 
-## Vertical
+### Vertical
 
 Vertical divider is enabled by setting the layout property as vertical.
 
@@ -70,7 +72,7 @@ Vertical divider is enabled by setting the layout property as vertical.
 </p>
 ```
 
-## Content
+### Content
 
 Children are rendered within the boundaries of the divider where location of the content is configured with the align property. In horizontal layout, alignment options are left, center and right whereas vertical mode supports top, center and bottom.
 
@@ -104,7 +106,7 @@ Children are rendered within the boundaries of the divider where location of the
 </p>
 ```
 
-## Login
+### Login
 
 Sample implementation of a login form using a divider with content.
 
@@ -133,13 +135,34 @@ Sample implementation of a login form using a divider with content.
 </div>
 ```
 
-## Accessibility
+### Accessibility
 
 Divider uses a separator role with aria-orientation set to either "horizontal" or "vertical".
 
-## Divider
+### Divider
 
 Divider is used to separate contents.
+
+## API
+
+### Divider API
+
+API defines helper props, events and others for the PrimeNG Divider module.
+
+#### Divider
+
+Divider is used to separate contents.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| styleClass | string | null | Style class of the component. |
+| layout | "vertical" | "horizontal" | horizontal | Specifies the orientation. |
+| type | "solid" | "dashed" | "dotted" | solid | Border style type. |
+| align | "right" | "left" | "top" | "bottom" | "center" | null | Alignment of the content. |
 
 ---
 

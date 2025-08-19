@@ -2,13 +2,15 @@
 
 ConfirmDialog is backed by a service utilizing Observables to display confirmation windows easily that can be shared by multiple actions on the same component.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 ```
 
-## Basic
+### Basic
 
 ConfirmDialog is defined using p-confirmDialog tag and an instance of ConfirmationService is required to display it bycalling confirm method.
 
@@ -19,7 +21,7 @@ ConfirmDialog is defined using p-confirmDialog tag and an instance of Confirmati
 <p-button (click)="confirm2($event)" label="Delete" severity="danger" [outlined]="true" />
 ```
 
-## Position
+### Position
 
 The position property of the confirm options is used to display a Dialog at all edges and corners of the screen.
 
@@ -42,7 +44,7 @@ The position property of the confirm options is used to display a Dialog at all 
 </div>
 ```
 
-## Template
+### Template
 
 Properties of the dialog are defined in two ways, message, icon, header properties can either be defined using confirm method or declaratively on p-confirmDialog ng-template by header, message, icon and footer templates. If these values are unlikely to change then declarative approach would be useful, still properties defined in a ng-template can be overridden with confirm method call.
 
@@ -59,7 +61,7 @@ Properties of the dialog are defined in two ways, message, icon, header properti
 <p-button (click)="confirm()" label="Save" />
 ```
 
-## Headless
+### Headless
 
 Headless mode allows you to customize the entire user interface instead of the default elements.
 
@@ -85,7 +87,7 @@ Headless mode allows you to customize the entire user interface instead of the d
 <p-button (click)="confirm()" label="Save"/>
 ```
 
-## Accessibility
+### Accessibility
 
 ConfirmDialog component uses alertdialog role along with aria-labelledby referring to the header element however any attribute is passed to the root element so you may use aria-labelledby to override this default behavior. In addition aria-modal is added since focus is kept within the popup.
 
@@ -110,13 +112,75 @@ this.confirmationService.confirm({
 <p-button (click)="visible = true" icon="pi pi-check" label="Confirm" aria-controls="{{visible ? 'dialog' : null}} aria-expanded="{{visible ? true : false}}" />
 ```
 
-## ConfirmDialog
+### ConfirmDialog
 
 ConfirmDialog uses a Dialog UI that is integrated with the Confirmation API.
 
-## ConfirmationService
+### ConfirmationService
 
-## Confirmation
+### Confirmation
+
+## API
+
+### ConfirmDialog API
+
+API defines helper props, events and others for the PrimeNG ConfirmDialog module.
+
+#### ConfirmDialog
+
+ConfirmDialog uses a Dialog UI that is integrated with the Confirmation API.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| header | string | null | Title text of the dialog. |
+| icon | string | null | Icon to display next to message. |
+| message | string | null | Message of the confirmation. |
+| style | { [klass: string]: any } | null | Inline style of the element. |
+| styleClass | string | null | Class of the element. |
+| maskStyleClass | string | null | Specify the CSS class(es) for styling the mask element |
+| acceptIcon | string | null | Icon of the accept button. |
+| acceptLabel | string | null | Label of the accept button. |
+| closeAriaLabel | string | null | Defines a string that labels the close button for accessibility. |
+| acceptAriaLabel | string | null | Defines a string that labels the accept button for accessibility. |
+| acceptVisible | boolean | true | Visibility of the accept button. |
+| rejectIcon | string | null | Icon of the reject button. |
+| rejectLabel | string | null | Label of the reject button. |
+| rejectAriaLabel | string | null | Defines a string that labels the reject button for accessibility. |
+| rejectVisible | boolean | true | Visibility of the reject button. |
+| acceptButtonStyleClass | string | null | Style class of the accept button. |
+| rejectButtonStyleClass | string | null | Style class of the reject button. |
+| closeOnEscape | boolean | true | Specifies if pressing escape key should hide the dialog. |
+| dismissableMask | boolean | false | Specifies if clicking the modal background should hide the dialog. |
+| blockScroll | boolean | true | Determines whether scrolling behavior should be blocked within the component. |
+| rtl | boolean | false | When enabled dialog is displayed in RTL direction. |
+| closable | boolean | true | Adds a close icon to the header to hide the dialog. |
+| appendTo | any | body | Target element to attach the dialog, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+| key | string | null | Optional key to match the key of confirm object, necessary to use when component tree has multiple confirm dialogs. |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| transitionOptions | string | 150ms cubic-bezier(0, 0, 0.2, 1) | Transition options of the animation. |
+| focusTrap | boolean | true | When enabled, can only focus on elements inside the confirm dialog. |
+| defaultFocus | "accept" | "reject" | "none" | "close" | accept | Element to receive the focus when the dialog gets visible. |
+| breakpoints | any | null | Object literal to define widths per screen size. |
+| visible | any | null | Current visible state as a boolean. |
+| position | "right" | "left" | "top" | "bottom" | "center" | "topleft" | "bottomleft" | "topright" | "bottomright" | null | Allows getting the position of the component. |
+| draggable | boolean | true | Enables dragging to change the position using header. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onHide | event :  ConfirmEventType | Callback to invoke when dialog is hidden. |
+
+#### ConfirmationService
+
+#### Confirmation
 
 ---
 

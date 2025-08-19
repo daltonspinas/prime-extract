@@ -2,13 +2,15 @@
 
 ToggleSwitch is used to select a boolean value.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ToggleSwitchModule } from 'primeng/toggleswitch';
 ```
 
-## Basic
+### Basic
 
 Two-way value binding is defined using ngModel.
 
@@ -16,7 +18,7 @@ Two-way value binding is defined using ngModel.
 <p-toggleswitch [(ngModel)]="checked" />
 ```
 
-## Preselection
+### Preselection
 
 Enabling ngModel property displays the component as active initially.
 
@@ -24,7 +26,7 @@ Enabling ngModel property displays the component as active initially.
 <p-toggleswitch [(ngModel)]="checked" />
 ```
 
-## Template
+### Template
 
 The handle template is available to display custom content.
 
@@ -36,7 +38,7 @@ The handle template is available to display custom content.
 </p-toggleswitch>
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -44,7 +46,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-toggleswitch [(ngModel)]="checked" [disabled]="true" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -52,7 +54,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-toggleswitch [(ngModel)]="checked" [invalid]="!checked" />
 ```
 
-## Forms
+### Forms
 
 ToggleSwitch can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -82,7 +84,7 @@ ToggleSwitch can also be used with reactive forms. In this case, the formControl
 </div>
 ```
 
-## Accessibility
+### Accessibility
 
 InputSwitch component uses a hidden native checkbox element with switch role internally that is only visible to screen readers. Value to describe the component can either be provided via label tag combined with inputId prop or using ariaLabelledBy, ariaLabel props.
 
@@ -96,9 +98,56 @@ InputSwitch component uses a hidden native checkbox element with switch role int
 <p-toggleswitch ariaLabel="Remember Me" />
 ```
 
-## ToggleSwitch
+### ToggleSwitch
 
 ToggleSwitch is used to select a boolean value.
+
+## API
+
+### ToggleSwitch API
+
+API defines helper props, events and others for the PrimeNG ToggleSwitch module.
+
+#### ToggleSwitch
+
+ToggleSwitch is used to select a boolean value.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| styleClass | string | null | Style class of the component. |
+| tabindex | number | null | Index of the element in tabbing order. |
+| inputId | string | null | Identifier of the input element. |
+| readonly | boolean | false | When present, it specifies that the component cannot be edited. |
+| trueValue | any | true | Value in checked state. |
+| falseValue | any | false | Value in unchecked state. |
+| ariaLabel | string | null | Used to define a string that autocomplete attribute the current element. |
+| size | InputSignal<"small" | "large"> | undefined | Specifies the size of the component. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onChange | event :  ToggleSwitchChangeEvent | Callback to invoke when the on value change. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| handle |  | Callback to invoke when the on value change. |
 
 ---
 

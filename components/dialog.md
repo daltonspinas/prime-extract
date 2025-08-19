@@ -2,13 +2,15 @@
 
 Dialog is a container to display content in an overlay window.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { DialogModule } from 'primeng/dialog';
 ```
 
-## Basic
+### Basic
 
 Dialog is used as a container and visibility is controlled with visible property.
 
@@ -31,7 +33,7 @@ Dialog is used as a container and visibility is controlled with visible property
 </p-dialog>
 ```
 
-## Template
+### Template
 
 Dialog can be customized using header and footer templates.
 
@@ -60,7 +62,7 @@ Dialog can be customized using header and footer templates.
 </p-dialog>
 ```
 
-## Position
+### Position
 
 The position property is used to display a Dialog at all edges and corners of the screen.
 
@@ -96,7 +98,7 @@ The position property is used to display a Dialog at all edges and corners of th
 </p-dialog>
 ```
 
-## Maximizable
+### Maximizable
 
 Setting maximizable property to true enables the full screen mode.
 
@@ -109,7 +111,7 @@ Setting maximizable property to true enables the full screen mode.
 </p-dialog>
 ```
 
-## Long Content
+### Long Content
 
 Dialog automatically displays a scroller when content exceeds viewport.
 
@@ -137,7 +139,7 @@ Dialog automatically displays a scroller when content exceeds viewport.
 </p-dialog>
 ```
 
-## Without Modal
+### Without Modal
 
 Mask layer behind the Dialog is configured with the modal property. By default, no modal layer is added.
 
@@ -160,7 +162,7 @@ Mask layer behind the Dialog is configured with the modal property. By default, 
 </p-dialog>
 ```
 
-## Responsive
+### Responsive
 
 Dialog width can be adjusted per screen size with the breakpoints option where a key defines the max-width for the breakpoint and value for the corresponding width. When no breakpoint matches width defined in style property is used.
 
@@ -173,7 +175,7 @@ Dialog width can be adjusted per screen size with the breakpoints option where a
 </p-dialog>
 ```
 
-## Headless
+### Headless
 
 Headless mode allows you to customize the entire user interface instead of the default elements.
 
@@ -232,7 +234,7 @@ Headless mode allows you to customize the entire user interface instead of the d
 </p-dialog>
 ```
 
-## Accessibility
+### Accessibility
 
 Dialog component uses dialog role along with aria-labelledby referring to the header element however any attribute is passed to the root element so you may use aria-labelledby to override this default behavior. In addition aria-modal is added since focus is kept within the popup.
 
@@ -244,9 +246,84 @@ Dialog component uses dialog role along with aria-labelledby referring to the he
 </p-dialog>
 ```
 
-## Dialog
+### Dialog
 
 Dialog is a container to display content in an overlay window.
+
+## API
+
+### Dialog API
+
+API defines helper props, events and others for the PrimeNG Dialog module.
+
+#### Dialog
+
+Dialog is a container to display content in an overlay window.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| header | string | null | Title text of the dialog. |
+| draggable | boolean | true | Enables dragging to change the position using header. |
+| resizable | boolean | true | Enables resizing of the content. |
+| contentStyle | any | null | Style of the content section. |
+| contentStyleClass | string | null | Style class of the content. |
+| modal | boolean | false | Defines if background should be blocked when dialog is displayed. |
+| closeOnEscape | boolean | true | Specifies if pressing escape key should hide the dialog. |
+| dismissableMask | boolean | false | Specifies if clicking the modal background should hide the dialog. |
+| rtl | boolean | false | When enabled dialog is displayed in RTL direction. |
+| closable | boolean | true | Adds a close icon to the header to hide the dialog. |
+| breakpoints | any | null | Object literal to define widths per screen size. |
+| styleClass | string | null | Style class of the component. |
+| maskStyleClass | string | null | Style class of the mask. |
+| maskStyle | { [klass: string]: any } | null | Style of the mask. |
+| showHeader | boolean | true | Whether to show the header or not. |
+| blockScroll | boolean | false | Whether background scroll should be blocked when dialog is visible. |
+| autoZIndex | boolean | true | Whether to automatically manage layering. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| minX | number | 0 | Minimum value for the left coordinate of dialog in dragging. |
+| minY | number | 0 | Minimum value for the top coordinate of dialog in dragging. |
+| focusOnShow | boolean | true | When enabled, first focusable element receives focus on show. |
+| maximizable | boolean | false | Whether the dialog can be displayed full screen. |
+| keepInViewport | boolean | true | Keeps dialog in the viewport. |
+| focusTrap | boolean | true | When enabled, can only focus on elements inside the dialog. |
+| transitionOptions | string | 150ms cubic-bezier(0, 0, 0.2, 1) | Transition options of the animation. |
+| closeIcon | string | null | Name of the close icon. |
+| closeAriaLabel | string | null | Defines a string that labels the close button for accessibility. |
+| closeTabindex | string | 0 | Index of the close button in tabbing order. |
+| minimizeIcon | string | null | Name of the minimize icon. |
+| maximizeIcon | string | null | Name of the maximize icon. |
+| closeButtonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the Button component. |
+| maximizeButtonProps | ButtonProps | ... | Used to pass all properties of the ButtonProps to the Button component. |
+| visible | boolean | null | Specifies the visibility of the dialog. |
+| style | any | null | Inline style of the component. |
+| position | "right" | "left" | "top" | "bottom" | "center" | "topleft" | "bottomleft" | "topright" | "bottomright" | null | Position of the dialog. |
+| appendTo | InputSignal<any> | 'self' | Target element to attach the overlay, valid values are "body" or a local ng-template variable of another element (note: use binding with brackets for template variables, e.g. [appendTo]="mydiv" for a div element having #mydiv as variable name). |
+| headerTemplate | TemplateRef<any> | null | Header template. |
+| contentTemplate | TemplateRef<any> | null | Content template. |
+| footerTemplate | TemplateRef<any> | null | Footer template. |
+| closeIconTemplate | TemplateRef<any> | null | Close icon template. |
+| maximizeIconTemplate | TemplateRef<any> | null | Maximize icon template. |
+| minimizeIconTemplate | TemplateRef<any> | null | Minimize icon template. |
+| headlessTemplate | TemplateRef<any> | null | Headless template. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| role | value : | Role attribute of html element. |
+| onShow | value :  any | Callback to invoke when dialog is shown. |
+| onHide | value :  any | Callback to invoke when dialog is hidden. |
+| visibleChange | value :  boolean | This EventEmitter is used to notify changes in the visibility state of a component. |
+| onResizeInit | event :  MouseEvent | Callback to invoke when dialog resizing is initiated. |
+| onResizeEnd | event :  MouseEvent | Callback to invoke when dialog resizing is completed. |
+| onDragEnd | event :  DragEvent | Callback to invoke when dialog dragging is completed. |
+| onMaximize | value :  any | Callback to invoke when dialog maximized or unmaximized. |
 
 ---
 

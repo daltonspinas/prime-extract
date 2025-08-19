@@ -2,13 +2,15 @@
 
 Galleria is an advanced content gallery component.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { GalleriaModule } from 'primeng/galleria';
 ```
 
-## Basic
+### Basic
 
 Galleria requires a value as a collection of images, item template for the higher resolution image and thumbnail template to display as a thumbnail.
 
@@ -23,7 +25,7 @@ Galleria requires a value as a collection of images, item template for the highe
 </p-galleria>
 ```
 
-## Controlled
+### Controlled
 
 Galleria can be controlled programmatically using the activeIndex property.
 
@@ -42,7 +44,7 @@ Galleria can be controlled programmatically using the activeIndex property.
 </p-galleria>
 ```
 
-## Indicator
+### Indicator
 
 Indicators are displayed at the bottom by enabling showIndicators property and interacted with the click event by default.
 
@@ -83,7 +85,7 @@ Indicators are displayed at the bottom by enabling showIndicators property and i
 </p-galleria>
 ```
 
-## Thumbnail
+### Thumbnail
 
 Galleria can be controlled programmatically using the activeIndex property.
 
@@ -106,7 +108,7 @@ Galleria can be controlled programmatically using the activeIndex property.
 </p-galleria>
 ```
 
-## Responsive
+### Responsive
 
 Galleria responsiveness is defined with the responsiveOptions property.
 
@@ -121,7 +123,7 @@ Galleria responsiveness is defined with the responsiveOptions property.
 </p-galleria>
 ```
 
-## Full Screen
+### Full Screen
 
 Full screen mode is enabled by adding fullScreen property.
 
@@ -152,7 +154,7 @@ Full screen mode is enabled by adding fullScreen property.
 </p-galleria>
 ```
 
-## Navigator
+### Navigator
 
 Add showItemNavigators to display navigator elements and the left and right side.
 
@@ -197,7 +199,7 @@ Add showItemNavigators to display navigator elements and the left and right side
 </p-galleria>
 ```
 
-## AutoPlay
+### AutoPlay
 
 A slideshow implementation is defined by adding circular and autoPlay properties.
 
@@ -212,7 +214,7 @@ A slideshow implementation is defined by adding circular and autoPlay properties
 </p-galleria>
 ```
 
-## Caption
+### Caption
 
 Description of an image is specified with the caption template.
 
@@ -231,7 +233,7 @@ Description of an image is specified with the caption template.
 </p-galleria>
 ```
 
-## Advanced
+### Advanced
 
 Galleria can be extended further to implement complex requirements.
 
@@ -280,13 +282,66 @@ Galleria can be extended further to implement complex requirements.
 </p-galleria>
 ```
 
-## Accessibility
+### Accessibility
 
 Galleria uses region role and since any attribute is passed to the main container element, attributes such as aria-label and aria-roledescription can be used as well. The slides container has aria-live attribute set as "polite" if galleria is not in autoplay mode, otherwise "off" would be the value in autoplay.
 
-## Galleria
+### Galleria
 
 Galleria is an advanced content gallery component.
+
+## API
+
+### Galleria API
+
+API defines helper props, events and others for the PrimeNG Galleria module.
+
+#### Galleria
+
+Galleria is an advanced content gallery component.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| activeIndex | number | null | Index of the first item. |
+| fullScreen | boolean | false | Whether to display the component on fullscreen. |
+| id | string | null | Unique identifier of the element. |
+| value | any[] | null | An array of objects to display. |
+| numVisible | number | 3 | Number of items per page. |
+| responsiveOptions | GalleriaResponsiveOptions[] | null | An array of options for responsive design. |
+| showItemNavigators | boolean | false | Whether to display navigation buttons in item section. |
+| showThumbnailNavigators | boolean | true | Whether to display navigation buttons in thumbnail container. |
+| showItemNavigatorsOnHover | boolean | false | Whether to display navigation buttons on item hover. |
+| changeItemOnIndicatorHover | boolean | false | When enabled, item is changed on indicator hover. |
+| circular | boolean | false | Defines if scrolling would be infinite. |
+| autoPlay | boolean | false | Items are displayed with a slideshow in autoPlay mode. |
+| shouldStopAutoplayByClick | boolean | true | When enabled, autorun should stop by click. |
+| transitionInterval | number | 4000 | Time in milliseconds to scroll items. |
+| showThumbnails | boolean | true | Whether to display thumbnail container. |
+| thumbnailsPosition | "right" | "left" | "top" | "bottom" | bottom | Position of thumbnails. |
+| verticalThumbnailViewPortHeight | string | 300px | Height of the viewport in vertical thumbnail. |
+| showIndicators | boolean | false | Whether to display indicator container. |
+| showIndicatorsOnItem | boolean | false | When enabled, indicator container is displayed on item container. |
+| indicatorsPosition | "right" | "left" | "top" | "bottom" | bottom | Position of indicators. |
+| baseZIndex | number | 0 | Base zIndex value to use in layering. |
+| maskClass | string | null | Style class of the mask on fullscreen mode. |
+| containerClass | string | null | Style class of the component on fullscreen mode. Otherwise, the 'class' property can be used. |
+| containerStyle | { [klass: string]: any } | null | Inline style of the component on fullscreen mode. Otherwise, the 'style' property can be used. |
+| showTransitionOptions | string | 150ms cubic-bezier(0, 0, 0.2, 1) | Transition options of the show animation. |
+| hideTransitionOptions | string | 150ms cubic-bezier(0, 0, 0.2, 1) | Transition options of the hide animation. |
+| visible | boolean | null | Specifies the visibility of the mask on fullscreen mode. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| activeIndexChange | value :  number | Callback to invoke on active index change. |
+| visibleChange | value :  boolean | Callback to invoke on visiblity change. |
 
 ---
 

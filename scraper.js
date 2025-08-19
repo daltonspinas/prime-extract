@@ -43,6 +43,87 @@ function extractSectionContent($, section) {
     return sectionData;
 }
 
+function extractApiTable($, table) {
+    const apiData = [];
+    
+    // Extract table headers
+    const headers = [];
+    $(table).find('thead th').each((i, th) => {
+        const headerText = $(th).text().trim();
+        if (headerText) headers.push(headerText);
+    });
+    
+    // Extract table rows
+    $(table).find('tbody tr').each((i, tr) => {
+        const row = {};
+        $(tr).find('td').each((j, td) => {
+            const cellText = $(td).text().trim();
+            if (j < headers.length && headers[j]) {
+                row[headers[j]] = cellText;
+            }
+        });
+        if (Object.keys(row).length > 0) {
+            apiData.push(row);
+        }
+    });
+    
+    return { headers, data: apiData };
+}
+
+function extractApiSection($, apiSection) {
+    const apiData = {
+        title: '',
+        description: '',
+        sections: []
+    };
+
+    // Extract main API title
+    const titleEl = $(apiSection).find('.doc-intro h1').first();
+    if (titleEl.length) {
+        apiData.title = titleEl.text().trim();
+    }
+
+    // Extract main API description
+    const descEl = $(apiSection).find('.doc-intro p').first();
+    if (descEl.length) {
+        apiData.description = descEl.text().trim();
+    }
+
+    // Extract subsections (Properties, Emitters, Templates, etc.)
+    $(apiSection).find('app-docsection section').each((i, section) => {
+        const sectionTitle = $(section).find('h2.doc-section-label').text().replace('#', '').trim();
+        const sectionDesc = $(section).find('.doc-section-description p').first().text().trim();
+        
+        const subsection = {
+            title: sectionTitle,
+            description: sectionDesc,
+            subsections: []
+        };
+
+        // Look for h3 subsections (like Properties, Emitters, Templates)
+        $(section).find('app-docapitable').each((j, apiTable) => {
+            const subTitle = $(apiTable).find('h3.doc-section-label').text().replace('#', '').trim();
+            const subDesc = $(apiTable).find('.doc-section-description p').text().trim();
+            
+            // Extract table data
+            const table = $(apiTable).find('table.doc-table').first();
+            const tableData = extractApiTable($, table);
+            
+            subsection.subsections.push({
+                title: subTitle,
+                description: subDesc,
+                table: tableData
+            });
+        });
+
+        if (subsection.title || subsection.subsections.length > 0) {
+            apiData.sections.push(subsection);
+        }
+    });
+
+    return apiData;
+}
+
 async function scrapeComponents() {
     // Load component list
     const componentList = JSON.parse(fs.readFileSync(COMPONENT_LIST_PATH, 'utf-8'));
@@ -58,14 +139,14 @@ async function scrapeComponents() {
             const { data: compData } = await axios.get(url);
             const $ = cheerio.load(compData);
 
+            let markdown = '';
+
             // Extract main documentation container
             const docMain = $('.doc-main');
             if (!docMain.length) {
                 console.log(`No doc-main found for ${comp.name}, trying alternative selectors...`);
                 continue;
             }
-
-            let markdown = '';
 
             // Extract title and intro
             const docIntro = docMain.find('.doc-intro').first();
@@ -81,15 +162,17 @@ async function scrapeComponents() {
                 markdown += `# ${comp.name}\n\n`;
             }
 
-            // Extract documentation sections
+            // Extract feature documentation sections
             const docSections = docMain.find('app-docsection section');
             
             if (docSections.length > 0) {
+                markdown += `## Features\n\n`;
+                
                 docSections.each((i, section) => {
                     const sectionData = extractSectionContent($, section);
                     
                     if (sectionData.title) {
-                        markdown += `## ${sectionData.title}\n\n`;
+                        markdown += `### ${sectionData.title}\n\n`;
                         
                         if (sectionData.description) {
                             markdown += `${sectionData.description}\n\n`;
@@ -109,6 +192,60 @@ async function scrapeComponents() {
                 const fallbackTitle = $('h1').first().text().trim() || comp.name;
                 const fallbackDesc = $('p').first().text().trim();
                 markdown += `${fallbackDesc}\n\n`;
+            }
+
+            // Extract API documentation
+            const apiSection = $('app-docapisection');
+            if (apiSection.length > 0) {
+                console.log(`Found API section for ${comp.name}`);
+                const apiData = extractApiSection($, apiSection);
+                
+                if (apiData.title) {
+                    markdown += `## API\n\n`;
+                    markdown += `### ${apiData.title}\n\n`;
+                    
+                    if (apiData.description) {
+                        markdown += `${apiData.description}\n\n`;
+                    }
+                    
+                    // Process API sections
+                    apiData.sections.forEach(section => {
+                        if (section.title) {
+                            markdown += `#### ${section.title}\n\n`;
+                            if (section.description) {
+                                markdown += `${section.description}\n\n`;
+                            }
+                        }
+                        
+                        // Process subsections (Properties, Emitters, etc.)
+                        section.subsections.forEach(subsection => {
+                            if (subsection.title) {
+                                markdown += `##### ${subsection.title}\n\n`;
+                                if (subsection.description) {
+                                    markdown += `${subsection.description}\n\n`;
+                                }
+                                
+                                // Add table data
+                                if (subsection.table && subsection.table.data.length > 0) {
+                                    // Create markdown table
+                                    const headers = subsection.table.headers;
+                                    if (headers.length > 0) {
+                                        markdown += `| ${headers.join(' | ')} |\n`;
+                                        markdown += `| ${headers.map(() => '---').join(' | ')} |\n`;
+                                        
+                                        subsection.table.data.forEach(row => {
+                                            const cells = headers.map(header => row[header] || '');
+                                            markdown += `| ${cells.join(' | ')} |\n`;
+                                        });
+                                        markdown += '\n';
+                                    }
+                                }
+                            }
+                        });
+                    });
+                }
+            } else {
+                console.log(`No API section found for ${comp.name}`);
             }
 
             // Add source link

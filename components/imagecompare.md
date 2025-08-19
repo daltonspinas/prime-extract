@@ -2,13 +2,15 @@
 
 Compare two images side by side with a slider.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ImageCompareModule } from 'primeng/imagecompare';
 ```
 
-## Basic
+### Basic
 
 Images are defined using templating with left and right templates. Use the style or class properties to define the size of the container.
 
@@ -23,7 +25,7 @@ Images are defined using templating with left and right templates. Use the style
 </p-imagecompare>
 ```
 
-## Responsive
+### Responsive
 
 Apply responsive styles to the container element to optimize display per screen size.
 
@@ -38,7 +40,7 @@ Apply responsive styles to the container element to optimize display per screen 
 </p-imagecompare>
 ```
 
-## Accessibility
+### Accessibility
 
 ImageComponent component uses a native range slider internally. Value to describe the component can be defined using aria-labelledby and aria-label props.
 
@@ -53,9 +55,38 @@ ImageComponent component uses a native range slider internally. Value to describ
 </p-imagecompare>
 ```
 
-## ImageCompare
+### ImageCompare
 
 Compare two images side by side with a slider.
+
+## API
+
+### ImageCompare API
+
+API defines helper props, events and others for the PrimeNG ImageCompare module.
+
+#### ImageCompare
+
+Compare two images side by side with a slider.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| tabindex | number | 0 | Index of the element in tabbing order. |
+| ariaLabelledby | string | null | Defines a string value that labels an interactive element. |
+| ariaLabel | string | null | Identifier of the underlying input element. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| left |  | Template for the left side. |
+| right |  | Template for the right side. |
 
 ---
 

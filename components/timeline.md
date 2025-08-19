@@ -2,13 +2,15 @@
 
 Timeline visualizes a series of chained events.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { TimelineModule } from 'primeng/timeline';
 ```
 
-## Basic
+### Basic
 
 Timeline receives the events with the value property as a collection of arbitrary objects. In addition, content template is required to display the representation of an event. Example below is a sample events array that is used throughout the documentation.
 
@@ -20,7 +22,7 @@ Timeline receives the events with the value property as a collection of arbitrar
 </p-timeline>
 ```
 
-## Alignment
+### Alignment
 
 Content location relative the line is defined with the align property.
 
@@ -44,7 +46,7 @@ Content location relative the line is defined with the align property.
 </p-timeline>
 ```
 
-## Opposite
+### Opposite
 
 Additional content at the other side of the line can be provided with the opposite property.
 
@@ -59,7 +61,7 @@ Additional content at the other side of the line can be provided with the opposi
 </p-timeline>
 ```
 
-## Template
+### Template
 
 Sample implementation with custom content and styled markers.
 
@@ -83,7 +85,7 @@ Sample implementation with custom content and styled markers.
 </p-timeline>
 ```
 
-## Horizontal
+### Horizontal
 
 TimeLine orientation is controlled with the layout property, default is vertical having horizontal as the alternative.
 
@@ -110,13 +112,44 @@ TimeLine orientation is controlled with the layout property, default is vertical
 </p-timeline>
 ```
 
-## Accessibility
+### Accessibility
 
 Timeline uses a semantic ordered list element to list the events. No specific role is enforced, still you may use any aria role and attributes as any valid attribute is passed to the list element.
 
-## Timeline
+### Timeline
 
 Timeline visualizes a series of chained events.
+
+## API
+
+### Timeline API
+
+API defines helper props, events and others for the PrimeNG Timeline module.
+
+#### Timeline
+
+Timeline visualizes a series of chained events.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | any[] | null | An array of events to display. |
+| styleClass | string | null | Style class of the component. |
+| align | string | left | Position of the timeline bar relative to the content. Valid values are "left", "right" for vertical layout and "top", "bottom" for horizontal layout. |
+| layout | "vertical" | "horizontal" | vertical | Orientation of the timeline. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| content |  | Custom content template. |
+| opposite |  | Custom opposite item template. |
+| marker |  | Custom marker template. |
 
 ---
 

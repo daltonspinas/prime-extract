@@ -2,14 +2,16 @@
 
 Avatar represents people using icons, labels and images.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { AvatarModule } from 'primeng/avatar';
 import { AvatarGroupModule } from 'primeng/avatargroup';
 ```
 
-## Label
+### Label
 
 A letter Avatar is defined with the label property.
 
@@ -26,7 +28,7 @@ A letter Avatar is defined with the label property.
 </p-overlay-badge>
 ```
 
-## Icon
+### Icon
 
 A font icon is displayed as an Avatar with the icon property.
 
@@ -43,7 +45,7 @@ A font icon is displayed as an Avatar with the icon property.
 </p-overlay-badge>
 ```
 
-## Image
+### Image
 
 Use the image property to display an image as an Avatar.
 
@@ -59,7 +61,7 @@ Use the image property to display an image as an Avatar.
 <p-avatar image="https://www.gravatar.com/avatar/05dfd4b41340d09cae045235eb0893c3?d=mp" class="flex items-center justify-center mr-2" size="xlarge" />
 ```
 
-## AvatarGroup
+### AvatarGroup
 
 Grouping is available by wrapping multiple Avatar components inside an AvatarGroup.
 
@@ -72,7 +74,7 @@ Grouping is available by wrapping multiple Avatar components inside an AvatarGro
 <p-avatar label="+2" shape="circle" size="large" />
 ```
 
-## Shape
+### Shape
 
 Avatar comes in two different styles specified with the shape property, square is the default and circle is the alternative.
 
@@ -81,15 +83,50 @@ Avatar comes in two different styles specified with the shape property, square i
 <p-avatar label="T" />
 ```
 
-## Accessibility
+### Accessibility
 
 Avatar does not include any roles and attributes by default. Any attribute is passed to the root element so you may add a role like img along with aria-labelledby or aria-label to describe the component. In case avatars need to be tabbable, tabIndex can be added as well to implement custom key handlers.
 
-## Avatar
+### Avatar
 
 Avatar represents people using icons, labels and images.
 
-## AvatarGroup
+### AvatarGroup
+
+## API
+
+### Avatar API
+
+API defines helper props, events and others for the PrimeNG Avatar module.
+
+#### Avatar
+
+Avatar represents people using icons, labels and images.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| label | string | null | Defines the text to display. |
+| icon | string | null | Defines the icon to display. |
+| image | string | null | Defines the image to display. |
+| size | "large" | "xlarge" | "normal" | normal | Size of the element. |
+| shape | "circle" | "square" | square | Shape of the element. |
+| styleClass | string | null | Class of the element. |
+| ariaLabel | string | null | Establishes a string value that labels the component. |
+| ariaLabelledBy | string | null | Establishes relationships between the component and label(s) where its value should be one or more element IDs. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onImageError | event :  Event | This event is triggered if an error occurs while loading an image file. |
+
+#### AvatarGroup
 
 ---
 

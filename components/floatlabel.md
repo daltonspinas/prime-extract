@@ -2,13 +2,15 @@
 
 FloatLabel appears on top of the input field when focused.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { FloatLabelModule } from 'primeng/floatlabel';
 ```
 
-## Basic
+### Basic
 
 FloatLabel is used by wrapping the input and its label.
 
@@ -19,7 +21,7 @@ FloatLabel is used by wrapping the input and its label.
 </p-floatlabel>
 ```
 
-## Variants
+### Variants
 
 The variant property defines the position of the label. Default value is over, whereas in and on are the alternatives.
 
@@ -35,7 +37,7 @@ The variant property defines the position of the label. Default value is over, w
 </p-floatlabel>
 ```
 
-## Invalid
+### Invalid
 
 When the form element is invalid, the label is also highlighted.
 
@@ -56,13 +58,31 @@ When the form element is invalid, the label is also highlighted.
 </p-floatlabel>
 ```
 
-## Accessibility
+### Accessibility
 
 FloatLabel does not require any roles and attributes.
 
-## FloatLabel
+### FloatLabel
 
 FloatLabel appears on top of the input field when focused.
+
+## API
+
+### FloatLabel API
+
+API defines helper props, events and others for the PrimeNG FloatLabel module.
+
+#### FloatLabel
+
+FloatLabel appears on top of the input field when focused.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| variant | "in" | "over" | "on" | over | Defines the positioning of the label relative to the input. |
 
 ---
 

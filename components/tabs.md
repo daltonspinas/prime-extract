@@ -2,13 +2,15 @@
 
 Tabs is a container component to group content with tabs.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { TabsModule } from 'primeng/tabs';
 ```
 
-## Basic
+### Basic
 
 Tabs is defined using TabList, Tab, TabPanels and TabPanel components. Tab and TabPanel components are associated with their value properties
 
@@ -51,7 +53,7 @@ Tabs is defined using TabList, Tab, TabPanels and TabPanel components. Tab and T
 </p-tabs>
 ```
 
-## Dynamic
+### Dynamic
 
 Tabs can be generated dynamically using the standard @for block.
 
@@ -72,7 +74,7 @@ Tabs can be generated dynamically using the standard @for block.
 </p-tabs>
 ```
 
-## Controlled
+### Controlled
 
 Tabs can be controlled programmatically using value property as a model.
 
@@ -118,7 +120,7 @@ Tabs can be controlled programmatically using value property as a model.
 </p-tabs>
 ```
 
-## Scrollable
+### Scrollable
 
 Adding scrollable property displays navigational buttons at each side to scroll between tabs.
 
@@ -141,7 +143,7 @@ Adding scrollable property displays navigational buttons at each side to scroll 
 </p-tabs>
 ```
 
-## Disabled
+### Disabled
 
 Enabling disabled property of a Tab prevents user interaction.
 
@@ -185,7 +187,7 @@ Enabling disabled property of a Tab prevents user interaction.
 </p-tabs>
 ```
 
-## Template
+### Template
 
 Custom content for a tab is defined with the default ng-content.
 
@@ -244,7 +246,7 @@ Custom content for a tab is defined with the default ng-content.
 </p-tabs>
 ```
 
-## Tab Menu
+### Tab Menu
 
 A navigation menu is implemented using tabs without the panels where the content of a tab is provided by a route component like router-outlet. For the purpose of this demo, router-outlet is not included.
 
@@ -262,17 +264,44 @@ A navigation menu is implemented using tabs without the panels where the content
 <!--<router-outlet></router-outlet>-->
 ```
 
-## Accessibility
+### Accessibility
 
 Tabs container is defined with the tablist role, as any attribute is passed to the container element aria-labelledby can be optionally used to specify an element to describe the Tabs. Each tab header has a tab role along with aria-selected state attribute and aria-controls to refer to the corresponding tab content element. The content element of each tab has tabpanel role, an id to match thearia-controls of the header and aria-labelledby reference to the header as the accessible name.
 
-## Tabs
+### Tabs
 
 Tabs facilitates seamless switching between different views.
 
-## TabPanel
+### TabPanel
 
-## Tab
+### Tab
+
+## API
+
+### Tabs API
+
+API defines helper props, events and others for the PrimeNG Tabs module.
+
+#### Tabs
+
+Tabs facilitates seamless switching between different views.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| value | ModelSignal<string | number> | undefined | Value of the active tab. |
+| scrollable | InputSignalWithTransform<boolean, unknown> | false | When specified, enables horizontal and/or vertical scrolling. |
+| lazy | InputSignalWithTransform<boolean, unknown> | false | When enabled, hidden tabs are not rendered at all. Defaults to false that hides tabs with css. |
+| selectOnFocus | InputSignalWithTransform<boolean, unknown> | false | When enabled, the focused tab is activated. |
+| showNavigators | InputSignalWithTransform<boolean, unknown> | true | Whether to display navigation buttons in container when scrollable is enabled. |
+| tabindex | InputSignalWithTransform<number, unknown> | 0 | Tabindex of the tab buttons. |
+
+#### TabPanel
+
+#### Tab
 
 ---
 

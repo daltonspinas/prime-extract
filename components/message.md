@@ -2,13 +2,15 @@
 
 Message component is used to display inline messages.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { MessageModule } from 'primeng/message';
 ```
 
-## Basic
+### Basic
 
 Message component requires a content to display.
 
@@ -16,7 +18,7 @@ Message component requires a content to display.
 <p-message>Message Content</p-message>
 ```
 
-## Severity
+### Severity
 
 The severity option specifies the type of the message.
 
@@ -29,7 +31,7 @@ The severity option specifies the type of the message.
 <p-message severity="contrast">Contrast Message</p-message>
 ```
 
-## Icon
+### Icon
 
 The severity option specifies the type of the message.
 
@@ -43,7 +45,7 @@ The severity option specifies the type of the message.
 </p-message>
 ```
 
-## Outlined
+### Outlined
 
 Configure the variant value as outlined for messages with borders and no background.
 
@@ -56,7 +58,7 @@ Configure the variant value as outlined for messages with borders and no backgro
 <p-message severity="contrast" variant="outlined">Contrast Message</p-message>
 ```
 
-## Simple
+### Simple
 
 Configure the variant value as simple for messages without borders and backgrounds.
 
@@ -69,7 +71,7 @@ Configure the variant value as simple for messages without borders and backgroun
 <p-message severity="contrast" variant="simple">Contrast Message</p-message>
 ```
 
-## Sizes
+### Sizes
 
 Message provides small and large sizes as alternatives to the base.
 
@@ -79,7 +81,7 @@ Message provides small and large sizes as alternatives to the base.
 <p-message size="large" icon="pi pi-check">Large Message</p-message>
 ```
 
-## Forms
+### Forms
 
 Validation errors in a form are displayed with the error severity.
 
@@ -101,7 +103,7 @@ Validation errors in a form are displayed with the error severity.
 </div>
 ```
 
-## Dynamic
+### Dynamic
 
 Multiple messages can be displayed using the standard for block.
 
@@ -117,7 +119,7 @@ Multiple messages can be displayed using the standard for block.
 </div>
 ```
 
-## Closable
+### Closable
 
 Enable closable option to display an icon to remove a message.
 
@@ -125,7 +127,7 @@ Enable closable option to display an icon to remove a message.
 <p-message closable>Closable Message</p-message>
 ```
 
-## Life
+### Life
 
 Messages can disappear automatically by defined the life in milliseconds.
 
@@ -133,13 +135,68 @@ Messages can disappear automatically by defined the life in milliseconds.
 <p-message [life]="3000" severity="success">Auto disappear message</p-message>
 ```
 
-## Accessibility
+### Accessibility
 
 Message component uses alert role that implicitly defines aria-live as "assertive" and aria-atomic as "true". Since any attribute is passed to the root element, attributes like aria-labelledby and aria-label can optionally be used as well.
 
-## Message
+### Message
 
 Message groups a collection of contents in tabs.
+
+## API
+
+### Message API
+
+API defines helper props, events and others for the PrimeNG Message module.
+
+#### Message
+
+Message groups a collection of contents in tabs.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| severity | string | 'info' | Severity level of the message. |
+| text | string | null | Text content. |
+| escape | boolean | true | Whether displaying messages would be escaped or not. |
+| style | { [klass: string]: any } | null | Inline style of the component. |
+| styleClass | string | null | Style class of the component. |
+| closable | boolean | false | Whether the message can be closed manually using the close icon. |
+| icon | string | undefined | Icon to display in the message. |
+| closeIcon | string | undefined | Icon to display in the message close button. |
+| showTransitionOptions | string | '300ms ease-out' | Transition options of the show animation. |
+| hideTransitionOptions | string | '200ms cubic-bezier(0.86, 0, 0.07, 1)' | Transition options of the hide animation. |
+| size | "small" | "large" | null | Defines the size of the component. |
+| variant | "text" | "outlined" | "simple" | null | Specifies the input variant of the component. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onClose | event :  { originalEvent: Event } | Emits when the message is closed. |
+
+##### Methods
+
+Defines methods that can be accessed by the component's reference.
+
+| name | parameters | description |
+| --- | --- | --- |
+| close | event :  Event | Closes the message. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| container |  | Custom template of the message container. |
+| icon |  | Custom template of the message icon. |
+| closeicon |  | Custom template of the close icon. |
 
 ---
 

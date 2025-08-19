@@ -2,13 +2,15 @@
 
 Listbox is used to select one or more values from a list of items.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ListboxModule } from 'primeng/listbox';
 ```
 
-## Basic
+### Basic
 
 Listbox is used as a controlled component with ngModel property along with an options collection. Label and value of an option are defined with the optionLabel and optionValue properties respectively. Default property name for the optionLabel is label and value for the optionValue. If optionValue is omitted and the object has no value property, the object itself becomes the value of an option. Note that, when options are simple primitive values such as a string array, no optionLabel and optionValue would be necessary.
 
@@ -16,7 +18,7 @@ Listbox is used as a controlled component with ngModel property along with an op
 <p-listbox [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" class="w-full md:w-56" />
 ```
 
-## Checkmark
+### Checkmark
 
 An alternative way to highlight the selected option is displaying a checkmark instead.
 
@@ -24,7 +26,7 @@ An alternative way to highlight the selected option is displaying a checkmark in
 <p-listbox [(ngModel)]="selectedCity" [options]="cities" optionLabel="name" [checkmark]="true" [highlightOnSelect]="false" class="w-full md:w-56"/>
 ```
 
-## Checkbox
+### Checkbox
 
 Listbox allows item selection using checkboxes.
 
@@ -32,7 +34,7 @@ Listbox allows item selection using checkboxes.
 <p-listbox [(ngModel)]="selectedCity" [options]="cities" [multiple]="true" [checkbox]="true" optionLabel="name" class="w-full md:w-56" />
 ```
 
-## Multiple
+### Multiple
 
 ListBox allows choosing a single item by default, enable multiple property to choose more than one. When the optional metaKeySelection is present, behavior is changed in a way that selecting a new item requires meta key to be present.
 
@@ -40,7 +42,7 @@ ListBox allows choosing a single item by default, enable multiple property to ch
 <p-listbox [options]="cities" [(ngModel)]="selectedCities" optionLabel="name" [multiple]="true" [metaKeySelection]="false" class="w-full md:w-56" />
 ```
 
-## Group
+### Group
 
 Options can be grouped when a nested data structures is provided.
 
@@ -55,7 +57,7 @@ Options can be grouped when a nested data structures is provided.
 </p-listbox>
 ```
 
-## Filter
+### Filter
 
 ListBox provides built-in filtering that is enabled by adding the filter property.
 
@@ -63,7 +65,7 @@ ListBox provides built-in filtering that is enabled by adding the filter propert
 <p-listbox [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" [filter]="true" class="w-full md:w-56" />
 ```
 
-## Template
+### Template
 
 For custom content support define a template named item where the default local template variable refers to an option.
 
@@ -78,7 +80,7 @@ For custom content support define a template named item where the default local 
 </p-listbox>
 ```
 
-## Virtual Scroll
+### Virtual Scroll
 
 VirtualScrolling is an efficient way of rendering the options by displaying a small subset of data in the viewport at any time. When dealing with huge number of options, it is suggested to enable VirtualScrolling to avoid performance issues. Usage is simple as setting virtualScroll property to true and defining virtualScrollItemSize to specify the height of an item.
 
@@ -86,7 +88,7 @@ VirtualScrolling is an efficient way of rendering the options by displaying a sm
 <p-listbox [options]="items" [(ngModel)]="selectedItems" [checkbox]="true" [filter]="true" [selectAll]="selectAll" optionLabel="label" [virtualScroll]="true" [virtualScrollItemSize]="40" [multiple]="true" [metaKeySelection]="false" (onSelectAllChange)="onSelectAllChange($event)" (onChange)="onChange($event)" scrollHeight="250px" [striped]="true" class="w-full md:w-56" />
 ```
 
-## Invalid
+### Invalid
 
 The invalid state is applied using the ⁠invalid property to indicate failed validation, which can be integrated with Angular Forms.
 
@@ -94,7 +96,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 <p-listbox [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" class="w-full md:w-56" [invalid]="selectedCity === undefined" />
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -102,7 +104,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-listbox [options]="cities" [(ngModel)]="selectedCity" optionLabel="name" [disabled]="true" class="w-full md:w-56" />
 ```
 
-## Forms
+### Forms
 
 Listbox can also be used with reactive forms. In this case, the formControlName property is used to bind the component to a form control.
 
@@ -130,7 +132,7 @@ Listbox can also be used with reactive forms. In this case, the formControlName 
 </form>
 ```
 
-## Accessibility
+### Accessibility
 
 Value to describe the component can be provided ariaLabelledBy or ariaLabel props. The list element has a listbox role with the aria-multiselectable attribute that sets to true when multiple selection is enabled. Each list item has an option role with aria-selected and aria-disabled as their attributes.
 
@@ -141,9 +143,120 @@ Value to describe the component can be provided ariaLabelledBy or ariaLabel prop
 <p-listbox ariaLabel="City"/>
 ```
 
-## Listbox
+### Listbox
 
 ListBox is used to select one or more values from a list of items.
+
+## API
+
+### Listbox API
+
+API defines helper props, events and others for the PrimeNG Listbox module.
+
+#### Listbox
+
+ListBox is used to select one or more values from a list of items.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| required | InputSignalWithTransform<boolean, unknown> | false | There must be a value (if set). |
+| invalid | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have invalid state style. |
+| disabled | InputSignalWithTransform<boolean, unknown> | false | When present, it specifies that the component should have disabled state style. |
+| name | InputSignal<string> | undefined | When present, it specifies that the name of the input. |
+| id | string | null | Unique identifier of the component. |
+| searchMessage | string | '{0} results are available' | Text to display when the search is active. Defaults to global value in i18n translation configuration. |
+| emptySelectionMessage | string | 'No selected item' | Text to display when filtering does not return any results. Defaults to global value in i18n translation configuration. |
+| selectionMessage | string | '{0} items selected' | Text to be displayed in hidden accessible field when options are selected. Defaults to global value in i18n translation configuration. |
+| autoOptionFocus | boolean | true | Whether to focus on the first visible or selected element when the overlay panel is shown. |
+| ariaLabel | string | null | Defines a string that labels the input for accessibility. |
+| selectOnFocus | boolean | false | When enabled, the focused option is selected. |
+| searchLocale | boolean | false | Locale to use in searching. The default locale is the host environment's current locale. |
+| focusOnHover | boolean | true | When enabled, the hovered option will be focused. |
+| filterMessage | string | null | Text to display when filtering. |
+| filterFields | any[] | null | Fields used when filtering the options, defaults to optionLabel. |
+| lazy | boolean | false | Defines if data is loaded and interacted with in lazy manner. |
+| virtualScroll | boolean | false | Whether the data should be loaded on demand during scroll. |
+| virtualScrollItemSize | number | null | Height of an item in the list for VirtualScrolling. |
+| virtualScrollOptions | ScrollerOptions | null | Whether to use the scroller feature. The properties of scroller component can be used like an object in it. |
+| scrollHeight | string | 14rem | Height of the viewport in pixels, a scrollbar is defined if height of list exceeds this value. |
+| tabindex | number | 0 | Index of the element in tabbing order. |
+| multiple | boolean | false | When specified, allows selecting multiple values. |
+| styleClass | string | null | Style class of the container. |
+| listStyle | { [klass: string]: any } | null | Inline style of the list element. |
+| listStyleClass | string | null | Style class of the list element. |
+| readonly | boolean | false | When present, it specifies that the element value cannot be changed. |
+| checkbox | boolean | false | When specified, allows selecting items with checkboxes. |
+| filter | boolean | false | When specified, displays a filter input at header. |
+| filterBy | string | null | When filtering is enabled, filterBy decides which field or fields (comma separated) to search against. |
+| filterMatchMode | string | contains | Defines how the items are filtered. |
+| filterLocale | string | null | Locale to use in filtering. The default locale is the host environment's current locale. |
+| metaKeySelection | boolean | false | Defines how multiple items can be selected, when true metaKey needs to be pressed to select or unselect an item and when set to false selection of each item can be toggled individually. On touch enabled devices, metaKeySelection is turned off automatically. |
+| dataKey | string | null | A property to uniquely identify a value in options. |
+| showToggleAll | boolean | true | Whether header checkbox is shown in multiple mode. |
+| optionLabel | string | null | Name of the label field of an option. |
+| optionValue | string | null | Name of the value field of an option. |
+| optionGroupChildren | string | items | Name of the options field of an option group. |
+| optionGroupLabel | string | label | Name of the label field of an option group. |
+| optionDisabled | string | ((item: any) => boolean) | null | Name of the disabled field of an option or function to determine disabled state. |
+| ariaFilterLabel | string | null | Defines a string that labels the filter input. |
+| filterPlaceHolder | string | null | Defines placeholder of the filter input. |
+| emptyFilterMessage | string | null | Text to display when filtering does not return any results. |
+| emptyMessage | string | null | Text to display when there is no data. Defaults to global value in i18n translation configuration. |
+| group | boolean | false | Whether to display options as grouped when nested options are provided. |
+| options | any[] | null | An array of selectitems to display as the available options. |
+| filterValue | string | null | When specified, filter displays with this value. |
+| selectAll | boolean | null | Whether all data is selected. |
+| striped | boolean | false | Whether to displays rows with alternating colors. |
+| highlightOnSelect | boolean | true | Whether the selected option will be add highlight class. |
+| checkmark | boolean | false | Whether the selected option will be shown with a check mark. |
+| dragdrop | boolean | false | Whether to enable dragdrop based reordering. |
+| fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onChange | event :  ListboxChangeEvent | Callback to invoke on value change. |
+| onClick | event :  ListboxClickEvent | Callback to invoke when option is clicked. |
+| onDblClick | event :  ListboxDoubleClickEvent | Callback to invoke when option is double clicked. |
+| onFilter | event :  ListboxFilterEvent | Callback to invoke when data is filtered. |
+| onFocus | event :  FocusEvent | Callback to invoke when component receives focus. |
+| onBlur | event :  FocusEvent | Callback to invoke when component loses focus. |
+| onSelectAllChange | event :  ListboxSelectAllChangeEvent | Callback to invoke when all data is selected. |
+| onLazyLoad | event :  ScrollerLazyLoadEvent | Emits on lazy load. |
+| onDrop | value :  CdkDragDrop | Emits on item is dropped. |
+
+##### Methods
+
+Defines methods that can be accessed by the component's reference.
+
+| name | parameters | description |
+| --- | --- | --- |
+| updateModel | value :  anyevent :  any | Updates the model value. |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| item |  | Custom item template. |
+| group |  | Custom group template. |
+| header |  | Custom header template. |
+| filter |  | Custom filter template. |
+| footer |  | Custom footer template. |
+| emptyfilter |  | Custom empty filter message template. |
+| empty |  | Custom empty message template. |
+| filtericon |  | Custom filter icon template. |
+| checkicon |  | Custom check icon template. |
+| checkmark |  | Custom checkmark icon template. |
+| loader |  | Custom loader template. |
 
 ---
 

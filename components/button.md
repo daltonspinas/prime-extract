@@ -2,13 +2,15 @@
 
 Button is an extension to standard button element with icons and theming.
 
-## Import
+## Features
+
+### Import
 
 ```typescript
 import { ButtonModule } from 'primeng/button';
 ```
 
-## Basic
+### Basic
 
 Text to display on a button is defined with the label property.
 
@@ -16,7 +18,7 @@ Text to display on a button is defined with the label property.
 <p-button label="Submit" />
 ```
 
-## Directive
+### Directive
 
 Button can also be used as directive using pButton along with pButtonLabel and pButtonIcon helper directives.
 
@@ -27,7 +29,7 @@ Button can also be used as directive using pButton along with pButtonLabel and p
 </button>
 ```
 
-## Link
+### Link
 
 A button can be rendered as a link when link property is present, while the pButton directive can be applied on an anchor element to style the link as a button.
 
@@ -41,7 +43,7 @@ A button can be rendered as a link when link property is present, while the pBut
 </a>
 ```
 
-## Icons
+### Icons
 
 Icon of a button is specified with icon property and position is configured using iconPos attribute.
 
@@ -53,7 +55,7 @@ Icon of a button is specified with icon property and position is configured usin
 <p-button label="Update" icon="pi pi-refresh" iconPos="bottom" />
 ```
 
-## Loading
+### Loading
 
 Busy state is controlled with the loading property.
 
@@ -61,7 +63,7 @@ Busy state is controlled with the loading property.
 <p-button label="Search" icon="pi pi-check" [loading]="loading" (onClick)="load()" />
 ```
 
-## Severity
+### Severity
 
 Severity defines the type of button.
 
@@ -76,7 +78,7 @@ Severity defines the type of button.
 <p-button label="Contrast" severity="contrast" />
 ```
 
-## Disabled
+### Disabled
 
 When disabled is present, the element cannot be edited and focused.
 
@@ -84,7 +86,7 @@ When disabled is present, the element cannot be edited and focused.
 <p-button label="Submit" [disabled]="true" />
 ```
 
-## Raised
+### Raised
 
 Raised buttons display a shadow to indicate elevation.
 
@@ -99,7 +101,7 @@ Raised buttons display a shadow to indicate elevation.
 <p-button label="Contrast" [raised]="true" severity="contrast" />
 ```
 
-## Rounded
+### Rounded
 
 Rounded buttons have a circular border radius.
 
@@ -114,7 +116,7 @@ Rounded buttons have a circular border radius.
 <p-button label="Contrast" [rounded]="true" severity="contrast" />
 ```
 
-## Text
+### Text
 
 Text buttons are displayed as textual elements.
 
@@ -129,7 +131,7 @@ Text buttons are displayed as textual elements.
 <p-button label="Plain" variant="text" />
 ```
 
-## Raised Text
+### Raised Text
 
 Text buttons can be displayed as raised for elevation.
 
@@ -144,7 +146,7 @@ Text buttons can be displayed as raised for elevation.
 <p-button label="Plain" variant="text" [raised]="true" />
 ```
 
-## Outlined
+### Outlined
 
 Outlined buttons display a border without a background initially.
 
@@ -159,7 +161,7 @@ Outlined buttons display a border without a background initially.
 <p-button label="Contrast" variant="outlined" severity="contrast" />
 ```
 
-## Icon Only
+### Icon Only
 
 Buttons can have icons without labels.
 
@@ -205,7 +207,7 @@ Buttons can have icons without labels.
 <p-button icon="pi pi-times" [rounded]="true" [text]="true" severity="danger" />
 ```
 
-## Badge
+### Badge
 
 Buttons have built-in badge support with badge and badgeClass properties.
 
@@ -214,7 +216,7 @@ Buttons have built-in badge support with badge and badgeClass properties.
 <p-button label="Messages" icon="pi pi-users" badge="2" badgeSeverity="contrast" styleClass="m-0" [outlined]="true" />
 ```
 
-## Button Group
+### Button Group
 
 Multiple buttons are grouped when wrapped inside an element with ButtonGroup component.
 
@@ -226,7 +228,7 @@ Multiple buttons are grouped when wrapped inside an element with ButtonGroup com
 </p-buttongroup>
 ```
 
-## Sizes
+### Sizes
 
 Button provides small and large sizes as alternatives to the standard.
 
@@ -236,7 +238,7 @@ Button provides small and large sizes as alternatives to the standard.
 <p-button label="Large" icon="pi pi-check" size="large" />
 ```
 
-## Template
+### Template
 
 Custom content inside a button is defined as children.
 
@@ -248,7 +250,7 @@ Custom content inside a button is defined as children.
 </p-button>
 ```
 
-## Accessibility
+### Accessibility
 
 Button component renders a native button element that implicitly includes any passed prop. Text to describe the button is defined with the aria-label prop, if not present label prop is used as the value. If the button is icon only or custom templating is used, it is recommended to use aria-label so that screen readers would be able to read the element properly.
 
@@ -262,13 +264,104 @@ Button component renders a native button element that implicitly includes any pa
 </p-button>
 ```
 
-## Button
+### Button
 
 Button is an extension to standard button element with icons and theming.
 
-## ButtonDirective
+### ButtonDirective
 
 Button directive is an extension to button component.
+
+## API
+
+### Button API
+
+API defines helper props, events and others for the PrimeNG Button module.
+
+#### Button
+
+Button is an extension to standard button element with icons and theming.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| type | string | button | Type of the button. |
+| iconPos | ButtonIconPosition | left | Position of the icon. |
+| icon | string | null | Name of the icon. |
+| badge | string | null | Value of the badge. |
+| label | string | null | Uses to pass attributes to the label's DOM element. |
+| disabled | boolean | false | When present, it specifies that the component should be disabled. |
+| loading | boolean | false | Whether the button is in loading state. |
+| loadingIcon | string | null | Icon to display in loading state. |
+| raised | boolean | false | Add a shadow to indicate elevation. |
+| rounded | boolean | false | Add a circular border radius to the button. |
+| text | boolean | false | Add a textual class to the button without a background initially. |
+| plain | boolean | false | Add a plain textual class to the button without a background initially. |
+| severity | ButtonSeverity | null | Defines the style of the button. |
+| outlined | boolean | false | Add a border class without a background initially. |
+| link | boolean | false | Add a link style to the button. |
+| tabindex | number | null | Add a tabindex to the button. |
+| size | "small" | "large" | null | Defines the size of the button. |
+| variant | "text" | "outlined" | null | Specifies the variant of the component. |
+| style | { [klass: string]: any } | null | Inline style of the element. |
+| styleClass | string | null | Class of the element. |
+| badgeClass | string | null | Style class of the badge. |
+| badgeSeverity | "info" | "success" | "warn" | "danger" | "secondary" | "contrast" | "help" | "primary" | secondary | Severity type of the badge. |
+| ariaLabel | string | null | Used to define a string that autocomplete attribute the current element. |
+| buttonProps | any | null | Button props as an object. |
+| autofocus | boolean | false | When present, it specifies that the component should automatically get focus on load. |
+| fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
+
+##### Emitters
+
+Defines emit that determine the behavior of the component based on a given condition or report the actions that the component takes.
+
+| name | parameters | description |
+| --- | --- | --- |
+| onClick | event :  MouseEvent | Callback to execute when button is clicked.
+This event is intended to be used with the <p-button> component. Using a regular <button> element, use (click). |
+| onFocus | event :  FocusEvent | Callback to execute when button is focused.
+This event is intended to be used with the <p-button> component. Using a regular <button> element, use (focus). |
+| onBlur | event :  FocusEvent | Callback to execute when button loses focus.
+This event is intended to be used with the <p-button> component. Using a regular <button> element, use (blur). |
+
+##### Templates
+
+Defines the templates used by the component.
+
+| name | parameters | description |
+| --- | --- | --- |
+| content |  | Template of the content. |
+| loadingicon |  | Template of the loading. |
+| icon |  | Template of the icon. |
+
+#### ButtonDirective
+
+Button directive is an extension to button component.
+
+##### Properties
+
+Defines the input properties of the component.
+
+| name | type | default | description |
+| --- | --- | --- | --- |
+| iconPos | ButtonIconPosition | left | Position of the icon. |
+| loadingIcon | string | null | Uses to pass attributes to the loading icon's DOM element. |
+| label | string | null | Text of the button. |
+| icon | string | null | Name of the icon. |
+| loading | boolean | null | Whether the button is in loading state. |
+| buttonProps | ButtonProps | null | Used to pass all properties of the ButtonProps to the Button component. |
+| severity | ButtonSeverity | null | Defines the style of the button. |
+| raised | boolean | false | Add a shadow to indicate elevation. |
+| rounded | boolean | false | Add a circular border radius to the button. |
+| text | boolean | false | Add a textual class to the button without a background initially. |
+| outlined | boolean | false | Add a border class without a background initially. |
+| size | "small" | "large" | null | Defines the size of the button. |
+| plain | boolean | false | Add a plain textual class to the button without a background initially. |
+| fluid | InputSignalWithTransform<boolean, unknown> | undefined | Spans 100% width of the container when enabled. |
 
 ---
 
